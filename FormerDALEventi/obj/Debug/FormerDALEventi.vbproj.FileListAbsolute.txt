@@ -1,0 +1,10 @@
+C:\source\Former\Source\main\FormerDALEventi\bin\Debug\FormerDALEventi.dll
+C:\source\Former\Source\main\FormerDALEventi\bin\Debug\FormerDALEventi.pdb
+C:\source\Former\Source\main\FormerDALEventi\bin\Debug\FormerDALEventi.xml
+C:\source\Former\Source\main\FormerDALEventi\obj\Debug\FormerDALEventi.vbprojAssemblyReference.cache
+C:\source\Former\Source\main\FormerDALEventi\obj\Debug\FormerDALEventi.Resources.resources
+C:\source\Former\Source\main\FormerDALEventi\obj\Debug\FormerDALEventi.vbproj.GenerateResource.cache
+C:\source\Former\Source\main\FormerDALEventi\obj\Debug\FormerDALEventi.vbproj.CoreCompileInputs.cache
+C:\source\Former\Source\main\FormerDALEventi\obj\Debug\FormerDALEventi.dll
+C:\source\Former\Source\main\FormerDALEventi\obj\Debug\FormerDALEventi.xml
+C:\source\Former\Source\main\FormerDALEventi\obj\Debug\FormerDALEventi.pdb

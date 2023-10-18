@@ -1,0 +1,33 @@
+﻿'------------------------------------------------------------------------------
+' <generato automaticamente>
+'     Codice generato da uno strumento.
+'
+'     Le modifiche a questo file possono causare un comportamento non corretto e verranno perse se
+'     il codice viene rigenerato. 
+' </generato automaticamente>
+'------------------------------------------------------------------------------
+
+Option Strict On
+Option Explicit On
+
+
+Partial Public Class pHomePage
+
+    '''<summary>
+    '''Controllo Reparti.
+    '''</summary>
+    '''<remarks>
+    '''Campo generato automaticamente.
+    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''</remarks>
+    Protected WithEvents Reparti As Global.FormerWeb.ucReparti
+
+    '''<summary>
+    '''Controllo tableWizard.
+    '''</summary>
+    '''<remarks>
+    '''Campo generato automaticamente.
+    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''</remarks>
+    Protected WithEvents tableWizard As Global.System.Web.UI.WebControls.Table
+End Class

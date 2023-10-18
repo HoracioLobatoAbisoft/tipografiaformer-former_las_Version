@@ -1,0 +1,277 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="listini.Master.vb" Inherits="FormerListiniWeb.listini" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" media='all' />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Tipografia Former Online - Il tuo mondo della stampa a Roma</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="robots" content="all" />
+    <meta http-equiv="CONTENT-LANGUAGE" content="Italian" />
+    <link rel="SHORTCUT ICON" href="/img/icoSite.gif" />
+
+    <link href="/styles/jquery-1.11.4/jquery-ui.min.css" rel="stylesheet" type="text/css" />    
+    <link href="/css/site.min.20160415.css" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/scripts/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery-ui-1.11.4/jquery-ui.js"></script>
+    <link href="/scripts/qtip-2.21/jquery.qtip.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/scripts/qtip-2.21/jquery.qtip.min.js"></script>
+
+    
+    <script type="text/javascript">
+
+        function toolTipStart() {
+
+            // Grab all elements with the class "hasTooltip"
+            $('.hasTooltip').each(function () { // Notice the .each() loop, discussed below
+                $(this).qtip({
+                    content: {
+                        text: $(this).next('div')// Use the "div" element next to this for the content
+                        //, title: {
+                        //        text: 'tipografiaformer.it'
+                        //        }
+                    },
+                    style: {
+                        //classes: 'qtip-youtube ',
+                        classes: 'qtip-youtube', 
+                        
+                        tip: {
+                            corner: true
+                        }
+                    },
+                    position: {
+                        my: 'right top',
+                        adjust: {
+                            y: 10
+
+                        }
+                        //my: 'left top'
+                    }
+
+                });
+            });
+
+            $('.hasFixedTooltip').each(function () {
+                $(this).qtip({
+                    content: $(this).next('div'),
+                    hide: {
+                        fixed: true,
+                        delay: 300
+                    },
+                    style: {
+                        classes: 'qtip-youtube '
+                    },
+                    position: {
+                        my: 'right top',
+                        adjust: {
+                            y: 20
+                        }
+                    }
+                });
+            });
+        }
+                     
+	</script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            toolTipStart();
+
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            prm.add_endRequest(function () {
+                //$('.hasTooltip').qtip('reposition');
+                toolTipStart(); 
+            });
+
+        });
+        
+    </script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-43742415-3', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="page">
+
+         <div id="testataCompleta">
+        <div class="headerRow">
+            <div style="height:60px;">
+            <div class="logo">
+                <a href="/"><img src="/img/logo.png" border="0"/></a> 
+            </div>            
+            <div class="benvenuto">
+                Benvenuto <%If UtenteConnesso.IdUtente Then%><b class="NomeUtente"><%--<img src="/img/icoUt20.png" width="25"/>--%><%=getNominativoUtente %></b><%Else%>Visitatore<%end if %>, 
+                <%If UtenteConnesso.IdUtente Then%>
+                <asp:LinkButton ID="lnkEsci" ForeColor="#009ec9" runat="server"><b>Esci</b></asp:LinkButton>
+                <%Else%>
+                <a href="http://www.tipografiaformer.it/registrati" class="orange"><b>Registrati</b></a> o <a href="/login" class="orange"><b>Accedi</b></a>
+                <%End If%>
+            </div>    
+            
+            <a class="assistenza hasTooltip" href="http://www.tipografiaformer.it/assistenza-clienti"><img src="/img/icoAssistenza32.png" /></a>
+            <div class="hidden tooltiptext">
+                <img src="/img/icoInformation.png" class="imgSx" />
+                <h4>Hai bisogno di Aiuto?</h4>Qui troverai tutte le risposte alle domande più comuni, e se non sarai ancora soddisfatto potrai contattare il nostro Call Center per una domanda specifica!
+            </div>
+            <a class="socialbuttonY hasTooltip" href="http://www.youtube.com/user/tipografiaformer" target="_blank" ><img src="/img/btnYoutube.png"/></a>
+             <div class="hidden tooltiptext">
+                <img src="/img/btnYoutube.png" class="imgSx" style="background-color:red;" />
+                <h4>Visita il nostro canale Youtube</h4>Sul nostro canale Youtube potrai trovare molti filmati di informazione dei nostri prodotti e lavorazioni con spiegazioni dettagliate e prodotti di esempio
+            </div>
+            <a class="socialbuttonT hasTooltip"  href="https://twitter.com/FormerOfficial" target="_blank" ><img src="/img/btnTwitter.png" /></a>
+               <div class="hidden tooltiptext">
+                <img src="/img/btnTwitter.png" class="imgSx" style="background-color:#5ea9dd;" />
+                <h4>Seguici su Twitter</h4>Seguici su Twitter e resta sempre aggiornato sulle novità riguardanti offerte sui nostri prodotti e lavorazioni
+            </div>
+            <a class="socialbuttonF hasTooltip"  href="http://www.facebook.com/tipografiaformer.it" target="_blank" ><img src="/img/btnFacebook.png"/></a>
+               <div class="hidden tooltiptext">
+                <img src="/img/btnFacebook.png" class="imgSx" style="background-color:#43609c;"/>
+                <h4>Visita la nostra pagina Facebook</h4>Visita la nostra pagina Facebook e troverai offerte speciali, informazioni e comunicazioni riguardanti i nostri prodotti e la nostra azienda
+            </div>
+            
+           </div>
+            <div class="menutxt">
+                <a href="/area-riservata">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+               
+                <a href="http://www.tipografiaformer.it/assistenza-clienti">Contattaci</a>
+            </div>
+        </div>
+
+        <div class="menuRow">
+            <div class="menuRowInside">
+
+                        
+            <div class="cerca">
+
+            </div>                 
+            <div class="pulsantiera">    
+            <%--    <%If UtenteConnesso.IdUtente = 0 then %>  
+                    <a href="/registrati" class="hasTooltip"><img src="/img/btnRegister.png" class="button"/></a>
+                    <div class="hidden tooltiptext">
+                        <img src="/img/icoInformation.png" class="imgSx" />
+                        <h4>Registrati</h4>Solo registrandoti potrai visualizzare i prezzi dei nostri prodotti, effettuare un ordine e accedere alla tua area riservata
+                    </div>
+                <%end if %>--%>
+                
+                <%If UtenteConnesso.IdUtente = 0 Then %>
+                    <a href="/login" class="pulsante120Black hasTooltip"><img src="/img/icoLock32W.png" />Accedi</a>
+                    <%--<a href="/login" ><img src="/img/btnAccedi.png" class="button"/></a>--%>
+                <%Else%>
+                    <a href="/area-riservata" class="pulsante120Black hasTooltip"><img src="/img/icoLock32W.png" />Area Riservata</a>
+                   <%-- <a href="/area-riservata" ><img src="/img/btnAreaRiservata.png"  class="button"/></a>     --%>
+                <%End If%>
+                <div class="hidden tooltiptext">
+                    <img src="/img/icoInformation.png" class="imgSx" />
+                    <h4>Accedi alla tua Area Riservata</h4>Solo registrandoti ed effettuando l'accesso potrai effettuare un ordine, accedere alla tua area riservata, scaricare i documenti fiscali e tenere costantemente sotto controllo lo stato di avanzamento dei tuoi ordini
+                </div>
+
+                <%--<div class="btn hasTooltip">
+                    <%--<a href="/carrello"><img src="/img/btnGoCarrello.png" alt="Carrello" class="button"/></a>--%>
+<asp:Label ID="lblNotifiche" runat="server" Visible="false" CssClass="totNotifiche notifica" Text="0"></asp:Label>
+                </a>
+                <div class="hidden tooltiptext">
+                    <img src="/img/icoNotifica30W.png" class="imgSx" /> <h4>Le tue notifiche</h4>
+
+                </div>
+
+            </div>    
+            </div>
+        </div>
+        </div>
+
+
+         <div class="content">
+             <asp:ContentPlaceHolder ID="body" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+
+         <!--FINE CONTENUTO PAGINA-->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1562316040717376";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="sottoFooter">
+         <div class="footer">
+            <div class="footerBlock footerBlockWithBorder">
+                <b>Tipografia FORMER</b> 
+                <br />
+                <a href="https://www.tipografiaformer.it/la-nostra-azienda">La Nostra Azienda</a><br />
+                <a href="https://www.tipografiaformer.it/il-nostro-parco-macchine">Il Nostro Parco Macchine</a><br />
+                <a href="https://www.tipografiaformer.it/assistenza-clienti">Contattaci</a><br />
+                <a href="https://www.tipografiaformer.it/registrati">Richiedi i codici di accesso</a><br />
+                <a href="https://www.tipografiaformer.it/diventa-rivenditore">Diventa Rivenditore</a><br />
+            </div>
+            <div class="footerBlock footerBlockWithBorder">
+                <b>Il mondo FORMER</b> 
+                <br />
+                <a href="https://www.tipografiaformer.it/il-mondo-former">Il Mondo Former</a><br />
+                <a href="https://www.tipografiaformer.it/mondo-former/stampa-tipografica-offset">Stampa Tipografica Offset</a><br />
+                <a href="https://www.tipografiaformer.it/mondo-former/stampa-digitale">Stampa Digitale</a><br />
+                <a href="https://www.tipografiaformer.it/mondo-former/ricamo">Ricamo</a><br />
+                <a href="https://www.tipografiaformer.it/mondo-former/packaging">Packaging</a><br />
+            </div>
+            <div class="footerBlock footerBlockWithBorder">
+                <b>Ed ancora...</b>
+                 <br />
+                <a href="https://www.tipografiaformer.it/glossario-tipografico">Glossario Tipografico</a><br />
+                <a href="https://www.tipografiaformer.it/suggerimenti-per-inviarci-i-file">Vuoi creare file perfetti?</a><br />
+                <%--<a href="/dal-vecchio-al-nuovo-sito">Dal vecchio al nuovo sito in 5 minuti</a><br />--%>
+                <a href="http://www.google.com/chrome" target="_blank">Scarica Google Chrome</a><br />
+            </div>
+            <div class="footerBlock">
+                <div class="fb-page" data-href="https://www.facebook.com/tipografiaformer.it" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/tipografiaformer.it"><a href="https://www.facebook.com/tipografiaformer.it">Tipografia Former</a></blockquote></div></div>
+            </div>
+        </div>
+        <div style="clear:both;">
+            <img src="/img/logoPiccolo.png" border="0"/>
+            <br /><br />
+            <b>STABILIMENTO E UFFICI</b>: Via Cassia, 2010 - 00123 Roma - P.IVA 14974961006 - Tutti i diritti riservati, vietata la riproduzione anche parziale.
+            <br />
+            <b>SERVIZIO CLIENTI</b>: 06.30884518 - 06.30884057 Dal Lunedì al Venerdì, con orario continuato 8.30-19.00, <a class="orange" href="mailto:info@tipografiaformer.it">info@tipografiaformer.it</a>
+            <br /><br />
+            <img src="/img/PPVerified.png" />
+            <br /><br /><br />
+        </div> 
+        <div style="display:none;" itemprop="seller" itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name">Tipografia Former http://www.tipografiaformer.it</span>
+            <span itemprop="url">https://www.tipografiaformer.it</span>
+            <span itemprop="description">Tipografia Former Online, il tuo mondo della stampa a Roma - Stampa Offset, Stampa Digitale Grande Formato, Packaging Personalizzato, Ricamo, Etichette</span>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">Via Cassia 2010 </span>
+                <span itemprop="addressLocality">Roma</span>
+                <span itemprop="postalCode">000123</span>
+                <span itemprop="addressCountry">Italia</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

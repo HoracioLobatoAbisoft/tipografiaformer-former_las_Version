@@ -1,0 +1,14 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".html" #>
+
+<b>Tipografia FORMER - <#=Now.ToString("dd MMM yyyy HH.mm")#></b>
+       <hr />
+<h3>Richiesta di rigenerazione Password!</h3><br>
+<b>Abbiamo ricevuto una richiesta di rigenerazione della password associata a questa email</b><br>
+Se non hai più bisogno di richiedere una nuova password o hai ricevuto questa email per errore puoi non tenerne conto e continuare a entrare con la tua password.<br><br>
+Se invece vuoi ottenere una nuova password clicca qui:<br><br>
+<center><a href="https://www.tipografiaformer.it/rigenera-password/<#=EmailCrypt#>"><b>Ottieni una nuova Password</b></a></center>

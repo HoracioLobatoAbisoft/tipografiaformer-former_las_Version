@@ -1,0 +1,10 @@
+D:\Abisfot\Former\main\FormerEFDALSql\bin\Release\FormerEFDALSql.dll
+D:\Abisfot\Former\main\FormerEFDALSql\bin\Release\FormerEFDALSql.pdb
+D:\Abisfot\Former\main\FormerEFDALSql\bin\Release\FormerEFDALSql.xml
+D:\Abisfot\Former\main\FormerEFDALSql\obj\Release\FormerEFDALSql.vbproj.AssemblyReference.cache
+D:\Abisfot\Former\main\FormerEFDALSql\obj\Release\FormerEFDALSql.Resources.resources
+D:\Abisfot\Former\main\FormerEFDALSql\obj\Release\FormerEFDALSql.vbproj.GenerateResource.cache
+D:\Abisfot\Former\main\FormerEFDALSql\obj\Release\FormerEFDALSql.vbproj.CoreCompileInputs.cache
+D:\Abisfot\Former\main\FormerEFDALSql\obj\Release\FormerEFDALSql.dll
+D:\Abisfot\Former\main\FormerEFDALSql\obj\Release\FormerEFDALSql.xml
+D:\Abisfot\Former\main\FormerEFDALSql\obj\Release\FormerEFDALSql.pdb

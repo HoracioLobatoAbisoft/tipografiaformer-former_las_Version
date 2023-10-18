@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF457977-11CA-4844-8BC1-D544040F1352}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FormerBusinessLogic</RootNamespace>
+    <AssemblyName>FormerBusinessLogic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FormerBusinessLogic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FormerBusinessLogic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>FormerBusinessLogic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>FormerBusinessLogic.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="code\Altro\FileTemporaneoInUso.vb" />
+    <Compile Include="code\Altro\ServerSito.vb" />
+    <Compile Include="code\Manager\MgrFormerException.vb" />
+    <Compile Include="code\FatturaElettronica\Allegati.vb" />
+    <Compile Include="code\FatturaElettronica\AltriDatiGestionali.vb" />
+    <Compile Include="code\FatturaElettronica\Anagrafica.vb" />
+    <Compile Include="code\FatturaElettronica\CedentePrestatore.vb" />
+    <Compile Include="code\FatturaElettronica\CessionarioCommittente.vb" />
+    <Compile Include="code\FatturaElettronica\CodiceArticolo.vb" />
+    <Compile Include="code\FatturaElettronica\Contatti.vb" />
+    <Compile Include="code\FatturaElettronica\ContattiTrasmittente.vb" />
+    <Compile Include="code\FatturaElettronica\DatiAnagrafici.vb" />
+    <Compile Include="code\FatturaElettronica\DatiAnagraficiVettore.vb" />
+    <Compile Include="code\FatturaElettronica\DatiBeniServizi.vb" />
+    <Compile Include="code\FatturaElettronica\DatiBollo.vb" />
+    <Compile Include="code\FatturaElettronica\DatiCassaPrevidenziale.vb" />
+    <Compile Include="code\FatturaElettronica\DatiContratto.vb" />
+    <Compile Include="code\FatturaElettronica\DatiConvenzione.vb" />
+    <Compile Include="code\FatturaElettronica\DatiDDT.vb" />
+    <Compile Include="code\FatturaElettronica\DatiFattureCollegate.vb" />
+    <Compile Include="code\FatturaElettronica\DatiGenerali.vb" />
+    <Compile Include="code\FatturaElettronica\DatiGeneraliDocumento.vb" />
+    <Compile Include="code\FatturaElettronica\DatiOrdineAcquisto.vb" />
+    <Compile Include="code\FatturaElettronica\DatiPagamento.vb" />
+    <Compile Include="code\FatturaElettronica\DatiRicezione.vb" />
+    <Compile Include="code\FatturaElettronica\DatiRiepilogo.vb" />
+    <Compile Include="code\FatturaElettronica\DatiRitenuta.vb" />
+    <Compile Include="code\FatturaElettronica\DatiSAL.vb" />
+    <Compile Include="code\FatturaElettronica\DatiTrasmissione.vb" />
+    <Compile Include="code\FatturaElettronica\DatiTrasporto.vb" />
+    <Compile Include="code\FatturaElettronica\DatiVeicoli.vb" />
+    <Compile Include="code\FatturaElettronica\DettaglioLinee.vb" />
+    <Compile Include="code\FatturaElettronica\DettaglioPagamento.vb" />
+    <Compile Include="code\FatturaElettronica\FatturaElettronica.vb" />
+    <Compile Include="code\FatturaElettronica\FatturaElettronicaBody.vb" />
+    <Compile Include="code\FatturaElettronica\FatturaElettronicaHeader.vb" />
+    <Compile Include="code\FatturaElettronica\FatturaPrincipale.vb" />
+    <Compile Include="code\FatturaElettronica\IdFiscaleIVA.vb" />
+    <Compile Include="code\FatturaElettronica\IdTrasmittente.vb" />
+    <Compile Include="code\FatturaElettronica\IndirizzoResa.vb" />
+    <Compile Include="code\FatturaElettronica\IscrizioneREA.vb" />
+    <Compile Include="code\FatturaElettronica\RappresentanteFiscale.vb" />
+    <Compile Include="code\FatturaElettronica\ScontoMaggiorazione.vb" />
+    <Compile Include="code\FatturaElettronica\Sede.vb" />
+    <Compile Include="code\FatturaElettronica\StabileOrganizzazione.vb" />
+    <Compile Include="code\FatturaElettronica\TerzoIntermediarioOSoggettoEmittente.vb" />
+    <Compile Include="code\Manager\FormerSecurity.vb" />
+    <Compile Include="code\Manager\MgrFattureFE.vb" />
+    <Compile Include="code\Manager\MgrDocumentiFiscali.vb" />
+    <Compile Include="code\Manager\MgrIO.vb" />
+    <Compile Include="code\Manager\MgrMagazzino.vb" />
+    <Compile Include="code\Manager\MgrOrderLock.vb" />
+    <Compile Include="code\Manager\MgrCTP.vb" />
+    <Compile Include="code\Manager\MgrPubblicazioneWeb.vb" />
+    <Compile Include="code\Manager\MgrQtaListinoBase.vb" />
+    <Compile Include="code\Manager\MgrQtaMovimenti.vb" />
+    <Compile Include="code\Manager\MgrTraceCorriere.vb" />
+    <Compile Include="code\Manager\MgrTrack.vb" />
+    <Compile Include="code\Manager\MgrWorkflow.vb" />
+    <Compile Include="code\MarketingWeb\ListinoBaseInTemplate.vb" />
+    <Compile Include="code\MarketingWeb\MgrMarketingWeb.vb" />
+    <Compile Include="code\MarketingWeb\TMO.vb" />
+    <Compile Include="code\PreRefineError\MgrPreRefineCheck.vb" />
+    <Compile Include="code\Risultati\RisCalcoloFogli.vb" />
+    <Compile Include="code\Risultati\RisCalcoloMq.vb" />
+    <Compile Include="code\Risultati\RisCaricaOnlineFatturaPDF.vb" />
+    <Compile Include="code\Risultati\RisFatturaXML.vb" />
+    <Compile Include="code\Risultati\RisFileTrovatoNelJob.vb" />
+    <Compile Include="code\Risultati\RisFunctionICan.vb" />
+    <Compile Include="code\Risultati\RisIsLocked.vb" />
+    <Compile Include="code\Risultati\RisSalvaCostoDaFatturaElettronica.vb" />
+    <Compile Include="code\Risultati\RisUserLogged.vb" />
+    <Compile Include="code\SearchEngine\FormerSearchEngine.vb" />
+    <Compile Include="code\Templates\FileJobVuotoGanging8.vb">
+      <DependentUpon>FileJobVuotoGanging8.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="code\Validator\FormerValidator.vb" />
+    <Compile Include="code\Validator\ValidationError.vb" />
+    <Compile Include="code\Validator\ValidationFileResult.vb" />
+    <Compile Include="code\Validator\ValidationOrderResult.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FormerBusinessLogicInterface\FormerBusinessLogicInterface.vbproj">
+      <Project>{d056f549-d3d9-4da0-b0a0-5c22bb15cb14}</Project>
+      <Name>FormerBusinessLogicInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerConfig\FormerConfig.vbproj">
+      <Project>{31ede59a-0c3f-462b-98e0-4dd454d96847}</Project>
+      <Name>FormerConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerDALSql\FormerDALSql.vbproj">
+      <Project>{ff140a84-b072-4107-9b8a-aa1c4a8f0407}</Project>
+      <Name>FormerDALSql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerDALWeb\FormerDALWeb.vbproj">
+      <Project>{fd43bd6d-dc66-45fe-b4d2-9c5b9cffd39f}</Project>
+      <Name>FormerDALWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerError\FormerError.vbproj">
+      <Project>{643fb19d-f1fa-42ec-9acd-563f3167e80e}</Project>
+      <Name>FormerError</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerIO\FormerIO.vbproj">
+      <Project>{7cd2a141-7ddc-41aa-ab70-1efee472f182}</Project>
+      <Name>FormerIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerLib\FormerLib.vbproj">
+      <Project>{47910d2b-17b8-437d-b5e6-eae3b203588e}</Project>
+      <Name>FormerLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="code\Templates\FileJobVuotoGanging8.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>FileJobVuotoGanging8.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

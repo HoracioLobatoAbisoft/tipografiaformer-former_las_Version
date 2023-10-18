@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://labelservice.gls-italy.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="https://labelservice.gls-italy.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://labelservice.gls-italy.com/">
+      <s:element name="GetPdf">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SedeGls" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodiceCliente" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodiceContratto" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ContatoreProgressivo" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPdfResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPdfResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetZpl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SedeGls" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodiceCliente" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodiceContratto" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ContatoreProgressivo" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetZplResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetZplResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddParcel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XMLInfoParcel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddParcelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddParcelResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloseWorkDay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XMLCloseInfoParcel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CloseWorkDayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CloseWorkDayResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSped">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SedeGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodiceClienteGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PasswordClienteGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumSpedizione" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSpedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteSpedResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListSped">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SedeGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodiceClienteGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PasswordClienteGls" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListSpedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListSpedResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListSpedByStato">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SedeGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodiceClienteGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PasswordClienteGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Stato" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListSpedByStatoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListSpedByStatoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListSpedPeriod">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SedeGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodiceClienteGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PasswordClienteGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataInizio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataFine" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListSpedPeriodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListSpedPeriodResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListSpedPeriodByStato">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SedeGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodiceClienteGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PasswordClienteGls" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataInizio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataFine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Stato" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListSpedPeriodByStatoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListSpedPeriodByStatoResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="base64Binary" nillable="true" type="s:base64Binary" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetPdfSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPdf" />
+  </wsdl:message>
+  <wsdl:message name="GetPdfSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPdfResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetZplSoapIn">
+    <wsdl:part name="parameters" element="tns:GetZpl" />
+  </wsdl:message>
+  <wsdl:message name="GetZplSoapOut">
+    <wsdl:part name="parameters" element="tns:GetZplResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddParcelSoapIn">
+    <wsdl:part name="parameters" element="tns:AddParcel" />
+  </wsdl:message>
+  <wsdl:message name="AddParcelSoapOut">
+    <wsdl:part name="parameters" element="tns:AddParcelResponse" />
+  </wsdl:message>
+  <wsdl:message name="CloseWorkDaySoapIn">
+    <wsdl:part name="parameters" element="tns:CloseWorkDay" />
+  </wsdl:message>
+  <wsdl:message name="CloseWorkDaySoapOut">
+    <wsdl:part name="parameters" element="tns:CloseWorkDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSpedSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSped" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSpedSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSpedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedSoapIn">
+    <wsdl:part name="parameters" element="tns:ListSped" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedSoapOut">
+    <wsdl:part name="parameters" element="tns:ListSpedResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedByStatoSoapIn">
+    <wsdl:part name="parameters" element="tns:ListSpedByStato" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedByStatoSoapOut">
+    <wsdl:part name="parameters" element="tns:ListSpedByStatoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodSoapIn">
+    <wsdl:part name="parameters" element="tns:ListSpedPeriod" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodSoapOut">
+    <wsdl:part name="parameters" element="tns:ListSpedPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodByStatoSoapIn">
+    <wsdl:part name="parameters" element="tns:ListSpedPeriodByStato" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodByStatoSoapOut">
+    <wsdl:part name="parameters" element="tns:ListSpedPeriodByStatoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPdfHttpGetIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceCliente" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="CodiceContratto" type="s:string" />
+    <wsdl:part name="ContatoreProgressivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPdfHttpGetOut">
+    <wsdl:part name="Body" element="tns:base64Binary" />
+  </wsdl:message>
+  <wsdl:message name="GetZplHttpGetIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceCliente" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="CodiceContratto" type="s:string" />
+    <wsdl:part name="ContatoreProgressivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetZplHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AddParcelHttpGetIn">
+    <wsdl:part name="XMLInfoParcel" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddParcelHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="CloseWorkDayHttpGetIn">
+    <wsdl:part name="XMLCloseInfoParcel" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CloseWorkDayHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSpedHttpGetIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceClienteGls" type="s:string" />
+    <wsdl:part name="PasswordClienteGls" type="s:string" />
+    <wsdl:part name="NumSpedizione" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSpedHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedHttpGetIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceClienteGls" type="s:string" />
+    <wsdl:part name="PasswordClienteGls" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedByStatoHttpGetIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceClienteGls" type="s:string" />
+    <wsdl:part name="PasswordClienteGls" type="s:string" />
+    <wsdl:part name="Stato" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedByStatoHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodHttpGetIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceClienteGls" type="s:string" />
+    <wsdl:part name="PasswordClienteGls" type="s:string" />
+    <wsdl:part name="DataInizio" type="s:string" />
+    <wsdl:part name="DataFine" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodByStatoHttpGetIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceClienteGls" type="s:string" />
+    <wsdl:part name="PasswordClienteGls" type="s:string" />
+    <wsdl:part name="DataInizio" type="s:string" />
+    <wsdl:part name="DataFine" type="s:string" />
+    <wsdl:part name="Stato" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodByStatoHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetPdfHttpPostIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceCliente" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="CodiceContratto" type="s:string" />
+    <wsdl:part name="ContatoreProgressivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPdfHttpPostOut">
+    <wsdl:part name="Body" element="tns:base64Binary" />
+  </wsdl:message>
+  <wsdl:message name="GetZplHttpPostIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceCliente" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="CodiceContratto" type="s:string" />
+    <wsdl:part name="ContatoreProgressivo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetZplHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="AddParcelHttpPostIn">
+    <wsdl:part name="XMLInfoParcel" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddParcelHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="CloseWorkDayHttpPostIn">
+    <wsdl:part name="XMLCloseInfoParcel" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CloseWorkDayHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSpedHttpPostIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceClienteGls" type="s:string" />
+    <wsdl:part name="PasswordClienteGls" type="s:string" />
+    <wsdl:part name="NumSpedizione" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSpedHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedHttpPostIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceClienteGls" type="s:string" />
+    <wsdl:part name="PasswordClienteGls" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedByStatoHttpPostIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceClienteGls" type="s:string" />
+    <wsdl:part name="PasswordClienteGls" type="s:string" />
+    <wsdl:part name="Stato" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedByStatoHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodHttpPostIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceClienteGls" type="s:string" />
+    <wsdl:part name="PasswordClienteGls" type="s:string" />
+    <wsdl:part name="DataInizio" type="s:string" />
+    <wsdl:part name="DataFine" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodByStatoHttpPostIn">
+    <wsdl:part name="SedeGls" type="s:string" />
+    <wsdl:part name="CodiceClienteGls" type="s:string" />
+    <wsdl:part name="PasswordClienteGls" type="s:string" />
+    <wsdl:part name="DataInizio" type="s:string" />
+    <wsdl:part name="DataFine" type="s:string" />
+    <wsdl:part name="Stato" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListSpedPeriodByStatoHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:portType name="IlsWebServiceSoap">
+    <wsdl:operation name="GetPdf">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce in un array di byte il pdf.</wsdl:documentation>
+      <wsdl:input message="tns:GetPdfSoapIn" />
+      <wsdl:output message="tns:GetPdfSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZpl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce la sequenza dei comandi ZPL per la stampa dell'etichetta.</wsdl:documentation>
+      <wsdl:input message="tns:GetZplSoapIn" />
+      <wsdl:output message="tns:GetZplSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddParcel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inserisce le informazioni dei colli e restituisce le relative informazioni per la stampa dello stessi.</wsdl:documentation>
+      <wsdl:input message="tns:AddParcelSoapIn" />
+      <wsdl:output message="tns:AddParcelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseWorkDay">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Invia le informazioni definitive di chiusura delle spedizioni e ritorna lo stato delle spedizioni (Esegue la trasmissione in sede.)</wsdl:documentation>
+      <wsdl:input message="tns:CloseWorkDaySoapIn" />
+      <wsdl:output message="tns:CloseWorkDaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSped">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Elimina la spedizione.</wsdl:documentation>
+      <wsdl:input message="tns:DeleteSpedSoapIn" />
+      <wsdl:output message="tns:DeleteSpedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSped">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate degli ultimi 4 mesi.</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedSoapIn" />
+      <wsdl:output message="tns:ListSpedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedByStato">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate degli ultimi 4 mesi in base allo stato della spedizione. Stato: 0 = solo in attesa di chiusura, 1 = solo chiuse, non specificato = tutte</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedByStatoSoapIn" />
+      <wsdl:output message="tns:ListSpedByStatoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriod">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate all'interno delle date indicate; le date vanno inserite nel formato AAAAMMGGHHMM. (La parte HHMM e' facoltativa)</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedPeriodSoapIn" />
+      <wsdl:output message="tns:ListSpedPeriodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriodByStato">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate all'interno delle date indicate in base allo stato della spedizione specificato. Le date vanno inserite nel formato AAAAMMGGHHMM(La parte HHMM e' facoltativa);   Stato: 0 = solo in attesa di chiusura, 1 = solo chiuse, non specificato = tutte</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedPeriodByStatoSoapIn" />
+      <wsdl:output message="tns:ListSpedPeriodByStatoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IlsWebServiceHttpGet">
+    <wsdl:operation name="GetPdf">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce in un array di byte il pdf.</wsdl:documentation>
+      <wsdl:input message="tns:GetPdfHttpGetIn" />
+      <wsdl:output message="tns:GetPdfHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZpl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce la sequenza dei comandi ZPL per la stampa dell'etichetta.</wsdl:documentation>
+      <wsdl:input message="tns:GetZplHttpGetIn" />
+      <wsdl:output message="tns:GetZplHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddParcel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inserisce le informazioni dei colli e restituisce le relative informazioni per la stampa dello stessi.</wsdl:documentation>
+      <wsdl:input message="tns:AddParcelHttpGetIn" />
+      <wsdl:output message="tns:AddParcelHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseWorkDay">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Invia le informazioni definitive di chiusura delle spedizioni e ritorna lo stato delle spedizioni (Esegue la trasmissione in sede.)</wsdl:documentation>
+      <wsdl:input message="tns:CloseWorkDayHttpGetIn" />
+      <wsdl:output message="tns:CloseWorkDayHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSped">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Elimina la spedizione.</wsdl:documentation>
+      <wsdl:input message="tns:DeleteSpedHttpGetIn" />
+      <wsdl:output message="tns:DeleteSpedHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSped">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate degli ultimi 4 mesi.</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedHttpGetIn" />
+      <wsdl:output message="tns:ListSpedHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedByStato">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate degli ultimi 4 mesi in base allo stato della spedizione. Stato: 0 = solo in attesa di chiusura, 1 = solo chiuse, non specificato = tutte</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedByStatoHttpGetIn" />
+      <wsdl:output message="tns:ListSpedByStatoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriod">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate all'interno delle date indicate; le date vanno inserite nel formato AAAAMMGGHHMM. (La parte HHMM e' facoltativa)</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedPeriodHttpGetIn" />
+      <wsdl:output message="tns:ListSpedPeriodHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriodByStato">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate all'interno delle date indicate in base allo stato della spedizione specificato. Le date vanno inserite nel formato AAAAMMGGHHMM(La parte HHMM e' facoltativa);   Stato: 0 = solo in attesa di chiusura, 1 = solo chiuse, non specificato = tutte</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedPeriodByStatoHttpGetIn" />
+      <wsdl:output message="tns:ListSpedPeriodByStatoHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IlsWebServiceHttpPost">
+    <wsdl:operation name="GetPdf">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce in un array di byte il pdf.</wsdl:documentation>
+      <wsdl:input message="tns:GetPdfHttpPostIn" />
+      <wsdl:output message="tns:GetPdfHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZpl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce la sequenza dei comandi ZPL per la stampa dell'etichetta.</wsdl:documentation>
+      <wsdl:input message="tns:GetZplHttpPostIn" />
+      <wsdl:output message="tns:GetZplHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddParcel">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inserisce le informazioni dei colli e restituisce le relative informazioni per la stampa dello stessi.</wsdl:documentation>
+      <wsdl:input message="tns:AddParcelHttpPostIn" />
+      <wsdl:output message="tns:AddParcelHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseWorkDay">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Invia le informazioni definitive di chiusura delle spedizioni e ritorna lo stato delle spedizioni (Esegue la trasmissione in sede.)</wsdl:documentation>
+      <wsdl:input message="tns:CloseWorkDayHttpPostIn" />
+      <wsdl:output message="tns:CloseWorkDayHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSped">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Elimina la spedizione.</wsdl:documentation>
+      <wsdl:input message="tns:DeleteSpedHttpPostIn" />
+      <wsdl:output message="tns:DeleteSpedHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSped">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate degli ultimi 4 mesi.</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedHttpPostIn" />
+      <wsdl:output message="tns:ListSpedHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedByStato">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate degli ultimi 4 mesi in base allo stato della spedizione. Stato: 0 = solo in attesa di chiusura, 1 = solo chiuse, non specificato = tutte</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedByStatoHttpPostIn" />
+      <wsdl:output message="tns:ListSpedByStatoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriod">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate all'interno delle date indicate; le date vanno inserite nel formato AAAAMMGGHHMM. (La parte HHMM e' facoltativa)</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedPeriodHttpPostIn" />
+      <wsdl:output message="tns:ListSpedPeriodHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriodByStato">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Restituisce l'elenco delle spedizioni registrate all'interno delle date indicate in base allo stato della spedizione specificato. Le date vanno inserite nel formato AAAAMMGGHHMM(La parte HHMM e' facoltativa);   Stato: 0 = solo in attesa di chiusura, 1 = solo chiuse, non specificato = tutte</wsdl:documentation>
+      <wsdl:input message="tns:ListSpedPeriodByStatoHttpPostIn" />
+      <wsdl:output message="tns:ListSpedPeriodByStatoHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IlsWebServiceSoap" type="tns:IlsWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPdf">
+      <soap:operation soapAction="https://labelservice.gls-italy.com/GetPdf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZpl">
+      <soap:operation soapAction="https://labelservice.gls-italy.com/GetZpl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddParcel">
+      <soap:operation soapAction="https://labelservice.gls-italy.com/AddParcel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseWorkDay">
+      <soap:operation soapAction="https://labelservice.gls-italy.com/CloseWorkDay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSped">
+      <soap:operation soapAction="https://labelservice.gls-italy.com/DeleteSped" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSped">
+      <soap:operation soapAction="https://labelservice.gls-italy.com/ListSped" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedByStato">
+      <soap:operation soapAction="https://labelservice.gls-italy.com/ListSpedByStato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriod">
+      <soap:operation soapAction="https://labelservice.gls-italy.com/ListSpedPeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriodByStato">
+      <soap:operation soapAction="https://labelservice.gls-italy.com/ListSpedPeriodByStato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IlsWebServiceSoap12" type="tns:IlsWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPdf">
+      <soap12:operation soapAction="https://labelservice.gls-italy.com/GetPdf" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZpl">
+      <soap12:operation soapAction="https://labelservice.gls-italy.com/GetZpl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddParcel">
+      <soap12:operation soapAction="https://labelservice.gls-italy.com/AddParcel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseWorkDay">
+      <soap12:operation soapAction="https://labelservice.gls-italy.com/CloseWorkDay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSped">
+      <soap12:operation soapAction="https://labelservice.gls-italy.com/DeleteSped" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSped">
+      <soap12:operation soapAction="https://labelservice.gls-italy.com/ListSped" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedByStato">
+      <soap12:operation soapAction="https://labelservice.gls-italy.com/ListSpedByStato" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriod">
+      <soap12:operation soapAction="https://labelservice.gls-italy.com/ListSpedPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriodByStato">
+      <soap12:operation soapAction="https://labelservice.gls-italy.com/ListSpedPeriodByStato" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IlsWebServiceHttpGet" type="tns:IlsWebServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetPdf">
+      <http:operation location="/GetPdf" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZpl">
+      <http:operation location="/GetZpl" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddParcel">
+      <http:operation location="/AddParcel" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseWorkDay">
+      <http:operation location="/CloseWorkDay" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSped">
+      <http:operation location="/DeleteSped" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSped">
+      <http:operation location="/ListSped" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedByStato">
+      <http:operation location="/ListSpedByStato" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriod">
+      <http:operation location="/ListSpedPeriod" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriodByStato">
+      <http:operation location="/ListSpedPeriodByStato" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="IlsWebServiceHttpPost" type="tns:IlsWebServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetPdf">
+      <http:operation location="/GetPdf" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZpl">
+      <http:operation location="/GetZpl" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddParcel">
+      <http:operation location="/AddParcel" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseWorkDay">
+      <http:operation location="/CloseWorkDay" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSped">
+      <http:operation location="/DeleteSped" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSped">
+      <http:operation location="/ListSped" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedByStato">
+      <http:operation location="/ListSpedByStato" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriod">
+      <http:operation location="/ListSpedPeriod" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListSpedPeriodByStato">
+      <http:operation location="/ListSpedPeriodByStato" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IlsWebService">
+    <wsdl:port name="IlsWebServiceSoap" binding="tns:IlsWebServiceSoap">
+      <soap:address location="https://labelservice.gls-italy.com/ilswebservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="IlsWebServiceSoap12" binding="tns:IlsWebServiceSoap12">
+      <soap12:address location="https://labelservice.gls-italy.com/ilswebservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="IlsWebServiceHttpGet" binding="tns:IlsWebServiceHttpGet">
+      <http:address location="https://labelservice.gls-italy.com/ilswebservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="IlsWebServiceHttpPost" binding="tns:IlsWebServiceHttpPost">
+      <http:address location="https://labelservice.gls-italy.com/ilswebservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

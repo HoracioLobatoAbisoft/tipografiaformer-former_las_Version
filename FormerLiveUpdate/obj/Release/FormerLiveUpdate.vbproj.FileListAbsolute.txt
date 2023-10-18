@@ -1,0 +1,12 @@
+D:\Abisfot\Former\main\FormerLiveUpdate\bin\Release\formerliveupdate.exe.config
+D:\Abisfot\Former\main\FormerLiveUpdate\bin\Release\formerliveupdate.exe
+D:\Abisfot\Former\main\FormerLiveUpdate\bin\Release\formerliveupdate.pdb
+D:\Abisfot\Former\main\FormerLiveUpdate\bin\Release\formerliveupdate.xml
+D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\FormerLiveUpdate.vbproj.AssemblyReference.cache
+D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\FormerLiveUpdate.vbproj.SuggestedBindingRedirects.cache
+D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\FormerLiveUpdate.Resources.resources
+D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\FormerLiveUpdate.vbproj.GenerateResource.cache
+D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\FormerLiveUpdate.vbproj.CoreCompileInputs.cache
+D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\formerliveupdate.exe
+D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\formerliveupdate.xml
+D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\formerliveupdate.pdb

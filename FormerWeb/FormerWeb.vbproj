@@ -1,0 +1,2020 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{5ADF7EF3-30B7-43C2-A19D-3B6E560E4D89}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FormerWeb</RootNamespace>
+    <AssemblyName>FormerWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44311</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FormerWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FormerWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CuteWebUI.AjaxUploader">
+      <HintPath>..\lib\CuteWebUI.AjaxUploader.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.4.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assistenza\contattaci.aspx" />
+    <Content Include="assistenza\faq.aspx" />
+    <Content Include="assistenza\ris.aspx" />
+    <Content Include="banner.inc" />
+    <Content Include="banner\01.jpg" />
+    <Content Include="banner\02.jpg" />
+    <Content Include="banner\05.jpg" />
+    <Content Include="banner\07.jpg" />
+    <Content Include="banner\08.jpg" />
+    <Content Include="banner\09.jpg" />
+    <Content Include="banner\10.jpg" />
+    <Content Include="banner\11.jpg" />
+    <Content Include="cartaW.aspx" />
+    <Content Include="code\template\template\CatFormatoProdottoWizard.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>CatFormatoProdottoWizard.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="code\template\template\Macchinario.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>Macchinario.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="coloriW.aspx" />
+    <Content Include="condizioni.htm" />
+    <Content Include="img\aggPrev.png" />
+    <Content Include="img\bannerCampione.png" />
+    <Content Include="img\bannerDiventaRivSchedaProd.png" />
+    <Content Include="img\bannerSchedaProd.png" />
+    <Content Include="img\btnApplCoupon.png" />
+    <Content Include="img\btnCancellati.png" />
+    <Content Include="img\btnCercaSmall.png" />
+    <Content Include="img\btnContinua.png" />
+    <Content Include="img\btnInstagram.png" />
+    <Content Include="img\btnLaNostraAzienda.png" />
+    <Content Include="img\btnVaiOrd.png" />
+    <Content Include="img\ico1Click.png" />
+    <Content Include="img\ico1px.png" />
+    <Content Include="img\icoAssistenzaTelefonica.png" />
+    <Content Include="img\icoBloccoSel.png" />
+    <Content Include="img\icoCalendarioNew.png" />
+    <Content Include="img\icoCalendarioPromo.png" />
+    <Content Include="img\icoCheckBlack.png" />
+    <Content Include="img\close-icon.png" />
+    <Content Include="img\contattaci.jpg" />
+    <Content Include="img\divieto.gif" />
+    <Content Include="img\etichetteMisure.png" />
+    <Content Include="img\guida\guidaCoupon1.png" />
+    <Content Include="img\guida\guidaCoupon2.png" />
+    <Content Include="img\guida\guidaOfferte.png" />
+    <Content Include="img\ico3D.png" />
+    <Content Include="img\icoCampGratuito.png" />
+    <Content Include="img\icoCheck.gif" />
+    <Content Include="img\icoChiaveW.png" />
+    <Content Include="img\icoConsigliato.png" />
+    <Content Include="img\icoConsigliatoEx.png" />
+    <Content Include="img\icoCorriere20W.png" />
+    <Content Include="img\icoCoupon.png" />
+    <Content Include="img\icoCoupon50.png" />
+    <Content Include="img\icoCoupon30.png" />
+    <Content Include="img\icoCoupon20.png" />
+    <Content Include="img\guida\go41.png" />
+    <Content Include="img\icoDigitale16W.png" />
+    <Content Include="img\icoEditW.png" />
+    <Content Include="img\icoEtichette16W.png" />
+    <Content Include="img\icoEvi.png" />
+    <Content Include="img\icoEvidenza16.png" />
+    <Content Include="img\icoEvidenza16W.png" />
+    <Content Include="img\icoFileTypePDF3D.png" />
+    <Content Include="img\icoIMieiCouponLaterale.png" />
+    <Content Include="img\icoIndietroW.png" />
+    <Content Include="img\icoInfoOmaggio.png" />
+    <Content Include="img\icoListino.png" />
+    <Content Include="img\icoMail30.png" />
+    <Content Include="img\icoMieiCoupon20.png" />
+    <Content Include="img\icoMieiCoupon30.png" />
+    <Content Include="img\icoMieiCoupon50.png" />
+    <Content Include="img\icoNotifica24.png" />
+    <Content Include="img\icoNotifica24Gray.png" />
+    <Content Include="img\icoOffertaNew.png" />
+    <Content Include="img\icoOfferta.png" />
+    <Content Include="img\icoOffertaPerc.png" />
+    <Content Include="img\icoOfferte16.png" />
+    <Content Include="img\icoOfferte16W.png" />
+    <Content Include="img\icoOffset16W.png" />
+    <Content Include="img\icoOperatore.png" />
+    <Content Include="img\icoPacco20.png" />
+    <Content Include="img\icoLavoro50.png" />
+    <Content Include="img\icoLavoro20.png" />
+    <Content Include="img\icoCarrello20.png" />
+    <Content Include="img\chisiamo\azienda.jpg" />
+    <Content Include="img\chisiamo\foto1.jpg" />
+    <Content Include="img\chisiamo\foto2.jpg" />
+    <Content Include="img\chisiamo\foto3.jpg" />
+    <Content Include="img\chisiamo\foto4.jpg" />
+    <Content Include="img\icoCheck.png" />
+    <Content Include="img\icoClose20.png" />
+    <Content Include="img\icoDatiUt20.png" />
+    <Content Include="img\icoDatiUt30.png" />
+    <Content Include="img\icoEdit20.png" />
+    <Content Include="img\icoCheckOk20.png" />
+    <Content Include="img\icoPackaging16W.png" />
+    <Content Include="img\icoPdf20.png" />
+    <Content Include="img\IcoPrev24.png" />
+    <Content Include="img\icoPrevConsegnato.png" />
+    <Content Include="img\icoPrevInserito.png" />
+    <Content Include="img\icoPrevLetto.png" />
+    <Content Include="img\icoPrinterW.png" />
+    <Content Include="img\icoPromo16W.png" />
+    <Content Include="img\icoPromo20.png" />
+    <Content Include="img\icoPwd20.png" />
+    <Content Include="img\icoPwd30.png" />
+    <Content Include="img\icoPwd32.png" />
+    <Content Include="img\icoRecensione.png" />
+    <Content Include="img\icoRicamo16.png" />
+    <Content Include="img\icoRicamo16W.png" />
+    <Content Include="img\icoRivenditore.png" />
+    <Content Include="img\icoSaveW.png" />
+    <Content Include="img\icoSelected.png" />
+    <Content Include="img\icoSite.png" />
+    <Content Include="img\icoStampaInDigitale26.png" />
+    <Content Include="img\icoStampaInDigitale64.png" />
+    <Content Include="img\icoStarEmpty.png" />
+    <Content Include="img\icoStarFull.png" />
+    <Content Include="img\icoStarHalf.png" />
+    <Content Include="img\icoTel24.png" />
+    <Content Include="img\icoupload20W.png" />
+    <Content Include="img\icoUt20B.png" />
+    <Content Include="img\IcoVerificaFile.png" />
+    <Content Include="img\ico_Blog.png" />
+    <Content Include="img\imgBusinessCliBanner.jpg" />
+    <Content Include="img\icoRitiroCli20.png" />
+    <Content Include="img\lblCosaStaiCercando.png" />
+    <Content Include="img\left_arrow.jpg" />
+    <Content Include="img\mondoformer\imgRomaStand.png" />
+    <Content Include="img\newFust.png" />
+    <Content Include="img\newPromo.png" />
+    <Content Include="img\OldbannerCampione.png" />
+    <Content Include="img\btnIndietroCarr.png" />
+    <Content Include="img\btnInviaFile.png" />
+    <Content Include="img\btnInviaFronte.png" />
+    <Content Include="img\btnInviaRetro.png" />
+    <Content Include="img\btnNotificaAlert.png" />
+    <Content Include="img\btnRichiedi.png" />
+    <Content Include="img\btnVaiCarrello.png" />
+    <Content Include="img\campione\img1.png" />
+    <Content Include="img\campione\titolo1.png" />
+    <Content Include="img\campione\titolo2.png" />
+    <Content Include="img\chisiamo\azienda.png" />
+    <Content Include="img\chisiamo\foto1.png" />
+    <Content Include="img\chisiamo\foto2.png" />
+    <Content Include="img\chisiamo\foto3.png" />
+    <Content Include="img\chisiamo\foto4.png" />
+    <Content Include="img\chisiamo\titolo1.png" />
+    <Content Include="img\chisiamo\titolo2.png" />
+    <Content Include="img\chisiamo\titolo3.png" />
+    <Content Include="img\chisiamo\titolo4.png" />
+    <Content Include="img\chisiamo\titolo5.png" />
+    <Content Include="img\guida\go1.png" />
+    <Content Include="img\guida\go2.png" />
+    <Content Include="img\guida\go3.png" />
+    <Content Include="img\guida\go4.png" />
+    <Content Include="img\guida\go5.png" />
+    <Content Include="img\guida\go6.png" />
+    <Content Include="img\guida\go7.png" />
+    <Content Include="img\guida\titoloOrd.png" />
+    <Content Include="img\icoAdd16.png" />
+    <Content Include="img\gr_custom-inputs.png" />
+    <Content Include="img\icoCalendario.png" />
+    <Content Include="img\icoDown16.png" />
+    <Content Include="img\icoElenco.png" />
+    <Content Include="img\icoFav20Off.png" />
+    <Content Include="img\icoFav20On.png" />
+    <Content Include="img\icoPrezzo16.png" />
+    <Content Include="img\icoSave16.png" />
+    <Content Include="img\icoFreccia16.png" />
+    <Content Include="img\OldbannerSchedaProd.png" />
+    <Content Include="img\btnAggiorna.png" />
+    <Content Include="img\btnAllegaFile.png" />
+    <Content Include="img\btnContinuaAcquisti.png" />
+    <Content Include="img\btnDettaglio.png" />
+    <Content Include="img\btnNotifica.png" />
+    <Content Include="img\btnOrdina.png" />
+    <Content Include="img\btnPredefinito.png" />
+    <Content Include="img\btnSalva.png" />
+    <Content Include="img\icoAttach16Ko.png" />
+    <Content Include="img\icoAttach16Ok.png" />
+    <Content Include="img\icoCestinoGo16.png" />
+    <Content Include="img\icoCorriere20.png" />
+    <Content Include="img\icoBianco.png" />
+    <Content Include="img\icoCheckOk16.png" />
+    <Content Include="img\icoDel20.png" />
+    <Content Include="img\icoCheckko.png" />
+    <Content Include="img\icoCheckOk.png" />
+    <Content Include="img\icoCestino16.png" />
+    <Content Include="img\btnAddCarrello.png" />
+    <Content Include="img\btnSvuotaCarrello.png" />
+    <Content Include="img\icoCarrello50.png" />
+    <Content Include="img\diventa-rivenditore.jpg" />
+    <Content Include="img\icoCarrelloW.png" />
+    <Content Include="img\icoCheckFile.png" />
+    <Content Include="img\icoFile32.png" />
+    <Content Include="img\icoMail32.png" />
+    <Content Include="img\icoNotifica30W.png" />
+    <Content Include="img\icoPagam20.png" />
+    <Content Include="img\icoProd20.png" />
+    <Content Include="img\icoInfo32.png" />
+    <Content Include="img\icoRetroFronte16.png" />
+    <Content Include="img\icoSped20.png" />
+    <Content Include="img\icoUpload20.png" />
+    <Content Include="img\icoProd16.png" />
+    <Content Include="img\icoImage16.png" />
+    <Content Include="img\icoUt20.png" />
+    <Content Include="img\imgBusinessCli.png" />
+    <Content Include="img\imgCorriereScheda.jpg" />
+    <Content Include="img\imgGuidaOrd.jpg" />
+    <Content Include="img\lblInfo.png" />
+    <Content Include="img\icoInd.png" />
+    <Content Include="img\icoInd20.png" />
+    <Content Include="img\icoInd50.png" />
+    <Content Include="img\logoSmall.png" />
+    <Content Include="img\icoNotifica50.png" />
+    <Content Include="default.aspx" />
+    <Content Include="error.aspx" />
+    <Content Include="fogliW.aspx" />
+    <Content Include="formatoW.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="img\bannerApertura.png" />
+    <Content Include="img\btnAreaRiservata.png" />
+    <Content Include="img\btnCerca.png" />
+    <Content Include="img\btnEsci.png" />
+    <Content Include="img\btnGoCarrello.png" />
+    <Content Include="img\btnHome200.png" />
+    <Content Include="img\btnHome200_1.png" />
+    <Content Include="img\btnHome200_2.png" />
+    <Content Include="img\btnHomeAssistenza.png" />
+    <Content Include="img\btnHomeBrowser.png" />
+    <Content Include="img\btnHomeCarta.png" />
+    <Content Include="img\btnHomeGlossario.png" />
+    <Content Include="img\btnHomeInvioFile.png" />
+    <Content Include="img\btnHomeLavorazioni.png" />
+    <Content Include="img\btnIndietro.png" />
+    <Content Include="img\btnInviaOrdine.png" />
+    <Content Include="img\btnLogin.png" />
+    <Content Include="img\btnModPwd.png" />
+    <Content Include="img\btnModSped.png" />
+    <Content Include="img\btnOfferta1.png" />
+    <Content Include="img\btnProsegui.png" />
+    <Content Include="img\btnRigenera.png" />
+    <Content Include="img\btnStampa.png" />
+    <Content Include="img\BulletFast.png" />
+    <Content Include="img\BulletNormal.png" />
+    <Content Include="img\BulletSlow.png" />
+    <Content Include="img\icoMsg50.png" />
+    <Content Include="img\icoSped50.png" />
+    <Content Include="img\icoCart50.png" />
+    <Content Include="img\cerca.png" />
+    <Content Include="img\dalVecchioAlNuovo.png" />
+    <Content Include="img\icoUt50.png" />
+    <Content Include="img\icoSearch32W.png" />
+    <Content Include="img\icoSkype64.png" />
+    <Content Include="img\itipidicarta.png" />
+    <Content Include="img\mondoformer\ricamo\img1.png" />
+    <Content Include="img\mondoformer\ricamo\img2.png" />
+    <Content Include="img\mondoformer\ricamo\titolo.png" />
+    <Content Include="img\mondoformer\stampadigitale\img1.png" />
+    <Content Include="img\mondoformer\stampadigitale\img2.png" />
+    <Content Include="img\mondoformer\stampadigitale\titolo.png" />
+    <Content Include="img\new.gif" />
+    <Content Include="img\icoHome.png" />
+    <Content Include="img\icoUpload16.png" />
+    <Content Include="img\icoUploadW16.png" />
+    <Content Include="img\icoWarning32.png" />
+    <Content Include="img\guida\titolo.png" />
+    <Content Include="img\icoDocFisc64.png" />
+    <Content Include="img\home.jpg" />
+    <Content Include="img\icoFileTypeJPG.png" />
+    <Content Include="img\icoFileTypePDF.png" />
+    <Content Include="img\icoGlossario64.png" />
+    <Content Include="img\btnCarrello.png" />
+    <Content Include="img\icoGlossario16.png" />
+    <Content Include="img\icoCalendario16.png" />
+    <Content Include="img\icoDownload32.png" />
+    <Content Include="img\icoCommento16.png" />
+    <Content Include="img\icoCommento64.png" />
+    <Content Include="img\icoGls.png" />
+    <Content Include="img\icoLock32w.png" />
+    <Content Include="img\icoPacco32.png" />
+    <Content Include="img\icoPdf32.png" />
+    <Content Include="img\icoPrev16.png" />
+    <Content Include="img\icoLavOpz16.png" />
+    <Content Include="img\icoFogli16.png" />
+    <Content Include="img\icoPrezzo.png" />
+    <Content Include="img\icoQta16.png" />
+    <Content Include="img\icoCalc16.png" />
+    <Content Include="img\close.png" />
+    <Content Include="img\icoFilm64.png" />
+    <Content Include="img\icoFilm16.png" />
+    <Content Include="img\icoFoto16.png" />
+    <Content Include="img\icoImage64.png" />
+    <Content Include="img\assistenzaOld.jpg" />
+    <Content Include="img\close_pop.png" />
+    <Content Include="img\icoAzienda.png" />
+    <Content Include="img\BannerHome200.png" />
+    <Content Include="img\btnAccedi.png" />
+    <Content Include="img\btnHome.png" />
+    <Content Include="img\btnHomeSicurezza.png" />
+    <Content Include="img\btnHomeFacebook.png" />
+    <Content Include="img\btnHomeRitiro.png" />
+    <Content Include="img\btnHomeShipping.png" />
+    <Content Include="img\btnRegister.png" />
+    <Content Include="img\btnServiceGrafica.png" />
+    <Content Include="img\btnServiceFustelle.png" />
+    <Content Include="img\btnServiceRicamo.png" />
+    <Content Include="img\btnServiceTaglioPannelli.png" />
+    <Content Include="img\icoInformation.png" />
+    <Content Include="img\icoSped.png" />
+    <Content Include="img\icoTel64.png" />
+    <Content Include="img\icoCompass64.png" />
+    <Content Include="img\Assistenza.png" />
+    <Content Include="img\icoFacebook.png" />
+    <Content Include="img\icoLastMinute.png" />
+    <Content Include="img\icoProdotti.png" />
+    <Content Include="img\icoSearch.png" />
+    <Content Include="img\icoSite.gif" />
+    <Content Include="img\icoTemplate.png" />
+    <Content Include="img\icoWizard16_1.png" />
+    <Content Include="img\icoWizard16_2.png" />
+    <Content Include="img\icoWizard16_3.png" />
+    <Content Include="img\icoWizard16_4.png" />
+    <Content Include="img\icoYoutube.png" />
+    <Content Include="img\icoInfo16.png" />
+    <Content Include="img\icoInfo64.png" />
+    <Content Include="img\imgFogli.png" />
+    <Content Include="img\imgHomeDx.jpg" />
+    <Content Include="img\imgHomeSx1.png" />
+    <Content Include="img\imgHomeSx2.png" />
+    <Content Include="img\imgHomeSx3.png" />
+    <Content Include="img\imgHomeSx4.png" />
+    <Content Include="img\imgFacciate-Pagine.png" />
+    <Content Include="img\indicazTemplate.png" />
+    <Content Include="img\lenostrelavorazioni.png" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\icoLock32.png" />
+    <Content Include="img\icoLock16.png" />
+    <Content Include="img\icoLock64.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\logoPiccolo.png" />
+    <Content Include="img\icoCarrello.png" />
+    <Content Include="img\icoMail64.png" />
+    <Content Include="img\icoMail16.png" />
+    <Content Include="img\modalitaPagamento.png" />
+    <Content Include="img\mondoformer1.png" />
+    <Content Include="img\mondoformer2.png" />
+    <Content Include="img\mondoformer3.png" />
+    <Content Include="img\mondoformer4.png" />
+    <Content Include="img\mondoformer\stampatipografica\img1.png" />
+    <Content Include="img\mondoformer\stampatipografica\titolo.png" />
+    <Content Include="img\mondoformer\stampatipografica\titolo2.png" />
+    <Content Include="img\mondoformer\stampatipografica\titolo3.png" />
+    <Content Include="img\next.png" />
+    <Content Include="img\NoAnteprima.png" />
+    <Content Include="img\noColoreStampa.png" />
+    <Content Include="img\noFormato.png" />
+    <Content Include="img\noPiega.png" />
+    <Content Include="img\nostriprodotti.png" />
+    <Content Include="img\noTipoCarta.png" />
+    <Content Include="img\icoCarrello16.png" />
+    <Content Include="img\mondoformer\packaging\img1.png" />
+    <Content Include="img\mondoformer\packaging\img2.png" />
+    <Content Include="img\mondoformer\packaging\img3.png" />
+    <Content Include="img\mondoformer\packaging\img4.png" />
+    <Content Include="img\mondoformer\packaging\img5.png" />
+    <Content Include="img\mondoformer\packaging\titolo.png" />
+    <Content Include="img\mondoformer\packaging\titolo2.png" />
+    <Content Include="img\mondoformer\packaging\titolo3.png" />
+    <Content Include="img\orecchia.png" />
+    <Content Include="img\icoAttach16.png" />
+    <Content Include="img\orientamentoOrizzontale.jpg" />
+    <Content Include="img\orientamentoVerticale.jpg" />
+    <Content Include="img\packagingMisure.png" />
+    <Content Include="img\packagingMisureCuscino.png" />
+    <Content Include="img\parcomacchine\titoloParcoMacchine.png" />
+    <Content Include="img\payment\icoBB.png" />
+    <Content Include="img\payment\icoBB30.png" />
+    <Content Include="img\payment\icoBB45.png" />
+    <Content Include="img\payment\icoBB60.png" />
+    <Content Include="img\payment\icoBB90.png" />
+    <Content Include="img\payment\icoCC.png" />
+    <Content Include="img\payment\icoContrassegno.png" />
+    <Content Include="img\payment\icoPP.png" />
+    <Content Include="img\pdfTemplate3d.jpg" />
+    <Content Include="img\PercheScegliereFormer.png" />
+    <Content Include="img\icoRetroBianco16.png" />
+    <Content Include="img\pixel.gif" />
+    <Content Include="img\plugin\titoloRicamo.png" />
+    <Content Include="img\PPverified.png" />
+    <Content Include="img\prev.png" />
+    <Content Include="img\icoCarrello64.png" />
+    <Content Include="img\btnfacebook.png" />
+    <Content Include="img\btngoogleplus.png" />
+    <Content Include="img\btntwitter.png" />
+    <Content Include="img\btnyoutube.png" />
+    <Content Include="img\icoAssistenza32.png" />
+    <Content Include="img\icoAssistenza16.png" />
+    <Content Include="img\icoAssistenza64.png" />
+    <Content Include="img\icoPiega16.png" />
+    <Content Include="img\icoPeso32.png" />
+    <Content Include="img\icoStatoOrd16.png" />
+    <Content Include="img\icoAdmin16.png" />
+    <Content Include="img\icoStatoOrd64.png" />
+    <Content Include="img\icoAdmin64.png" />
+    <Content Include="img\icoCarrello32.png" />
+    <Content Include="img\progress.gif" />
+    <Content Include="img\registrati\screen1.jpg" />
+    <Content Include="img\registrati\screen2.jpg" />
+    <Content Include="img\registrati\titolo.png" />
+    <Content Include="img\registrati\tour.png" />
+    <Content Include="img\icoInfo20.png" />
+    <Content Include="img\icoShutdown.png" />
+    <Content Include="img\right_arrow.jpg" />
+    <Content Include="img\SitoInManutenzione.jpg" />
+    <Content Include="img\icoCalendar30.png" />
+    <Content Include="img\plugin\titoloPackaging.png" />
+    <Content Include="img\icoEuro50.png" />
+    <Content Include="img\icoCrawler16.png" />
+    <Content Include="img\StrisciaCarrello1.png" />
+    <Content Include="img\StrisciaCarrello2.png" />
+    <Content Include="img\StrisciaCarrello3.png" />
+    <Content Include="img\StrisciaCarrello4.png" />
+    <Content Include="img\StrisciaCarrello_1.png" />
+    <Content Include="img\StrisciaCarrello_2.png" />
+    <Content Include="img\StrisciaCarrello_3.png" />
+    <Content Include="img\StrisciaCarrello_4.png" />
+    <Content Include="img\StrisciaCarrello_5.png" />
+    <Content Include="img\titoloOfferte.png" />
+    <Content Include="img\wait.gif" />
+    <Content Include="img\icoMondo.png" />
+    <Content Include="img\_icoDatiFiscali.png" />
+    <Content Include="img\_icoDatiFiscali20.png" />
+    <Content Include="img\_Omaggio.png" />
+    <Content Include="manutenzione.aspx" />
+    <Content Include="assets\css\fontawesome-all.min.css" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\js\breakpoints.min.js" />
+    <Content Include="assets\js\browser.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\util.js" />
+    <Content Include="assets\webfonts\fa-brands-400.svg" />
+    <Content Include="assets\webfonts\fa-regular-400.svg" />
+    <Content Include="assets\webfonts\fa-solid-900.svg" />
+    <Content Include="mobile\default.m.aspx" />
+    <Content Include="mobile\desktopversion.m.aspx" />
+    <Content Include="mobile\login.m.aspx" />
+    <Content Include="mobile\ordini.m.aspx" />
+    <Content Include="mobile\prodotto.m.aspx" />
+    <Content Include="mobile\_elements.html" />
+    <Content Include="mobile\_generic.html" />
+    <Content Include="offerte\offerta1.png" />
+    <Content Include="pageplugin\crearicamo\crearicamo.aspx" />
+    <Content Include="pageplugin\etichette\etichette.aspx" />
+    <Content Include="pageplugin\etichette\etichetteCat.aspx" />
+    <Content Include="pageplugin\etichette\etichetteCm.aspx" />
+    <Content Include="pageplugin\packaging\misurepackaging.aspx" />
+    <Content Include="pagerss\getRssPromo.aspx" />
+    <Content Include="pagerss\getRssOfferte.aspx" />
+    <Content Include="pagetext\privacy.aspx" />
+    <Content Include="pagetext\offerteepromozioni.aspx" />
+    <Content Include="pagetext\guidaOrdine.aspx" />
+    <Content Include="pagetext\elencocarte.aspx" />
+    <Content Include="pagetext\elencolavorazioni.aspx" />
+    <Content Include="pagetext\diventariv.aspx" />
+    <Content Include="pagetext\ilmondoformer.aspx" />
+    <Content Include="pagetext\inviofile\inviofile.aspx" />
+    <Content Include="pagetext\lanostraazienda.aspx" />
+    <Content Include="pagetext\mondoformer\packaging.aspx" />
+    <Content Include="pagetext\mondoformer\stampadigitale.aspx" />
+    <Content Include="pagetext\mondoformer\ricamo.aspx" />
+    <Content Include="pagetext\mondoformer\stampatipografica.aspx" />
+    <Content Include="img\parcomacchine\Brossura_BQ_470SC_large.jpg" />
+    <Content Include="img\parcomacchine\CJV30-160.jpg" />
+    <Content Include="img\parcomacchine\Cucitrice_Bizzozero.jpg" />
+    <Content Include="img\parcomacchine\Duplo_System-5000.jpg" />
+    <Content Include="img\parcomacchine\heidelberg.jpg" />
+    <Content Include="img\parcomacchine\heidelberg_Stampa_a_caldo.jpg" />
+    <Content Include="img\parcomacchine\Horizon_AFC_564_6A_large.jpg" />
+    <Content Include="img\parcomacchine\impulse452.jpg" />
+    <Content Include="img\parcomacchine\Incelofanatrice.jpg" />
+    <Content Include="img\parcomacchine\KBA_Rapida-SRO-4_2.jpg" />
+    <Content Include="img\parcomacchine\linea_taglio_arrotonda_angoli_arrotondangoli_vicking_a_leva_dvicking.jpg" />
+    <Content Include="img\parcomacchine\macchina-piegaincolla-modello-ftp-g1200.jpg" />
+    <Content Include="img\parcomacchine\Magnus_400_III.jpg" />
+    <Content Include="img\parcomacchine\neolam-calandra-con-portarotolo.png" />
+    <Content Include="img\parcomacchine\OKI-ES3640FINISHER.png" />
+    <Content Include="page\appIframe.aspx" />
+    <Content Include="page\carrello\carrelloFile.aspx" />
+    <Content Include="page\datifiscali.aspx" />
+    <Content Include="page\ituoipreventivi.aspx" />
+    <Content Include="page\ordineconfermato.aspx" />
+    <Content Include="page\richiestapreventivoOk.aspx" />
+    <Content Include="page\richiedipreventivo.aspx" />
+    <Content Include="page\parcomacchine.aspx" />
+    <Content Include="img\parcomacchine\perforatori___trapani___occhiellatrici_trapani_per_carta_trapano_modmercury_220_v_dmercury.jpg" />
+    <Content Include="img\parcomacchine\Plastificatrice_surelam-380d.jpg" />
+    <Content Include="img\parcomacchine\Reggiatrice.jpg" />
+    <Content Include="img\parcomacchine\Roland_AdvancedJET_AJ-1000.jpg" />
+    <Content Include="img\parcomacchine\Siser_TS-One.jpg" />
+    <Content Include="img\parcomacchine\Tagliapannelli_steeltrack.jpg" />
+    <Content Include="img\parcomacchine\wohlenberg_tagliacarte.jpg" />
+    <Content Include="img\parcomacchine\ZSK_jaf-0612.jpg" />
+    <Content Include="img\parcomacchine\ZSK_SAM_0105_mono.jpg" />
+    <Content Include="page\areariservata.aspx" />
+    <Content Include="page\carrello\carrelloRiepilogo.aspx" />
+    <Content Include="page\carrello\carrelloPagamento.aspx" />
+    <Content Include="page\carrello\carrelloConsegna.aspx" />
+    <Content Include="page\carrello\carrello.aspx" />
+    <Content Include="page\comunicazioni.aspx" />
+    <Content Include="page\campioneok.aspx" />
+    <Content Include="page\fatture.aspx" />
+    <Content Include="page\dettaglioOrdine.aspx" />
+    <Content Include="page\gestpay\bsEndKo.aspx" />
+    <Content Include="page\gestpay\bsEndOk.aspx" />
+    <Content Include="page\gestpay\bsIPN.aspx" />
+    <Content Include="page\goto.aspx" />
+    <Content Include="page\letuerecensioni.aspx" />
+    <Content Include="page\offerte.aspx" />
+    <Content Include="page\ituoicoupon.aspx" />
+    <Content Include="page\ordini.aspx" />
+    <Content Include="page\dettaglioLavoro.aspx" />
+    <Content Include="page\newInd.aspx" />
+    <Content Include="page\paypal\ppEndKo.aspx" />
+    <Content Include="page\paypal\ppEndOk.aspx" />
+    <Content Include="page\paypal\ppIPN.aspx" />
+    <Content Include="page\registrazionenewsletter.aspx" />
+    <Content Include="page\regNewsletter.aspx" />
+    <Content Include="page\recensioni.aspx" />
+    <Content Include="page\promo.aspx" />
+    <Content Include="scripts\lightSlider\css\lightslider.css" />
+    <Content Include="scripts\lightSlider\css\lightslider.min.css" />
+    <Content Include="scripts\lightSlider\img\controls.png" />
+    <Content Include="scripts\lightSlider\js\lightslider.js" />
+    <Content Include="scripts\lightSlider\js\lightslider.min.js" />
+    <Content Include="selCatVirtuale.aspx" />
+    <Content Include="selFormato.aspx" />
+    <Content Include="page\_gallery.aspx" />
+    <Content Include="page\scaricaDocFisc.aspx" />
+    <Content Include="page\search.aspx" />
+    <Content Include="page\searchRis.aspx" />
+    <Content Include="page\unsubscribeok.aspx" />
+    <Content Include="page\unsubscribe.aspx" />
+    <Content Include="page\richiediCampione.aspx" />
+    <Content Include="page\rigpwd.aspx" />
+    <Content Include="page\indirizzosped.aspx" />
+    <Content Include="page\lavori.aspx" />
+    <Content Include="page\webmaster.aspx" />
+    <Content Include="privacy.htm" />
+    <Content Include="prodotto.aspx" />
+    <Content Include="page\carrello\_carrelloOld.aspx" />
+    <Content Include="page\login.aspx" />
+    <Content Include="page\datiutente.aspx" />
+    <Content Include="page\registrazioneok.aspx" />
+    <Content Include="page\register.aspx" />
+    <Content Include="robots.txt" />
+    <Content Include="pagerss\getRssPreventivazioni.aspx" />
+    <Content Include="scripts\easySlider\easySlider1.5.js" />
+    <Content Include="scripts\easySlider\easySlider1.5.min.js" />
+    <Content Include="scripts\find5\find5.js" />
+    <Content Include="scripts\freewall\freewall.js" />
+    <Content Include="scripts\jquery-1.10.2\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2\jquery-1.10.2.min.js" />
+    <Content Include="scripts\jquery-1.11.3\jquery-1.11.3.min.js" />
+    <Content Include="scripts\jquery-1.9.1\jquery-1.9.1.js" />
+    <Content Include="scripts\jquery-1.9.1\jquery-1.9.1.min.js" />
+    <Content Include="scripts\jquery-ui-1.10.3\jquery-ui.js" />
+    <Content Include="scripts\jquery-ui-1.10.3\jquery-ui.min.js" />
+    <Content Include="scripts\jquery-ui-1.10.4\jquery-ui.js" />
+    <Content Include="scripts\jquery-ui-1.10.4\jquery-ui.min.js" />
+    <Content Include="scripts\jquery-ui-1.11.4\jquery-ui.js" />
+    <Content Include="scripts\jquery-ui-1.11.4\jquery-ui.min.js" />
+    <Content Include="scripts\jsCarousel\jsCarousel.css" />
+    <Content Include="scripts\jsCarousel\jsCarousel.js" />
+    <Content Include="scripts\jsCarousel\left_arrow.jpg" />
+    <Content Include="scripts\jsCarousel\right_arrow.jpg" />
+    <Content Include="scripts\lightbox-2.6\lightbox-2.6.min.js" />
+    <Content Include="scripts\lightbox-2.6\lightbox.css" />
+    <Content Include="scripts\lightbox-2.6\lightbox.min.css" />
+    <Content Include="scripts\qtip-2.11\jquery.qtip.min.css" />
+    <Content Include="scripts\qtip-2.11\jquery.qtip.min.js" />
+    <Content Include="scripts\qtip-2.21\jquery.qtip.min.css" />
+    <Content Include="scripts\qtip-2.21\jquery.qtip.min.js" />
+    <Content Include="scripts\qtip-3.03\jquery.qtip.min.css" />
+    <Content Include="scripts\qtip-3.03\jquery.qtip.min.js" />
+    <Content Include="scripts\sly\horizontal.css" />
+    <Content Include="scripts\sly\horizontal.js" />
+    <Content Include="scripts\sly\ospb.css" />
+    <Content Include="scripts\sly\plugins.js" />
+    <Content Include="scripts\sly\sly.js" />
+    <Content Include="scripts\sly\sly.min.js" />
+    <Content Include="styles\css\newsite.css" />
+    <Content Include="styles\css\site.min.20230124.css" />
+    <Content Include="styles\css\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="styles\jquery-1.11.4\images\ui-icons_444444_256x240.png" />
+    <Content Include="styles\jquery-1.11.4\images\ui-icons_555555_256x240.png" />
+    <Content Include="styles\jquery-1.11.4\images\ui-icons_777620_256x240.png" />
+    <Content Include="styles\jquery-1.11.4\images\ui-icons_777777_256x240.png" />
+    <Content Include="styles\jquery-1.11.4\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="styles\jquery-1.11.4\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="styles\jquery-1.11.4\jquery-ui.css" />
+    <Content Include="styles\jquery-1.11.4\jquery-ui.min.css" />
+    <Content Include="styles\jquery-1.9.1\images\animated-overlay.gif" />
+    <Content Include="styles\jquery-1.9.1\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-icons_222222_256x240.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-icons_454545_256x240.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-icons_888888_256x240.png" />
+    <Content Include="styles\jquery-1.9.1\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="styles\jquery-1.10.4\jquery-ui.css" />
+    <Content Include="styles\jquery-1.10.4\jquery-ui.min.css" />
+    <Content Include="styles\jquery-1.9.1\jquery-ui.css" />
+    <Content Include="styles\jquery-1.9.1\jquery-ui.min.css" />
+    <Content Include="styles\css\site.css" />
+    <Content Include="userControl\ucAggregateReview.ascx" />
+    <Content Include="userControl\ucBoxFooterOrdine.ascx" />
+    <Content Include="userControl\ucCarrelloHelp.ascx" />
+    <Content Include="userControl\ucLbConsigliato.ascx" />
+    <Content Include="userControl\ucPrevPromo.ascx" />
+    <Content Include="userControl\ucPrezziTabellari.ascx" />
+    <Content Include="userControl\ucRandomLB.ascx" />
+    <Content Include="userControl\ucReview.ascx" />
+    <Content Include="userControl\ucReviewAdd.ascx" />
+    <Content Include="userControl\ucRisultatoRicerca.ascx" />
+    <Content Include="userControl\ucSlideProdotti.ascx" />
+    <Content Include="userControl\ucTavolozzaColori.ascx" />
+    <Content Include="userControl\ucNotifiche.ascx" />
+    <Content Include="userControl\ucAdmin.ascx" />
+    <Content Include="userControl\ucBoxCorpoLavoro.ascx" />
+    <Content Include="userControl\ucBoxFooterLavoro.ascx" />
+    <Content Include="userControl\ucCarrello.ascx" />
+    <Content Include="userControl\ucContattaci.ascx" />
+    <Content Include="userControl\ucBoxHeaderLavoro.ascx" />
+    <Content Include="userControl\ucPreventivazioni.ascx" />
+    <Content Include="userControl\ucReparti.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="assistenza\contattaci.aspx.designer.vb">
+      <DependentUpon>contattaci.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="assistenza\contattaci.aspx.vb">
+      <DependentUpon>contattaci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assistenza\faq.aspx.designer.vb">
+      <DependentUpon>faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="assistenza\faq.aspx.vb">
+      <DependentUpon>faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="assistenza\ris.aspx.designer.vb">
+      <DependentUpon>ris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="assistenza\ris.aspx.vb">
+      <DependentUpon>ris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\class\caching\CachingSection.vb" />
+    <Compile Include="code\class\caching\FileExtension.vb" />
+    <Compile Include="code\class\caching\FileExtensionCollection.vb" />
+    <Compile Include="code\class\Carrello.vb" />
+    <Compile Include="code\class\FatturaPdf.vb" />
+    <Compile Include="code\class\FileAllegato.vb" />
+    <Compile Include="code\class\former-engine\FormerMasterPage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\class\former-engine\FormerPage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\class\former-engine\FormerPluginPage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\class\former-engine\FormerRouting.vb" />
+    <Compile Include="code\class\former-engine\FormerSecurePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\class\former-engine\FormerFreePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\class\former-engine\FormerSecurityModule.vb" />
+    <Compile Include="code\class\former-engine\FormerUrlCreator.vb" />
+    <Compile Include="code\class\former-engine\FormerUserControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\class\former-engine\FormerWebApp.vb" />
+    <Compile Include="cartaW.aspx.designer.vb">
+      <DependentUpon>cartaW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cartaW.aspx.vb">
+      <DependentUpon>cartaW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\class\former-engine\FormerCacheHandler.vb" />
+    <Compile Include="code\class\FormerPDFMgr.vb" />
+    <Compile Include="code\class\IFormerWizardPage.vb" />
+    <Compile Include="code\class\imgGallery.vb" />
+    <Compile Include="code\class\Mgr\MgrGenericWebObject.vb" />
+    <Compile Include="code\class\Mgr\MgrOmaggi.vb" />
+    <Compile Include="code\class\plugin\MgrPlugin.vb" />
+    <Compile Include="code\class\OrdineInGriglia.vb" />
+    <Compile Include="code\class\plugin\Plugin.vb" />
+    <Compile Include="code\class\PPResponse.vb" />
+    <Compile Include="code\class\ProdottoInCarrello.vb" />
+    <Compile Include="code\class\RigaTabellaPrezzi.vb" />
+    <Compile Include="code\class\GenericWebObject.vb" />
+    <Compile Include="code\class\SpedizioneCumulativa.vb" />
+    <Compile Include="code\template\templateClass\FormatoProdottoFinito.vb" />
+    <Compile Include="code\template\templateClass\CatFormatoProdottoWizard.vb" />
+    <Compile Include="code\template\templateClass\ListinoBase.vb" />
+    <Compile Include="code\template\templateClass\CatFustella.vb" />
+    <Compile Include="code\template\templateClass\BloccoInEvidenza.vb" />
+    <Compile Include="code\template\templateClass\MailCoupon.vb" />
+    <Compile Include="code\template\templateClass\MailPwdChanged.vb" />
+    <Compile Include="code\template\templateClass\MailIscrizioneNewsletter.vb" />
+    <Compile Include="code\template\templateClass\MailRigeneraPwd.vb" />
+    <Compile Include="code\template\templateClass\MailRegistrazioneInserita.vb" />
+    <Compile Include="code\template\templateClass\MailRegistrazioneOk.vb" />
+    <Compile Include="code\template\templateClass\MailOrdineOk.vb" />
+    <Compile Include="code\template\templateClass\FogliWizard.vb" />
+    <Compile Include="code\template\templateClass\Macchinario.vb" />
+    <Compile Include="code\template\template\FormatoProdottoFinito.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormatoProdottoFinito.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\CatFormatoProdottoWizard.vb">
+      <DependentUpon>CatFormatoProdottoWizard.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="code\template\template\BloccoInEvidenza1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BloccoInEvidenza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\CatFustella1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatFustella.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\ColoreStampaWizard.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ColoreStampaWizard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\ListinoBase.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ListinoBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\MailCoupon.vb">
+      <DependentUpon>MailCoupon.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="code\template\template\MailOrdineOk.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MailOrdineOk.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\MailPwdChanged.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MailPwdChanged.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\MailRegistrazioneInserita.vb">
+      <DependentUpon>MailRegistrazioneInserita.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="code\template\template\FogliWizard.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FogliWizard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\FormatoProdottoWizard1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormatoProdottoWizard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\MailRegistrazioneOk.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MailRegistrazioneOk.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\MailIscrizioneNewsletter.vb">
+      <DependentUpon>MailIscrizioneNewsletter.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="code\template\template\MailRigeneraPwd.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MailRigeneraPwd.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\Macchinario.vb">
+      <DependentUpon>Macchinario.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="code\template\template\PreventivazioneWizard.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PreventivazioneWizard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\template\TipoCartaWizard1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipoCartaWizard.tt</DependentUpon>
+    </Compile>
+    <Compile Include="coloriW.aspx.designer.vb">
+      <DependentUpon>coloriW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="coloriW.aspx.vb">
+      <DependentUpon>coloriW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.vb">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.vb">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="fogliW.aspx.designer.vb">
+      <DependentUpon>fogliW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fogliW.aspx.vb">
+      <DependentUpon>fogliW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formatoW.aspx.designer.vb">
+      <DependentUpon>formatoW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formatoW.aspx.vb">
+      <DependentUpon>formatoW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="manutenzione.aspx.designer.vb">
+      <DependentUpon>manutenzione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manutenzione.aspx.vb">
+      <DependentUpon>manutenzione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\home.master.designer.vb">
+      <DependentUpon>home.master</DependentUpon>
+    </Compile>
+    <Compile Include="master\home.master.vb">
+      <DependentUpon>home.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\main.master.designer.vb">
+      <DependentUpon>main.master</DependentUpon>
+    </Compile>
+    <Compile Include="master\main.master.vb">
+      <DependentUpon>main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\reserved.master.designer.vb">
+      <DependentUpon>reserved.master</DependentUpon>
+    </Compile>
+    <Compile Include="master\reserved.master.vb">
+      <DependentUpon>reserved.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\default.m.aspx.designer.vb">
+      <DependentUpon>default.m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\default.m.aspx.vb">
+      <DependentUpon>default.m.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mobile\desktopversion.m.aspx.designer.vb">
+      <DependentUpon>desktopversion.m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\desktopversion.m.aspx.vb">
+      <DependentUpon>desktopversion.m.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mobile\login.m.aspx.designer.vb">
+      <DependentUpon>login.m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\login.m.aspx.vb">
+      <DependentUpon>login.m.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mobile\master\main.m.Master.designer.vb">
+      <DependentUpon>main.m.Master</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\master\main.m.Master.vb">
+      <DependentUpon>main.m.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\ordini.m.aspx.designer.vb">
+      <DependentUpon>ordini.m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\ordini.m.aspx.vb">
+      <DependentUpon>ordini.m.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mobile\prodotto.m.aspx.designer.vb">
+      <DependentUpon>prodotto.m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mobile\prodotto.m.aspx.vb">
+      <DependentUpon>prodotto.m.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pageplugin\crearicamo\crearicamo.aspx.designer.vb">
+      <DependentUpon>crearicamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageplugin\crearicamo\crearicamo.aspx.vb">
+      <DependentUpon>crearicamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageplugin\etichette\etichette.aspx.designer.vb">
+      <DependentUpon>etichette.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageplugin\etichette\etichette.aspx.vb">
+      <DependentUpon>etichette.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageplugin\etichette\etichetteCat.aspx.designer.vb">
+      <DependentUpon>etichetteCat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageplugin\etichette\etichetteCat.aspx.vb">
+      <DependentUpon>etichetteCat.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pageplugin\etichette\etichetteCm.aspx.designer.vb">
+      <DependentUpon>etichetteCm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageplugin\etichette\etichetteCm.aspx.vb">
+      <DependentUpon>etichetteCm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pageplugin\packaging\misurepackaging.aspx.designer.vb">
+      <DependentUpon>misurepackaging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageplugin\packaging\misurepackaging.aspx.vb">
+      <DependentUpon>misurepackaging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagerss\getRssPromo.aspx.designer.vb">
+      <DependentUpon>getRssPromo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagerss\getRssPromo.aspx.vb">
+      <DependentUpon>getRssPromo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pagerss\getRssOfferte.aspx.designer.vb">
+      <DependentUpon>getRssOfferte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagerss\getRssOfferte.aspx.vb">
+      <DependentUpon>getRssOfferte.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\privacy.aspx.designer.vb">
+      <DependentUpon>privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\privacy.aspx.vb">
+      <DependentUpon>privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\offerteepromozioni.aspx.designer.vb">
+      <DependentUpon>offerteepromozioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\offerteepromozioni.aspx.vb">
+      <DependentUpon>offerteepromozioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\guidaOrdine.aspx.designer.vb">
+      <DependentUpon>guidaOrdine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\guidaOrdine.aspx.vb">
+      <DependentUpon>guidaOrdine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\elencocarte.aspx.designer.vb">
+      <DependentUpon>elencocarte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\elencocarte.aspx.vb">
+      <DependentUpon>elencocarte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\elencolavorazioni.aspx.designer.vb">
+      <DependentUpon>elencolavorazioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\elencolavorazioni.aspx.vb">
+      <DependentUpon>elencolavorazioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\diventariv.aspx.designer.vb">
+      <DependentUpon>diventariv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\diventariv.aspx.vb">
+      <DependentUpon>diventariv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\ilmondoformer.aspx.designer.vb">
+      <DependentUpon>ilmondoformer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\ilmondoformer.aspx.vb">
+      <DependentUpon>ilmondoformer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\inviofile\inviofile.aspx.designer.vb">
+      <DependentUpon>inviofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\inviofile\inviofile.aspx.vb">
+      <DependentUpon>inviofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\lanostraazienda.aspx.designer.vb">
+      <DependentUpon>lanostraazienda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\lanostraazienda.aspx.vb">
+      <DependentUpon>lanostraazienda.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\mondoformer\packaging.aspx.designer.vb">
+      <DependentUpon>packaging.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\mondoformer\packaging.aspx.vb">
+      <DependentUpon>packaging.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\mondoformer\stampadigitale.aspx.designer.vb">
+      <DependentUpon>stampadigitale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\mondoformer\stampadigitale.aspx.vb">
+      <DependentUpon>stampadigitale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\mondoformer\ricamo.aspx.designer.vb">
+      <DependentUpon>ricamo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\mondoformer\ricamo.aspx.vb">
+      <DependentUpon>ricamo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagetext\mondoformer\stampatipografica.aspx.designer.vb">
+      <DependentUpon>stampatipografica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagetext\mondoformer\stampatipografica.aspx.vb">
+      <DependentUpon>stampatipografica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\appIframe.aspx.designer.vb">
+      <DependentUpon>appIframe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\appIframe.aspx.vb">
+      <DependentUpon>appIframe.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="page\carrello\carrelloFile.aspx.designer.vb">
+      <DependentUpon>carrelloFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\carrello\carrelloFile.aspx.vb">
+      <DependentUpon>carrelloFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\datifiscali.aspx.designer.vb">
+      <DependentUpon>datifiscali.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\datifiscali.aspx.vb">
+      <DependentUpon>datifiscali.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\ituoipreventivi.aspx.designer.vb">
+      <DependentUpon>ituoipreventivi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\ituoipreventivi.aspx.vb">
+      <DependentUpon>ituoipreventivi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="page\ordineconfermato.aspx.designer.vb">
+      <DependentUpon>ordineconfermato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\ordineconfermato.aspx.vb">
+      <DependentUpon>ordineconfermato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\richiestapreventivoOk.aspx.designer.vb">
+      <DependentUpon>richiestapreventivoOk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\richiestapreventivoOk.aspx.vb">
+      <DependentUpon>richiestapreventivoOk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\richiedipreventivo.aspx.designer.vb">
+      <DependentUpon>richiedipreventivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\richiedipreventivo.aspx.vb">
+      <DependentUpon>richiedipreventivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\parcomacchine.aspx.designer.vb">
+      <DependentUpon>parcomacchine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\parcomacchine.aspx.vb">
+      <DependentUpon>parcomacchine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\areariservata.aspx.designer.vb">
+      <DependentUpon>areariservata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\areariservata.aspx.vb">
+      <DependentUpon>areariservata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\carrello\carrelloRiepilogo.aspx.designer.vb">
+      <DependentUpon>carrelloRiepilogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\carrello\carrelloRiepilogo.aspx.vb">
+      <DependentUpon>carrelloRiepilogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\carrello\carrelloPagamento.aspx.designer.vb">
+      <DependentUpon>carrelloPagamento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\carrello\carrelloPagamento.aspx.vb">
+      <DependentUpon>carrelloPagamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\carrello\carrelloConsegna.aspx.designer.vb">
+      <DependentUpon>carrelloConsegna.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\carrello\carrelloConsegna.aspx.vb">
+      <DependentUpon>carrelloConsegna.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\carrello\carrello.aspx.designer.vb">
+      <DependentUpon>carrello.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\carrello\carrello.aspx.vb">
+      <DependentUpon>carrello.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\comunicazioni.aspx.designer.vb">
+      <DependentUpon>comunicazioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\comunicazioni.aspx.vb">
+      <DependentUpon>comunicazioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\campioneok.aspx.designer.vb">
+      <DependentUpon>campioneok.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\campioneok.aspx.vb">
+      <DependentUpon>campioneok.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\fatture.aspx.designer.vb">
+      <DependentUpon>fatture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\fatture.aspx.vb">
+      <DependentUpon>fatture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\dettaglioOrdine.aspx.designer.vb">
+      <DependentUpon>dettaglioOrdine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\dettaglioOrdine.aspx.vb">
+      <DependentUpon>dettaglioOrdine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\gestpay\bsEndKo.aspx.designer.vb">
+      <DependentUpon>bsEndKo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\gestpay\bsEndKo.aspx.vb">
+      <DependentUpon>bsEndKo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\gestpay\bsEndOk.aspx.designer.vb">
+      <DependentUpon>bsEndOk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\gestpay\bsEndOk.aspx.vb">
+      <DependentUpon>bsEndOk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\gestpay\bsIPN.aspx.designer.vb">
+      <DependentUpon>bsIPN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\gestpay\bsIPN.aspx.vb">
+      <DependentUpon>bsIPN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\goto.aspx.designer.vb">
+      <DependentUpon>goto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\goto.aspx.vb">
+      <DependentUpon>goto.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="page\letuerecensioni.aspx.designer.vb">
+      <DependentUpon>letuerecensioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\letuerecensioni.aspx.vb">
+      <DependentUpon>letuerecensioni.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="page\offerte.aspx.designer.vb">
+      <DependentUpon>offerte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\offerte.aspx.vb">
+      <DependentUpon>offerte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\ituoicoupon.aspx.designer.vb">
+      <DependentUpon>ituoicoupon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\ituoicoupon.aspx.vb">
+      <DependentUpon>ituoicoupon.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="page\ordini.aspx.designer.vb">
+      <DependentUpon>ordini.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\ordini.aspx.vb">
+      <DependentUpon>ordini.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\dettaglioLavoro.aspx.designer.vb">
+      <DependentUpon>dettaglioLavoro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\dettaglioLavoro.aspx.vb">
+      <DependentUpon>dettaglioLavoro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\newInd.aspx.designer.vb">
+      <DependentUpon>newInd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\newInd.aspx.vb">
+      <DependentUpon>newInd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\paypal\ppEndKo.aspx.designer.vb">
+      <DependentUpon>ppEndKo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\paypal\ppEndKo.aspx.vb">
+      <DependentUpon>ppEndKo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\paypal\ppEndOk.aspx.designer.vb">
+      <DependentUpon>ppEndOk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\paypal\ppEndOk.aspx.vb">
+      <DependentUpon>ppEndOk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\paypal\ppIPN.aspx.designer.vb">
+      <DependentUpon>ppIPN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\paypal\ppIPN.aspx.vb">
+      <DependentUpon>ppIPN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\registrazionenewsletter.aspx.designer.vb">
+      <DependentUpon>registrazionenewsletter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\registrazionenewsletter.aspx.vb">
+      <DependentUpon>registrazionenewsletter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\regNewsletter.aspx.designer.vb">
+      <DependentUpon>regNewsletter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\regNewsletter.aspx.vb">
+      <DependentUpon>regNewsletter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\recensioni.aspx.designer.vb">
+      <DependentUpon>recensioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\recensioni.aspx.vb">
+      <DependentUpon>recensioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\promo.aspx.designer.vb">
+      <DependentUpon>promo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\promo.aspx.vb">
+      <DependentUpon>promo.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="selCatVirtuale.aspx.designer.vb">
+      <DependentUpon>selCatVirtuale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="selCatVirtuale.aspx.vb">
+      <DependentUpon>selCatVirtuale.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="selFormato.aspx.designer.vb">
+      <DependentUpon>selFormato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="selFormato.aspx.vb">
+      <DependentUpon>selFormato.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="page\_gallery.aspx.designer.vb">
+      <DependentUpon>_gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\_gallery.aspx.vb">
+      <DependentUpon>_gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\scaricaDocFisc.aspx.designer.vb">
+      <DependentUpon>scaricaDocFisc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\scaricaDocFisc.aspx.vb">
+      <DependentUpon>scaricaDocFisc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\search.aspx.designer.vb">
+      <DependentUpon>search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\search.aspx.vb">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="page\searchRis.aspx.designer.vb">
+      <DependentUpon>searchRis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\searchRis.aspx.vb">
+      <DependentUpon>searchRis.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="page\unsubscribeok.aspx.designer.vb">
+      <DependentUpon>unsubscribeok.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\unsubscribeok.aspx.vb">
+      <DependentUpon>unsubscribeok.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\unsubscribe.aspx.designer.vb">
+      <DependentUpon>unsubscribe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\unsubscribe.aspx.vb">
+      <DependentUpon>unsubscribe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\richiediCampione.aspx.designer.vb">
+      <DependentUpon>richiediCampione.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\richiediCampione.aspx.vb">
+      <DependentUpon>richiediCampione.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\rigpwd.aspx.designer.vb">
+      <DependentUpon>rigpwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\rigpwd.aspx.vb">
+      <DependentUpon>rigpwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\indirizzosped.aspx.designer.vb">
+      <DependentUpon>indirizzosped.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\indirizzosped.aspx.vb">
+      <DependentUpon>indirizzosped.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\lavori.aspx.designer.vb">
+      <DependentUpon>lavori.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\lavori.aspx.vb">
+      <DependentUpon>lavori.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\webmaster.aspx.designer.vb">
+      <DependentUpon>webmaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\webmaster.aspx.vb">
+      <DependentUpon>webmaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="prodotto.aspx.designer.vb">
+      <DependentUpon>prodotto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="prodotto.aspx.vb">
+      <DependentUpon>prodotto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\carrello\_carrelloOld.aspx.designer.vb">
+      <DependentUpon>_carrelloOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\carrello\_carrelloOld.aspx.vb">
+      <DependentUpon>_carrelloOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\datiutente.aspx.designer.vb">
+      <DependentUpon>datiutente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\datiutente.aspx.vb">
+      <DependentUpon>datiutente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\registrazioneok.aspx.designer.vb">
+      <DependentUpon>registrazioneok.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\registrazioneok.aspx.vb">
+      <DependentUpon>registrazioneok.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\register.aspx.designer.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\register.aspx.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="code\template\templateClass\ColoreStampaWizard.vb" />
+    <Compile Include="code\template\templateClass\TipoCartaWizard.vb" />
+    <Compile Include="code\template\templateClass\FormatoProdottoWizard.vb" />
+    <Compile Include="code\template\templateClass\PreventivazioneWizard.vb" />
+    <Compile Include="pagerss\getRssPreventivazioni.aspx.designer.vb">
+      <DependentUpon>getRssPreventivazioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagerss\getRssPreventivazioni.aspx.vb">
+      <DependentUpon>getRssPreventivazioni.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucAggregateReview.ascx.designer.vb">
+      <DependentUpon>ucAggregateReview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucAggregateReview.ascx.vb">
+      <DependentUpon>ucAggregateReview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucBoxFooterOrdine.ascx.designer.vb">
+      <DependentUpon>ucBoxFooterOrdine.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucBoxFooterOrdine.ascx.vb">
+      <DependentUpon>ucBoxFooterOrdine.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucCarrelloHelp.ascx.designer.vb">
+      <DependentUpon>ucCarrelloHelp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucCarrelloHelp.ascx.vb">
+      <DependentUpon>ucCarrelloHelp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucLbConsigliato.ascx.designer.vb">
+      <DependentUpon>ucLbConsigliato.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucLbConsigliato.ascx.vb">
+      <DependentUpon>ucLbConsigliato.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucPrevPromo.ascx.designer.vb">
+      <DependentUpon>ucPrevPromo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucPrevPromo.ascx.vb">
+      <DependentUpon>ucPrevPromo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucPrezziTabellari.ascx.designer.vb">
+      <DependentUpon>ucPrezziTabellari.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucPrezziTabellari.ascx.vb">
+      <DependentUpon>ucPrezziTabellari.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucRandomLB.ascx.designer.vb">
+      <DependentUpon>ucRandomLB.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucRandomLB.ascx.vb">
+      <DependentUpon>ucRandomLB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucReview.ascx.designer.vb">
+      <DependentUpon>ucReview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucReview.ascx.vb">
+      <DependentUpon>ucReview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucReviewAdd.ascx.designer.vb">
+      <DependentUpon>ucReviewAdd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucReviewAdd.ascx.vb">
+      <DependentUpon>ucReviewAdd.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucRisultatoRicerca.ascx.designer.vb">
+      <DependentUpon>ucRisultatoRicerca.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucRisultatoRicerca.ascx.vb">
+      <DependentUpon>ucRisultatoRicerca.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucSlideProdotti.ascx.designer.vb">
+      <DependentUpon>ucSlideProdotti.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucSlideProdotti.ascx.vb">
+      <DependentUpon>ucSlideProdotti.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucTavolozzaColori.ascx.designer.vb">
+      <DependentUpon>ucTavolozzaColori.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucTavolozzaColori.ascx.vb">
+      <DependentUpon>ucTavolozzaColori.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucNotifiche.ascx.designer.vb">
+      <DependentUpon>ucNotifiche.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucNotifiche.ascx.vb">
+      <DependentUpon>ucNotifiche.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucAdmin.ascx.designer.vb">
+      <DependentUpon>ucAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucAdmin.ascx.vb">
+      <DependentUpon>ucAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucBoxCorpoLavoro.ascx.designer.vb">
+      <DependentUpon>ucBoxCorpoLavoro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucBoxCorpoLavoro.ascx.vb">
+      <DependentUpon>ucBoxCorpoLavoro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucBoxFooterLavoro.ascx.designer.vb">
+      <DependentUpon>ucBoxFooterLavoro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucBoxFooterLavoro.ascx.vb">
+      <DependentUpon>ucBoxFooterLavoro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucCarrello.ascx.designer.vb">
+      <DependentUpon>ucCarrello.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucCarrello.ascx.vb">
+      <DependentUpon>ucCarrello.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucContattaci.ascx.designer.vb">
+      <DependentUpon>ucContattaci.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucContattaci.ascx.vb">
+      <DependentUpon>ucContattaci.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucBoxHeaderLavoro.ascx.designer.vb">
+      <DependentUpon>ucBoxHeaderLavoro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucBoxHeaderLavoro.ascx.vb">
+      <DependentUpon>ucBoxHeaderLavoro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucPreventivazioni.ascx.designer.vb">
+      <DependentUpon>ucPreventivazioni.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucPreventivazioni.ascx.vb">
+      <DependentUpon>ucPreventivazioni.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\ucReparti.ascx.designer.vb">
+      <DependentUpon>ucReparti.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\ucReparti.ascx.vb">
+      <DependentUpon>ucReparti.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="master\main.master" />
+    <Content Include="master\home.master" />
+    <Content Include="code\template\template\FogliWizard.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>FogliWizard.vb</LastGenOutput>
+    </Content>
+    <Content Include="code\template\template\MailOrdineOk.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>MailOrdineOk.vb</LastGenOutput>
+    </Content>
+    <Content Include="code\template\template\MailRegistrazioneOk.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailRegistrazioneOk.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="master\reserved.master" />
+    <Content Include="code\template\template\MailRegistrazioneInserita.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailRegistrazioneInserita.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="code\template\template\MailRigeneraPwd.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailRigeneraPwd.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="code\template\template\MailPwdChanged.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailPwdChanged.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="code\template\template\MailCoupon.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailCoupon.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="code\template\template\BloccoInEvidenza.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>BloccoInEvidenza1.vb</LastGenOutput>
+    </Content>
+    <Content Include="code\template\template\CatFustella.tt">
+      <Generator>TextTemplatingFilePreProcessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>CatFustella1.vb</LastGenOutput>
+    </Content>
+    <Content Include="code\template\template\ListinoBase.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>ListinoBase.vb</LastGenOutput>
+    </Content>
+    <Content Include="code\template\template\FormatoProdottoFinito.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>FormatoProdottoFinito.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="code\template\template\MailIscrizioneNewsletter.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailIscrizioneNewsletter.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <None Include="bundleconfig.json" />
+    <Content Include="assets\sass\base\_page.scss" />
+    <Content Include="assets\sass\base\_reset.scss" />
+    <Content Include="assets\sass\base\_typography.scss" />
+    <Content Include="assets\sass\components\_actions.scss" />
+    <Content Include="assets\sass\components\_box.scss" />
+    <Content Include="assets\sass\components\_button.scss" />
+    <Content Include="assets\sass\components\_contact.scss" />
+    <Content Include="assets\sass\components\_features.scss" />
+    <Content Include="assets\sass\components\_form.scss" />
+    <Content Include="assets\sass\components\_icon.scss" />
+    <Content Include="assets\sass\components\_icons.scss" />
+    <Content Include="assets\sass\components\_image.scss" />
+    <Content Include="assets\sass\components\_list.scss" />
+    <Content Include="assets\sass\components\_mini-posts.scss" />
+    <Content Include="assets\sass\components\_pagination.scss" />
+    <Content Include="assets\sass\components\_posts.scss" />
+    <Content Include="assets\sass\components\_row.scss" />
+    <Content Include="assets\sass\components\_section.scss" />
+    <Content Include="assets\sass\components\_table.scss" />
+    <Content Include="assets\sass\layout\_banner.scss" />
+    <Content Include="assets\sass\layout\_footer.scss" />
+    <Content Include="assets\sass\layout\_header.scss" />
+    <Content Include="assets\sass\layout\_main.scss" />
+    <Content Include="assets\sass\layout\_menu.scss" />
+    <Content Include="assets\sass\layout\_sidebar.scss" />
+    <Content Include="assets\sass\layout\_wrapper.scss" />
+    <Content Include="assets\sass\libs\_breakpoints.scss" />
+    <Content Include="assets\sass\libs\_functions.scss" />
+    <Content Include="assets\sass\libs\_html-grid.scss" />
+    <Content Include="assets\sass\libs\_mixins.scss" />
+    <Content Include="assets\sass\libs\_vars.scss" />
+    <Content Include="assets\sass\libs\_vendor.scss" />
+    <Content Include="assets\sass\main.scss" />
+    <Content Include="assets\webfonts\fa-brands-400.eot" />
+    <Content Include="assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="assets\webfonts\fa-brands-400.woff" />
+    <Content Include="assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="assets\webfonts\fa-regular-400.eot" />
+    <Content Include="assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="assets\webfonts\fa-regular-400.woff" />
+    <Content Include="assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="assets\webfonts\fa-solid-900.eot" />
+    <Content Include="assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="assets\webfonts\fa-solid-900.woff" />
+    <Content Include="assets\webfonts\fa-solid-900.woff2" />
+    <Content Include="mobile\master\main.m.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\Collaudo.pubxml" />
+    <None Include="My Project\PublishProfiles\Produzione.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="code\template\template\PreventivazioneWizard.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>PreventivazioneWizard.vb</LastGenOutput>
+    </Content>
+    <Content Include="code\template\template\FormatoProdottoWizard.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>FormatoProdottoWizard1.vb</LastGenOutput>
+    </Content>
+    <Content Include="code\template\template\TipoCartaWizard.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>TipoCartaWizard1.vb</LastGenOutput>
+    </Content>
+    <Content Include="code\template\template\ColoreStampaWizard.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>ColoreStampaWizard.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="styles\css\site2.less" />
+    <Content Include="styles\css\site.mobile.css" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="code\class\packaging\" />
+    <Folder Include="code\class\Risultati\" />
+    <Folder Include="code\interface\" />
+    <Folder Include="consegne\" />
+    <Folder Include="img\temp\" />
+    <Folder Include="log\paypal\" />
+    <Folder Include="ordini\" />
+    <Folder Include="pagetext\parcomacchine\" />
+    <Folder Include="preventivi\" />
+    <Folder Include="resource\" />
+    <Folder Include="upload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FormerBancaSella\FormerBancaSella.vbproj">
+      <Project>{90604d91-e412-4f70-9425-d429dc1cd377}</Project>
+      <Name>FormerBancaSella</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerBusinessLogicInterface\FormerBusinessLogicInterface.vbproj">
+      <Project>{d056f549-d3d9-4da0-b0a0-5c22bb15cb14}</Project>
+      <Name>FormerBusinessLogicInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerBusinessLogic\FormerBusinessLogic.vbproj">
+      <Project>{ef457977-11ca-4844-8bc1-d544040f1352}</Project>
+      <Name>FormerBusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerConfig\FormerConfig.vbproj">
+      <Project>{31ede59a-0c3f-462b-98e0-4dd454d96847}</Project>
+      <Name>FormerConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerDALSql\FormerDALSql.vbproj">
+      <Project>{FF140A84-B072-4107-9B8A-AA1C4A8F0407}</Project>
+      <Name>FormerDALSql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerDALWeb\FormerDALWeb.vbproj">
+      <Project>{fd43bd6d-dc66-45fe-b4d2-9c5b9cffd39f}</Project>
+      <Name>FormerDALWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerGraphics\FormerGraphics.vbproj">
+      <Project>{b694a233-b984-4364-8691-1fee6ebb1fac}</Project>
+      <Name>FormerGraphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerLib\FormerLib.vbproj">
+      <Project>{47910d2b-17b8-437d-b5e6-eae3b203588e}</Project>
+      <Name>FormerLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FormerWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FormerWeb.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7646</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44311</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "ls '$(SolutionDir)\packages\GhostScriptSharp.*\Tools\gsdll32.dll' | Sort -Descending | Select -First 1 | cp -Destination '$(TargetDir)'; exit 0"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

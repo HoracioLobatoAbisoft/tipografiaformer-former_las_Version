@@ -1,0 +1,95 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import Namespace="FormerDALWeb" #>
+<#@ import Namespace="FormerLib" #>
+<#@ import Namespace="FormerLib.FormerEnum" #>
+<#@ output extension=".html" #>
+
+<b>RIEPILOGO DELL' ORDINE</b><br><br>
+Ordine del <b><#=O.dataInserimentoStr #></b><br><br>
+Lo stato dell' ordine è <b style="padding:3px;border:1px solid #aaaaaa;border-radius:3px;background-color:<#=O.ColoreStatoHtml #>"><#=O.StatoStr #></b><br><br>
+Il metodo di pagamento scelto è <b><#=O.PagamentoStr #></b><br>
+La consegna è prevista per <b><#=O.GiornoConsegna.ToString("dddd dd MMMM yyyy") #></b> tramite <b><#=O.CorriereStr #></b><br><br>
+<table style="border:1px solid #aaaaaa">
+<tr><td>Totale Lavori:</td><td align="right"><b>€ <#=O.ImportoTotOrdiniNettoOriginaleStr #></b></td></tr>
+<#if o.ImportoTotaleSconti then #>
+<tr><td>Sconti per Coupon:</td><td align="right"><b style="color:red;">- € <#=O.ImportoTotaleScontiStr #></b></td></tr>
+<#End If #>
+<tr><td>Totale Spedizioni:</td><td align="right"><b>€ <#=O.ImportoConsegnaStr #></b></td></tr>
+<tr><td>IVA (<#=FormerWeb.FormerWebApp.GetPercIva #>%):</td><td align="right"><b>€ <#=O.ImportoTotIvaStr #></b></td></tr>
+<tr style="background-color:#d6e03d;"><td><b>TOTALE:</b></td><td align="right"><b>€ <#=O.ImportoTotStr #></b></td></tr>
+</table>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="background-color:red;color:white;border-radius:3px;padding:3px;" href="https://www.tipografiaformer.it/<#=O.IdConsegna #>/dettaglio-ordine"><b>Per vedere il DETTAGLIO ORDINE o effettuare il PAGAMENTO, clicca qui</b></a>
+<br><br>
+
+<b>RIEPILOGO LAVORI INCLUSI NELL'ORDINE</b><br>
+
+<# For each Lav As OrdineWeb In O.ListaOrdini #>
+
+<table border="0">
+<tr style="background-color:#f1f1f1;">
+    <td>Prodotto:</td>
+    <td><b><#=Lav.P.Descrizione #></b></td>
+</tr>
+<tr>
+    <td>Formato prodotto:</td>
+    <td><#=Lav.DimensioniStr #></td>
+</tr>
+<tr>
+    <td>Supporto:</td>
+    <td><#=Lav.TC.Tipologia #></td>
+</tr>
+<tr>
+    <td>Colori di stampa:</td>
+    <td><#=Lav.C.Descrizione #></td>
+</tr>
+<#If Lav.L.ShowLabelFogli() Then #>
+    <tr>
+        <td><#=Lav.L.GetLabelFogli #></td>
+        <td><#=Lav.NFoglivis #></td>
+    </tr>
+<#end if #>
+<#If Lav.ElencoLavorazioni.Count > 0 Then #>
+    <tr>
+        <td valign="top">Opzioni incluse:</td>
+        <td><ul><#For Each L As lavorazioneW In Lav.ElencoLavorazioni.FindAll(function(x) x.LavorazioneInterna = enSiNo.No) #>
+            <li><#=L.Descrizione #></li>
+            <#Next #></ul>
+        </td>
+    </tr>
+<#End If #>
+<tr >
+    <td>Quantità:</td>
+    <td><#=Lav.Qta #></td>
+</tr>
+<tr>
+    <td>Peso:</td>
+    <td> <#=Lav.Peso #> kg &#177;</td>
+</tr>
+<#If Lav.Omaggio <> enSiNo.Si then#>
+<tr>
+    <td>Prezzo (+ Iva e trasporto):</td>
+    <td><#=FormerHelper.Stringhe.FormattaPrezzo(Lav.PrezzoCalcolatoNetto)#></td>
+</tr>
+<#else#>
+<tr>
+<td>&nbsp;</td>
+<td><b style="background-color:#850c70;color:white;padding:2px;">OMAGGIO</b></td>
+</tr>
+<#end if#>
+</table>
+<br>
+<#If Lav.Omaggio <> enSiNo.Si then#>
+<#If Lav.L.NoAttachFile <> enSiNo.Si then#>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="background-color:red;color:white;border-radius:3px;padding:3px;" href="https://www.tipografiaformer.it/<#=Lav.IdOrdine #>/dettaglio-lavoro"><b>Per INVIARE I FILE di questo Lavoro, clicca qui</b></a>
+<br><br>
+<#end if#>
+<#end if#>
+<hr style="border:1px solid darkgray;">
+<#Next #>
+<h3>Grazie per il tuo ordine!</h3>
+

@@ -1,0 +1,10 @@
+C:\source\Former\Source\main\FormerConfig\bin\Debug\FormerConfig.dll
+C:\source\Former\Source\main\FormerConfig\bin\Debug\FormerConfig.pdb
+C:\source\Former\Source\main\FormerConfig\bin\Debug\FormerConfig.xml
+C:\source\Former\Source\main\FormerConfig\obj\Debug\FormerConfig.vbprojAssemblyReference.cache
+C:\source\Former\Source\main\FormerConfig\obj\Debug\FormerConfig.Resources.resources
+C:\source\Former\Source\main\FormerConfig\obj\Debug\FormerConfig.vbproj.GenerateResource.cache
+C:\source\Former\Source\main\FormerConfig\obj\Debug\FormerConfig.vbproj.CoreCompileInputs.cache
+C:\source\Former\Source\main\FormerConfig\obj\Debug\FormerConfig.dll
+C:\source\Former\Source\main\FormerConfig\obj\Debug\FormerConfig.xml
+C:\source\Former\Source\main\FormerConfig\obj\Debug\FormerConfig.pdb

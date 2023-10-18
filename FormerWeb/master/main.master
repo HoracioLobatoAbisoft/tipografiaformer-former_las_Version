@@ -1,0 +1,748 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="main.master.vb" Inherits="FormerWeb.pSiteMasterPage" %>
+<%@ Register  TagPrefix="FormerWeb" TagName="Carrello" Src="~/userControl/ucCarrello.ascx" %>
+<%@ Register  TagPrefix="FormerWeb" TagName="Notifica" Src="~/userControl/ucNotifiche.ascx" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" media='all' lazyload="1"/>
+    <%--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" media='all' />--%>
+
+    <title>Tipografia Former Online - Il tuo mondo della stampa a Roma mod</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="keywords" content=<%=GetSpecificKeywords()%> />
+    <meta name="description" content=<%=GetSpecificDescription()%> /> 
+    <meta name="robots" content="all" />
+    <meta http-equiv="CONTENT-LANGUAGE" content="Italian" />
+<%--    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />--%>
+    <link rel="SHORTCUT ICON" href="/img/icoSite.gif" />
+
+    <link href="/styles/jquery-1.11.4/jquery-ui.min.css" rel="stylesheet" type="text/css" />    
+    <%--<link href="/styles/css/site.css" rel="stylesheet" type="text/css" />--%>
+    <link href="/styles/css/site.min.20230124.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="/scripts/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#tabs").tabs();
+        });
+        const production = false;
+        var Uris = {
+            front: production ? 'https://react.tipografiaformertest.it:6060' : 'http://localhost:5173',
+            formerLocal: production ? 'https://www.tipografiaformertest.it' : 'https://localhost:44311',
+            //front:'http://95.110.133.251:6061'
+        }
+        window.addEventListener('message', function (aea) {
+            if (aea.origin === Uris.front) {
+                //if (aea.origin === Uris.front) {
+                var message = aea.data;
+                switch (message.operation) {
+                    case 1:
+                        var frameId = this.document.getElementById('frameId');
+                        frameId.style.width = "1000px";
+                        frameId.style.position = "relative";
+                        frameId.style.right = "200px";
+                        console.log('entro caso 1');
+                        var divHidden = this.document.getElementById('divHidden');
+                        //divHidden.classList.add(message.color);
+                        divHidden.style.display = 'none';
+                        var divHidden2 = this.document.getElementById('divHidden2');
+                        //divHidden2.classList.add(message.color);
+                        divHidden2.style.display = 'none';
+                        var introProdH = this.document.getElementById('introProdH');
+                        var introProdH2 = this.document.getElementById('introProdH2');
+                        if (introProdH) {
+                            //introProdH.classList.add(message.color);introProdH2
+                            introProdH.style.display = 'none'
+                        } else {
+                            //introProdH.classList.add(message.color);introProdH2
+                            introProdH2.style.display = 'none'
+                        }
+                        var sugestedProductHidden = this.document.getElementById('sugestedProductHidden');
+                        //sugestedProductHidden.classList.add(message.color);
+                        sugestedProductHidden.style.display = 'none'
+                        var reviewContainerHidden = this.document.getElementById('reviewContainerHidden');
+                        //reviewContainerHidden.classList.add(message.color);
+                        reviewContainerHidden.style.display = 'none'
+                        var DescrizioneDinamicaHidden = this.document.getElementById('DescrizioneDinamicaHidden');
+                        //DescrizioneDinamicaHidden.classList.add(message.color);
+                        DescrizioneDinamicaHidden.style.display = 'none';
+
+                        var frameId = this.document.getElementById('frameId');
+                        frameId.style.width = "1000px";
+                        frameId.style.position = "relative";
+                        frameId.style.right = "200px";
+
+                        var content = this.document.getElementById('contentHelperHidden');
+                        content.style.overflowX = "hidden";
+                        break;
+                    case 2:
+                        window.location.href = `${Uris.formerLocal}/${message.uri}`;
+                        break;
+                    case 3:
+                        window.location.href = `${Uris.formerLocal}`;
+                        break;
+                    case 4:
+                        window.location.href = `${Uris.formerLocal}/aggiungi-indirizzo`;
+                        break;
+                    case 5:
+                        window.location.href = `${Uris.formerLocal}/i-tuoi-coupon-di-sconto`;
+                        break;
+                    case 6:
+                        var frameId = this.document.getElementById('frameId');
+                        frameId.style.width = "820px";
+                        frameId.style.position = "inherit";
+                        //frameId.style.right = "200px";
+                        console.log('entro caso 6');
+                        var divHidden = this.document.getElementById('divHidden');
+                        //divHidden.classList.add(message.color);
+                        divHidden.style.display = 'block';
+                        var divHidden2 = this.document.getElementById('divHidden2');
+                        //divHidden2.classList.add(message.color);
+                        divHidden2.style.display = 'block';
+                        var introProdH = this.document.getElementById('introProdH');
+                        var introProdH2 = this.document.getElementById('introProdH2');
+                        if (introProdH) {
+                            //introProdH.classList.add(message.color);introProdH2
+                            introProdH.style.display = 'block'
+                        } else {
+                            //introProdH.classList.add(message.color);introProdH2
+                            introProdH2.style.display = 'block'
+                        }
+                        var sugestedProductHidden = this.document.getElementById('sugestedProductHidden');
+                        //sugestedProductHidden.classList.add(message.color);
+                        sugestedProductHidden.style.display = 'block'
+                        var reviewContainerHidden = this.document.getElementById('reviewContainerHidden');
+                        //reviewContainerHidden.classList.add(message.color);
+                        reviewContainerHidden.style.display = 'block'
+                        var DescrizioneDinamicaHidden = this.document.getElementById('DescrizioneDinamicaHidden');
+                        //DescrizioneDinamicaHidden.classList.add(message.color);
+                        DescrizioneDinamicaHidden.style.display = 'block';
+
+                        var frameId = this.document.getElementById('frameId');
+                        frameId.style.width = "820px";
+                        frameId.style.position = "inherit";
+                        //frameId.style.right = "200px";
+
+                        var content = this.document.getElementById('contentHelperHidden');
+                        content.style.overflowX = "hidden";
+                        break;
+                    //redirection de react a la vista i-tuoi-ordini
+                    case 7:
+                        var frameId = this.document.getElementById('frameId');
+                        frameId.style.width = "1000px";
+                        frameId.style.position = "relative";
+                        frameId.style.right = "220px";
+                        console.log('entro caso 7');
+                        var divHidden = this.document.getElementById('divHidden');
+                        //divHidden.classList.add(message.color);
+                        divHidden.style.display = 'none';
+                        var divHidden2 = this.document.getElementById('divHidden2');
+                        //divHidden2.classList.add(message.color);
+                        divHidden2.style.display = 'none';
+                        var introProdH = this.document.getElementById('introProdH');
+                        //introProdH.classList.add(message.color);introProdH2
+                        introProdH.style.display = 'none'
+                        var introProdH2 = this.document.getElementById('introProdH2');
+                        //introProdH.classList.add(message.color);introProdH2
+                        introProdH2.style.display = 'none'
+                        var sugestedProductHidden = this.document.getElementById('sugestedProductHidden');
+                        //sugestedProductHidden.classList.add(message.color);
+                        sugestedProductHidden.style.display = 'none'
+                        var reviewContainerHidden = this.document.getElementById('reviewContainerHidden');
+                        //reviewContainerHidden.classList.add(message.color);
+                        reviewContainerHidden.style.display = 'none'
+                        var DescrizioneDinamicaHidden = this.document.getElementById('DescrizioneDinamicaHidden');
+                        //DescrizioneDinamicaHidden.classList.add(message.color);
+                        DescrizioneDinamicaHidden.style.display = 'none';
+
+                        var frameId = this.document.getElementById('frameId');
+                        frameId.style.width = "1000px";
+                        frameId.style.position = "relative";
+                        frameId.style.right = "220px";
+
+                        var content = this.document.getElementById('contentHelperHidden');
+                        content.style.overflowX = "hidden";
+                        break;
+                    case 8:
+                        //this.alert('dio')
+                        window.location.href = `${Uris.formerLocal}/login`;
+                        break;
+                    case 9:
+                        window.location.href = `${Uris.formerLocal}/${message.id}/dettaglio-ordine`;
+                        break;
+                    case 10:
+                        window.location.href = `${Uris.formerLocal}/${message.id}/dettaglio-lavoro`;
+                        break;
+                    case 11:
+                        window.open(`https://tipografiaformer.it/listino/template/${message.path}`);
+                        break;
+                    case 12:
+                        window.location.href = message.uri;
+                    default:
+                        break;
+                }
+            }
+        })
+</script>
+
+    <link href="/scripts/qtip-2.21/jquery.qtip.min.css" rel="stylesheet" type="text/css" />
+    <link href="/scripts/lightbox-2.6/lightbox.min.css" rel="stylesheet" type="text/css" />
+   
+    <script type="text/javascript" src="/scripts/easySlider/easySlider1.5.min.js"></script>
+    <script type="text/javascript" src="/scripts/qtip-2.21/jquery.qtip.min.js"></script>
+
+    <script type="text/javascript" src="/scripts/lightbox-2.6/lightbox-2.6.min.js"></script>
+
+    <script src="/scripts/jsCarousel/jsCarousel.js" type="text/javascript"></script>
+    <link href="/scripts/jsCarousel/jsCarousel.css" rel="stylesheet" type="text/css" />
+
+    <link type="text/css" rel="stylesheet" href="/scripts/lightSlider/css/lightslider.min.css" />
+    <script src="/scripts/lightSlider/js/lightslider.js"></script>
+
+
+    <%If FormerWeb.FormerWebApp.IsDebug Then %>
+        <link href="/styles/css/newsite.css" rel="stylesheet" type="text/css" />
+    <%End if %>
+
+    <script type="text/javascript">
+
+        function toolTipStart() {
+
+            // Grab all elements with the class "hasTooltip"
+            $('.hasTooltip').each(function () { // Notice the .each() loop, discussed below
+                $(this).qtip({
+                    content: {
+                        text: $(this).next('div')// Use the "div" element next to this for the content
+                        //, title: {
+                        //        text: 'tipografiaformer.it'
+                        //        }
+                    },
+                    style: {
+                        //classes: 'qtip-youtube ',
+                        classes: 'qtip-youtube ', 
+                        
+                        tip: {
+                            corner: true
+                        }
+                    },
+                    position: {
+                        my: 'right top',
+                        adjust: {
+                            y: 10
+
+                        }
+                        //my: 'left top'
+                    }
+
+                });
+            });
+
+            $('.hasFixedTooltip').each(function () {
+                $(this).qtip({
+                    content: $(this).next('div'),
+                    hide: {
+                        fixed: true,
+                        delay: 300
+                    },
+                    style: {
+                        classes: 'qtip-youtube '
+                    },
+                    position: {
+                        my: 'right top',
+                        adjust: {
+                            y: 20
+                        }
+                    }
+                });
+            });
+        }
+                     
+	</script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            toolTipStart();
+
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+            prm.add_endRequest(function () {
+                //$('.hasTooltip').qtip('reposition');
+                toolTipStart(); 
+            });
+
+            <%If ShowCookieMessage Then%>
+
+            $(".cookieRow").fadeIn("slow");
+
+            <%end If%>
+        });
+        
+
+    </script>
+
+    <script type="text/javascript">
+
+        function slideSwitch() {
+            var $active = $('#slideshow a.active');
+
+            if ($active.length == 0) $active = $('#slideshow a:last');
+
+            var $next = $active.next().length ? $active.next()
+                : $('#slideshow a:first');
+
+            $active.addClass('last-active');
+
+            $next.css({ opacity: 0.0 })
+                .addClass('active')
+                .animate({ opacity: 1.0 }, 1000, function () {
+                    $active.removeClass('active last-active');
+                });
+        }
+
+        function goSearch() {
+            
+            document.getElementById('<%=btnCerca.ClientID %>').click();
+        }
+
+        
+
+        $(function () {
+            setInterval("slideSwitch()", 3500);
+        });
+
+
+    </script>
+
+    <script>
+        $(function () {
+
+
+            //function (request, response) {
+            //    response(cercaClient());
+            //}
+            var cercauser = $('#<%=txtCerca.ClientID %>').value;
+            //console.log(cercauser);
+            $("#txtCerca").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/page/search.aspx/cercaFunction", //It calls our web method  
+                        contentType: "application/json; charset=utf-8",
+                        data: "{'userText':'" + request.term + "'}",
+                        dataType: "xml",
+                        success: function (msg) {
+                            //console.log('***START***');
+                            var prodotti = [];
+
+                            $(msg).find("Table").each(function () {
+                                //var singoloval = "{ value: \"" + $(this).find('descrizione').text() + "\", url: \"" + $(this).find('url').text() + "\", img: \"" + $(this).find('img').text() + "\"}";
+                                var singoloval = { "value": $(this).find('descrizione').text(), "url": $(this).find('url').text(), "img": $(this).find('img').text() };
+                                //console.log('aggiungo: ' + singoloval.value);
+                                var newsize = prodotti.push(singoloval);
+                                //console.log('nuova dimensione array prodotti: ' + newsize);
+                                //alert(newsize);
+                                //valori = valori + singoloval + " ,"
+                            });
+                            //console.log(prodotti.length);
+                            //console.log('***END***');
+                            response(prodotti);
+                        }
+                    });
+                },
+                select: function (event, ui) {
+                    window.location = ui.item.url;
+                    return false;
+                },
+                minLength: 3,
+                'open': function (e, ui) {
+
+                    $('.ui-autocomplete').css('background-color', 'white');
+                    $('.ui-autocomplete').css('font-family', 'sans-serif');
+                    $('.ui-autocomplete').css('font-size', 'small');
+                    //$('.ui-autocomplete').append('<li><div><img src="/img/btnCercaSmall.png"><span><a href="javascript:goSearch()">Mostra tutti i risultati</a></span></div></li>'); //See all results
+                    //$('.ui-autocomplete').append('<li><div><img src="/img/btnCercaSmall.png"><span><a href="javascript:goSearch()">Mostra tutti i risultati</a></span></div></li>'); //See all results
+                    //$('.ui-autocomplete').append("{ value: ""Mostra tutti i risultati"", url: ""/cerca/"", img: ""/listino/""}");
+
+                    //'<li><a href="javascript:alert(\'redirecting...\')">See All Result</a></li>'
+                }
+            }).autocomplete("instance")._renderItem = function (ul, item) {
+                return $("<li><div><img src='" + item.img + "'><span>" + item.value + "</span></div></li>").appendTo(ul);
+            };
+
+        });
+    </script>
+
+    <%If FormerWeb.FormerWebApp.IsDebug = False Then%>
+
+        <script language="Javascript1.2">
+            function nrcIE(){
+            if (document.all){return false;}}
+            function nrcNS(e){
+            if(document.layers||(document.getElementById&&!document.all)){
+            if (e.which==2||e.which==3){
+            return false;}}}
+            if (document.layers){
+            document.captureEvents(Event.MOUSEDOWN);
+            document.onmousedown=nrcNS;
+            }else{document.onmouseup=nrcNS;document.oncontextmenu=nrcIE;}
+            document.oncontextmenu=new Function("return false");
+        </script>
+
+    <%      End If %>
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-43742415-1', 'tipografiaformer.it');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+
+</script>
+    <script type="text/javascript">
+               
+function highlightRadioButtonList(elementRef)
+{
+    
+   var inputElementArray = elementRef.getElementsByTagName('input');
+
+    for (var i=0; i<inputElementArray.length; i++) 
+    { 
+        var inputElementRef = inputElementArray[i];
+        var parentElement = inputElementRef.parentNode;
+
+        if ( parentElement )
+        {
+            if ( inputElementRef.checked == true ) 
+            {
+                parentElement.className = 'rdoHighLight';
+            }
+            else
+            {
+                parentElement.className = elementRef.className;
+            }
+        }
+    }
+
+        }
+
+
+function NewsletterFissa()
+{
+
+        var divNL = $("#divNewsletter");
+        var imgNL = $("#btnNewsletterClose");
+
+        var win = $(window);
+
+        var viewport = {
+            top: win.scrollTop(),
+            left: win.scrollLeft()
+        };
+        viewport.bottom = viewport.top + win.height();
+
+        var bounds = divNL.offset();
+        bounds.right = bounds.left + divNL.outerWidth();
+        bounds.bottom = bounds.top + divNL.outerHeight();
+
+        var visibile = (viewport.bottom < bounds.top || viewport.top > bounds.bottom);
+    
+        if (divNL.hasClass("NewsletterFissa"))
+        {
+            divNL.removeClass("NewsletterFissa");
+            imgNL.removeClass("newsletterImgClose");
+            imgNL.addClass("newsletterImg");
+        }
+        else
+        {
+       
+            if (visibile) {
+                divNL.addClass("NewsletterFissa");
+                imgNL.removeClass("newsletterImg");
+                imgNL.addClass("newsletterImgClose");
+                $("#divNewsletter").fadeIn();
+                
+            }
+                   
+        }
+    }
+      
+    </script>
+    <script>var w = window; var p = w.location.protocol; if (p.indexOf("http") < 0) { p = "http" + ":"; } var d = document; var f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript'; s.async = false; if (s.readyState) { s.onreadystatechange = function () { if (s.readyState == "loaded" || s.readyState == "complete") { s.onreadystatechange = null; try { loadwaprops("3z028b08e95fc683f6275de4529595292c", "3zc2e41397ab6b0ae34ef86368ccbee603", "3zd3a2e7929871ec85b420bd634eacbce1aadb10ee8cb12a3b1b53c03b1f30dba5", "3z1f999a8acc4d146215cbe8a91592f9a27ac9db2440a1f0e26a27890156d08414", "0.0"); } catch (e) { } } }; } else { s.onload = function () { try { loadwaprops("3z028b08e95fc683f6275de4529595292c", "3zc2e41397ab6b0ae34ef86368ccbee603", "3zd3a2e7929871ec85b420bd634eacbce1aadb10ee8cb12a3b1b53c03b1f30dba5", "3z1f999a8acc4d146215cbe8a91592f9a27ac9db2440a1f0e26a27890156d08414", "0.0"); } catch (e) { } }; }; s.src = p + "//ma.zoho.eu/hub/js/WebsiteAutomation.js"; f.parentNode.insertBefore(s, f);</script>
+
+</head>
+<body>
+ 
+    <form id="formPrincipale" name="formPrincipale" runat="server">
+    <div class="page">
+
+        <div class="cookieRow">
+            Questo sito utilizza dei cookie per funzionare al meglio. <a href="/privacy">Continuando a navigare si considera accettato il loro utilizzo</a>.&nbsp;&nbsp;&nbsp;
+            <asp:LinkButton id="lnkCookieOk" runat="server" Text="OK" Font-Underline="false" Font-Bold="true" ForeColor="#f58220" Font-Size="11px"></asp:LinkButton>
+        </div>
+        <div id="testataCompleta">
+        <div class="headerRow">
+            <div style="height:60px;" >
+            <div class="logo">
+                <a href="https://www.tipografiaformer.it/"><img src="/img/logo.png" border="0"/></a> 
+            </div>            
+            <div class="benvenuto">
+                Benvenuto <%If UtenteConnesso.IdUtente Then%><b class="NomeUtente"><%--<img src="/img/icoUt20.png" width="25"/>--%><%=getNominativoUtente %></b><%Else%>Visitatore<%end if %>, 
+                <%If UtenteConnesso.IdUtente Then%>
+                <asp:LinkButton ID="lnkEsci" ForeColor="#009ec9" runat="server"><b>Esci</b></asp:LinkButton>
+                <%Else%>
+                <a href="/registrati" class="orange"><b>Registrati</b></a> o <a href="/login" class="orange"><b>Accedi</b></a>
+                <%End If%>
+            </div>    
+            
+            <a class="assistenza hasTooltip" href="/assistenza-clienti"><img src="/img/icoAssistenza32.png" /></a>
+            <div class="hidden tooltiptext">
+                <img src="/img/icoInformation.png" class="imgSx" />
+                <h4>Hai bisogno di Aiuto?</h4>Qui troverai tutte le risposte alle domande più comuni, e se non sarai ancora soddisfatto potrai contattare il nostro Call Center per una domanda specifica!
+            </div>
+            <a class="socialbuttonY hasTooltip" href="https://www.youtube.com/user/tipografiaformer" target="_blank" ><img src="/img/btnYoutube.png"/></a>
+             <div class="hidden tooltiptext">
+                <img src="/img/btnYoutube.png" class="imgSx" style="background-color:red;" />
+                <h4>Visita il nostro canale Youtube</h4>Sul nostro canale Youtube potrai trovare molti filmati di informazione dei nostri prodotti e lavorazioni con spiegazioni dettagliate e prodotti di esempio
+            </div>
+            <a class="socialbuttonT hasTooltip"  href="https://twitter.com/FormerOfficial" target="_blank" ><img src="/img/btnTwitter.png" /></a>
+               <div class="hidden tooltiptext">
+                <img src="/img/btnTwitter.png" class="imgSx" style="background-color:#5ea9dd;" />
+                <h4>Seguici su Twitter</h4>Seguici su Twitter e resta sempre aggiornato sulle novità riguardanti offerte sui nostri prodotti e lavorazioni
+            </div>
+            <a class="socialbuttonI hasTooltip"  href="https://www.instagram.com/tipografiaformer/" target="_blank" ><img src="/img/btnInstagram.png"/></a>
+               <div class="hidden tooltiptext">
+                <img src="/img/btnInstagram.png" class="imgSx"/>
+                <h4>Visita la nostra pagina Instagram</h4>Visita la nostra pagina Instagram e troverai foto e video riguardanti il mondo delle arti grafiche
+            </div>
+            <a class="socialbuttonF hasTooltip"  href="https://www.facebook.com/tipografiaformer.it" target="_blank" ><img src="/img/btnFacebook.png"/></a>
+               <div class="hidden tooltiptext">
+                <img src="/img/btnFacebook.png" class="imgSx" style="background-color:#43609c;"/>
+                <h4>Visita la nostra pagina Facebook</h4>Visita la nostra pagina Facebook e troverai offerte speciali, informazioni e comunicazioni riguardanti i nostri prodotti e la nostra azienda
+            </div>
+            <a class="socialbuttonB hasTooltip"  href="https://www.tipografiaformer.net" target="_blank" ><img src="/img/ico_Blog.png"/ height="26"/></a>
+             <div class="hidden tooltiptext">
+                <img src="/img/ico_Blog.png" class="imgSx" style="background-color:white;height:26px;"/>
+                <h4>Visita il nostro Blog</h4>Visita il nostro Blog e troverai offerte speciali, informazioni e comunicazioni riguardanti i nostri prodotti e la nostra azienda
+            </div>
+           </div>
+            <div class="menutxt">
+                <%If UtenteConnesso.IdUtente = 1684 Then %>
+                    <a href="/appIframe">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <%Else%>
+                    <a href="/area-riservata">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <%End If%>
+                <%--<a href="/area-riservata">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;--%>
+                <a href="/i-tuoi-ordini">I tuoi Ordini</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/i-tuoi-lavori">I tuoi Lavori<%If UtenteConnesso.IdUtente Then
+                                                              Dim TotOrd As Integer = UtenteConnesso.GetNumeroTotaleOrdini
+                                                              If TotOrd Then
+                                                                  Response.Write(" (<b class=""red"">" & TotOrd & "</b>)")
+                                                              End If
+                                                          End If%></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/i-tuoi-coupon-di-sconto">I tuoi Coupon di Sconto<%If UtenteConnesso.IdUtente Then
+                                                                                  Dim TotCoup As Integer = UtenteConnesso.GetNumeroTotaleCoupon
+                                                                                  If TotCoup Then
+                                                                                      Response.Write(" (<b class=""red"">" & TotCoup & "</b>)")
+                                                                                  End If
+                                                          End If%></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+                <%--<a href="/carrello">Carrello</a>&nbsp;&nbsp;|&nbsp;&nbsp;--%>
+                <a href="/le-tue-recensioni">Le tue Recensioni</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/assistenza-clienti">Contattaci</a>
+            </div>
+        </div>
+
+        <div class="menuRow">
+            <div class="menuRowInside">
+
+       <img src="/img/lblCosaStaiCercando.png" class="cosaCerchi" alt="Cosa stai cercando?"  onclick="javascript:goSearch();"/>
+                         
+            <div class="cerca">
+                <asp:Panel ID="pnlCerca" runat="server" DefaultButton="btnCerca">
+                <%If FormerWeb.FormerWebApp.SitoInManutenzione = False Then%>
+                <asp:TextBox CssClass="cercaTxt" title="Cerca nei nostri prodotti" MaxLength="30" ClientIDMode="Static"  ID="txtCerca" runat="server" ></asp:TextBox>
+                <asp:ImageButton ID="btnCerca" runat="server" CssClass="btnCerca hasTooltip" ImageUrl="/img/btnCercaSmall.png" />
+                <div class="hidden tooltiptext">
+                    <img src="/img/btnCercaSmall.png" class="imgSx"/>
+                    <h4>Cosa stai cercando?</h4>Da oggi il nostro motore di ricerca è tutto nuovo!!!<br /><br />Scrivi ciò che ti serve, <b>PREMI INVIO &crarr;</b><br /><br />Scoprirai un nuovo modo di scegliere i nostri prodotti
+                </div>
+                <%End If%>
+                </asp:Panel>
+            </div>                 
+            <div class="pulsantiera">    
+            <%--    <%If UtenteConnesso.IdUtente = 0 then %>  
+                    <a href="/registrati" class="hasTooltip"><img src="/img/btnRegister.png" class="button"/></a>
+                    <div class="hidden tooltiptext">
+                        <img src="/img/icoInformation.png" class="imgSx" />
+                        <h4>Registrati</h4>Solo registrandoti potrai visualizzare i prezzi dei nostri prodotti, effettuare un ordine e accedere alla tua area riservata
+                    </div>
+                <%end if %>--%>
+                
+                <%If UtenteConnesso.IdUtente = 0 then %>
+                    <a href="/login" class="pulsante120Black hasTooltip"><img src="/img/icoLock32W.png" />Accedi</a>
+                    <%--<a href="/login" ><img src="/img/btnAccedi.png" class="button"/></a>--%>
+                <%Else%>
+                    <a href="/area-riservata" class="pulsante120Black hasTooltip"><img src="/img/icoLock32W.png" />Area Riservata</a>
+                   <%-- <a href="/area-riservata" ><img src="/img/btnAreaRiservata.png"  class="button"/></a>     --%>
+                <%End If%>
+                <div class="hidden tooltiptext">
+                    <img src="/img/icoInformation.png" class="imgSx" />
+                    <h4>Accedi alla tua Area Riservata</h4>Solo registrandoti ed effettuando l'accesso potrai effettuare un ordine, accedere alla tua area riservata, scaricare i documenti fiscali e tenere costantemente sotto controllo lo stato di avanzamento dei tuoi ordini
+                </div>
+
+                <%--<div class="btn hasTooltip">
+                    <%--<a href="/carrello"><img src="/img/btnGoCarrello.png" alt="Carrello" class="button"/></a>--%>
+                <%If UtenteConnesso.IdUtente > 0 Or MostraNewsletter = False Then%>
+                <a href="/carrello" class="pulsante120Green hasTooltip"><img src="/img/icoCarrello32.png" />Carrello <asp:Label ID="lblTotOrdCarrello" Visible="false" runat="server" CssClass="totOrdCarrello notifica" Text="0"></asp:Label></a>
+                <%--</div>--%>
+                <div class="hidden tooltiptext">
+                    <img src="/img/icoCarrelloW.png" class="imgSx" /> <h4>Il tuo Carrello</h4>
+                    <FormerWeb:Carrello id="Carrello" runat="server"/>
+                </div>
+                <%Else%>
+                <a href="javascript:NewsletterFissa();" class="pulsante120Green hasTooltip"><img src="/img/icoMsg50.png" />Newsletter</a>
+                <%--</div>--%>
+                <div class="hidden tooltiptext">
+                    <img src="/img/icoInformation.png" class="imgSx" /> <h4>Iscrizione alla Newsletter</h4>
+                    Iscrivendoti alla nostra Newsletter riceverai direttamente nella tua email le nostre offerte e promozioni.
+                </div>
+                <%end if%>
+               <%Dim TotNotif As Integer = 0
+                   If UtenteConnesso.IdUtente Then
+                       TotNotif = Notifica.NumeroNotifiche
+                   End If
+                %>
+                <a href="/i-tuoi-lavori" class="pulsante55Green hasFixedTooltip" ><%If TotNotif Then%><img src="/img/icoNotifica24.png" /><%Else%>
+<img src="/img/icoNotifica24gray.png"/><%End If%>
+<asp:Label ID="lblNotifiche" runat="server" Visible="false" CssClass="totNotifiche notifica" Text="0"></asp:Label>
+                </a>
+                <div class="hidden tooltiptext">
+                    <img src="/img/icoNotifica30W.png" class="imgSx" /> <h4>Le tue notifiche</h4>
+                    <FormerWeb:Notifica id="Notifica" runat="server"/>
+                </div>
+
+            </div>    
+            </div>
+        </div>
+        </div>
+        <!-- CONTENUTO PAGINA-->
+        <asp:ScriptManager ID="ScriptManagerFormer" runat="server"  EnablePartialRendering="true"  ></asp:ScriptManager>
+        
+        <div class="content"  id="contentHelperHidden">
+            <asp:ContentPlaceHolder id="body" runat="server"></asp:ContentPlaceHolder> 
+            <asp:ContentPlaceHolder ID="secondaFascia" runat="server"></asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder id="Iframe" runat="server"></asp:ContentPlaceHolder>
+        </div>
+ 
+        <!--NEWSLETTER-->
+        
+        <asp:UpdatePanel ID="UpdpnlNewsl"  runat="server">
+
+            <ContentTemplate>
+                        <%If MostraNewsletter Then 'la newsletter compare solo se non si e' registrati al sito%>
+        <div class="newsletter" id="divNewsletter">
+            
+            <div class="newsletterInside">
+                <asp:Panel ID="pnlNewsletter" DefaultButton="lnkRegisterNewsletter" runat="server">
+               <h4 class="newsletterInsideTitle ">Iscriviti alla nostra <b>Newsletter</b></h4>
+
+                <asp:TextBox ID="txtRegisterNewsletter" runat="server" placeholder="Inserisci la tua email" Width="200px" Font-Size="Large" style="margin-right:10px;"></asp:TextBox> 
+                <asp:LinkButton ID="lnkRegisterNewsletter" runat="server" CssClass="pulsante120Green">Registrati</asp:LinkButton>&nbsp;<asp:Label ID="lblErrore" runat="server" Text="" ></asp:Label>
+                <div style="margin-top:5px;">
+                    <asp:CheckBox id="chkNewsletter" runat="server" /> Consento al <a  style="text-decoration:underline;" href="/privacy">trattamento dei miei dati personali</a>
+                </div>
+                </asp:Panel>
+                <a href="javascript:NewsletterFissa();"><img src="/img/close-icon.png" class="newsletterImg" id="btnNewsletterClose"/></a>
+            </div>            
+
+        </div>
+                        <%End If%>
+            </ContentTemplate>
+
+        </asp:UpdatePanel>
+        <!-- ZOHO SALES LIVE CHAT -->
+<script type="text/javascript" id="zsiqchat">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "e825ab263c7b774591d85a9bdb113c6858540134534eca327634201aac5f1a83e80200ff8a0b3bb717d64d9e4ad15a6a", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zoho.eu/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t);</script>
+<script>
+    $zoho.salesiq.ready = function () {
+        $zoho.salesiq.visitor.name("<%=UtenteConnesso.Nominativo%>");
+        $zoho.salesiq.visitor.email("<%=UtenteConnesso.Email%>");
+    }
+</script>
+
+<!-- END ZOHO SALES LIVE CHAT -->
+        <!--FINE CONTENUTO PAGINA-->
+        <div class="sottoFooter">
+         <div class="footer">
+            <div class="footerBlock ">
+            </div>
+            <div class="footerBlock footerBlockWithBorder">
+                <b>Tipografia FORMER</b> 
+                <br />
+                <a href="/la-nostra-azienda">La Nostra Azienda</a><br />
+                <a href="/il-nostro-parco-macchine">Il Nostro Parco Macchine</a><br />
+                <a href="/assistenza-clienti">Contattaci</a><br />
+                <a href="/registrati">Richiedi i codici di accesso</a><br />
+                <a href="/diventa-rivenditore">Diventa Rivenditore</a><br />
+            </div>
+            <div class="footerBlock footerBlockWithBorder">
+                <b>Il mondo FORMER</b> 
+                <br />
+                <a href="/il-mondo-former">Il Mondo Former</a><br />
+                <a href="/mondo-former/stampa-tipografica-offset">Stampa Tipografica Offset</a><br />
+                <a href="/mondo-former/stampa-digitale">Stampa Digitale</a><br />
+                <a href="/mondo-former/ricamo">Ricamo</a><br />
+                <a href="/mondo-former/packaging">Packaging</a><br />
+            </div>
+            <div class="footerBlock ">
+                <b>Ed ancora...</b>
+                 <br />
+                <a href="/glossario-tipografico">Glossario Tipografico</a><br />
+                <a href="/suggerimenti-per-inviarci-i-file">Vuoi creare file perfetti?</a><br />
+                <%--<a href="/dal-vecchio-al-nuovo-sito">Dal vecchio al nuovo sito in 5 minuti</a><br />--%>
+                <a href="https://www.tipografiaformer.it/privacy" target="_blank">Privacy</a><br />
+                <a href="https://www.google.com/chrome" target="_blank">Scarica Google Chrome</a><br />
+            </div>
+        </div>
+        <div style="clear:both;">
+            <img src="/img/logoPiccolo.png" border="0"/>
+            <br /><br />
+            <b>STABILIMENTO E UFFICI</b>: Via Cassia, 2010 - 00123 Roma - P.IVA 14974961006 - Tutti i diritti riservati, vietata la riproduzione anche parziale.
+            <br />
+            <b>SERVIZIO CLIENTI</b>: 06.30884518 - 06.30884057 Dal Lunedì al Venerdì, con orario continuato 8.30-19.00, <a class="orange" href="mailto:info@tipografiaformer.it">info@tipografiaformer.it</a>
+            <br /><br />
+            <img src="/img/PPVerified.png" />
+            <br /><br /><br />
+        </div> 
+        <div style="display:none;" itemprop="seller" itemtype="https://schema.org/Organization">
+            <span itemprop="name">Tipografia Former https://www.tipografiaformer.it</span>
+            <span itemprop="url">https://www.tipografiaformer.it</span>
+            <span itemprop="description">Tipografia Former Online, il tuo mondo della stampa a Roma mod - Stampa Offset, Stampa Digitale Grande Formato, Packaging Personalizzato, Ricamo, Etichette</span>
+            <div itemprop="address" itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAddress">Via Cassia 2010 </span>
+                <span itemprop="addressLocality">Roma</span>
+                <span itemprop="postalCode">000123</span>
+                <span itemprop="addressCountry">Italia</span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </form>
+    
+    <asp:ContentPlaceHolder ID="AfterForm" runat="Server"></asp:ContentPlaceHolder>
+
+<!--POWERED BY LUNA ORM https://sourceforge.net/projects/lunaorm/ -->
+
+</body>
+
+</html>

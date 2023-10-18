@@ -1,0 +1,99 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".txt" #>
+
+<html>
+
+<head>
+<title>Anteprima</title>
+<style>
+
+body
+
+{
+
+	font-family: Arial;
+    font-size: 12px;
+	line-heigth:18px;
+    font-style: normal;
+	color:#212121;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+
+}
+
+a
+{
+	color:red;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+div
+{
+	margin:5px;
+	border:0px;
+	border-radius:5px;
+	background-color:#EDEDED;
+	padding:7px;
+}
+
+h4
+{
+	margin:3px;
+	text-transform:uppercase;
+	font-style:italic;
+}
+
+.note
+{
+
+	background-color:white;
+
+}
+
+table 
+{
+	border:0px;
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+td
+{
+    font-size: 11px;
+
+}
+
+.divTable
+{
+	margin:5px;
+	border:0px;
+	padding:0px;
+}
+
+.divPiccolo
+{
+	font-size: 11px;
+}
+
+
+</style>
+</head>
+<body>
+
+$$CONTENT$$
+
+</body>
+</html>

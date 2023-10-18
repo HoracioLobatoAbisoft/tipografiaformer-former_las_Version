@@ -1,0 +1,25 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import Namespace="FormerDALWeb" #>
+<#@ import Namespace="FormerLib" #>
+<#@ output extension=".html" #>
+<center><img src="https://www.tipografiaformer.it/emailattach/CouponDiSconto.png"></center><br><br>
+<b>HAI RICEVUTO UN COUPON DI SCONTO</b><br><br>
+Gentile Cliente,<br>
+avendo inserito una recensione di un prodotto ordinato nel nostro sito, hai ricevuto un <b>Coupon di Sconto</b>.<br><br>
+
+Potrai acquistare <b><#=C.Riassunto #></b><br>
+con uno Sconto netto <b><#=C.ScontoStr #></b><br>
+(Valido fino al <b><#=C.DataFineValiditaStr #></b>)<br><br>
+
+Codice da inserire per ottenere la promozione: <b><#=C.Codice #></b><br><br>
+
+<a href="https://www.tipografiaformer.it/i-tuoi-coupon-di-sconto">CLICCA QUI</a> e vai alla sezione <b>I tuoi Coupon di Sconto</b>
+<br>
+<br>
+
+<h3>Grazie per la tua recensione!</h3>
+

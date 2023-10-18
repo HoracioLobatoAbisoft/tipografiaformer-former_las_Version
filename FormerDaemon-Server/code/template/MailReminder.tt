@@ -1,0 +1,26 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import Namespace="FormerDALWeb" #>
+<#@ import Namespace="FormerLib" #>
+<#@ import Namespace="FormerLib.FormerEnum" #>
+<#@ output extension=".html" #>
+
+<div style="line-height:25px;">
+<center><h3 style="color:black;border-radius:5px;padding:5px;background-color:#f58220;">AVVISO: Alcuni dei tuoi ordini non sono completi e saranno cancellati a breve</h3></center><br>
+Gentile <b><#=U.Nominativo #></b>,<br>
+Vorremmo ricordarti che alcuni dei tuoi ordini sono <b style="padding:3px;border:1px solid #aaaaaa;border-radius:3px;background-color:<#=FormerColori.GetColoreStatoConsegnaHTML(enStatoConsegna.InAttesaDiPagamento)#>;"><#=FormerEnumHelper.StatoConsegnaString(enStatoConsegna.InAttesaDiPagamento) #></b> o <b style="padding:3px;border:1px solid #aaaaaa;border-radius:3px;background-color:<#=FormerColori.GetColoreStatoOrdineHTML(enStatoOrdine.InAttesaAllegati)#>;"><#=FormerEnumHelper.StatoOrdineString(enStatoOrdine.InAttesaAllegati) #></b>.
+A causa dell'elevato volume di traffico che riceve il nostro sito, conserveremo i tuoi ordini <b>NON completi</b> solo per i 15 giorni successivi al giorno in cui li hai creati. Una volta scaduti, tali ordini verranno cancellati e non potranno essere recuperati.<br><br>
+
+Sarebbe un vero peccato perdere i tuoi prodotti personalizzati, quindi ti invitiamo a completare subito i tuoi ordini effettuando l'accesso al tuo account <a href="https://www.tipografiaformer.it/login"><b style="padding:3px;border:1px solid #aaaaaa;border-radius:3px;background-color:#91b73e;color:black;">CLICCANDO QUI</b></a>.
+
+<h4>Hai delle domande o delle difficolta?</h4>
+
+Visita la nostra sezione di <b>Assistenza ai Clienti</b> <a href="https://www.tipografiaformer.it/assistenza-clienti"><b style="padding:3px;border:1px solid #aaaaaa;border-radius:3px;background-color:#91b73e;color:black;">CLICCANDO QUI</b></a><br><br>
+
+Leggi la nostra <b>Guida all'Invio di un Ordine</b> <a href="https://www.tipografiaformer.it/come-effettuare-un-ordine"><b style="padding:3px;border:1px solid #aaaaaa;border-radius:3px;background-color:#91b73e;color:black;">CLICCANDO QUI</b></a><br><br>
+
+<h3>Grazie per l'interesse mostrato verso i nostri prodotti!</h3>
+</div>

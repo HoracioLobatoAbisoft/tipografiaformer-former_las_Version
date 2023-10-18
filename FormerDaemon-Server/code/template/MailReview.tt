@@ -1,0 +1,26 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import Namespace="FormerDALSql" #>
+<#@ import Namespace="FormerLib" #>
+<#@ import Namespace="FormerLib.FormerConst" #>
+<#@ output extension=".html" #>
+
+<div style="line-height:25px;">
+<center><h2 style="color:#2b2b2b;border-radius:5px;padding:5px;background-color:#d6e03d;"><img src="https://www.tipografiaformer.it/img/icoStarFull.png"><img src="https://www.tipografiaformer.it/img/icoStarFull.png"><img src="https://www.tipografiaformer.it/img/icoStarFull.png"><img src="https://www.tipografiaformer.it/img/icoStarFull.png"><img src="https://www.tipografiaformer.it/img/icoStarFull.png"> INSERISCI LA TUA RECENSIONE</h2></center><br>
+Gentile <b><#=U.RagSocNome #></b>,<br>
+ti ringraziamo per il tuo recente ordine di <b><#= O.ListinoBase.nome #></b>.<br><br>
+La tua opinione è importante per noi e tramite la tua recensione potrai aiutarci a migliorare i nostri prodotti.<br>
+Lasciare una recensione è semplice, veloce e anonimo. <br><br>
+
+<center><a href="https://www.tipografiaformer.it/le-tue-recensioni" style="text-decoration:none;"><b style="padding:5px;border:1px solid #aaaaaa;border-radius:3px;background-color:#91b73e;color:black;">Inserisci la tua Recensione CLICCANDO QUI</b></a></center>
+
+<# If FormerConst.Coupon.ImportoCouponScontoPerRecensione then #>
+<h4>COUPON DI SCONTO OMAGGIO</h4>
+Per la tua prima recensione di <b><#= O.ListinoBase.nome #></b> riceverai un Coupon di sconto di <b><#=FormerLib.FormerHelper.Stringhe.FormattaPrezzo(FormerLib.FormerConst.Coupon.ImportoCouponScontoPerRecensione) #> €</b>. Il Coupon ti verrà recapitato tramite email <b>DOPO CHE LA RECENSIONE SARA' STATA APPROVATA E PUBBLICATA</b> e lo troverai nella sezione <b>I tuoi Coupon di Sconto</b><br /><br />
+<# End If #>
+
+<h3>Grazie per il tuo contributo!</h3>
+</div>

@@ -1,0 +1,63 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import Namespace="FormerDALWeb" #>
+<#@ output extension=".html" #>
+
+<b>Tipografia FORMER - <#=Now.ToString("dd MMM yyyy HH.mm")#></b>
+       <hr />
+<h3>Grazie per la tua Registrazione al nostro sito!<br><br>
+A breve verrà esaminata da un operatore che dopo averne verificato i dati renderà attivo il tuo account e ti invierà i dati di accesso tramite l'email che hai specificato.</h3>        
+<b>Riepilogo</b><br>
+<table border="0">
+<tr>
+    <td >Tipo:</td>
+    <td><#=R.TipoStr#></td>
+</tr>
+<tr>
+    <td>Email:</td>
+    <td><#=R.Email#></td>
+</tr>
+<tr>
+    <td>Nome:</td>
+    <td><#=R.Nome#></td>
+</tr>
+<tr>
+    <td>Cognome:</td>
+    <td><#=R.Cognome#></td>
+</tr>
+<tr>
+    <td>Nome Azienda:</td>
+    <td><#=R.NomeAz#></td>
+</tr>
+<tr>
+    <td>Città:</td>
+    <td><#=R.Citta#></td>
+</tr>
+<tr>
+    <td>Indirizzo:</td>
+    <td><#=R.Indirizzo#></td>
+</tr>
+<tr>
+    <td>CAP:</td>
+    <td><#=R.CAP#></td>
+</tr>
+<tr>
+    <td>Partita Iva:</td>
+    <td><#=R.Piva#></td>
+</tr>
+<tr>
+    <td>Codice Fiscale:</td>
+    <td><#=R.CodFisc#></td>
+</tr>
+<tr>
+    <td>Telefono:</td>
+    <td><#=R.Telefono#></td>
+</tr>
+<tr>
+    <td>Sito Internet:</td>
+    <td><#=R.Sito#></td>
+</tr>
+</table>

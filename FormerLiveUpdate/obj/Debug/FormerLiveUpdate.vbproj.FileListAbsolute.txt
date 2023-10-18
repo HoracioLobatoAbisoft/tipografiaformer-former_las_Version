@@ -1,0 +1,11 @@
+C:\source\Former\Source\main\FormerLiveUpdate\bin\Debug\formerliveupdate.exe.config
+C:\source\Former\Source\main\FormerLiveUpdate\bin\Debug\formerliveupdate.exe
+C:\source\Former\Source\main\FormerLiveUpdate\bin\Debug\formerliveupdate.pdb
+C:\source\Former\Source\main\FormerLiveUpdate\bin\Debug\formerliveupdate.xml
+C:\source\Former\Source\main\FormerLiveUpdate\obj\Debug\FormerLiveUpdate.vbprojAssemblyReference.cache
+C:\source\Former\Source\main\FormerLiveUpdate\obj\Debug\FormerLiveUpdate.Resources.resources
+C:\source\Former\Source\main\FormerLiveUpdate\obj\Debug\FormerLiveUpdate.vbproj.GenerateResource.cache
+C:\source\Former\Source\main\FormerLiveUpdate\obj\Debug\FormerLiveUpdate.vbproj.CoreCompileInputs.cache
+C:\source\Former\Source\main\FormerLiveUpdate\obj\Debug\formerliveupdate.exe
+C:\source\Former\Source\main\FormerLiveUpdate\obj\Debug\formerliveupdate.xml
+C:\source\Former\Source\main\FormerLiveUpdate\obj\Debug\formerliveupdate.pdb

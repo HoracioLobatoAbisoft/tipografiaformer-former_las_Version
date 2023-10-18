@@ -1,0 +1,12 @@
+D:\Abisfot\Former\main\FormerMarketing\bin\Release\net5.0\FormerMarketing.deps.json
+D:\Abisfot\Former\main\FormerMarketing\bin\Release\net5.0\FormerMarketing.dll
+D:\Abisfot\Former\main\FormerMarketing\bin\Release\net5.0\FormerMarketing.pdb
+D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\FormerMarketing.csproj.AssemblyReference.cache
+D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\FormerMarketing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\FormerMarketing.AssemblyInfoInputs.cache
+D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\FormerMarketing.AssemblyInfo.cs
+D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\FormerMarketing.csproj.CoreCompileInputs.cache
+D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\FormerMarketing.dll
+D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\refint\FormerMarketing.dll
+D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\FormerMarketing.pdb
+D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\ref\FormerMarketing.dll

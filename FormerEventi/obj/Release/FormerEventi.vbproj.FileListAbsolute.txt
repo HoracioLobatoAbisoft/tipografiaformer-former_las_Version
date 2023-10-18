@@ -1,0 +1,15 @@
+D:\Abisfot\Former\main\FormerEventi\bin\FormerEventi.dll.config
+D:\Abisfot\Former\main\FormerEventi\bin\FormerEventi.dll
+D:\Abisfot\Former\main\FormerEventi\bin\FormerEventi.pdb
+D:\Abisfot\Former\main\FormerEventi\bin\FormerEventi.xml
+D:\Abisfot\Former\main\FormerEventi\bin\FormerDALEventi.dll
+D:\Abisfot\Former\main\FormerEventi\bin\FormerDALEventi.pdb
+D:\Abisfot\Former\main\FormerEventi\bin\FormerDALEventi.xml
+D:\Abisfot\Former\main\FormerEventi\obj\Release\FormerEventi.vbproj.AssemblyReference.cache
+D:\Abisfot\Former\main\FormerEventi\obj\Release\FormerEventi.Resources.resources
+D:\Abisfot\Former\main\FormerEventi\obj\Release\FormerEventi.vbproj.GenerateResource.cache
+D:\Abisfot\Former\main\FormerEventi\obj\Release\FormerEventi.vbproj.CoreCompileInputs.cache
+D:\Abisfot\Former\main\FormerEventi\obj\Release\FormerEventi.vbproj.CopyComplete
+D:\Abisfot\Former\main\FormerEventi\obj\Release\FormerEventi.dll
+D:\Abisfot\Former\main\FormerEventi\obj\Release\FormerEventi.xml
+D:\Abisfot\Former\main\FormerEventi\obj\Release\FormerEventi.pdb

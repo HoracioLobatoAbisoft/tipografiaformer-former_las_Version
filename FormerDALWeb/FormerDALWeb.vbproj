@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD43BD6D-DC66-45FE-B4D2-9C5B9CFFD39F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FormerDALWeb</RootNamespace>
+    <AssemblyName>FormerDALWeb</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FormerDALWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FormerDALWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>FormerDALWeb.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>FormerDALWeb.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="code\FormerListSorterW.vb" />
+    <Compile Include="code\Manager\MgrNazioni.vb" />
+    <Compile Include="code\Manager\MgrPreventivi.vb" />
+    <Compile Include="code\Manager\MgrUrlCreator.vb" />
+    <Compile Include="code\Risultati\RichiestaPreventivo.vb" />
+    <Compile Include="code\Risultati\RisLatoFissoRiferimento.vb" />
+    <Compile Include="code\Risultati\SviluppoDisegnoSuRotoloLastra.vb" />
+    <Compile Include="code\Template\templateClass\MailRichiestaPreventivo.vb" />
+    <Compile Include="code\Template\template\MailRichiestaPreventivo.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MailRichiestaPreventivo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LunaEngine\ClassDAO\_Banner.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_BannerDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CapCorriereW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CapCorriereWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CatFormatoProdottoW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CatFormatoProdottoWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CatFustellaW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CatFustelleWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CatVirtualeW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CatVirtualiWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ColoreRGBW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ColoriRGBWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ComuneInElenco.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Consegna.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ConsegneDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CouponLog.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CouponLogDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CouponW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CouponWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_DefaultFormatoProdotto.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_DefaultFormatoProdottoDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ElencoComuniDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_GruppiLBConsigliatiWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_GruppiVariantiRifWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_GruppiVariantiWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_GruppoLBConsigliatiW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_GruppoVarianteRifW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_GruppoVarianteW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_IndiceRicerca.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_IndiciRicercaDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_IpBan.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_IpBanDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ListiniUtenteWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ListiniWSuCatVDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ListinoUtenteW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ListinoWSuCatV.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ModelliCubettiWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ModelloCubettoW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Nazione.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_NazioniDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Newsletter.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_NewsletterDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_OmaggioW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_OmaggiWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_PagamentiOnlineDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_PagamentoOnline.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ParamListiniDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ParamListino.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_PrevLinkListino.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_PrevLinkListinoDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_PromoW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_PromoWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Review.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ReviewDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_RichiestaPreventivo.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_RichiestePreventivoDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TipiFustellaWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TipiPagamentiWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TipoAttivita.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TipoAttivitaDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TipoFustellaSuCatW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TipoFustellaSuCatWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TipoFustellaW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TipoPagamentoW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TraceSource.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TraceSourceDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TrackerW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TrackerWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Unsubscribe.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_UnsubscribeDAO.vb" />
+    <Compile Include="LunaUserClass\ClassBase\LunaContext.vb" />
+    <Compile Include="code\Manager\MgrUtenti.vb" />
+    <Compile Include="code\Utenti\UtenteSito.vb" />
+    <Compile Include="code\Interface\IOrdineBox.vb" />
+    <Compile Include="LunaEngine\ClassBase\LunaBaseClasses.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ArgomentiDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Argomento.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CatLavW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CatLavWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ColoreStampaW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ColoriStampaWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ComposizioneCartaW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ComposizioneCartaWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Comune.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ComuniDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CorriereW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CorrieriWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CurvaAttW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_CurvaAttWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Faq.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_FaqDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_FormatiCartaWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_FormatiMacchinaWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_FormatiProdottoWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_FormatoCartaW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_FormatoMacchinaW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_FormatoProdottoW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Glossario.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_GlossarioDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_IndirizziDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Indirizzo.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_LavorazioneW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_LavorazioniWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_LavorazSuPreventivazW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_LavorazSuPreventivazWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ListinoBaseW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ListinoBaseWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Localita.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_LocalitaDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_MacchinarioW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_MacchinariWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_OrdineWeb.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_OrdiniWebDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_PreventivazioneW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_PreventivazioniWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_PrezziLavoroWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_PrezzoLavoroW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ProvinceDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Provincia.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Regione.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_RegioniDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_RepartiDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Reparto.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ResaW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_ResaWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_RichiestaRegistrazioneW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_RichiesteRegistrazioneWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TipiCartaWDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_TipoCartaW.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Utente.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_UtentiDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ArgomentiDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\BannerDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\CapCorriereWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\CatFormatoProdottoWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\CatFustelleWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\CatLavWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\CatVirtualiWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ColoriRGBWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ColoriStampaWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ComposizioneCartaWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ComuniDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ConsegneDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\CorrieriWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\CouponLogDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\CouponWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\CurvaAttWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\DefaultFormatoProdottoDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ElencoComuniDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\FaqDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\FormatiCartaWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\FormatiMacchinaWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\FormatiProdottoWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\GlossarioDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\GruppiLBConsigliatiWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\GruppiVariantiRifWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\GruppiVariantiWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\IndiciRicercaDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\IndirizziDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\IpBanDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\LavorazioniWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\LavorazSuPreventivazWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ListiniUtenteWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ListiniWSuCatVDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ListinoBaseWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\LocalitaDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\MacchinariWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ModelliCubettiWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\NazioniDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\NewsletterDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\OmaggiWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\OrdiniWebDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\PagamentiOnlineDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ParamlistiniDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\PreventivazioniWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\PrevLinkListinoDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\PrezziLavoroWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\PromoWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ProvinceDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\RegioniDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\RepartiDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ResaWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\ReviewDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\RichiestePreventivoDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\RichiesteRegistrazioneWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\TipiCartaWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\TipiFustellaWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\TipiPagamentiWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\TipoAttivitaDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\TipoFustellaSuCatWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\TraceSourceDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\TrackerWDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\UnsubscribeDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\UtentiDAO.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Argomento.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Banner.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\CapCorriereW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\CatFormatoProdottoW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\CatFustellaW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\CatLavW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\CatVirtualeW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\ColoreRGBW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\ColoreStampaW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\ComposizioneCartaW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Comune.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\ComuneInElenco.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Consegna.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\CorriereW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\CouponLog.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\CouponW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\CurvaAttW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\DefaultFormatoProdotto.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Faq.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\FormatoCartaW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\FormatoMacchinaW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\FormatoProdottoW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Glossario.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\GruppoLBConsigliatiW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\GruppoVarianteRifW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\GruppoVarianteW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\IndiceRicerca.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Indirizzo.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\IpBan.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\LavorazioneW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\LavorazSuPreventivazW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\ListinoBaseW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\ListinoUtenteW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\ListinoWSuCatV.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Localita.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\MacchinarioW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\ModelloCubettoW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Nazione.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Newsletter.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\OmaggioW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\OrdineWeb.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\PagamentoOnline.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\ParamListino.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\PreventivazioneW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\PrevLinkListino.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\PrezzoLavoroW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\PromoW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Provincia.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Regione.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Reparto.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\ResaW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Review.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\RichiestaPreventivo.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\RichiestaRegistrazioneW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\TipoAttivita.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\TipoCartaW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\TipoFustellaSuCatW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\TipoFustellaW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\TipoPagamentoW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\TraceSource.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\TrackerW.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Unsubscribe.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Utente.vb" />
+    <Compile Include="LunaView\MgrLunaView.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Luna\DataSchema.lds">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Luna\Luna.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FormerBusinessLogicInterface\FormerBusinessLogicInterface.vbproj">
+      <Project>{d056f549-d3d9-4da0-b0a0-5c22bb15cb14}</Project>
+      <Name>FormerBusinessLogicInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerGraphics\FormerGraphics.vbproj">
+      <Project>{b694a233-b984-4364-8691-1fee6ebb1fac}</Project>
+      <Name>FormerGraphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerLib\FormerLib.vbproj">
+      <Project>{47910d2b-17b8-437d-b5e6-eae3b203588e}</Project>
+      <Name>FormerLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="code\Template\template\MailRichiestaPreventivo.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>MailRichiestaPreventivo.vb</LastGenOutput>
+    </Content>
+    <Content Include="Luna\DbScript.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LunaView\class\" />
+    <Folder Include="LunaView\mgr\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,3950 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F0D8B34-FB71-4C95-939E-CC64E6381896}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Former.My.MyApplication</StartupObject>
+    <RootNamespace>Former</RootNamespace>
+    <AssemblyName>Former</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>NewLogoEx.ico</ApplicationIcon>
+    <OptionCompare>Text</OptionCompare>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>http://localhost/Former/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <Optimize>false</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DefineConstants>
+    </DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <Optimize>true</Optimize>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Spire.Pdf, Version=4.3.0.20040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40\Telerik.WinControls.PdfViewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40\Telerik.WinControls.Themes.VisualStudio2012Dark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2019.2.618.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\RCWF\2019.1.219.40\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2019.1.215.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40\Telerik.Windows.Documents.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Fixed, Version=2019.1.215.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40\Telerik.Windows.Documents.Fixed.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Zip, Version=2019.1.215.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40\Telerik.Windows.Zip.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="code\class\Risultati\RisCongruenzaPrezzi.vb" />
+    <Compile Include="code\class\Risultati\RisSelectTipoCarta.vb" />
+    <Compile Include="ui\baseUI\class\IRoundedControl.vb" />
+    <Compile Include="ui\baseUI\class\MgrRoundedControl.vb" />
+    <Compile Include="ui\baseUI\control\ucDirectoryTreeView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucFileListView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucLabelSlider.Designer.vb">
+      <DependentUpon>ucLabelSlider.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucLabelSlider.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucPictureWizard.Designer.vb">
+      <DependentUpon>ucPictureWizard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucPictureWizard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucSliderGroup.Designer.vb">
+      <DependentUpon>ucSliderGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucSliderGroup.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="code\class\Altro\Fustelle\AzioneFustella.vb" />
+    <Compile Include="code\class\Altro\Fustelle\ProcedimentoFustella.vb" />
+    <Compile Include="code\class\Altro\Imballaggio\BoxContenitore.vb" />
+    <Compile Include="code\class\Altro\Imballaggio\Cubetto.vb" />
+    <Compile Include="code\class\Altro\Imballaggio\CubettoDisegnato.vb" />
+    <Compile Include="code\class\Altro\Imballaggio\MgrImballo.vb" />
+    <Compile Include="code\class\Altro\Imballaggio\ScatolaDisegnata.vb" />
+    <Compile Include="code\class\Altro\Imballaggio\ScatolaProposta.vb" />
+    <Compile Include="code\class\Altro\Imballaggio\ScatoleDisponibili.vb" />
+    <Compile Include="code\class\Altro\Imballaggio\SoluzioneImballo.vb" />
+    <Compile Include="code\class\Altro\Imballaggio\TipoScatola.vb" />
+    <Compile Include="code\class\Altro\NumerazioneDuplicato.vb" />
+    <Compile Include="code\class\Mgr\MgrControl.vb" />
+    <Compile Include="ui\baseUI\class\OrdinatoreLista.vb" />
+    <Compile Include="ui\baseUI\control\ucButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucComboWithImage.Designer.vb">
+      <DependentUpon>ucComboWithImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucComboWithImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucDataGridView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucFormerUserControl.Designer.vb">
+      <DependentUpon>ucFormerUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucFormerUserControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucInfoBox.Designer.vb">
+      <DependentUpon>ucInfoBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucInfoBox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucLabelScrolling.Designer.vb">
+      <DependentUpon>ucLabelScrolling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucLabelScrolling.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucLinkLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucNumericTextBox.Designer.vb">
+      <DependentUpon>ucNumericTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucNumericTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucPictureWithZoom.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucRadGridView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucTreeViewExtended.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\form\baseFormInternaFixed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\form\baseFormInternaRedim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\form\baseFormRad.Designer.vb">
+      <DependentUpon>baseFormRad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\form\baseFormRad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\form\cFormSopra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\form\baseFormInterna.Designer.vb">
+      <DependentUpon>baseFormInterna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\form\baseFormInterna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\form\baseFormMessageBox.Designer.vb">
+      <DependentUpon>baseFormMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\form\baseFormMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\form\frmZoomImg.Designer.vb">
+      <DependentUpon>frmZoomImg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\form\frmZoomImg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\class\Altro\cLavoroAperto.vb" />
+    <Compile Include="code\class\Altro\LogOperatore.vb" />
+    <Compile Include="code\class\Mgr\MgrAnteprime.vb" />
+    <Compile Include="code\class\Mgr\partial\MgrDocumentiFiscali.vb" />
+    <Compile Include="code\class\Mgr\partial\MgrError.vb" />
+    <Compile Include="code\class\Mgr\MgrEtichetteCustom.vb" />
+    <Compile Include="code\class\Mgr\MgrIcons.vb" />
+    <Compile Include="code\class\Mgr\MgrCommesse.vb" />
+    <Compile Include="code\class\Mgr\MgrConsegneCorriere.vb" />
+    <Compile Include="code\class\Mgr\partial\MgrIO.vb" />
+    <Compile Include="code\class\Mgr\MgrOrdini.vb" />
+    <Compile Include="code\class\Mgr\MgrOrdiniAcquisto.vb" />
+    <Compile Include="code\class\Mgr\MgrPDF.vb" />
+    <Compile Include="code\class\Mgr\MgrProcedure.vb" />
+    <Compile Include="ui\baseUI\class\MgrSlider.vb" />
+    <Compile Include="code\class\Mgr\MgrUDP.vb" />
+    <Compile Include="code\class\Altro\OrdineDaInserire.vb" />
+    <Compile Include="code\class\Altro\PostazioneCorrente.vb" />
+    <Compile Include="code\class\Altro\myPrinter.vb" />
+    <Compile Include="code\class\Mgr\partial\MgrPubblicazioneWeb.vb" />
+    <Compile Include="code\class\Altro\OggettoTrascinato.vb" />
+    <Compile Include="code\class\Altro\ProxyDocumenti.vb" />
+    <Compile Include="code\class\Risultati\RisCheckNumeroDocumentiFiscali.vb" />
+    <Compile Include="code\class\Risultati\RisInterpretazioneJob.vb" />
+    <Compile Include="code\class\Altro\TotaleDocumentiCliente.vb" />
+    <Compile Include="code\class\Mgr\MgrUsbLogin.vb" />
+    <Compile Include="code\template\class\MailCoupon.vb" />
+    <Compile Include="code\template\ContenitoreAnteprima.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContenitoreAnteprima.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\ListaStampa.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListaStampa.tt</DependentUpon>
+    </Compile>
+    <Compile Include="code\template\MailCoupon.vb">
+      <DependentUpon>MailCoupon.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ui\baseUI\class\MessageBox.vb" />
+    <Compile Include="ui\form\frmContabilitaF24.Designer.vb">
+      <DependentUpon>frmContabilitaF24.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaF24.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaBilancio.Designer.vb">
+      <DependentUpon>frmContabilitaBilancio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaBilancio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoManageExtraData.Designer.vb">
+      <DependentUpon>frmListinoManageExtraData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoManageExtraData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOrdineCambiaDataConsegna.Designer.vb">
+      <DependentUpon>frmOrdineCambiaDataConsegna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOrdineCambiaDataConsegna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaNotaCredito.designer.vb">
+      <DependentUpon>frmContabilitaNotaCredito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaNotaCredito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmSelectCatLav.Designer.vb">
+      <DependentUpon>frmSelectCatLav.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmSelectCatLav.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmSelectTipoCarta.Designer.vb">
+      <DependentUpon>frmSelectTipoCarta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmSelectTipoCarta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmStampaMassivaRicavi.Designer.vb">
+      <DependentUpon>frmStampaMassivaRicavi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmStampaMassivaRicavi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmStampaMassivaCosti.Designer.vb">
+      <DependentUpon>frmStampaMassivaCosti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmStampaMassivaCosti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoCaricoDiMagazzinoScegli.Designer.vb">
+      <DependentUpon>frmMagazzinoCaricoDiMagazzinoScegli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoCaricoDiMagazzinoScegli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmVoceRubricaUnione.Designer.vb">
+      <DependentUpon>frmVoceRubricaUnione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmVoceRubricaUnione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoCaricoDiMagazzino.Designer.vb">
+      <DependentUpon>frmMagazzinoCaricoDiMagazzino.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoCaricoDiMagazzino.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmReminder.Designer.vb">
+      <DependentUpon>frmReminder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmReminder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmInfoBandierine.Designer.vb">
+      <DependentUpon>frmInfoBandierine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmInfoBandierine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmToolPulisciBigFile.Designer.vb">
+      <DependentUpon>frmToolPulisciBigFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmToolPulisciBigFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCalcPrezzoLavorazioni.Designer.vb">
+      <DependentUpon>frmCalcPrezzoLavorazioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCalcPrezzoLavorazioni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaCopyAllegati.Designer.vb">
+      <DependentUpon>frmCommessaCopyAllegati.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaCopyAllegati.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOperatoreTempoStimato.Designer.vb">
+      <DependentUpon>frmOperatoreTempoStimato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOperatoreTempoStimato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoVariante.Designer.vb">
+      <DependentUpon>frmListinoVariante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoVariante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmReportOperatori.Designer.vb">
+      <DependentUpon>frmReportOperatori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmReportOperatori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmScreenshoot.Designer.vb">
+      <DependentUpon>frmScreenshoot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmScreenshoot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoAddRichiesta.Designer.vb">
+      <DependentUpon>frmMagazzinoAddRichiesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoAddRichiesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoOrdineAcquisto.Designer.vb">
+      <DependentUpon>frmMagazzinoOrdineAcquisto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoOrdineAcquisto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoRichiesta.Designer.vb">
+      <DependentUpon>frmMagazzinoRichiesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoRichiesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoStorno.Designer.vb">
+      <DependentUpon>frmMagazzinoStorno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoStorno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOpenIMG.Designer.vb">
+      <DependentUpon>frmOpenIMG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOpenIMG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCalcNumerazioneDuplicato.Designer.vb">
+      <DependentUpon>frmCalcNumerazioneDuplicato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCalcNumerazioneDuplicato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCalcNumerazionePDFEx.Designer.vb">
+      <DependentUpon>frmCalcNumerazionePDFEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCalcNumerazionePDFEx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmPdfTools.Designer.vb">
+      <DependentUpon>frmPdfTools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmPdfTools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoScaricoConsumo.Designer.vb">
+      <DependentUpon>frmMagazzinoScaricoConsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoScaricoConsumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmReleaseNote.Designer.vb">
+      <DependentUpon>frmReleaseNote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmReleaseNote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaGLSReportContrassegno.Designer.vb">
+      <DependentUpon>frmConsegnaGLSReportContrassegno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaGLSReportContrassegno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOpenPDF.designer.vb">
+      <DependentUpon>frmOpenPDF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOpenPDF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaCosto.designer.vb">
+      <DependentUpon>frmContabilitaCosto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaCosto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaFatturaRiepilogativaCosto.Designer.vb">
+      <DependentUpon>frmContabilitaFatturaRiepilogativaCosto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaFatturaRiepilogativaCosto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCreaListinoPDF.Designer.vb">
+      <DependentUpon>frmCreaListinoPDF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCreaListinoPDF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoPromoAutomatico.Designer.vb">
+      <DependentUpon>frmListinoPromoAutomatico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoPromoAutomatico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmTextGet.Designer.vb">
+      <DependentUpon>frmTextGet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmTextGet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOrdiniPanoramica.Designer.vb">
+      <DependentUpon>frmOrdiniPanoramica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOrdiniPanoramica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmBug.Designer.vb">
+      <DependentUpon>frmBug.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmBug.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmStampaEtichette.Designer.vb">
+      <DependentUpon>frmStampaEtichette.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmStampaEtichette.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmDaemonMonitor.Designer.vb">
+      <DependentUpon>frmDaemonMonitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmDaemonMonitor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmProcedure.Designer.vb">
+      <DependentUpon>frmProcedure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmProcedure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmProceduraStep.Designer.vb">
+      <DependentUpon>frmProceduraStep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmProceduraStep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmProcedura.Designer.vb">
+      <DependentUpon>frmProcedura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmProcedura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOperatoreComanda.Designer.vb">
+      <DependentUpon>frmOperatoreComanda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOperatoreComanda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaRegoleCalcolo.Designer.vb">
+      <DependentUpon>frmCommessaRegoleCalcolo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaRegoleCalcolo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaFromJob.Designer.vb">
+      <DependentUpon>frmCommessaFromJob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaFromJob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaCalcoloSoluzioni.Designer.vb">
+      <DependentUpon>frmCommessaCalcoloSoluzioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaCalcoloSoluzioni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOrdineCreaOnline.Designer.vb">
+      <DependentUpon>frmOrdineCreaOnline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOrdineCreaOnline.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmHotFolderMgr.Designer.vb">
+      <DependentUpon>frmHotFolderMgr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmHotFolderMgr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmHotFolder.Designer.vb">
+      <DependentUpon>frmHotFolder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmHotFolder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmTextShow.Designer.vb">
+      <DependentUpon>frmTextShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmTextShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaEditIntestazioneDocumento.Designer.vb">
+      <DependentUpon>frmContabilitaEditIntestazioneDocumento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaEditIntestazioneDocumento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmSelectLB.Designer.vb">
+      <DependentUpon>frmSelectLB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmSelectLB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCalcFustella.Designer.vb">
+      <DependentUpon>frmCalcFustella.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCalcFustella.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCatVirtuale.Designer.vb">
+      <DependentUpon>frmListinoCatVirtuale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCatVirtuale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoPromo.Designer.vb">
+      <DependentUpon>frmListinoPromo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoPromo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmSelectDefaultFP.Designer.vb">
+      <DependentUpon>frmSelectDefaultFP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmSelectDefaultFP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmSelectFormatoProdotto.Designer.vb">
+      <DependentUpon>frmSelectFormatoProdotto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmSelectFormatoProdotto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoListaImgTemporanee.Designer.vb">
+      <DependentUpon>frmListinoListaImgTemporanee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoListaImgTemporanee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoImgTemporanea.Designer.vb">
+      <DependentUpon>frmListinoImgTemporanea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoImgTemporanea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCalcCm2.Designer.vb">
+      <DependentUpon>frmCalcCm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCalcCm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCatFormato.Designer.vb">
+      <DependentUpon>frmListinoCatFormato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCatFormato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaDigitalePannelli.Designer.vb">
+      <DependentUpon>frmCommessaDigitalePannelli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaDigitalePannelli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCalcPesoConsegna.Designer.vb">
+      <DependentUpon>frmCalcPesoConsegna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCalcPesoConsegna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmPreventivoMail.Designer.vb">
+      <DependentUpon>frmPreventivoMail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmPreventivoMail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOperatoreLog.Designer.vb">
+      <DependentUpon>frmOperatoreLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOperatoreLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoCaricoOperatore.Designer.vb">
+      <DependentUpon>frmMagazzinoCaricoOperatore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoCaricoOperatore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoRegolaOmaggio.Designer.vb">
+      <DependentUpon>frmListinoRegolaOmaggio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoRegolaOmaggio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingHtmlNew.Designer.vb">
+      <DependentUpon>frmMarketingHtmlNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingHtmlNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoOrdineMacchinari.Designer.vb">
+      <DependentUpon>frmListinoOrdineMacchinari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoOrdineMacchinari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoOrdineLavorazioni.Designer.vb">
+      <DependentUpon>frmListinoOrdineLavorazioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoOrdineLavorazioni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOperatoreNew.Designer.vb">
+      <DependentUpon>frmOperatoreNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOperatoreNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmRecensione.Designer.vb">
+      <DependentUpon>frmRecensione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmRecensione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCodTrackGls.Designer.vb">
+      <DependentUpon>frmCodTrackGls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCodTrackGls.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCatLav.Designer.vb">
+      <DependentUpon>frmListinoCatLav.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCatLav.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaOrdiniCorriere.Designer.vb">
+      <DependentUpon>frmConsegnaOrdiniCorriere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaOrdiniCorriere.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCodTrackBrt.Designer.vb">
+      <DependentUpon>frmCodTrackBrt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCodTrackBrt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmIndirizzo.Designer.vb">
+      <DependentUpon>frmIndirizzo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmIndirizzo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoBarCodeCorriere.Designer.vb">
+      <DependentUpon>frmMagazzinoBarCodeCorriere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoBarCodeCorriere.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOrdineNumColli.Designer.vb">
+      <DependentUpon>frmOrdineNumColli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOrdineNumColli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaPercorso.Designer.vb">
+      <DependentUpon>frmConsegnaPercorso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaPercorso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoTipoCartaAddRes.Designer.vb">
+      <DependentUpon>frmListinoTipoCartaAddRes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoTipoCartaAddRes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoBanner.Designer.vb">
+      <DependentUpon>frmListinoBanner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoBanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoLavorazione.Designer.vb">
+      <DependentUpon>frmListinoLavorazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoLavorazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaPagamentoOnlineBonifico.Designer.vb">
+      <DependentUpon>frmContabilitaPagamentoOnlineBonifico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaPagamentoOnlineBonifico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaParamSoluzione.Designer.vb">
+      <DependentUpon>frmCommessaParamSoluzione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaParamSoluzione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCategoriaFustella.Designer.vb">
+      <DependentUpon>frmListinoCategoriaFustella.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCategoriaFustella.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoTipoFustella.Designer.vb">
+      <DependentUpon>frmListinoTipoFustella.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoTipoFustella.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingAddLBToTemplate.Designer.vb">
+      <DependentUpon>frmMarketingAddLBToTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingAddLBToTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingTemplateNew.Designer.vb">
+      <DependentUpon>frmMarketingTemplateNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingTemplateNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCalcNumerazione.Designer.vb">
+      <DependentUpon>frmCalcNumerazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCalcNumerazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCoupon.Designer.vb">
+      <DependentUpon>frmListinoCoupon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCoupon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoBaseLink.Designer.vb">
+      <DependentUpon>frmListinoBaseLink.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoBaseLink.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingFiltro.Designer.vb">
+      <DependentUpon>frmMarketingFiltro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingFiltro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaModificaDati.Designer.vb">
+      <DependentUpon>frmConsegnaModificaDati.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaModificaDati.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaImballaggio.Designer.vb">
+      <DependentUpon>frmConsegnaImballaggio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaImballaggio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoModelloCubetto.Designer.vb">
+      <DependentUpon>frmListinoModelloCubetto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoModelloCubetto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOrdineAllegaFileOnline.Designer.vb">
+      <DependentUpon>frmOrdineAllegaFileOnline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOrdineAllegaFileOnline.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoSoluzioneImballo.Designer.vb">
+      <DependentUpon>frmMagazzinoSoluzioneImballo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoSoluzioneImballo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoDatiWebLB.Designer.vb">
+      <DependentUpon>frmListinoDatiWebLB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoDatiWebLB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoComposizioneCarta.Designer.vb">
+      <DependentUpon>frmListinoComposizioneCarta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoComposizioneCarta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoPrezzoLavorazione.Designer.vb">
+      <DependentUpon>frmListinoPrezzoLavorazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoPrezzoLavorazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCalcLavoraz.Designer.vb">
+      <DependentUpon>frmCalcLavoraz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCalcLavoraz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmLocked.Designer.vb">
+      <DependentUpon>frmLocked.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmLocked.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoPubblicazioneOnline.Designer.vb">
+      <DependentUpon>frmListinoPubblicazioneOnline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoPubblicazioneOnline.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmFormatoProdsuModCom.Designer.vb">
+      <DependentUpon>frmFormatoProdsuModCom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmFormatoProdsuModCom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoFormatoMacchina.Designer.vb">
+      <DependentUpon>frmListinoFormatoMacchina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoFormatoMacchina.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoColoreStampa.Designer.vb">
+      <DependentUpon>frmListinoColoreStampa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoColoreStampa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoMacchinario.Designer.vb">
+      <DependentUpon>frmListinoMacchinario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoMacchinario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoResa.Designer.vb">
+      <DependentUpon>frmListinoResa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoResa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoBase.Designer.vb">
+      <DependentUpon>frmListinoBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOpzioniTabSec.Designer.vb">
+      <DependentUpon>frmOpzioniTabSec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOpzioniTabSec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoPreventivazione.Designer.vb">
+      <DependentUpon>frmListinoPreventivazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoPreventivazione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCaller.Designer.vb">
+      <DependentUpon>frmCaller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCaller.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoTipoCarta.Designer.vb">
+      <DependentUpon>frmListinoTipoCarta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoTipoCarta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoFormatoProdotto.Designer.vb">
+      <DependentUpon>frmListinoFormatoProdotto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoFormatoProdotto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmWait.Designer.vb">
+      <DependentUpon>frmWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\old\frmSelectCat.Designer.vb">
+      <DependentUpon>frmSelectCat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\old\frmSelectCat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCreaFormerKey.Designer.vb">
+      <DependentUpon>frmCreaFormerKey.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCreaFormerKey.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmInsertUsb.Designer.vb">
+      <DependentUpon>frmInsertUsb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmInsertUsb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMonitor.Designer.vb">
+      <DependentUpon>frmMonitor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMonitor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaModello.Designer.vb">
+      <DependentUpon>frmCommessaModello.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaModello.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoImballaggioColli.Designer.vb">
+      <DependentUpon>frmMagazzinoImballaggioColli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoImballaggioColli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmProntoRitiroCliente.Designer.vb">
+      <DependentUpon>frmProntoRitiroCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmProntoRitiroCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoCaricaColli.Designer.vb">
+      <DependentUpon>frmMagazzinoCaricaColli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoCaricaColli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaOrdiniRCTF.Designer.vb">
+      <DependentUpon>frmConsegnaOrdiniRCTF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaOrdiniRCTF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMonitorOperat.Designer.vb">
+      <DependentUpon>frmMonitorOperat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMonitorOperat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCli.Designer.vb">
+      <DependentUpon>frmListinoCli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoCli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\old\frmCatProd.Designer.vb">
+      <DependentUpon>frmCatProd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\old\frmCatProd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingEffettivo.Designer.vb">
+      <DependentUpon>frmMarketingEffettivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingEffettivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingProgrammato.Designer.vb">
+      <DependentUpon>frmMarketingProgrammato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingProgrammato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmGruppo.Designer.vb">
+      <DependentUpon>frmGruppo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmGruppo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingEmail.Designer.vb">
+      <DependentUpon>frmMarketingEmail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMarketingEmail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmBrowser.Designer.vb">
+      <DependentUpon>frmBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaOperatore.Designer.vb">
+      <DependentUpon>frmConsegnaOperatore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaOperatore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaProgrammata.Designer.vb">
+      <DependentUpon>frmConsegnaProgrammata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmConsegnaProgrammata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\old\frmAccordoForn.Designer.vb">
+      <DependentUpon>frmAccordoForn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\old\frmAccordoForn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoMovimento.designer.vb">
+      <DependentUpon>frmMagazzinoMovimento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoMovimento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCalcPeso.Designer.vb">
+      <DependentUpon>frmCalcPeso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCalcPeso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmEmailOrd.Designer.vb">
+      <DependentUpon>frmEmailOrd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmEmailOrd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaFatturaRiepilogativaRicavo.Designer.vb">
+      <DependentUpon>frmContabilitaFatturaRiepilogativaRicavo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaFatturaRiepilogativaRicavo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaExportCTP.Designer.vb">
+      <DependentUpon>frmCommessaExportCTP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCommessaExportCTP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOrdineModificaImporti.Designer.vb">
+      <DependentUpon>frmOrdineModificaImporti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOrdineModificaImporti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaPagamento.Designer.vb">
+      <DependentUpon>frmContabilitaPagamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaPagamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaRicavo.designer.vb">
+      <DependentUpon>frmContabilitaRicavo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmContabilitaRicavo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\old\frmListPers.Designer.vb">
+      <DependentUpon>frmListPers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\old\frmListPers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoBarCodeRCTF.Designer.vb">
+      <DependentUpon>frmMagazzinoBarCodeRCTF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoBarCodeRCTF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCommessa.Designer.vb">
+      <DependentUpon>frmCommessa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCommessa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoCarico.Designer.vb">
+      <DependentUpon>frmMagazzinoCarico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoCarico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmUtente.Designer.vb">
+      <DependentUpon>frmUtente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmUtente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOrdine.Designer.vb">
+      <DependentUpon>frmOrdine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOrdine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoRisorsa.Designer.vb">
+      <DependentUpon>frmMagazzinoRisorsa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmMagazzinoRisorsa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCalcPrezzoIndicativo.Designer.vb">
+      <DependentUpon>frmCalcPrezzoIndicativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCalcPrezzoIndicativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmOpzioni.Designer.vb">
+      <DependentUpon>frmOpzioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmOpzioni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmPostit.designer.vb">
+      <DependentUpon>frmPostit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmPostit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmListinoProdotto.Designer.vb">
+      <DependentUpon>frmListinoProdotto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmListinoProdotto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmVoceRubrica.Designer.vb">
+      <DependentUpon>frmVoceRubrica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmVoceRubrica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\old\frmSplashScreen.Designer.vb">
+      <DependentUpon>frmSplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\old\frmSplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmStampa.designer.vb">
+      <DependentUpon>frmStampa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmStampa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmBase.Designer.vb">
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="code\module\mdlMain.vb" />
+    <Compile Include="code\class\Mgr\MgrSound.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="code\template\class\MailRigeneraPwd.vb" />
+    <Compile Include="code\template\MailRigeneraPwd.vb">
+      <DependentUpon>MailRigeneraPwd.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneSituazioneClienti.Designer.vb">
+      <DependentUpon>ucAmministrazioneSituazioneClienti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneSituazioneClienti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneDashboard.Designer.vb">
+      <DependentUpon>ucAmministrazioneDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneCheckMassivo.Designer.vb">
+      <DependentUpon>ucAmministrazioneCheckMassivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneCheckMassivo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneDashboardCount.Designer.vb">
+      <DependentUpon>ucAmministrazioneDashboardCount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneDashboardCount.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneF24.Designer.vb">
+      <DependentUpon>ucAmministrazioneF24.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneF24.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneContabilita.Designer.vb">
+      <DependentUpon>ucAmministrazioneContabilita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneContabilita.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoDecodificaVociCosto.Designer.vb">
+      <DependentUpon>ucMagazzinoDecodificaVociCosto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoDecodificaVociCosto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucContabCostoAmmortamento.Designer.vb">
+      <DependentUpon>ucContabCostoAmmortamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucContabCostoAmmortamento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucDocumentiFiscaliXMLRicavo.Designer.vb">
+      <DependentUpon>ucDocumentiFiscaliXMLRicavo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucDocumentiFiscaliXMLRicavo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucDocumentiFiscaliXMLCosto.Designer.vb">
+      <DependentUpon>ucDocumentiFiscaliXMLCosto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucDocumentiFiscaliXMLCosto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoGruppoVariante.Designer.vb">
+      <DependentUpon>ucListinoGruppoVariante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoGruppoVariante.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoCarichiDiMagazzino.Designer.vb">
+      <DependentUpon>ucMagazzinoCarichiDiMagazzino.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoCarichiDiMagazzino.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoRichieste.Designer.vb">
+      <DependentUpon>ucMagazzinoRichieste.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoRichieste.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoOrdiniAcquisto.Designer.vb">
+      <DependentUpon>ucMagazzinoOrdiniAcquisto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoOrdiniAcquisto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoOrdini.Designer.vb">
+      <DependentUpon>ucMagazzinoOrdini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoOrdini.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoCercaRisorsa.Designer.vb">
+      <DependentUpon>ucMagazzinoCercaRisorsa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoCercaRisorsa.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoMgrMovimenti.Designer.vb">
+      <DependentUpon>ucMagazzinoMgrMovimenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoMgrMovimenti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucComboRubrica.Designer.vb">
+      <DependentUpon>ucComboRubrica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\baseUI\control\ucComboRubrica.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucDocumentiFiscaliEditRow.Designer.vb">
+      <DependentUpon>ucDocumentiFiscaliEditRow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucDocumentiFiscaliEditRow.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMailManager.Designer.vb">
+      <DependentUpon>ucMailManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMailManager.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoStatistiche.Designer.vb">
+      <DependentUpon>ucMagazzinoStatistiche.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoStatistiche.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoMain.Designer.vb">
+      <DependentUpon>ucMagazzinoMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoMain.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCaratteristicheProdotto.Designer.vb">
+      <DependentUpon>ucCaratteristicheProdotto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneConsegne.Designer.vb">
+      <DependentUpon>ucAmministrazioneConsegne.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneConsegne.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazionePromo.Designer.vb">
+      <DependentUpon>ucAmministrazionePromo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazionePromo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneOrdiniBonifico.Designer.vb">
+      <DependentUpon>ucAmministrazioneOrdiniBonifico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneOrdiniBonifico.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneCoupon.Designer.vb">
+      <DependentUpon>ucAmministrazioneCoupon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneCoupon.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneReport.Designer.vb">
+      <DependentUpon>ucAmministrazioneReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneReport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneProcedure.Designer.vb">
+      <DependentUpon>ucAmministrazioneProcedure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneProcedure.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneStep.Designer.vb">
+      <DependentUpon>ucAmministrazioneStep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneStep.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniListaPreview.Designer.vb">
+      <DependentUpon>ucOrdiniListaPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniListaPreview.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseRegoleCalcolo.Designer.vb">
+      <DependentUpon>ucCommesseRegoleCalcolo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseRegoleCalcolo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneOrdiniSelezionati.Designer.vb">
+      <DependentUpon>ucProduzioneOrdiniSelezionati.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneOrdiniSelezionati.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneVerify.Designer.vb">
+      <DependentUpon>ucProduzioneVerify.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneVerify.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMailPreview.Designer.vb">
+      <DependentUpon>ucMailPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMailPreview.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMail.Designer.vb">
+      <DependentUpon>ucMail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMailOrdini.Designer.vb">
+      <DependentUpon>ucMailOrdini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMailOrdini.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMailPreventivi.Designer.vb">
+      <DependentUpon>ucMailPreventivi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMailPreventivi.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreConfermaConsegne.Designer.vb">
+      <DependentUpon>ucOperatoreConfermaConsegne.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreConfermaConsegne.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoOmaggi.Designer.vb">
+      <DependentUpon>ucListinoOmaggi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoOmaggi.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreCodaLavori.Designer.vb">
+      <DependentUpon>ucOperatoreCodaLavori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreCodaLavori.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneEtichette.Designer.vb">
+      <DependentUpon>ucProduzioneEtichette.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneEtichette.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneRicamo.Designer.vb">
+      <DependentUpon>ucProduzioneRicamo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneRicamo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzionePackaging.Designer.vb">
+      <DependentUpon>ucProduzionePackaging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzionePackaging.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneDigitale.Designer.vb">
+      <DependentUpon>ucProduzioneDigitale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneDigitale.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzione.Designer.vb">
+      <DependentUpon>ucProduzione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzione.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseModelli.Designer.vb">
+      <DependentUpon>ucCommesseModelli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseModelli.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreConsegna.Designer.vb">
+      <DependentUpon>ucOperatoreConsegna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreConsegna.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreImballaggioCorriere.Designer.vb">
+      <DependentUpon>ucOperatoreImballaggioCorriere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreImballaggioCorriere.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatore.Designer.vb">
+      <DependentUpon>ucOperatore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatore.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreImballaggio.Designer.vb">
+      <DependentUpon>ucOperatoreImballaggio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreImballaggio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreProduzione.Designer.vb">
+      <DependentUpon>ucOperatoreProduzione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOperatoreProduzione.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucRepartoWeb.Designer.vb">
+      <DependentUpon>ucRepartoWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucRepartoWeb.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucConsegneGlsAdmin.Designer.vb">
+      <DependentUpon>ucConsegneGlsAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucConsegneGlsAdmin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucSitoWebRecensioniProdotti.Designer.vb">
+      <DependentUpon>ucSitoWebRecensioniProdotti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucSitoWebRecensioniProdotti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucSitoWeb.Designer.vb">
+      <DependentUpon>ucSitoWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucSitoWeb.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoImpatto.Designer.vb">
+      <DependentUpon>ucListinoImpatto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoImpatto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucFiltroCorriere.Designer.vb">
+      <DependentUpon>ucFiltroCorriere.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucFiltroCorriere.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListino.Designer.vb">
+      <DependentUpon>ucListino.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListino.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoBaseDatiWeb.Designer.vb">
+      <DependentUpon>ucListinoBaseDatiWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoBaseDatiWeb.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoValidatorError.Designer.vb">
+      <DependentUpon>ucListinoValidatorError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoValidatorError.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoFormatoProdotto.Designer.vb">
+      <DependentUpon>ucListinoFormatoProdotto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoFormatoProdotto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucSitoWebBannerSito.Designer.vb">
+      <DependentUpon>ucSitoWebBannerSito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucSitoWebBannerSito.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoFustelle.Designer.vb">
+      <DependentUpon>ucListinoFustelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoFustelle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCaller.Designer.vb">
+      <DependentUpon>ucCaller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCaller.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoLavorazioniGestione.Designer.vb">
+      <DependentUpon>ucListinoLavorazioniGestione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoLavorazioniGestione.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMarketingWeb.Designer.vb">
+      <DependentUpon>ucMarketingWeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMarketingWeb.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniDaFatturare.Designer.vb">
+      <DependentUpon>ucOrdiniDaFatturare.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniDaFatturare.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoTipiCarta.Designer.vb">
+      <DependentUpon>ucListinoTipiCarta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoTipiCarta.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucBase.Designer.vb">
+      <DependentUpon>ucBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneOffset.Designer.vb">
+      <DependentUpon>ucProduzioneOffset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucProduzioneOffset.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoColoriStampa.Designer.vb">
+      <DependentUpon>ucListinoColoriStampa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoColoriStampa.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoIcoLavorazione.Designer.vb">
+      <DependentUpon>ucListinoIcoLavorazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoIcoLavorazione.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoFormatoMacchina.Designer.vb">
+      <DependentUpon>ucListinoFormatoMacchina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoFormatoMacchina.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoMacchinari.Designer.vb">
+      <DependentUpon>ucListinoMacchinari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoMacchinari.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoPreventivazione.Designer.vb">
+      <DependentUpon>ucListinoPreventivazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoPreventivazione.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCaratteristicheProdotto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneEmailAvviso.Designer.vb">
+      <DependentUpon>ucAmministrazioneEmailAvviso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneEmailAvviso.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoResa.Designer.vb">
+      <DependentUpon>ucListinoResa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoResa.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucScadenzarioMese.Designer.vb">
+      <DependentUpon>ucScadenzarioMese.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucScadenzarioMese.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAnteprimaLavoro.Designer.vb">
+      <DependentUpon>ucAnteprimaLavoro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAnteprimaLavoro.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAnteprimaOperatore.Designer.vb">
+      <DependentUpon>ucAnteprimaOperatore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAnteprimaOperatore.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucDocumentiFiscali.designer.vb">
+      <DependentUpon>ucDocumentiFiscali.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucDocumentiFiscali.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMessaggiInterni.Designer.vb">
+      <DependentUpon>ucMessaggiInterni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMessaggiInterni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucConsegneAlbero.Designer.vb">
+      <DependentUpon>ucConsegneAlbero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucConsegneAlbero.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAllegati.Designer.vb">
+      <DependentUpon>ucAllegati.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAllegati.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniAdmin.Designer.vb">
+      <DependentUpon>ucOrdiniAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniAdmin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneRubricaMarketing.Designer.vb">
+      <DependentUpon>ucAmministrazioneRubricaMarketing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneRubricaMarketing.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMarketingProgrammato.Designer.vb">
+      <DependentUpon>ucMarketingProgrammato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMarketingProgrammato.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMarketing.Designer.vb">
+      <DependentUpon>ucMarketing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMarketing.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneRubricaGruppi.Designer.vb">
+      <DependentUpon>ucAmministrazioneRubricaGruppi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneRubricaGruppi.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneSituazioneContabile.Designer.vb">
+      <DependentUpon>ucAmministrazioneSituazioneContabile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneSituazioneContabile.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucDocumentiStato.Designer.vb">
+      <DependentUpon>ucDocumentiStato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucDocumentiStato.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucStoricoAcquisti.Designer.vb">
+      <DependentUpon>ucStoricoAcquisti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucStoricoAcquisti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucStoricoPrezziRis.Designer.vb">
+      <DependentUpon>ucStoricoPrezziRis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucStoricoPrezziRis.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoRisorseAcquisto.Designer.vb">
+      <DependentUpon>ucMagazzinoRisorseAcquisto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoRisorseAcquisto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucReport.Designer.vb">
+      <DependentUpon>ucReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucReport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucConsegneGiorno.Designer.vb">
+      <DependentUpon>ucConsegneGiorno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucConsegneGiorno.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseStato.Designer.vb">
+      <DependentUpon>ucCommesseStato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseStato.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAnteprima.designer.vb">
+      <DependentUpon>ucAnteprima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAnteprima.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseAnteprima.Designer.vb">
+      <DependentUpon>ucCommesseAnteprima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseAnteprima.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMain.Designer.vb">
+      <DependentUpon>ucMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMain.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneOperatori.Designer.vb">
+      <DependentUpon>ucAmministrazioneOperatori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneOperatori.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniAnteprima.Designer.vb">
+      <DependentUpon>ucOrdiniAnteprima.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniAnteprima.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniCom.Designer.vb">
+      <DependentUpon>ucOrdiniCom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniCom.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneParametri.Designer.vb">
+      <DependentUpon>ucAmministrazioneParametri.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneParametri.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseRisorse.Designer.vb">
+      <DependentUpon>ucCommesseRisorse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseRisorse.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseDettaglio.Designer.vb">
+      <DependentUpon>ucCommesseDettaglio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesseDettaglio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucLavorazioni.Designer.vb">
+      <DependentUpon>ucLavorazioni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucLavorazioni.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniDettaglio.Designer.vb">
+      <DependentUpon>ucOrdiniDettaglio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniDettaglio.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdini.Designer.vb">
+      <DependentUpon>ucOrdini.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdini.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazione.Designer.vb">
+      <DependentUpon>ucAmministrazione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazione.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazionePagamenti.Designer.vb">
+      <DependentUpon>ucAmministrazionePagamenti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazionePagamenti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoRisorse.Designer.vb">
+      <DependentUpon>ucMagazzinoRisorse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMagazzinoRisorse.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesse.Designer.vb">
+      <DependentUpon>ucCommesse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucCommesse.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMessaggiInterniSmall.designer.vb">
+      <DependentUpon>ucMessaggiInterniSmall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMessaggiInterniSmall.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoProdotti.Designer.vb">
+      <DependentUpon>ucListinoProdotti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucListinoProdotti.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneRubrica.Designer.vb">
+      <DependentUpon>ucAmministrazioneRubrica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucAmministrazioneRubrica.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniStatoAdvanced.Designer.vb">
+      <DependentUpon>ucOrdiniStatoAdvanced.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucOrdiniStatoAdvanced.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMainToolbar.Designer.vb">
+      <DependentUpon>ucMainToolbar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucMainToolbar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\ucConsegneSettimana.Designer.vb">
+      <DependentUpon>ucConsegneSettimana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucConsegneSettimana.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\UserControl\usScadenziarioMese.Designer.vb">
+      <DependentUpon>ucScadenziarioSettimana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucScadenziarioSettimana.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="ui\baseUI\control\ucFormerUserControl.resx">
+      <DependentUpon>ucFormerUserControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\control\ucInfoBox.resx">
+      <DependentUpon>ucInfoBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\control\ucLabel.resx">
+      <DependentUpon>ucLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\control\ucLabelSlider.resx">
+      <DependentUpon>ucLabelSlider.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\control\ucPictureWithZoom.resx">
+      <DependentUpon>ucPictureWithZoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\control\ucPictureWizard.resx">
+      <DependentUpon>ucPictureWizard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\control\ucSliderGroup.resx">
+      <DependentUpon>ucSliderGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\form\baseFormInterna.resx">
+      <DependentUpon>baseFormInterna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\form\baseFormInternaFixed.resx">
+      <DependentUpon>baseFormInternaFixed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\form\baseFormInternaRedim.resx">
+      <DependentUpon>baseFormInternaRedim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\form\baseFormMessageBox.resx">
+      <DependentUpon>baseFormMessageBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\form\baseFormRad.resx">
+      <DependentUpon>baseFormRad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\form\cFormSopra.resx">
+      <DependentUpon>cFormSopra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\form\frmZoomImg.resx">
+      <DependentUpon>frmZoomImg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmContabilitaF24.resx">
+      <DependentUpon>frmContabilitaF24.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmContabilitaBilancio.resx">
+      <DependentUpon>frmContabilitaBilancio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoManageExtraData.resx">
+      <DependentUpon>frmListinoManageExtraData.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOrdineCambiaDataConsegna.resx">
+      <DependentUpon>frmOrdineCambiaDataConsegna.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmContabilitaNotaCredito.resx">
+      <DependentUpon>frmContabilitaNotaCredito.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmSelectCatLav.resx">
+      <DependentUpon>frmSelectCatLav.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmSelectTipoCarta.resx">
+      <DependentUpon>frmSelectTipoCarta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmStampaMassivaRicavi.resx">
+      <DependentUpon>frmStampaMassivaRicavi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmStampaMassivaCosti.resx">
+      <DependentUpon>frmStampaMassivaCosti.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoCaricoDiMagazzinoScegli.resx">
+      <DependentUpon>frmMagazzinoCaricoDiMagazzinoScegli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmVoceRubricaUnione.resx">
+      <DependentUpon>frmVoceRubricaUnione.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoCaricoDiMagazzino.resx">
+      <DependentUpon>frmMagazzinoCaricoDiMagazzino.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmReminder.resx">
+      <DependentUpon>frmReminder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmInfoBandierine.resx">
+      <DependentUpon>frmInfoBandierine.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmToolPulisciBigFile.resx">
+      <DependentUpon>frmToolPulisciBigFile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCalcPrezzoLavorazioni.resx">
+      <DependentUpon>frmCalcPrezzoLavorazioni.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCommessaCopyAllegati.resx">
+      <DependentUpon>frmCommessaCopyAllegati.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOperatoreTempoStimato.resx">
+      <DependentUpon>frmOperatoreTempoStimato.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoVariante.resx">
+      <DependentUpon>frmListinoVariante.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmReportOperatori.resx">
+      <DependentUpon>frmReportOperatori.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmScreenshoot.resx">
+      <DependentUpon>frmScreenshoot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoAddRichiesta.resx">
+      <DependentUpon>frmMagazzinoAddRichiesta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoOrdineAcquisto.resx">
+      <DependentUpon>frmMagazzinoOrdineAcquisto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoRichiesta.resx">
+      <DependentUpon>frmMagazzinoRichiesta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoStorno.resx">
+      <DependentUpon>frmMagazzinoStorno.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOpenIMG.resx">
+      <DependentUpon>frmOpenIMG.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCalcNumerazioneDuplicato.resx">
+      <DependentUpon>frmCalcNumerazioneDuplicato.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCalcNumerazionePDFEx.resx">
+      <DependentUpon>frmCalcNumerazionePDFEx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmPdfTools.resx">
+      <DependentUpon>frmPdfTools.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoScaricoConsumo.resx">
+      <DependentUpon>frmMagazzinoScaricoConsumo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmReleaseNote.resx">
+      <DependentUpon>frmReleaseNote.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmConsegnaGLSReportContrassegno.resx">
+      <DependentUpon>frmConsegnaGLSReportContrassegno.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOpenPDF.resx">
+      <DependentUpon>frmOpenPDF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmContabilitaCosto.resx">
+      <DependentUpon>frmContabilitaCosto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmContabilitaFatturaRiepilogativaCosto.resx">
+      <DependentUpon>frmContabilitaFatturaRiepilogativaCosto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCreaListinoPDF.resx">
+      <DependentUpon>frmCreaListinoPDF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoPromoAutomatico.resx">
+      <DependentUpon>frmListinoPromoAutomatico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmTextGet.resx">
+      <DependentUpon>frmTextGet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOrdiniPanoramica.resx">
+      <DependentUpon>frmOrdiniPanoramica.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmBug.resx">
+      <DependentUpon>frmBug.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmStampaEtichette.resx">
+      <DependentUpon>frmStampaEtichette.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmDaemonMonitor.resx">
+      <DependentUpon>frmDaemonMonitor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmProcedure.resx">
+      <DependentUpon>frmProcedure.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmProceduraStep.resx">
+      <DependentUpon>frmProceduraStep.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmProcedura.resx">
+      <DependentUpon>frmProcedura.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOperatoreComanda.resx">
+      <DependentUpon>frmOperatoreComanda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCommessaRegoleCalcolo.resx">
+      <DependentUpon>frmCommessaRegoleCalcolo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCommessaFromJob.resx">
+      <DependentUpon>frmCommessaFromJob.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCommessaCalcoloSoluzioni.resx">
+      <DependentUpon>frmCommessaCalcoloSoluzioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOrdineCreaOnline.resx">
+      <DependentUpon>frmOrdineCreaOnline.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmHotFolderMgr.resx">
+      <DependentUpon>frmHotFolderMgr.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmHotFolder.resx">
+      <DependentUpon>frmHotFolder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmTextShow.resx">
+      <DependentUpon>frmTextShow.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmContabilitaEditIntestazioneDocumento.resx">
+      <DependentUpon>frmContabilitaEditIntestazioneDocumento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmSelectLB.resx">
+      <DependentUpon>frmSelectLB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCalcFustella.resx">
+      <DependentUpon>frmCalcFustella.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoCatVirtuale.resx">
+      <DependentUpon>frmListinoCatVirtuale.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoPromo.resx">
+      <DependentUpon>frmListinoPromo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmSelectDefaultFP.resx">
+      <DependentUpon>frmSelectDefaultFP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmSelectFormatoProdotto.resx">
+      <DependentUpon>frmSelectFormatoProdotto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoListaImgTemporanee.resx">
+      <DependentUpon>frmListinoListaImgTemporanee.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoImgTemporanea.resx">
+      <DependentUpon>frmListinoImgTemporanea.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCalcCm2.resx">
+      <DependentUpon>frmCalcCm2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoCatFormato.resx">
+      <DependentUpon>frmListinoCatFormato.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCommessaDigitalePannelli.resx">
+      <DependentUpon>frmCommessaDigitalePannelli.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCalcPesoConsegna.resx">
+      <DependentUpon>frmCalcPesoConsegna.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmPreventivoMail.resx">
+      <DependentUpon>frmPreventivoMail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOperatoreLog.resx">
+      <DependentUpon>frmOperatoreLog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoCaricoOperatore.resx">
+      <DependentUpon>frmMagazzinoCaricoOperatore.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoRegolaOmaggio.resx">
+      <DependentUpon>frmListinoRegolaOmaggio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMarketingHtmlNew.resx">
+      <DependentUpon>frmMarketingHtmlNew.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoOrdineMacchinari.resx">
+      <DependentUpon>frmListinoOrdineMacchinari.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoOrdineLavorazioni.resx">
+      <DependentUpon>frmListinoOrdineLavorazioni.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOperatoreNew.resx">
+      <DependentUpon>frmOperatoreNew.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmRecensione.resx">
+      <DependentUpon>frmRecensione.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCodTrackGls.resx">
+      <DependentUpon>frmCodTrackGls.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoCatLav.resx">
+      <DependentUpon>frmListinoCatLav.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmConsegnaOrdiniCorriere.resx">
+      <DependentUpon>frmConsegnaOrdiniCorriere.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCodTrackBrt.resx">
+      <DependentUpon>frmCodTrackBrt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmIndirizzo.resx">
+      <DependentUpon>frmIndirizzo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoBarCodeCorriere.resx">
+      <DependentUpon>frmMagazzinoBarCodeCorriere.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOrdineNumColli.resx">
+      <DependentUpon>frmOrdineNumColli.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmConsegnaPercorso.resx">
+      <DependentUpon>frmConsegnaPercorso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoTipoCartaAddRes.resx">
+      <DependentUpon>frmListinoTipoCartaAddRes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoBanner.resx">
+      <DependentUpon>frmListinoBanner.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoLavorazione.resx">
+      <DependentUpon>frmListinoLavorazione.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmContabilitaPagamentoOnlineBonifico.resx">
+      <DependentUpon>frmContabilitaPagamentoOnlineBonifico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCommessaParamSoluzione.resx">
+      <DependentUpon>frmCommessaParamSoluzione.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoCategoriaFustella.resx">
+      <DependentUpon>frmListinoCategoriaFustella.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoTipoFustella.resx">
+      <DependentUpon>frmListinoTipoFustella.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMarketingAddLBToTemplate.resx">
+      <DependentUpon>frmMarketingAddLBToTemplate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMarketingTemplateNew.resx">
+      <DependentUpon>frmMarketingTemplateNew.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCalcNumerazione.resx">
+      <DependentUpon>frmCalcNumerazione.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoCoupon.resx">
+      <DependentUpon>frmListinoCoupon.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoBaseLink.resx">
+      <DependentUpon>frmListinoBaseLink.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMarketingFiltro.resx">
+      <DependentUpon>frmMarketingFiltro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmConsegnaModificaDati.resx">
+      <DependentUpon>frmConsegnaModificaDati.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmConsegnaImballaggio.resx">
+      <DependentUpon>frmConsegnaImballaggio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoModelloCubetto.resx">
+      <DependentUpon>frmListinoModelloCubetto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOrdineAllegaFileOnline.resx">
+      <DependentUpon>frmOrdineAllegaFileOnline.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoSoluzioneImballo.resx">
+      <DependentUpon>frmMagazzinoSoluzioneImballo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoDatiWebLB.resx">
+      <DependentUpon>frmListinoDatiWebLB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoComposizioneCarta.resx">
+      <DependentUpon>frmListinoComposizioneCarta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoPrezzoLavorazione.resx">
+      <DependentUpon>frmListinoPrezzoLavorazione.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCalcLavoraz.resx">
+      <DependentUpon>frmCalcLavoraz.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmLocked.resx">
+      <DependentUpon>frmLocked.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoPubblicazioneOnline.resx">
+      <DependentUpon>frmListinoPubblicazioneOnline.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmFormatoProdsuModCom.resx">
+      <DependentUpon>frmFormatoProdsuModCom.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoFormatoMacchina.resx">
+      <DependentUpon>frmListinoFormatoMacchina.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoColoreStampa.resx">
+      <DependentUpon>frmListinoColoreStampa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoMacchinario.resx">
+      <DependentUpon>frmListinoMacchinario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoResa.resx">
+      <DependentUpon>frmListinoResa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoBase.resx">
+      <DependentUpon>frmListinoBase.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOpzioniTabSec.resx">
+      <DependentUpon>frmOpzioniTabSec.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoPreventivazione.resx">
+      <DependentUpon>frmListinoPreventivazione.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCaller.resx">
+      <DependentUpon>frmCaller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoTipoCarta.resx">
+      <DependentUpon>frmListinoTipoCarta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoFormatoProdotto.resx">
+      <DependentUpon>frmListinoFormatoProdotto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmWait.resx">
+      <DependentUpon>frmWait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\old\frmSelectCat.resx">
+      <DependentUpon>frmSelectCat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCreaFormerKey.resx">
+      <DependentUpon>frmCreaFormerKey.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmInsertUsb.resx">
+      <DependentUpon>frmInsertUsb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMonitor.resx">
+      <DependentUpon>frmMonitor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCommessaModello.resx">
+      <DependentUpon>frmCommessaModello.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoImballaggioColli.resx">
+      <DependentUpon>frmMagazzinoImballaggioColli.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmProntoRitiroCliente.resx">
+      <DependentUpon>frmProntoRitiroCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoCaricaColli.resx">
+      <DependentUpon>frmMagazzinoCaricaColli.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmConsegnaOrdiniRCTF.resx">
+      <DependentUpon>frmConsegnaOrdiniRCTF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMonitorOperat.resx">
+      <DependentUpon>frmMonitorOperat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoCli.resx">
+      <DependentUpon>frmListinoCli.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\old\frmCatProd.resx">
+      <DependentUpon>frmCatProd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMarketingEffettivo.resx">
+      <DependentUpon>frmMarketingEffettivo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMarketingProgrammato.resx">
+      <DependentUpon>frmMarketingProgrammato.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmGruppo.resx">
+      <DependentUpon>frmGruppo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMarketingEmail.resx">
+      <DependentUpon>frmMarketingEmail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmBrowser.resx">
+      <DependentUpon>frmBrowser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmConsegnaOperatore.resx">
+      <DependentUpon>frmConsegnaOperatore.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmConsegnaProgrammata.resx">
+      <DependentUpon>frmConsegnaProgrammata.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\old\frmAccordoForn.resx">
+      <DependentUpon>frmAccordoForn.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoMovimento.resx">
+      <DependentUpon>frmMagazzinoMovimento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCalcPeso.resx">
+      <DependentUpon>frmCalcPeso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmEmailOrd.resx">
+      <DependentUpon>frmEmailOrd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmContabilitaFatturaRiepilogativaRicavo.resx">
+      <DependentUpon>frmContabilitaFatturaRiepilogativaRicavo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCommessaExportCTP.resx">
+      <DependentUpon>frmCommessaExportCTP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOrdineModificaImporti.resx">
+      <DependentUpon>frmOrdineModificaImporti.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmContabilitaPagamento.resx">
+      <DependentUpon>frmContabilitaPagamento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmContabilitaRicavo.resx">
+      <DependentUpon>frmContabilitaRicavo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\old\frmListPers.resx">
+      <DependentUpon>frmListPers.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoBarCodeRCTF.resx">
+      <DependentUpon>frmMagazzinoBarCodeRCTF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCommessa.resx">
+      <DependentUpon>frmCommessa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoCarico.resx">
+      <DependentUpon>frmMagazzinoCarico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmUtente.resx">
+      <DependentUpon>frmUtente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOrdine.resx">
+      <DependentUpon>frmOrdine.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMagazzinoRisorsa.resx">
+      <DependentUpon>frmMagazzinoRisorsa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCalcPrezzoIndicativo.resx">
+      <DependentUpon>frmCalcPrezzoIndicativo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmOpzioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOpzioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmPostit.resx">
+      <DependentUpon>frmPostit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmListinoProdotto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmListinoProdotto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmVoceRubrica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmVoceRubrica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\old\frmSplashScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmStampa.resx">
+      <DependentUpon>frmStampa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneSituazioneClienti.resx">
+      <DependentUpon>ucAmministrazioneSituazioneClienti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneDashboard.resx">
+      <DependentUpon>ucAmministrazioneDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneCheckMassivo.resx">
+      <DependentUpon>ucAmministrazioneCheckMassivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneDashboardCount.resx">
+      <DependentUpon>ucAmministrazioneDashboardCount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneF24.resx">
+      <DependentUpon>ucAmministrazioneF24.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneContabilita.resx">
+      <DependentUpon>ucAmministrazioneContabilita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMagazzinoDecodificaVociCosto.resx">
+      <DependentUpon>ucMagazzinoDecodificaVociCosto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucContabCostoAmmortamento.resx">
+      <DependentUpon>ucContabCostoAmmortamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucDocumentiFiscaliXMLRicavo.resx">
+      <DependentUpon>ucDocumentiFiscaliXMLRicavo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucDocumentiFiscaliXMLCosto.resx">
+      <DependentUpon>ucDocumentiFiscaliXMLCosto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoGruppoVariante.resx">
+      <DependentUpon>ucListinoGruppoVariante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMagazzinoCarichiDiMagazzino.resx">
+      <DependentUpon>ucMagazzinoCarichiDiMagazzino.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMagazzinoRichieste.resx">
+      <DependentUpon>ucMagazzinoRichieste.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMagazzinoOrdiniAcquisto.resx">
+      <DependentUpon>ucMagazzinoOrdiniAcquisto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMagazzinoOrdini.resx">
+      <DependentUpon>ucMagazzinoOrdini.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMagazzinoCercaRisorsa.resx">
+      <DependentUpon>ucMagazzinoCercaRisorsa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMagazzinoMgrMovimenti.resx">
+      <DependentUpon>ucMagazzinoMgrMovimenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\baseUI\control\ucComboRubrica.resx">
+      <DependentUpon>ucComboRubrica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucDocumentiFiscaliEditRow.resx">
+      <DependentUpon>ucDocumentiFiscaliEditRow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMailManager.resx">
+      <DependentUpon>ucMailManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMagazzinoStatistiche.resx">
+      <DependentUpon>ucMagazzinoStatistiche.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMagazzinoMain.resx">
+      <DependentUpon>ucMagazzinoMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucCaratteristicheProdotto.resx">
+      <DependentUpon>ucCaratteristicheProdotto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneConsegne.resx">
+      <DependentUpon>ucAmministrazioneConsegne.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazionePromo.resx">
+      <DependentUpon>ucAmministrazionePromo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneOrdiniBonifico.resx">
+      <DependentUpon>ucAmministrazioneOrdiniBonifico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneCoupon.resx">
+      <DependentUpon>ucAmministrazioneCoupon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneReport.resx">
+      <DependentUpon>ucAmministrazioneReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneProcedure.resx">
+      <DependentUpon>ucAmministrazioneProcedure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneStep.resx">
+      <DependentUpon>ucAmministrazioneStep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOrdiniListaPreview.resx">
+      <DependentUpon>ucOrdiniListaPreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucCommesseRegoleCalcolo.resx">
+      <DependentUpon>ucCommesseRegoleCalcolo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucProduzioneOrdiniSelezionati.resx">
+      <DependentUpon>ucProduzioneOrdiniSelezionati.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucProduzioneVerify.resx">
+      <DependentUpon>ucProduzioneVerify.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMailPreview.resx">
+      <DependentUpon>ucMailPreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMail.resx">
+      <DependentUpon>ucMail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMailOrdini.resx">
+      <DependentUpon>ucMailOrdini.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMailPreventivi.resx">
+      <DependentUpon>ucMailPreventivi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOperatoreConfermaConsegne.resx">
+      <DependentUpon>ucOperatoreConfermaConsegne.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoOmaggi.resx">
+      <DependentUpon>ucListinoOmaggi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOperatoreCodaLavori.resx">
+      <DependentUpon>ucOperatoreCodaLavori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucProduzioneEtichette.resx">
+      <DependentUpon>ucProduzioneEtichette.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucProduzioneRicamo.resx">
+      <DependentUpon>ucProduzioneRicamo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucProduzionePackaging.resx">
+      <DependentUpon>ucProduzionePackaging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucProduzioneDigitale.resx">
+      <DependentUpon>ucProduzioneDigitale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucProduzione.resx">
+      <DependentUpon>ucProduzione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucCommesseModelli.resx">
+      <DependentUpon>ucCommesseModelli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOperatoreConsegna.resx">
+      <DependentUpon>ucOperatoreConsegna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOperatoreImballaggioCorriere.resx">
+      <DependentUpon>ucOperatoreImballaggioCorriere.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOperatore.resx">
+      <DependentUpon>ucOperatore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOperatoreImballaggio.resx">
+      <DependentUpon>ucOperatoreImballaggio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOperatoreProduzione.resx">
+      <DependentUpon>ucOperatoreProduzione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucRepartoWeb.resx">
+      <DependentUpon>ucRepartoWeb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucConsegneGlsAdmin.resx">
+      <DependentUpon>ucConsegneGlsAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucSitoWebRecensioniProdotti.resx">
+      <DependentUpon>ucSitoWebRecensioniProdotti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucSitoWeb.resx">
+      <DependentUpon>ucSitoWeb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoImpatto.resx">
+      <DependentUpon>ucListinoImpatto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucFiltroCorriere.resx">
+      <DependentUpon>ucFiltroCorriere.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListino.resx">
+      <DependentUpon>ucListino.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoBaseDatiWeb.resx">
+      <DependentUpon>ucListinoBaseDatiWeb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoValidatorError.resx">
+      <DependentUpon>ucListinoValidatorError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoFormatoProdotto.resx">
+      <DependentUpon>ucListinoFormatoProdotto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucSitoWebBannerSito.resx">
+      <DependentUpon>ucSitoWebBannerSito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoFustelle.resx">
+      <DependentUpon>ucListinoFustelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucCaller.resx">
+      <DependentUpon>ucCaller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoLavorazioniGestione.resx">
+      <DependentUpon>ucListinoLavorazioniGestione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMarketingWeb.resx">
+      <DependentUpon>ucMarketingWeb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOrdiniDaFatturare.resx">
+      <DependentUpon>ucOrdiniDaFatturare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoTipiCarta.resx">
+      <DependentUpon>ucListinoTipiCarta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucBase.resx">
+      <DependentUpon>ucBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucProduzioneOffset.resx">
+      <DependentUpon>ucProduzioneOffset.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoColoriStampa.resx">
+      <DependentUpon>ucListinoColoriStampa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoIcoLavorazione.resx">
+      <DependentUpon>ucListinoIcoLavorazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoFormatoMacchina.resx">
+      <DependentUpon>ucListinoFormatoMacchina.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoMacchinari.resx">
+      <DependentUpon>ucListinoMacchinari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoPreventivazione.resx">
+      <DependentUpon>ucListinoPreventivazione.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneEmailAvviso.resx">
+      <DependentUpon>ucAmministrazioneEmailAvviso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoResa.resx">
+      <DependentUpon>ucListinoResa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucScadenzarioMese.resx">
+      <DependentUpon>ucScadenzarioMese.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucScadenziarioSettimana.resx">
+      <DependentUpon>ucScadenziarioSettimana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAnteprimaLavoro.resx">
+      <DependentUpon>ucAnteprimaLavoro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAnteprimaOperatore.resx">
+      <DependentUpon>ucAnteprimaOperatore.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucDocumentiFiscali.resx">
+      <DependentUpon>ucDocumentiFiscali.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMessaggiInterni.resx">
+      <DependentUpon>ucMessaggiInterni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucConsegneAlbero.resx">
+      <DependentUpon>ucConsegneAlbero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAllegati.resx">
+      <DependentUpon>ucAllegati.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOrdiniAdmin.resx">
+      <DependentUpon>ucOrdiniAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneRubricaMarketing.resx">
+      <DependentUpon>ucAmministrazioneRubricaMarketing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMarketingProgrammato.resx">
+      <DependentUpon>ucMarketingProgrammato.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMarketing.resx">
+      <DependentUpon>ucMarketing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneRubricaGruppi.resx">
+      <DependentUpon>ucAmministrazioneRubricaGruppi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneSituazioneContabile.resx">
+      <DependentUpon>ucAmministrazioneSituazioneContabile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucDocumentiStato.resx">
+      <DependentUpon>ucDocumentiStato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucStoricoAcquisti.resx">
+      <DependentUpon>ucStoricoAcquisti.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucStoricoPrezziRis.resx">
+      <DependentUpon>ucStoricoPrezziRis.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMagazzinoRisorseAcquisto.resx">
+      <DependentUpon>ucMagazzinoRisorseAcquisto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucReport.resx">
+      <DependentUpon>ucReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucConsegneGiorno.resx">
+      <DependentUpon>ucConsegneGiorno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucCommesseStato.resx">
+      <DependentUpon>ucCommesseStato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAnteprima.resx">
+      <DependentUpon>ucAnteprima.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucCommesseAnteprima.resx">
+      <DependentUpon>ucCommesseAnteprima.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMain.resx">
+      <DependentUpon>ucMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneOperatori.resx">
+      <DependentUpon>ucAmministrazioneOperatori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOrdiniAnteprima.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucOrdiniAnteprima.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOrdiniCom.resx">
+      <DependentUpon>ucOrdiniCom.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneParametri.resx">
+      <DependentUpon>ucAmministrazioneParametri.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucCommesseRisorse.resx">
+      <DependentUpon>ucCommesseRisorse.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucCommesseDettaglio.resx">
+      <DependentUpon>ucCommesseDettaglio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucLavorazioni.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucLavorazioni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOrdiniDettaglio.resx">
+      <DependentUpon>ucOrdiniDettaglio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOrdini.resx">
+      <DependentUpon>ucOrdini.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazione.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucAmministrazione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazionePagamenti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucAmministrazionePagamenti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMagazzinoRisorse.resx">
+      <DependentUpon>ucMagazzinoRisorse.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucCommesse.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucCommesse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMessaggiInterniSmall.resx">
+      <DependentUpon>ucMessaggiInterniSmall.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucListinoProdotti.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucListinoProdotti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucAmministrazioneRubrica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ucAmministrazioneRubrica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucOrdiniStatoAdvanced.resx">
+      <DependentUpon>ucOrdiniStatoAdvanced.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucMainToolbar.resx">
+      <DependentUpon>ucMainToolbar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucConsegneSettimana.resx">
+      <DependentUpon>ucConsegneSettimana.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_PrimaNota.png" />
+    <None Include="Resources\_Wait48.png" />
+    <None Include="Resources\_Magazzino48.png" />
+    <None Include="Resources\_NewVersionB.png" />
+    <None Include="Resources\_NewVersionOffB.png" />
+    <None Include="Resources\_NewVersionOff.png" />
+    <None Include="Resources\_NewVersion.png" />
+    <None Include="Resources\_NotaCredito.png" />
+    <None Include="Resources\_StampaMassiva.png" />
+    <None Include="Resources\_Postazione.png" />
+    <None Include="Resources\_UserBig.png" />
+    <None Include="Resources\_RefineAutomatico.png" />
+    <None Include="Resources\_Step2.png" />
+    <None Include="Resources\_Step1.png" />
+    <None Include="Resources\_ManageConsegna.png" />
+    <None Include="Resources\_RisorsaRichiesta.png" />
+    <None Include="Resources\_RisorsaStorno.png" />
+    <None Include="Resources\_MaterialeConsumo.png" />
+    <None Include="Resources\_RigeneraCoupon.png" />
+    <None Include="Resources\_Next.png" />
+    <None Include="Resources\_previous.png" />
+    <None Include="Resources\_Timer.png" />
+    <None Include="Resources\_Text.png" />
+    <None Include="Resources\_Template.png" />
+    <None Include="Resources\_Marketing.png" />
+    <None Include="Resources\_RisorsaAdd.png" />
+    <None Include="Resources\_PreventivoOff.png" />
+    <None Include="Resources\_PreventivoOn.png" />
+    <None Include="Resources\_Risorsa.png" />
+    <None Include="Resources\_TipoCarta.png" />
+    <None Include="Resources\_Server48Orange.png" />
+    <None Include="Resources\_Server48.png" />
+    <None Include="Resources\_Prodotto.png" />
+    <None Include="Resources\_RefreshCombo.png" />
+    <None Include="Resources\_note.png" />
+    <None Include="Resources\_Zip.png" />
+    <None Include="Resources\_Unico.png" />
+    <None Include="Resources\_Merge.png" />
+    <None Include="Resources\_Preventivazione.png" />
+    <None Include="Resources\_Wizard20.png" />
+    <None Include="Resources\_test.png" />
+    <None Include="Resources\_remove.png" />
+    <None Include="Resources\_UscitoAll.png" />
+    <None Include="Resources\_Uscito.png" />
+    <None Include="Resources\_Think.png" />
+    <None Include="Resources\_Panels.png" />
+    <None Include="Resources\_UsbKey.png" />
+    <None Include="Resources\_Think48.png" />
+    <None Include="Resources\_Telefono48.png" />
+    <None Include="Resources\_PrendiInCarico.png" />
+    <None Include="Resources\_password.png" />
+    <None Include="Resources\_Wait.png" />
+    <None Include="Resources\_prodotto48.png" />
+    <None Include="Resources\_magazzino26.png" />
+    <None Include="Resources\_xml.png" />
+    <None Include="Resources\_OrdineAcquisto.png" />
+    <None Include="Resources\_pdf1.png" />
+    <None Include="Resources\_NuovoCliente1.png" />
+    <None Include="Resources\_StatoDisattivo.png" />
+    <None Include="Resources\_StatoAttivo.png" />
+    <None Include="Resources\_Toolbox.png" />
+    <None Include="Resources\_Risposta.png" />
+    <None Include="Resources\_Step.png" />
+    <None Include="Resources\_Procedura1.png" />
+    <None Include="Resources\_Procedura.png" />
+    <None Include="Resources\_SelezionatiLock.png" />
+    <None Include="Resources\_LucchettoRosso.png" />
+    <None Include="Resources\internet.png" />
+    <None Include="Resources\_internet.png" />
+    <None Include="Resources\_DaVerificareLock.png" />
+    <None Include="Resources\_CommessaLock.png" />
+    <None Include="Resources\_IcoLock1.png" />
+    <None Include="Resources\_CreaLocked.png" />
+    <None Include="Resources\_FileJobLocked.png" />
+    <Content Include="code\template\ContenitoreAnteprima.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>ContenitoreAnteprima.vb</LastGenOutput>
+    </Content>
+    <None Include="Resources\_FitToWidth.png" />
+    <None Include="Resources\_Etichetta.png" />
+    <None Include="Resources\MainBarEx.png" />
+    <None Include="Resources\ico_LB.png" />
+    <None Include="Resources\question-shield-48.png" />
+    <None Include="Resources\coins.png" />
+    <Content Include="code\template\ListaStampa.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>ListaStampa.vb</LastGenOutput>
+    </Content>
+    <Content Include="NewLogo.ico" />
+    <Content Include="NewLogoEx.ico" />
+    <None Include="Resources\Default_Tab_Bar_Icon30.png" />
+    <None Include="Resources\ico_DL_R.png" />
+    <None Include="Resources\ico_DL_R1.png" />
+    <None Include="Resources\ico_LV_R.png" />
+    <None Include="Resources\35FLOPPY.BMP" />
+    <None Include="Resources\CLSDFOLD.BMP" />
+    <None Include="Resources\4%281%291.png" />
+    <Content Include="Resources\Actions20_16.png" />
+    <None Include="Resources\advance-24.png" />
+    <None Include="Resources\bar_chart-24.png" />
+    <None Include="Resources\backup1.png" />
+    <None Include="Resources\advance-241.png" />
+    <None Include="Resources\approval-48.png" />
+    <None Include="Resources\AttenzioneCommessa48.png" />
+    <None Include="Resources\AttenzioneCommessa481.png" />
+    <Content Include="Resources\Business20_11.png" />
+    <Content Include="Resources\check_mark.png" />
+    <None Include="Resources\flash_off.png" />
+    <None Include="Resources\do_not_mix-96.png" />
+    <None Include="Resources\do_not_mix-24.png" />
+    <None Include="Resources\flash_auto.png" />
+    <None Include="Resources\flash_auto-96.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\close1.png" />
+    <None Include="Resources\info-24.png" />
+    <None Include="Resources\ico_GV_R.png" />
+    <None Include="Resources\currency_exchange-24.png" />
+    <None Include="Resources\folder_open.png" />
+    <None Include="Resources\check_mark1.png" />
+    <None Include="Resources\IcoFlagGreen.png" />
+    <None Include="Resources\IcoFlagOrange.png" />
+    <None Include="Resources\IcoFlagYellow.png" />
+    <None Include="Resources\IcoFlagRed.png" />
+    <None Include="Resources\icoLeggenda.png" />
+    <None Include="Resources\device-desktop.png" />
+    <None Include="Resources\icoZoom.png" />
+    <None Include="Resources\endI.png" />
+    <None Include="Resources\icoConsigliatoEx.png" />
+    <Content Include="Resources\Miscellaneous30_12.png" />
+    <Content Include="Resources\Official.ico" />
+    <None Include="Resources\_Cartella.png" />
+    <None Include="Resources\_Dividi.png" />
+    <None Include="Resources\_GLS.png" />
+    <None Include="Resources\OPENFOLD.BMP" />
+    <None Include="Resources\warningscudo.png" />
+    <None Include="Resources\_Foto.png" />
+    <None Include="Resources\packagingMisure.png" />
+    <None Include="Resources\whatsapp.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\rectangle.png" />
+    <None Include="Resources\search-24.png" />
+    <None Include="Resources\zoom.png" />
+    <None Include="Resources\text.png" />
+    <None Include="Resources\switch_camera-24.png" />
+    <None Include="Resources\usb_connected1.png" />
+    <None Include="Resources\printer1.png" />
+    <None Include="Resources\_CartellaAperta2.png" />
+    <None Include="Resources\_CaricoDiMagazzino.png" />
+    <None Include="Resources\_CaricoDiMagazzino24.png" />
+    <None Include="Resources\_barcode24.png" />
+    <None Include="Resources\_barcode242.png" />
+    <None Include="Resources\_administrator.png" />
+    <None Include="Resources\_Cliente.png" />
+    <None Include="Resources\_DeleteAll.png" />
+    <None Include="Resources\_DeleteRegistration.png" />
+    <None Include="Resources\_BannerSIto.png" />
+    <None Include="Resources\_CategoriaFustella.png" />
+    <None Include="Resources\_BigliettoDaVisita.png" />
+    <None Include="Resources\_Detail.png" />
+    <None Include="Resources\_Front.png" />
+    <None Include="Resources\_Back.png" />
+    <None Include="Resources\_Estrai.png" />
+    <None Include="Resources\_Converti.png" />
+    <None Include="Resources\_FustellaTemplate.png" />
+    <None Include="Resources\_GruppiVarianti.png" />
+    <None Include="Resources\_Comanda.png" />
+    <None Include="Resources\_Database.png" />
+    <None Include="Resources\_CodaMetti.png" />
+    <None Include="Resources\_CodaTogli.png" />
+    <None Include="Resources\_Calendario.png" />
+    <None Include="Resources\_CommessaNew.png" />
+    <None Include="Resources\_googleLogo.png" />
+    <None Include="Resources\_EtichettaSenza.png" />
+    <None Include="Resources\_Divieto.png" />
+    <None Include="Resources\_ClosedBox.png" />
+    <None Include="Resources\_Azienda.png" />
+    <None Include="Resources\_FloraLogo.png" />
+    <None Include="Resources\_FotoHd.png" />
+    <None Include="Resources\_Duplicati.png" />
+    <None Include="Resources\_ControlloOperatore.png" />
+    <None Include="Resources\_Errore.png" />
+    <None Include="Resources\_DataGarantita26.png" />
+    <None Include="Resources\_DataGarantita48.png" />
+    <None Include="Resources\_Bilancio26.png" />
+    <None Include="Resources\_Bilancio48.png" />
+    <None Include="Resources\_ammortamento48.png" />
+    <None Include="Resources\_calendario48.png" />
+    <None Include="Resources\_documenti48.png" />
+    <None Include="Resources\_DecodificaVociCosto.png" />
+    <Content Include="Resources\_DocumentoFiscaleDaPagare.png" />
+    <Content Include="Resources\_DocumentoFiscalePagato.png" />
+    <None Include="Resources\_FotoHdAdd.png" />
+    <None Include="Resources\_extraData.png" />
+    <None Include="Resources\_F24.png" />
+    <None Include="Resources\_FlussiMensili48.png" />
+    <None Include="Resources\_ExportCSV.png" />
+    <None Include="Resources\_Ghost48.png" />
+    <None Include="Resources\_Ghost481.png" />
+    <None Include="Resources\_Ghost26.png" />
+    <Content Include="Resources\_IcoLock.png" />
+    <None Include="Resources\_Importa.png" />
+    <None Include="Resources\_Indirizzo.png" />
+    <None Include="Resources\_ListinoBase.png" />
+    <None Include="Resources\_Incolla.png" />
+    <None Include="Resources\_LinkOk.png" />
+    <None Include="Resources\_LinkOk48.png" />
+    <None Include="Resources\_icoUnknowType.png" />
+    <Content Include="Resources\_LucchettoChiuso.png" />
+    <None Include="Resources\_downloadLock.png" />
+    <None Include="Resources\_UploadLocked.png" />
+    <None Include="Resources\_Adatta.png" />
+    <None Include="Resources\_FileJOB.png" />
+    <None Include="Resources\_MandaFlusso.png" />
+    <None Include="Resources\_Opzioni.png" />
+    <None Include="Resources\_IcoZipColor.png" />
+    <None Include="Resources\_IcoPdfColor.png" />
+    <None Include="Resources\_Ordinamento.png" />
+    <None Include="Resources\_CartaDiCredito.png" />
+    <None Include="Resources\_HotFolder.png" />
+    <None Include="Resources\_Strumenti.png" />
+    <None Include="Resources\_11.png" />
+    <None Include="Resources\_user1.png" />
+    <None Include="Resources\_Peso.png" />
+    <None Include="Resources\_Calcolatrice.png" />
+    <None Include="Resources\_righello.png" />
+    <None Include="Resources\_Promo.png" />
+    <None Include="Resources\_risolvi.png" />
+    <None Include="Resources\_1.png" />
+    <None Include="Resources\_stop.png" />
+    <None Include="Resources\_MailOut.png" />
+    <None Include="Resources\_CaricoMagazzino.png" />
+    <None Include="Resources\_Sottoscorta.png" />
+    <None Include="Resources\_Segui.png" />
+    <None Include="Resources\_Omaggio.png" />
+    <None Include="Resources\_NotifyBkg.png" />
+    <None Include="Resources\_Soluzione1.png" />
+    <None Include="Resources\_ConnessioneServer.png" />
+    <None Include="Resources\_Notifica.png" />
+    <None Include="Resources\_Download.png" />
+    <None Include="Resources\_RepConsumo.jpg" />
+    <None Include="Resources\_RepStampaOffset.jpg" />
+    <None Include="Resources\_RepRicamo.jpg" />
+    <None Include="Resources\_RepPackaging.jpg" />
+    <None Include="Resources\_RepLastre.jpg" />
+    <None Include="Resources\_RepEtichette.jpg" />
+    <None Include="Resources\_RepDigitale.jpg" />
+    <None Include="Resources\_Macchinari.png" />
+    <None Include="Resources\_Chiamata.png" />
+    <None Include="Resources\_ChiamataPersa.png" />
+    <None Include="Resources\_RecensioneVuota.png" />
+    <None Include="Resources\_Recensione.png" />
+    <None Include="Resources\_Sgancia.png" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\System.Xml.XmlNode.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\lock1.png" />
+    <None Include="Resources\pdf.png" />
+    <None Include="Resources\pdf1.png" />
+    <None Include="Resources\26%2821%29.png" />
+    <None Include="Resources\26%2821%291.png" />
+    <None Include="Resources\appicns-Chrome-icon.png" />
+    <None Include="Resources\002_27.png" />
+    <None Include="Resources\filing_cabinet.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\edit1.png" />
+    <None Include="Resources\note%281%29.png" />
+    <None Include="Resources\book.png" />
+    <None Include="Resources\fantasy.png" />
+    <None Include="Resources\file1.png" />
+    <None Include="Resources\folder1.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\_Ordine.png" />
+    <None Include="Resources\_Allega.png" />
+    <None Include="Resources\_CartellaAperta.png" />
+    <None Include="Resources\_Shell.png" />
+    <None Include="Resources\_Anteprima.png" />
+    <None Include="Resources\_Messaggio.png" />
+    <None Include="Resources\_CartellaAperta1.png" />
+    <None Include="Resources\_Attenzione.png" />
+    <None Include="Resources\_Commessa.png" />
+    <None Include="Resources\_Consegna.png" />
+    <None Include="Resources\_DocumentoFiscale.png" />
+    <None Include="Resources\_LucchettoAperto.png" />
+    <None Include="Resources\_Log.png" />
+    <None Include="Resources\_Ok.png" />
+    <None Include="Resources\_Annulla.png" />
+    <None Include="Resources\_Sorgenti.png" />
+    <None Include="Resources\_Reset.png" />
+    <None Include="Resources\_Prezzo.png" />
+    <None Include="Resources\_PubblicazioneWeb.png" />
+    <None Include="Resources\_pdf.png" />
+    <None Include="Resources\_Resa.png" />
+    <None Include="Resources\_Telefono.png" />
+    <None Include="Resources\_ColoreStampa.png" />
+    <None Include="Resources\_Stampa.png" />
+    <None Include="Resources\_Aggiorna.png" />
+    <None Include="Resources\_Export.png" />
+    <None Include="Resources\_Aggiungi.png" />
+    <None Include="Resources\_Rimuovi.png" />
+    <None Include="Resources\_Lavorazione.png" />
+    <None Include="Resources\_Elimina.png" />
+    <None Include="Resources\_Modifica.png" />
+    <None Include="Resources\_Duplica.png" />
+    <None Include="Resources\_Soluzione.png" />
+    <None Include="Resources\_Cerca.png" />
+    <None Include="Resources\_CartaComposta.png" />
+    <None Include="Resources\_Corriere.png" />
+    <None Include="Resources\_paypal.png" />
+    <None Include="Resources\_Pagamento.png" />
+    <None Include="Resources\_Coupon.png" />
+    <None Include="Resources\_Su.png" />
+    <None Include="Resources\_Giu.png" />
+    <None Include="Resources\_Mail.png" />
+    <None Include="Resources\_Ftp.png" />
+    <None Include="Resources\_Filtro.png" />
+    <None Include="Resources\_barcode.png" />
+    <None Include="Resources\_BarcodeScanner.png" />
+    <None Include="Resources\_Consegna1.png" />
+    <None Include="Resources\_FormatoMacchina.png" />
+    <None Include="Resources\_FormatoProdotto.png" />
+    <None Include="Resources\_Collegamento.png" />
+    <None Include="Resources\_Save.png" />
+    <None Include="Resources\_NuovoCliente.png" />
+    <None Include="Resources\_Spesa.png" />
+    <None Include="Resources\_bank.png" />
+    <None Include="Resources\_Commessa1.png" />
+    <None Include="Resources\_ModelloCommessa.png" />
+    <None Include="Resources\_user.png" />
+    <None Include="Resources\_Magazzino.png" />
+    <None Include="Resources\bartolini.png" />
+    <None Include="Resources\Gls.png" />
+    <None Include="Resources\_CategoriaLavorazioni.png" />
+    <None Include="Resources\logo_gls.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\brt.png" />
+    <None Include="Resources\barcode2.png" />
+    <None Include="Resources\glsEtichetta.png" />
+    <None Include="Resources\_help.png" />
+    <None Include="Resources\_HelpRadioButton.png" />
+    <None Include="Resources\_HelpCombobox.png" />
+    <None Include="Resources\_HelpCheckBox.jpg" />
+    <None Include="Resources\icoZoom.gif" />
+    <None Include="Resources\_upload.png" />
+    <Content Include="code\template\MailCoupon.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailCoupon.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="code\template\MailRigeneraPwd.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailRigeneraPwd.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img\Former.ico" />
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="Resources\web10.png" />
+    <None Include="Resources\WP_20131015_001.jpg" />
+    <None Include="Resources\Web2.png" />
+    <None Include="Resources\Web1.png" />
+    <None Include="Resources\Web.png" />
+    <None Include="Resources\warning_shieldWhite.png" />
+    <None Include="Resources\warning_shield.png" />
+    <None Include="Resources\calendar.jpg" />
+    <None Include="Resources\002_22.png" />
+    <None Include="Resources\26%2828%29.png" />
+    <None Include="Resources\128%2831%29.png" />
+    <None Include="Resources\48%2831%29.png" />
+    <None Include="Resources\256%2812%29.png" />
+    <None Include="Resources\4%281%29.png" />
+    <None Include="Resources\Actions20_0.png" />
+    <None Include="Resources\Actions20_19.png" />
+    <None Include="Resources\Actions20_15.png" />
+    <None Include="Resources\Actions20_122.png" />
+    <None Include="Resources\Actions30_12.png" />
+    <None Include="Resources\Actions20_12.png" />
+    <None Include="Resources\26%2812%29.png" />
+    <None Include="Resources\agfa.png" />
+    <Content Include="Resources\Annulla.gif" />
+    <None Include="Resources\calendar1.jpg" />
+    <None Include="Resources\BarCodeOld.jpg" />
+    <None Include="Resources\backup.png" />
+    <None Include="Resources\Box.bmp" />
+    <None Include="Resources\Box_closed_icon.png" />
+    <None Include="Resources\barcode.png" />
+    <None Include="Resources\checkmark.png" />
+    <None Include="Resources\barcode1.png" />
+    <None Include="Resources\calculator.png" />
+    <None Include="Resources\checkmark1.png" />
+    <None Include="Resources\checkmark2.png" />
+    <None Include="Resources\begin.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\bill.png" />
+    <None Include="Resources\checkout.png" />
+    <None Include="Resources\billing.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\cash_receiving.png" />
+    <None Include="Resources\banknotes.png" />
+    <None Include="Resources\check_book.png" />
+    <None Include="Resources\bank_cards.png" />
+    <None Include="Resources\check_book1.png" />
+    <None Include="Resources\banknotes1.png" />
+    <None Include="Resources\bank_cards1.png" />
+    <None Include="Resources\bar.png" />
+    <None Include="Resources\Button Add.png" />
+    <None Include="Resources\Color Palette.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\Button Add1.png" />
+    <None Include="Resources\Chart Area Up.png" />
+    <None Include="Resources\Button Check.png" />
+    <None Include="Resources\Button Delete.png" />
+    <None Include="Resources\Application.png" />
+    <None Include="Resources\Calendar1.png" />
+    <None Include="Resources\Calendario.png" />
+    <None Include="Resources\Computer.png" />
+    <None Include="Resources\Arrows30-1.png" />
+    <None Include="Resources\Arrows20-1.png" />
+    <None Include="Resources\Arrows20-6.png" />
+    <None Include="Resources\Business30-11.png" />
+    <None Include="Resources\Art20-11.png" />
+    <None Include="Resources\Business30-9.png" />
+    <None Include="Resources\Business30-111.png" />
+    <None Include="Resources\Communication20-4.png" />
+    <None Include="Resources\calendar2.png" />
+    <None Include="Resources\clock1.png" />
+    <None Include="Resources\business_contact.png" />
+    <None Include="Resources\biglietti.png" />
+    <Content Include="Resources\Conferma.gif" />
+    <None Include="Resources\info.jpg" />
+    <None Include="Resources\icoOk.jpg" />
+    <None Include="Resources\icoCancel.jpg" />
+    <None Include="Resources\icoCli.jpg" />
+    <None Include="Resources\icoCal.jpg" />
+    <None Include="Resources\icoPc.jpg" />
+    <None Include="Resources\icoPost.jpg" />
+    <None Include="Resources\icoAlert.jpg" />
+    <None Include="Resources\icoMoney.jpg" />
+    <None Include="Resources\icoOrder.jpg" />
+    <None Include="Resources\icoListPers.jpg" />
+    <None Include="Resources\icoCom.jpg" />
+    <None Include="Resources\icoCerca.jpg" />
+    <None Include="Resources\icoComNew.jpg" />
+    <None Include="Resources\icoCalc.jpg" />
+    <None Include="Resources\icoEmail.jpg" />
+    <None Include="Resources\icoFolder.jpg" />
+    <None Include="Resources\EtichettaPacco1.jpg" />
+    <None Include="Resources\DocumentoFiscale.jpg" />
+    <None Include="Resources\icoAdd.jpg" />
+    <None Include="Resources\icoDel.jpg" />
+    <None Include="Resources\icoCestino.jpg" />
+    <Content Include="Resources\Control Panel2.ico" />
+    <None Include="Resources\desktopicon_trash.png" />
+    <None Include="Resources\Corriere.png" />
+    <None Include="Resources\icoFindBarcode.jpg" />
+    <None Include="Resources\icoCal1.jpg" />
+    <None Include="Resources\Corriere1.png" />
+    <None Include="Resources\exitForm.png" />
+    <None Include="Resources\fork.png" />
+    <None Include="Resources\end.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\folder%281%29.png" />
+    <None Include="Resources\data_backup.png" />
+    <None Include="Resources\empty_trash.png" />
+    <None Include="Resources\data_recovery.png" />
+    <None Include="Resources\eraser.png" />
+    <None Include="Resources\grid.png" />
+    <None Include="Resources\Formerkey.png" />
+    <None Include="Resources\dollar_currency_sign.png" />
+    <None Include="Resources\euro_currency_sign.png" />
+    <None Include="Resources\database_server.png" />
+    <None Include="Resources\File.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\Format Bullets.png" />
+    <None Include="Resources\Film.png" />
+    <None Include="Resources\Database.png" />
+    <None Include="Resources\Default-Tool-Bar30-1.png" />
+    <None Include="Resources\File New1.png" />
+    <None Include="Resources\Default-Tab-Bar-Icon20-7.png" />
+    <None Include="Resources\icoCoupon20.png" />
+    <None Include="Resources\GOOGLE-VECTORLOGO-BIZ-128x128.png" />
+    <None Include="Resources\email_send.png" />
+    <None Include="Resources\email_send1.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\filled_flag.png" />
+    <None Include="Resources\dust.png" />
+    <None Include="Resources\icoFileTypePDF.png" />
+    <None Include="Resources\download.jpg" />
+    <None Include="Resources\File New.png" />
+    <Content Include="Resources\icoForn.jpg" />
+    <None Include="Resources\icoProd.jpg" />
+    <None Include="Resources\icoRis.jpg" />
+    <None Include="Resources\icoRub.jpg" />
+    <None Include="Resources\icoRub1.jpg" />
+    <None Include="Resources\icoMagaz.jpg" />
+    <None Include="Resources\icoStato2.jpg" />
+    <None Include="Resources\icoStato1.jpg" />
+    <None Include="Resources\icoStato3.jpg" />
+    <None Include="Resources\icoStato4.jpg" />
+    <None Include="Resources\icoStato5.jpg" />
+    <None Include="Resources\icoStato0.jpg" />
+    <None Include="Resources\icoOrder5.jpg" />
+    <None Include="Resources\icoOrder0.jpg" />
+    <None Include="Resources\icoOrder1.jpg" />
+    <None Include="Resources\icoOrder2.jpg" />
+    <None Include="Resources\icoOrder3.jpg" />
+    <None Include="Resources\icoOrder4.jpg" />
+    <None Include="Resources\icoOrder6.jpg" />
+    <None Include="Resources\icoOrderNew.jpg" />
+    <None Include="Resources\icoPrint.jpg" />
+    <None Include="Resources\icoPrint1.jpg" />
+    <None Include="Resources\icoImg.jpg" />
+    <None Include="Resources\icoNote.jpg" />
+    <None Include="Resources\icoRisNew.jpg" />
+    <None Include="Resources\icoShowAll.jpg" />
+    <None Include="Resources\icoProdNew.jpg" />
+    <None Include="Resources\icoStatoStampa.jpg" />
+    <None Include="Resources\icoSu.jpg" />
+    <None Include="Resources\icoGiu.jpg" />
+    <None Include="Resources\icoParam.jpg" />
+    <None Include="Resources\icoLavorazNew.jpg" />
+    <None Include="Resources\icoLavoraz.jpg" />
+    <None Include="Resources\icoRefresh.jpg" />
+    <None Include="Resources\icoPcNew.jpg" />
+    <None Include="Resources\icoMoneyNew.jpg" />
+    <None Include="Resources\icoPagNew.jpg" />
+    <None Include="Resources\icoMagazNew.jpg" />
+    <None Include="Resources\icoPrintEtich.jpg" />
+    <None Include="Resources\icoPrintDoc.jpg" />
+    <None Include="Resources\icoResize.jpg" />
+    <None Include="Resources\icoPrintEtichAll.jpg" />
+    <None Include="Resources\icoLock.jpg" />
+    <None Include="Resources\icoResizeRight.jpg" />
+    <None Include="Resources\icoPeso.jpg" />
+    <None Include="Resources\icoPrintEtichGruppo.jpg" />
+    <None Include="Resources\icoPrev.jpg" />
+    <None Include="Resources\icoMail.jpg" />
+    <None Include="Resources\icoResizeRightAll.jpg" />
+    <None Include="Resources\IcoLogo.jpg" />
+    <None Include="Resources\icoInserisci.png" />
+    <None Include="Resources\LinearBarcodeScan.jpg" />
+    <None Include="Resources\idea.png" />
+    <None Include="Resources\Link Broken.png" />
+    <None Include="Resources\Link.png" />
+    <None Include="Resources\icoScatola.png" />
+    <None Include="Resources\icoPP.png" />
+    <None Include="Resources\icoMieiCoupon30.png" />
+    <None Include="Resources\left.png" />
+    <None Include="Resources\IcoNotifyBkg2.png" />
+    <None Include="Resources\icoNotificheTel.png" />
+    <None Include="Resources\icoNotificheTel1.png" />
+    <None Include="Resources\ico_W_R.png" />
+    <None Include="Resources\ico_W_R1.png" />
+    <None Include="Resources\ico_F_R.png" />
+    <None Include="Resources\ico_F_R1.png" />
+    <None Include="Resources\ico_F_R2.png" />
+    <None Include="Resources\ico_R.png" />
+    <Content Include="Resources\liveupdate.jpg" />
+    <None Include="Resources\splash.jpg" />
+    <None Include="Resources\loghetto.jpg" />
+    <None Include="Resources\Login.jpg" />
+    <None Include="Resources\todo.jpg" />
+    <None Include="Resources\postit.jpg" />
+    <None Include="Resources\postit1.jpg" />
+    <None Include="Resources\pctArrowRight.jpg" />
+    <None Include="Resources\pctArrowDown.jpg" />
+    <None Include="Resources\logo1.jpg" />
+    <None Include="Resources\maximize.gif" />
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\scatola_aperta.jpg" />
+    <None Include="Resources\scatola_chiusa.jpg" />
+    <None Include="Resources\Newlogo.png" />
+    <None Include="Resources\minimize_box_blue.png" />
+    <None Include="Resources\minimize_box_red.png" />
+    <None Include="Resources\scale.png" />
+    <None Include="Resources\sinchronize.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\sinchronize1.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\minimize.png" />
+    <None Include="Resources\shutdown.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\monitor.png" />
+    <None Include="Resources\sinchronize2.png" />
+    <None Include="Resources\message.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\maximize.png" />
+    <None Include="Resources\reply.png" />
+    <None Include="Resources\truck.png" />
+    <None Include="Resources\question_shieldWhite.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\minus.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\usb_connected.png" />
+    <None Include="Resources\telephone.png" />
+    <None Include="Resources\telephone1.png" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\noFormato.png" />
+    <None Include="Resources\noTipo.png" />
+    <None Include="Resources\no_image.jpg" />
+    <None Include="Resources\Printer.png" />
+    <None Include="Resources\Ruler.png" />
+    <None Include="Resources\View Restore Alt.png" />
+    <None Include="Resources\Question 1.png" />
+    <None Include="Resources\Ruler1.png" />
+    <None Include="Resources\Puzzle.png" />
+    <None Include="Resources\Puzzle1.png" />
+    <None Include="Resources\Puzzle2.png" />
+    <None Include="Resources\Plug.png" />
+    <None Include="Resources\Plug1.png" />
+    <None Include="Resources\scatola.png" />
+    <None Include="Resources\Sound_Music30.png" />
+    <None Include="Resources\Miscellaneous30-5.png" />
+    <None Include="Resources\Settings-&amp;-Info30-7.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\user%281%29.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\up.png" />
+    <None Include="Resources\logoPiccolo.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\ruler2.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\printPdf.png" />
+    <None Include="Resources\shoping_cart.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\operatore.jpg" />
+    <None Include="Resources\qrcode.jpg" />
+    <Content Include="Resources\warning.jpg" />
+    <None Include="Resources\postazione.jpg" />
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FormerBusinessLogicInterface\FormerBusinessLogicInterface.vbproj">
+      <Project>{d056f549-d3d9-4da0-b0a0-5c22bb15cb14}</Project>
+      <Name>FormerBusinessLogicInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerBusinessLogic\FormerBusinessLogic.vbproj">
+      <Project>{ef457977-11ca-4844-8bc1-d544040f1352}</Project>
+      <Name>FormerBusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerConfig\FormerConfig.vbproj">
+      <Project>{31ede59a-0c3f-462b-98e0-4dd454d96847}</Project>
+      <Name>FormerConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerDALSql\FormerDALSql.vbproj">
+      <Project>{ff140a84-b072-4107-9b8a-aa1c4a8f0407}</Project>
+      <Name>FormerDALSql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerDALWeb\FormerDALWeb.vbproj">
+      <Project>{fd43bd6d-dc66-45fe-b4d2-9c5b9cffd39f}</Project>
+      <Name>FormerDALWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerError\FormerError.vbproj">
+      <Project>{643fb19d-f1fa-42ec-9acd-563f3167e80e}</Project>
+      <Name>FormerError</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerGraphics\FormerGraphics.vbproj">
+      <Project>{b694a233-b984-4364-8691-1fee6ebb1fac}</Project>
+      <Name>FormerGraphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerIO\FormerIO.vbproj">
+      <Project>{7cd2a141-7ddc-41aa-ab70-1efee472f182}</Project>
+      <Name>FormerIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerLib\FormerLib.vbproj">
+      <Project>{47910d2b-17b8-437d-b5e6-eae3b203588e}</Project>
+      <Name>FormerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerListiniLib\FormerListiniLib.vbproj">
+      <Project>{E9F40DD4-B7EB-4519-8208-4CC36CBEFE7F}</Project>
+      <Name>FormerListiniLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerPrinter\FormerPrinter.vbproj">
+      <Project>{d6b6d7f1-5ff8-4bbd-81c8-a70d1751e223}</Project>
+      <Name>FormerPrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerWebLabeling\FormerWebLabeling.vbproj">
+      <Project>{1f914a96-59ad-405f-b725-d11c13182475}</Project>
+      <Name>FormerWebLabeling</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ShouldAddDPIScalingManifest="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

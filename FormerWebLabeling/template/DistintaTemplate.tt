@@ -1,0 +1,67 @@
+﻿<#@ template language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="FormerDALSql" #>
+<#@ import namespace="FormerLib" #>
+<#@ import namespace="FormerWebLabeling.MgrGls" #>
+<#@ import namespace="FormerLib.FormerEnum" #>
+<#@ import namespace="System.Web.HttpUtility" #>
+<#@ output extension=".html" #>
+<html>
+  <head></head>
+  <body>
+    <font face="Arial">
+General Logistics Systems Italy S.p.A.<br /><br />
+
+<span style="margin-left: 400px;">Trasmissione del <#=Now.ToString("dd/MM/yyyy HH:mm:ss")#></span><br /><br />
+Sede di appartenenza: <#=MgrWebLabelingGls.SedeGls#><br />
+Codice cliente: <#=MgrWebLabelingGls.CodiceClienteGls#> - FORMER Snc<br /><br />
+
+Contratto mittente:  <#=MgrWebLabelingGls.CodiceContrattoGls#> - FORMER Snc<br /><br />
+
+  <table width="1200" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+	  <td>N&ordm; Sped.</td><td>Destinatario</td><td>Localit&agrave;</td><td>Indirizzo</td><td>Prov</td><td>ZipCode</td><td>Colli</td><td>Peso</td><td>C/Assegno</td><td>BDA</td><td>Note</td>
+    </tr>
+	<tr>
+	  <td colspan="11"><hr></td>
+	</tr>
+<#
+For Each C In Consegne
+	Dim ImportoContrassegno As Decimal = 0
+	Dim ModalitaIncasso As String = String.Empty
+	If C.MetodoPagamento.IdTipoPagam = enMetodoPagamento.ContrassegnoAlRitiro Then
+		If C.ListaIdDocumenti.Count Then
+			Dim IdDoc As Integer = C.ListaIdDocumenti(0)
+			Using d As New Ricavo
+				d.Read(IdDoc)
+				ImportoContrassegno = d.Totale
+				ModalitaIncasso = "ARM"
+			End Using
+		Else
+			'TODO: ?
+		End If
+	End If
+#>
+    <tr>
+	  <td><#=MgrWebLabelingGls.SedeGls#><#=C.CodTrack#></td><td><#=HtmlEncode(C.IndirizzoRif.Destinatario)#></td><td><#=HtmlEncode(C.IndirizzoRif.Citta)#></td><td><#=HtmlEncode(C.IndirizzoRif.Indirizzo)#></td><td><#=HtmlEncode(C.IndirizzoRif.Localita.Provincia)#></td><td><#=C.IndirizzoRif.Cap#></td><td><#=C.NumColli#></td><td><#=C.Peso#></td><td><#=ImportoContrassegno#></td><td></td><td><#=ModalitaIncasso#></td>
+    </tr>
+<# Next #>
+  </table><br />
+
+Totale spedizioni:  <#=Consegne.Count()#>.<br />
+Totale colli:  <#=TotaleColli#>.<br />
+Totale peso:  <#=TotalePeso#> Kg.<br />
+Totale peso volume:  0 Kg.<br />
+Totale spedizioni in contrassegno: <#=TotaleContrassegno#> con valore complessivo di  <#=TotaleRicavoContrassegno#> Euro.<br />
+Totale spedizioni in Porto Franco: <#=TotalePortoFranco#>.<br />
+Totale spedizioni in Porto Assegnato: <#=TotalePortoAssegnato#>.<br />
+Totale spedizioni con assicurazione integrativa 10/10: 0 con valore complessivo di  0 Euro.<br />
+Totale spedizioni con assicurazione integrativa ALL-IN: 0 con valore complessivo di  0 Euro.<br /><br />
+
+Non sono presenti spedizioni con servizi Sprinter che prevedono un costo aggiuntivo.
+    </font>
+  </body>
+</html>

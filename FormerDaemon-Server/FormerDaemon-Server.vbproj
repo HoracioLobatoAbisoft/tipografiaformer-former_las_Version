@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16A40005-5836-4260-87EA-3240B430087D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FormerDaemon_Server.My.MyApplication</StartupObject>
+    <RootNamespace>FormerDaemon_Server</RootNamespace>
+    <AssemblyName>FormerDaemon-Server</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>NewLogoEx.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveUp.Net.Common, Version=2.0.2.31649, Culture=neutral, PublicKeyToken=6cceae6a4844c51b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveUp\ActiveUp.Net.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Imap4, Version=2.0.2.31650, Culture=neutral, PublicKeyToken=9d424b1770e92b68, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ActiveUp\ActiveUp.Net.Imap4.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenPop">
+      <HintPath>..\lib\OpenPop.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartBackupLib">
+      <HintPath>..\lib\SmartBackupLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="code\FormerLog.vb" />
+    <Compile Include="code\daemon\BaseService.vb" />
+    <Compile Include="code\MGRPostazioni.vb" />
+    <Compile Include="code\Mgr\MgrModelliCommessa.vb" />
+    <Compile Include="code\Mgr\MgrCommesse.vb" />
+    <Compile Include="code\Mgr\MgrOrdini.vb" />
+    <Compile Include="code\Postazione.vb" />
+    <Compile Include="code\PostazioneDiLavoro.vb" />
+    <Compile Include="code\daemon\FormerService.vb" />
+    <Compile Include="code\daemon\FormerUdp.vb" />
+    <Compile Include="code\daemon\FormerCaller.vb" />
+    <Compile Include="code\daemon\FormerMessenger.vb" />
+    <Compile Include="code\daemon\FormerSyncronizer.vb" />
+    <Compile Include="FormerDaemonService.Designer.vb">
+      <DependentUpon>FormerDaemonService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormerDaemonService.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.vb">
+      <DependentUpon>ProjectInstaller.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectInstaller.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmCheck.Designer.vb">
+      <DependentUpon>frmCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmForzaAzione.Designer.vb">
+      <DependentUpon>frmForzaAzione.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmForzaAzione.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmPostit.designer.vb">
+      <DependentUpon>frmPostit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmPostit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\form\frmWait.Designer.vb">
+      <DependentUpon>frmWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\form\frmWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="code\template\MailFatturaOnline.vb">
+      <DependentUpon>MailFatturaOnline.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="code\template\MailFatturaNonConsegnata.vb">
+      <DependentUpon>MailFatturaNonConsegnata.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="code\template\MailReview.vb">
+      <DependentUpon>MailReview.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="code\template\MailReminder.vb">
+      <DependentUpon>MailReminder.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="code\template\TemplateClass\MailFatturaOnline.vb" />
+    <Compile Include="code\template\TemplateClass\MailFatturaNonConsegnata.vb" />
+    <Compile Include="code\template\TemplateClass\MailReview.vb" />
+    <Compile Include="code\template\TemplateClass\MailReminder.vb" />
+    <Compile Include="ui\UserControl\ucService.Designer.vb">
+      <DependentUpon>ucService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\UserControl\ucService.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormerDaemonService.resx">
+      <DependentUpon>FormerDaemonService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmCheck.resx">
+      <DependentUpon>frmCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmForzaAzione.resx">
+      <DependentUpon>frmForzaAzione.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmPostit.resx">
+      <DependentUpon>frmPostit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\form\frmWait.resx">
+      <DependentUpon>frmWait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\UserControl\ucService.resx">
+      <DependentUpon>ucService.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\onebit_34.png" />
+    <None Include="Resources\onebit_35.png" />
+    <None Include="Resources\onebit_37.png" />
+    <None Include="Resources\_Attenzione.png" />
+    <None Include="Resources\_ChiamataPersa.png" />
+    <None Include="Resources\_Messaggio.png" />
+    <None Include="Resources\checkmark.png" />
+    <None Include="Resources\reply.png" />
+    <None Include="Resources\_Annulla.png" />
+    <None Include="Resources\megafone.png" />
+    <None Include="Resources\Message1.png" />
+    <None Include="Resources\_Ordine.png" />
+    <None Include="Resources\_Aggiorna.png" />
+    <None Include="Resources\_Calendario.png" />
+    <None Include="Resources\filled_filter.png" />
+    <None Include="Resources\_Refine.png" />
+    <None Include="Resources\26%2815%29.png" />
+    <None Include="Resources\_MailOut.png" />
+    <None Include="Resources\_Play.png" />
+    <None Include="Resources\_StopRed.png" />
+    <None Include="Resources\_Mail.png" />
+    <None Include="Resources\_Stampa.png" />
+    <None Include="Resources\_Chiamata.png" />
+    <None Include="Resources\_Opzioni.png" />
+    <Content Include="guetzli.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NewLogo.ico" />
+    <Content Include="NewLogoEx.ico" />
+    <Content Include="Official.ico" />
+    <Content Include="code\template\MailFatturaOnline.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailFatturaOnline.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="code\template\MailFatturaNonConsegnata.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailFatturaNonConsegnata.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="code\template\MailReview.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailReview.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+    <Content Include="code\template\MailReminder.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>MailReminder.vb</LastGenOutput>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FormerBusinessLogicInterface\FormerBusinessLogicInterface.vbproj">
+      <Project>{d056f549-d3d9-4da0-b0a0-5c22bb15cb14}</Project>
+      <Name>FormerBusinessLogicInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerBusinessLogic\FormerBusinessLogic.vbproj">
+      <Project>{ef457977-11ca-4844-8bc1-d544040f1352}</Project>
+      <Name>FormerBusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerConfig\FormerConfig.vbproj">
+      <Project>{31ede59a-0c3f-462b-98e0-4dd454d96847}</Project>
+      <Name>FormerConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerDALSql\FormerDALSql.vbproj">
+      <Project>{ff140a84-b072-4107-9b8a-aa1c4a8f0407}</Project>
+      <Name>FormerDALSql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerDALWeb\FormerDALWeb.vbproj">
+      <Project>{fd43bd6d-dc66-45fe-b4d2-9c5b9cffd39f}</Project>
+      <Name>FormerDALWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerIO\FormerIO.vbproj">
+      <Project>{7cd2a141-7ddc-41aa-ab70-1efee472f182}</Project>
+      <Name>FormerIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerLib\FormerLib.vbproj">
+      <Project>{47910d2b-17b8-437d-b5e6-eae3b203588e}</Project>
+      <Name>FormerLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerPrinter\FormerPrinter.vbproj">
+      <Project>{d6b6d7f1-5ff8-4bbd-81c8-a70d1751e223}</Project>
+      <Name>FormerPrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormerWebLabeling\FormerWebLabeling.vbproj">
+      <Project>{1f914a96-59ad-405f-b725-d11c13182475}</Project>
+      <Name>FormerWebLabeling</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Former.ico" />
+    <None Include="Resources\Address Book.png" />
+    <None Include="Resources\Printer.png" />
+    <None Include="Resources\Message.png" />
+    <None Include="Resources\Traffic Cone.png" />
+    <None Include="Resources\Button Reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

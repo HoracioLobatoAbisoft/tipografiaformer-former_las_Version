@@ -1,0 +1,30 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".txt" #>
+%!PS
+% This: Job Map File: \\Former-server\z\Diego\Vuoto.job
+%%Creator: Preps 8.0.0 build number 504 Windows Win32
+%%FileEncoding: 134217984
+%SSiPrepsVer: 1
+%SSiJobDir: '\\Former-server\z\Diego\Vuoto.job'
+{{{FILE-LIST-HERE}}}%SSiJobFileRef: -1 'Blank Page' 0 -1 0 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 1.00000 0 -1 0 0 0 0 
+%SSiLaySpecs: 0 0 0.00000 0.00000 '' 0.00000 0.00000 0.00000 0.00000 1.00000 1.00000 8.50390 0 '' '' '' 4 1 1 '' 0 0.00000 0.00000 0 
+%SSiSigUsed: 'Vuoto.tpl' 'Senza titolo Segnatura 1' 0 0 '' '' '' 10.00000 '' '' '' '' '' 0 0 0 0 'PREPS_A41b15d86-cd89-456a-a106-5c83dd2fb18d' '' '3dee3a48-4def-4e38-87c4-0ecd484b7035' '1' 
+%SSiJobDelivery: 1 1 1 1 0 
+%SSiJobAssemblyDelivery: 1 1 
+%SSiJobColor: 'Composite' 150.00000 45.00000 -1 0.00000 0.00000 0.00000 0.00000 0 0 0.00000 0.00000 0.00000 0.00000 150.00000 45.00000 
+%SSiJobColor: 'Process Cyan' 150.00000 105.00000 -1 0.00000 0.00000 0.00000 0.00000 1 2 0.00000 0.00000 0.00000 0.00000 150.00000 105.00000 
+%SSiJobColor: 'Process Magenta' 150.00000 75.00000 -1 0.00000 0.00000 0.00000 0.00000 2 2 0.00000 0.00000 0.00000 0.00000 150.00000 75.00000 
+%SSiJobColor: 'Process Yellow' 150.00000 90.00000 -1 0.00000 0.00000 0.00000 0.00000 3 2 0.00000 0.00000 0.00000 0.00000 150.00000 90.00000 
+%SSiJobColor: 'Process Black' 150.00000 45.00000 -1 0.00000 0.00000 0.00000 0.00000 4 2 0.00000 0.00000 0.00000 0.00000 150.00000 45.00000 
+%SSiJobTemplate: 'Vuoto.tpl'
+%SSiLayout: |Vuoto.tpl| |Vuoto.tpl| 1 1 792.00000 612.00000 8 ||
+%SSiPressSheet: 2736.00000 1800.00000 0.00000 108.00000 0 288.00000 1 36.00000 0 '' 1 1 0 0 '' 1.40000 2.00000 'LongEdge' -1 0 1 0 0 0 1 1 0 0 0 2 1 0 0 0 3 1 0 0 0 -1 0 1 0 0 0 0.00000 1 1 0 0 0 0.00000 2 1 0 0 0 0.00000 3 1 0 0 0 0.00000 
+%SSiPrshPage: 0.00000 0.00000 612.00000 792.00000 3 1 2 9.00000 9.00000 9.00000 9.00000 24580 0.00000 1.00000 0.00000 16385 0.00000 0.00000 1 9.00000 9.00000 9.00000 9.00000 0 24580 0.00000 0 0 -1 -1 -1 0 0 0 -1.00000 -1.00000 -1
+%SSiSignature: |Senza titolo Segnatura 1| 0 2 1 0 ||
+%SSiPressSheet: 1247.24414 907.08661 0.00000 141.73230 3 283.46460 1 17.00790 0 'Hashimoto Impulse 440x320' 1 1 0 0 'Kodak Paper' 1.50000 2.00000 'ShortEdge' 0 0 1 0 0 0 1 1 0 0 0 2 1 0 0 0 3 1 0 0 0 0 0 1 0 0 0 0.00000 1 1 0 0 0 0.00000 2 1 0 0 0 0.00000 3 1 0 0 0 0.00000 
+%SSiProduct: 0 'A' 0 'Nuovo prodotto' '' '' '' 0 0 '' '' 7 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0 -1 0.00000 0.00000 0 0 0 0.00000 0.00000 0 0 
+%SSiPart: 0 0 'Parte' 1 0 1247.24414 907.08661 0 '' 'Hashimoto 440x320' '' 0 '' -1 1 0 '65bbee30-09b1-4b76-a23b-5a47cb60e7c8' 1 0.00000 0.00000 4 3 0.00000 0.00000 0.00000 0.00000 0 0.00000 0.00000 0 0 0 0 0.00000 0.00000 

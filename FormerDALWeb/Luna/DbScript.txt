@@ -1,0 +1,1206 @@
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Tracker](
+[IdTrack] [int] IDENTITY(1,1) NOT NULL ,
+[IdUt] [int] NULL ,
+[IdListinoBase] [int] NULL ,
+[Quando] [DateTime] NULL ,
+ CONSTRAINT [PK_Tracker] PRIMARY KEY CLUSTERED 
+(
+[IdTrack] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Argomenti](
+[IDArgomento] [int] IDENTITY(1,1) NOT NULL ,
+[DescrizioneBreve] [nvarchar(255)] NULL ,
+[Ordine] [int] NULL ,
+[Titolo] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_Argomenti] PRIMARY KEY CLUSTERED 
+(
+[IDArgomento] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Banner](
+[IdBanner] [int] IDENTITY(1,1) NOT NULL ,
+[Alt] [nvarchar(255)] NOT NULL ,
+[Attivo] [Boolean] NOT NULL ,
+[Path] [nvarchar(255)] NOT NULL ,
+[Url] [nvarchar(2000)] NOT NULL ,
+ CONSTRAINT [PK_Banner] PRIMARY KEY CLUSTERED 
+(
+[IdBanner] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Comuni](
+[ID] [int] NOT NULL ,
+[CAP] [nvarchar(255)] NULL ,
+[CODCOMUNE] [int] NULL ,
+[DESCCOMUNE] [nvarchar(255)] NOT NULL ,
+[DTVARIAZIONE] [nvarchar(255)] NULL ,
+[FLGVARIAZIONE] [int] NULL ,
+[IDPROV] [int] NULL ,
+[ordine] [int] NULL ,
+[SGLCATASTALE] [nvarchar(255)] NULL ,
+[SGLNAZIONALE] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_Comuni] PRIMARY KEY CLUSTERED 
+(
+[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Consegne](
+[IdConsegna] [int] IDENTITY(1,1) NOT NULL ,
+[AlertLevel] [int] NULL ,
+[Annotazioni] [nvarchar(255)] NULL ,
+[Blocco] [int] NULL ,
+[CodTrack] [nvarchar(50)] NULL ,
+[DataEffettiva] [DateTime] NULL ,
+[DataInserimento] [DateTime] NULL ,
+[DataPrevistaOriginale] [DateTime] NULL ,
+[EmailNotificheCorriere] [nvarchar(255)] NULL ,
+[Giorno] [DateTime] NULL ,
+[GuidTransazione] [nvarchar(50)] NULL ,
+[IdConsegnaInt] [int] NULL ,
+[IdCorriere] [int] NULL ,
+[IdIndirizzo] [int] NULL ,
+[IdPagam] [int] NULL ,
+[IdStatoConsegna] [int] NULL ,
+[IdUt] [int] NULL ,
+[ImportoNetto] [decimal] NULL ,
+[NoCartaceo] [int] NULL ,
+[NumColli] [int] NULL ,
+[Peso] [int] NULL ,
+[TipoDoc] [int] NULL ,
+ CONSTRAINT [PK_Consegne] PRIMARY KEY CLUSTERED 
+(
+[IdConsegna] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Couponlog](
+[IdCouponLog] [int] IDENTITY(1,1) NOT NULL ,
+[IdCoupon] [int] NOT NULL ,
+[IdUt] [int] NOT NULL ,
+[Quando] [DateTime] NOT NULL ,
+ CONSTRAINT [PK_Couponlog] PRIMARY KEY CLUSTERED 
+(
+[IdCouponLog] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Elencocomuni](
+[IDCap] [int] IDENTITY(1,1) NOT NULL ,
+[CAP] [nvarchar(255)] NULL ,
+[Comune] [nvarchar(255)] NULL ,
+[Provincia] [nvarchar(255)] NULL ,
+[Regione] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_Elencocomuni] PRIMARY KEY CLUSTERED 
+(
+[IDCap] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Faq](
+[IDFaq] [int] IDENTITY(1,1) NOT NULL ,
+[Domanda] [nvarchar(255)] NULL ,
+[IDArgomento] [int] NULL ,
+[IDReparto] [int] NULL ,
+[Ordine] [int] NULL ,
+[Risposta] [nvarchar(2147483647)] NULL ,
+ CONSTRAINT [PK_Faq] PRIMARY KEY CLUSTERED 
+(
+[IDFaq] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Glossario](
+[ID] [int] IDENTITY(1,1) NOT NULL ,
+[Campo1] [nvarchar(255)] NULL ,
+[Campo2] [nvarchar(2147483647)] NULL ,
+ CONSTRAINT [PK_Glossario] PRIMARY KEY CLUSTERED 
+(
+[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Indiciricerca](
+[IdIndiceRicerca] [int] IDENTITY(1,1) NOT NULL ,
+[IdListinoBase] [int] NOT NULL ,
+[IdPrev] [int] NOT NULL ,
+[InEvidenza] [int] NOT NULL ,
+[NomeListino] [nvarchar(255)] NULL ,
+[PercCoupon] [int] NOT NULL ,
+[Prezzo1] [decimal] NULL ,
+[Prezzo1Riv] [decimal] NULL ,
+[Prezzo2] [decimal] NULL ,
+[Prezzo2Riv] [decimal] NULL ,
+[Prezzo3] [decimal] NULL ,
+[Prezzo3Riv] [decimal] NULL ,
+[ProdottoFinito] [int] NOT NULL ,
+[Qta1] [int] NOT NULL ,
+[Qta2] [int] NOT NULL ,
+[Qta3] [int] NOT NULL ,
+[TotOrdini] [int] NOT NULL ,
+ CONSTRAINT [PK_Indiciricerca] PRIMARY KEY CLUSTERED 
+(
+[IdIndiceRicerca] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Indirizzi](
+[IdIndirizzo] [int] IDENTITY(1,1) NOT NULL ,
+[Cap] [nvarchar(5)] NOT NULL ,
+[Citta] [nvarchar(100)] NOT NULL ,
+[Destinatario] [nvarchar(255)] NULL ,
+[IdComune] [int] NOT NULL ,
+[IdIndirizzoInt] [int] NULL ,
+[IdNazione] [int] NULL ,
+[IdProvincia] [int] NOT NULL ,
+[IdUt] [int] NOT NULL ,
+[Indirizzo] [nvarchar(100)] NOT NULL ,
+[Nome] [nvarchar(100)] NULL ,
+[Predefinito] [Boolean] NOT NULL ,
+[Presso] [nvarchar(255)] NULL ,
+[Status] [int] NOT NULL ,
+[Telefono] [nvarchar(50)] NULL ,
+ CONSTRAINT [PK_Indirizzi] PRIMARY KEY CLUSTERED 
+(
+[IdIndirizzo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Ipban](
+[IdIpBan] [int] IDENTITY(1,1) NOT NULL ,
+[IpToBan] [nvarchar(50)] NOT NULL ,
+[Quando] [DateTime] NOT NULL ,
+ CONSTRAINT [PK_Ipban] PRIMARY KEY CLUSTERED 
+(
+[IdIpBan] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Listiniutente](
+[IdListino] [int] IDENTITY(1,1) NOT NULL ,
+[IdUt] [int] NOT NULL ,
+[PercDefault] [int] NOT NULL ,
+[UltimaGenerazione] [DateTime] NULL ,
+[UltimoAccesso] [DateTime] NOT NULL ,
+ CONSTRAINT [PK_Listiniutente] PRIMARY KEY CLUSTERED 
+(
+[IdListino] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Localita](
+[IdLocalita] [Double] NOT NULL ,
+[ALTITUDINE] [nvarchar(255)] NULL ,
+[CENTRO] [int] NULL ,
+[IdComune] [int] NULL ,
+[IdProvincia] [int] NULL ,
+[IdRegione] [int] NULL ,
+[loc] [int] NOT NULL ,
+[localita] [nvarchar(255)] NULL ,
+[POP2001] [int] NULL ,
+[TIPO_LOC] [int] NULL ,
+[xcoord] [Double] NULL ,
+[ycoord] [Double] NULL ,
+ CONSTRAINT [PK_Localita] PRIMARY KEY CLUSTERED 
+(
+[IdLocalita] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Modellicubetti](
+[IDModelloCubetto] [int] IDENTITY(1,1) NOT NULL ,
+[Larghezza] [int] NULL ,
+[Lunghezza] [int] NULL ,
+[Nome] [nvarchar(255)] NULL ,
+[Profondita] [int] NULL ,
+ CONSTRAINT [PK_Modellicubetti] PRIMARY KEY CLUSTERED 
+(
+[IDModelloCubetto] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Nazioni](
+[IdNazione] [int] IDENTITY(1,1) NOT NULL ,
+[Code] [nvarchar(2)] NOT NULL ,
+[IdGruppo] [int] NULL ,
+[Nazione] [nvarchar(50)] NOT NULL ,
+ CONSTRAINT [PK_Nazioni] PRIMARY KEY CLUSTERED 
+(
+[IdNazione] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Ordini](
+[IdOrdine] [int] IDENTITY(1,1) NOT NULL ,
+[Altezza] [int] NULL ,
+[Annotazioni] [nvarchar(2147483647)] NULL ,
+[Anteprima] [nvarchar(255)] NULL ,
+[ConsegnaGarantita] [DateTime] NULL ,
+[ConsegnaGarantitaDa] [int] NULL ,
+[DataCambioStato] [DateTime] NULL ,
+[DataIns] [DateTime] NULL ,
+[DataPrevConsegna] [DateTime] NULL ,
+[DataPrevProduzione] [DateTime] NULL ,
+[ExtraData] [nvarchar(255)] NULL ,
+[IdCons] [int] NULL ,
+[IdCorriere] [int] NULL ,
+[IdCoupon] [int] NULL ,
+[IdIndirizzo] [int] NULL ,
+[IdListinoBase] [int] NULL ,
+[IdMacchinarioProduzioneUtilizzato] [int] NULL ,
+[IdMailPreventivo] [int] NULL ,
+[IdOrdineInt] [int] NULL ,
+[IdPromo] [int] NULL ,
+[IdTipoFustella] [int] NULL ,
+[IdUt] [int] NULL ,
+[InseritoDa] [int] NULL ,
+[Larghezza] [int] NULL ,
+[Lavorazioni] [nvarchar(255)] NULL ,
+[Mq] [Single] NULL ,
+[Nfogli] [int] NULL ,
+[NoEmailDemone] [int] NULL ,
+[NomeLavoro] [nvarchar(100)] NULL ,
+[NumeroColli] [int] NULL ,
+[OrdineInOmaggio] [int] NULL ,
+[OrdineWeb] [Boolean] NULL ,
+[Orientamento] [int] NULL ,
+[Peso] [int] NULL ,
+[Preventivo] [int] NULL ,
+[PrezzoCalcolatoNetto] [decimal] NULL ,
+[PrezzoCorriere] [decimal] NULL ,
+[Profondita] [int] NULL ,
+[Qta] [int] NULL ,
+[Ricarico] [decimal] NULL ,
+[Sconto] [decimal] NULL ,
+[SorgenteCopertina] [nvarchar(255)] NULL ,
+[SorgenteFronte] [nvarchar(255)] NULL ,
+[SorgenteRetro] [nvarchar(255)] NULL ,
+[Stato] [int] NULL ,
+[StatoWeb] [int] NULL ,
+[TipoConsegna] [int] NULL ,
+[TipoRetro] [int] NULL ,
+[TotaleIva] [decimal] NULL ,
+[TotaleNetto] [decimal] NULL ,
+[TotaleOrdine] [decimal] NULL ,
+[UsaNomeLavoroInFattura] [int] NULL ,
+ CONSTRAINT [PK_Ordini] PRIMARY KEY CLUSTERED 
+(
+[IdOrdine] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Pagamentionline](
+[IdPagamentoOnline] [int] IDENTITY(1,1) NOT NULL ,
+[IdConsegna] [int] NOT NULL ,
+[IdPagInt] [int] NOT NULL ,
+[IdTipoPagamento] [int] NOT NULL ,
+[IdUt] [int] NOT NULL ,
+[Importo] [decimal] NULL ,
+[Quando] [DateTime] NOT NULL ,
+[StatoPagamento] [int] NOT NULL ,
+ CONSTRAINT [PK_Pagamentionline] PRIMARY KEY CLUSTERED 
+(
+[IdPagamentoOnline] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Paramlistini](
+[IdParamListino] [int] IDENTITY(1,1) NOT NULL ,
+[IdPrev] [int] NOT NULL ,
+[IdUt] [int] NOT NULL ,
+[PercRicarico] [int] NOT NULL ,
+[Qta1] [int] NOT NULL ,
+[Qta2] [int] NOT NULL ,
+[Qta3] [int] NOT NULL ,
+[Qta4] [int] NOT NULL ,
+[Qta5] [int] NOT NULL ,
+ CONSTRAINT [PK_Paramlistini] PRIMARY KEY CLUSTERED 
+(
+[IdParamListino] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Promo](
+[IdPromo] [int] IDENTITY(1,1) NOT NULL ,
+[Automatico] [int] NULL ,
+[DataFineValidita] [DateTime] NOT NULL ,
+[IdListinoBase] [int] NOT NULL ,
+[IdPromoInt] [int] NOT NULL ,
+[Percentuale] [int] NOT NULL ,
+[QtaSpecifica] [int] NOT NULL ,
+[Stato] [int] NOT NULL ,
+ CONSTRAINT [PK_Promo] PRIMARY KEY CLUSTERED 
+(
+[IdPromo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Province](
+[ID] [int] NOT NULL ,
+[Cod] [nvarchar(255)] NULL ,
+[DTVARIAZIONE] [nvarchar(255)] NULL ,
+[FLGVARIAZIONE] [int] NULL ,
+[IdRegione] [int] NULL ,
+[ordine] [int] NULL ,
+[PROVINCIA] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_Province] PRIMARY KEY CLUSTERED 
+(
+[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Regioni](
+[ID] [int] NOT NULL ,
+[CODAREA] [int] NULL ,
+[ordine] [int] NULL ,
+[REGIONE] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_Regioni] PRIMARY KEY CLUSTERED 
+(
+[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Reparti](
+[IDReparto] [int] IDENTITY(1,1) NOT NULL ,
+[Email] [nvarchar(255)] NULL ,
+[NomeReparto] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_Reparti] PRIMARY KEY CLUSTERED 
+(
+[IDReparto] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Review](
+[IdReview] [int] IDENTITY(1,1) NOT NULL ,
+[Difetti] [nvarchar(2147483647)] NULL ,
+[IdLavoro] [int] NOT NULL ,
+[IdListinoBase] [int] NOT NULL ,
+[IdUt] [int] NOT NULL ,
+[Pregi] [nvarchar(2147483647)] NULL ,
+[PrevedeCoupon] [int] NULL ,
+[Quando] [DateTime] NOT NULL ,
+[Risposta] [nvarchar(2147483647)] NULL ,
+[Stato] [int] NOT NULL ,
+[Voto] [int] NOT NULL ,
+ CONSTRAINT [PK_Review] PRIMARY KEY CLUSTERED 
+(
+[IdReview] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Richiestepreventivo](
+[IdRP] [int] IDENTITY(1,1) NOT NULL ,
+[BufferXML] [nvarchar(2147483647)] NULL ,
+[IdLb] [int] NOT NULL ,
+[IdUt] [int] NOT NULL ,
+[ImportoNetto] [decimal] NULL ,
+[Quando] [DateTime] NOT NULL ,
+ CONSTRAINT [PK_Richiestepreventivo] PRIMARY KEY CLUSTERED 
+(
+[IdRP] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Richiesteregistrazione](
+[IdRichReg] [int] IDENTITY(1,1) NOT NULL ,
+[Cap] [nvarchar(5)] NULL ,
+[Citta] [nvarchar(50)] NULL ,
+[Citta] [nvarchar(100)] NULL ,
+[CodFisc] [nvarchar(50)] NULL ,
+[Cognome] [nvarchar(50)] NULL ,
+[Email] [nvarchar(50)] NULL ,
+[IdComune] [int] NULL ,
+[IdProvincia] [int] NULL ,
+[Indirizzo] [nvarchar(100)] NULL ,
+[Nazione] [nvarchar(50)] NULL ,
+[Nome] [nvarchar(50)] NULL ,
+[NomeAz] [nvarchar(100)] NULL ,
+[Piva] [nvarchar(50)] NULL ,
+[Sito] [nvarchar(250)] NULL ,
+[Stato] [int] NOT NULL ,
+[Telefono] [nvarchar(30)] NULL ,
+[Tipo] [int] NOT NULL ,
+[TipoStr] [nvarchar(50)] NOT NULL ,
+ CONSTRAINT [PK_Richiesteregistrazione] PRIMARY KEY CLUSTERED 
+(
+[IdRichReg] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_capcorr](
+[IdCapCorr] [int] IDENTITY(1,1) NOT NULL ,
+[Cap] [nvarchar(255)] NULL ,
+[IdCorriere] [int] NULL ,
+ CONSTRAINT [PK_T_capcorr] PRIMARY KEY CLUSTERED 
+(
+[IdCapCorr] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_catvirtuali](
+[IdCatVirtuale] [int] IDENTITY(1,1) NOT NULL ,
+[Nome] [nvarchar(255)] NOT NULL ,
+ CONSTRAINT [PK_T_catvirtuali] PRIMARY KEY CLUSTERED 
+(
+[IdCatVirtuale] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_colori](
+[IdColore] [int] IDENTITY(1,1) NOT NULL ,
+[Alpha] [int] NULL ,
+[Attivo] [int] NULL ,
+[B] [int] NULL ,
+[G] [int] NULL ,
+[ImportoMillePunti] [Single] NULL ,
+[Nome] [nvarchar(255)] NULL ,
+[R] [int] NULL ,
+ CONSTRAINT [PK_T_colori] PRIMARY KEY CLUSTERED 
+(
+[IdColore] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_corriere](
+[IdCorriere] [int] IDENTITY(1,1) NOT NULL ,
+[Costo] [decimal] NULL ,
+[Descrizione] [nvarchar(50)] NOT NULL ,
+[Disattivo] [int] NULL ,
+[DisponibileOnline] [Boolean] NULL ,
+[GGConsegna] [int] NULL ,
+[KgLimite1] [int] NULL ,
+[KgLimite2] [int] NULL ,
+[KgLimite3] [int] NULL ,
+[KgLimite4] [int] NULL ,
+[KgLimite5] [int] NULL ,
+[KgLimite6] [int] NULL ,
+[KgLimite7] [int] NULL ,
+[Label] [nvarchar(255)] NULL ,
+[NomeBreve] [nvarchar(255)] NULL ,
+[PathTrack] [nvarchar(255)] NULL ,
+[PercPortoAssegnato] [int] NULL ,
+[PrevedeAccorpamento] [Boolean] NOT NULL ,
+[TariffaLimite1] [decimal] NULL ,
+[TariffaLimite2] [decimal] NULL ,
+[TariffaLimite3] [decimal] NULL ,
+[TariffaLimite4] [decimal] NULL ,
+[TariffaLimite5] [decimal] NULL ,
+[TariffaLimite6] [decimal] NULL ,
+[TariffaLimite7] [decimal] NULL ,
+[TestoMail] [nvarchar(80)] NULL ,
+[TipoCorriere] [int] NULL ,
+ CONSTRAINT [PK_T_corriere] PRIMARY KEY CLUSTERED 
+(
+[IdCorriere] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_coupon](
+[IdCoupon] [int] IDENTITY(1,1) NOT NULL ,
+[Codice] [nvarchar(255)] NULL ,
+[DataFineValidita] [DateTime] NULL ,
+[DataInizioValidita] [DateTime] NULL ,
+[IdCouponInt] [int] NULL ,
+[IdLavoro] [int] NULL ,
+[IdListinoBase] [int] NULL ,
+[IdReview] [int] NULL ,
+[ImgOnline] [nvarchar(255)] NULL ,
+[ImportoFisso] [decimal] NULL ,
+[ImportoMinimoSpesa] [decimal] NULL ,
+[MaxVolte] [int] NULL ,
+[Nome] [nvarchar(255)] NULL ,
+[Percentuale] [int] NULL ,
+[QtaSpecifica] [int] NULL ,
+[Riservato] [int] NULL ,
+[RiservatoATipoUtente] [int] NULL ,
+[Stato] [int] NULL ,
+[UrlHref] [nvarchar(255)] NULL ,
+[VisibileOnline] [int] NULL ,
+ CONSTRAINT [PK_T_coupon] PRIMARY KEY CLUSTERED 
+(
+[IdCoupon] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_curvaatt](
+[IdCurvaAtt] [int] IDENTITY(1,1) NOT NULL ,
+[NomeCurva] [nvarchar(255)] NULL ,
+[v1] [Single] NULL ,
+[v2] [Single] NULL ,
+[v3] [Single] NULL ,
+[v4] [Single] NULL ,
+[v5] [Single] NULL ,
+[v6] [Single] NULL ,
+ CONSTRAINT [PK_T_curvaatt] PRIMARY KEY CLUSTERED 
+(
+[IdCurvaAtt] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_gruppilbconsigliati](
+[IdGC] [int] IDENTITY(1,1) NOT NULL ,
+[Nome] [nvarchar(50)] NOT NULL ,
+ CONSTRAINT [PK_T_gruppilbconsigliati] PRIMARY KEY CLUSTERED 
+(
+[IdGC] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_gruppilblogici](
+[IdGruppoLBLogico] [int] IDENTITY(1,1) NOT NULL ,
+[Nome] [nvarchar(50)] NOT NULL ,
+ CONSTRAINT [PK_T_gruppilblogici] PRIMARY KEY CLUSTERED 
+(
+[IdGruppoLBLogico] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_gruppivarianti](
+[IdGruppoVariante] [int] IDENTITY(1,1) NOT NULL ,
+[Nome] [nvarchar(50)] NOT NULL ,
+ CONSTRAINT [PK_T_gruppivarianti] PRIMARY KEY CLUSTERED 
+(
+[IdGruppoVariante] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_lavori](
+[IdLavoro] [int] IDENTITY(1,1) NOT NULL ,
+[Accorpabile] [int] NULL ,
+[CostoSingCopia] [decimal] NULL ,
+[Descrizione] [nvarchar(100)] NULL ,
+[DescrizioneEstesa] [nvarchar(255)] NULL ,
+[DimensMaxH] [int] NULL ,
+[DimensMaxW] [int] NULL ,
+[DimensMedieMaxH] [int] NULL ,
+[DimensMedieMaxW] [int] NULL ,
+[DimensMedieMinH] [int] NULL ,
+[DimensMedieMinW] [int] NULL ,
+[DimensMinH] [int] NULL ,
+[DimensMinW] [int] NULL ,
+[ExtraData] [nvarchar(255)] NULL ,
+[FormatoRiferimento] [nvarchar(255)] NULL ,
+[ggRealiz] [int] NULL ,
+[GrammiMax] [int] NULL ,
+[GrammiMin] [int] NULL ,
+[IdCatLav] [int] NULL ,
+[IdMacchinario] [int] NULL ,
+[IdMacchinario2] [int] NULL ,
+[IdTipoLav] [int] NULL ,
+[ImgRif] [nvarchar(255)] NULL ,
+[ImgZoom] [nvarchar(255)] NULL ,
+[LavorazioneInterna] [int] NULL ,
+[Macchinario] [nvarchar(255)] NULL ,
+[Premio] [decimal] NULL ,
+[PreTaglio] [int] NULL ,
+[Prezzo] [decimal] NULL ,
+[Pubblica] [Boolean] NULL ,
+[SePresenteCalcolaSuSoggetti] [int] NULL ,
+[Sigla] [nvarchar(255)] NULL ,
+[Stato] [int] NULL ,
+[SuCommessa] [Boolean] NULL ,
+[SuProdotto] [Boolean] NULL ,
+[TempoRif] [int] NULL ,
+[TipoControlloWeb] [int] NULL ,
+ CONSTRAINT [PK_T_lavori] PRIMARY KEY CLUSTERED 
+(
+[IdLavoro] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_listinobase](
+[IdListinoBase] [int] IDENTITY(1,1) NOT NULL ,
+[AbilitaQtaIntermedie] [int] NULL ,
+[AbilitaQtaSottoColonna1] [int] NULL ,
+[AllowCustomSize] [int] NULL ,
+[AvviamStampa] [int] NULL ,
+[AvviamStampa2] [int] NULL ,
+[CalcolaAncheDaSolo] [int] NULL ,
+[ConSoggettiDuplicati] [int] NULL ,
+[DefaultNFogli] [int] NULL ,
+[DescrSito] [nvarchar(255)] NULL ,
+[Disattivo] [int] NULL ,
+[faccmax] [int] NULL ,
+[faccmin] [int] NULL ,
+[GoogleDescr] [nvarchar(255)] NULL ,
+[GoogleSEO] [nvarchar(2147483647)] NULL ,
+[IdColoreStampa] [int] NULL ,
+[IdCurvaAtt] [int] NULL ,
+[IdCurvaPubbl] [int] NULL ,
+[IdFormato] [int] NULL ,
+[IdFormatoMacchina2] [int] NULL ,
+[IdFormProd] [int] NULL ,
+[IdGruppoLCAppartenenza] [int] NULL ,
+[IdGruppoListiniConsigliati] [int] NULL ,
+[idGruppoLogico] [int] NULL ,
+[IdHotFolderPostRefine] [int] NULL ,
+[IdLavTaglioDuplicati] [int] NULL ,
+[IdLavTaglioSoggetti] [int] NULL ,
+[IdListinoBaseSource] [int] NULL ,
+[IdMacchinarioProduzione] [int] NULL ,
+[IdMacchinarioProduzione2] [int] NULL ,
+[IdMacchinarioTaglio] [int] NULL ,
+[IdModelloCubetto] [int] NULL ,
+[IdPrev] [int] NULL ,
+[IdTipoCarta] [int] NULL ,
+[IdTipoCartaCop] [int] NULL ,
+[IdTipoCartaDorso] [int] NULL ,
+[IdTipoImballo] [int] NULL ,
+[imgrif] [nvarchar(255)] NULL ,
+[ImgSito] [nvarchar(255)] NULL ,
+[InEvidenza] [int] NULL ,
+[IsFormerChoice] [int] NULL ,
+[LabelWeb] [nvarchar(255)] NULL ,
+[LargRotolo] [nvarchar(255)] NULL ,
+[LastUpdate] [int] NULL ,
+[MinimaleStampa] [int] NULL ,
+[MinimaleStampa2] [int] NULL ,
+[MoltiplicatoreQta] [int] NULL ,
+[MoltiplicatoreQta0] [int] NULL ,
+[MoltiplicatoreQta2] [int] NULL ,
+[MoltiplicatoreQta3] [int] NULL ,
+[MoltiplicatoreQta4] [int] NULL ,
+[MoltiplicatoreQta5] [int] NULL ,
+[MoltiplicatoreQtaIntermedia] [int] NULL ,
+[MostraPrezziTabella] [int] NULL ,
+[MultiploQta] [int] NULL ,
+[NascondiOnline] [int] NULL ,
+[NoAttachFile] [int] NULL ,
+[nofaccsuimpianti] [Boolean] NULL ,
+[Nome] [nvarchar(255)] NULL ,
+[NomeInterno] [nvarchar(255)] NULL ,
+[noResa] [int] NULL ,
+[Ordinamento] [int] NULL ,
+[p1] [Single] NULL ,
+[p2] [Single] NULL ,
+[p3] [Single] NULL ,
+[p4] [Single] NULL ,
+[p5] [Single] NULL ,
+[p6] [Single] NULL ,
+[PercAdatCostoCopia] [int] NULL ,
+[PercMaxPromoFatturato] [int] NULL ,
+[PercPromoAutomatico] [int] NULL ,
+[PrefissoVarianti] [nvarchar(50)] NULL ,
+[PrendiIcoDa] [int] NULL ,
+[qta1] [Single] NULL ,
+[qta2] [Single] NULL ,
+[qta3] [Single] NULL ,
+[qta4] [Single] NULL ,
+[qta5] [Single] NULL ,
+[qta6] [Single] NULL ,
+[qtacollo] [int] NULL ,
+[QtaDefault] [int] NULL ,
+[TipoControlloPrezzo] [int] NULL ,
+[TipoPrezzo] [int] NULL ,
+[v1] [decimal] NULL ,
+[v2] [decimal] NULL ,
+[v3] [decimal] NULL ,
+[v4] [decimal] NULL ,
+[v5] [decimal] NULL ,
+[v6] [decimal] NULL ,
+[VMotoreCalcolo] [int] NULL ,
+[AttivaPromoAutomatico] [int] NULL ,
+[CounterDayPromo] [int] NULL ,
+ CONSTRAINT [PK_T_listinobase] PRIMARY KEY CLUSTERED 
+(
+[IdListinoBase] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_macchinari](
+[IdMacchinario] [int] IDENTITY(1,1) NOT NULL ,
+[AlertCommesse] [int] NULL ,
+[AltezzaCaricoCm] [int] NULL ,
+[CaricoPrevistoMensile] [int] NULL ,
+[CopieOra] [int] NULL ,
+[CostoMensile] [int] NULL ,
+[CostoMinAvv] [decimal] NULL ,
+[CostoSingCopia] [decimal] NULL ,
+[Descrizione] [nvarchar(255)] NULL ,
+[DescrizioneEstesa] [nvarchar(1000)] NULL ,
+[DescrizioneOnline] [nvarchar(255)] NULL ,
+[HotFolderFlusso] [nvarchar(255)] NULL ,
+[IdRepartoDefault] [int] NULL ,
+[ImgBig] [nvarchar(255)] NULL ,
+[ImgRif] [nvarchar(255)] NULL ,
+[MinutiAvv] [int] NULL ,
+[Ordinamento] [int] NULL ,
+[Tipo] [int] NULL ,
+[VisibileOnline] [int] NULL ,
+ CONSTRAINT [PK_T_macchinari] PRIMARY KEY CLUSTERED 
+(
+[IdMacchinario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_omaggi](
+[IdOmaggio] [int] IDENTITY(1,1) NOT NULL ,
+[IdListinoOmaggio] [int] NOT NULL ,
+[IdPreventivazione] [int] NOT NULL ,
+[ImportoMin] [decimal] NOT NULL ,
+[QtaOmaggio] [int] NOT NULL ,
+[TipoCliente] [int] NOT NULL ,
+[Tipologia] [int] NOT NULL ,
+ CONSTRAINT [PK_T_omaggi] PRIMARY KEY CLUSTERED 
+(
+[IdOmaggio] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_preventivazione](
+[IdPrev] [int] IDENTITY(1,1) NOT NULL ,
+[Descrizione] [nvarchar(255)] NULL ,
+[DescrizioneEstesa] [nvarchar(255)] NULL ,
+[DispOnline] [Boolean] NULL ,
+[ggFast] [int] NULL ,
+[ggNorm] [int] NULL ,
+[ggSlow] [int] NULL ,
+[GoogleDescr] [nvarchar(255)] NULL ,
+[GraficaPerFacciata] [decimal] NULL ,
+[GruppoVariante] [int] NULL ,
+[IdColoreStampaDefault] [int] NULL ,
+[IdFunzionePack] [int] NULL ,
+[IdMacchinario] [int] NULL ,
+[IdMacchinarioTaglio] [int] NULL ,
+[IdPluginToUse] [int] NULL ,
+[IdReparto] [int] NULL ,
+[ImgRif] [nvarchar(255)] NULL ,
+[ImgSito] [nvarchar(255)] NULL ,
+[Linguetta] [int] NULL ,
+[NascondiAlbero] [int] NULL ,
+[PercCoupon] [int] NULL ,
+[PercFast] [int] NULL ,
+[PercSlow] [int] NULL ,
+[Prefisso] [nvarchar(255)] NULL ,
+[RicaricoPubblico] [int] NULL ,
+[SaltaCS] [int] NULL ,
+[SaltaFP] [int] NULL ,
+[SaltaTC] [int] NULL ,
+[TipoProd] [int] NULL ,
+[UrlVideo] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_T_preventivazione] PRIMARY KEY CLUSTERED 
+(
+[IdPrev] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_prezzilavoro](
+[IdLavPrezzo] [int] IDENTITY(1,1) NOT NULL ,
+[IdFormProd] [int] NULL ,
+[IdLavoro] [int] NULL ,
+[Prezzo] [decimal] NULL ,
+[Prezzo2] [decimal] NULL ,
+[PrezzoMin] [decimal] NULL ,
+[PrezzoMin2] [decimal] NULL ,
+[PrezzoOltre] [decimal] NULL ,
+[PrezzoOltre2] [decimal] NULL ,
+[QtaRif] [int] NULL ,
+[TipoGrandezza] [int] NULL ,
+ CONSTRAINT [PK_T_prezzilavoro] PRIMARY KEY CLUSTERED 
+(
+[IdLavPrezzo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[T_tipofustella](
+[IdTipoFustella] [int] IDENTITY(1,1) NOT NULL ,
+[Altezza] [int] NULL ,
+[Base] [int] NULL ,
+[CODICE] [nvarchar(50)] NULL ,
+[Disponibile] [int] NULL ,
+[IdCatFustella] [int] NULL ,
+[IdPrev] [int] NULL ,
+[ImgRif] [nvarchar(255)] NULL ,
+[Orientabile] [int] NULL ,
+[Profondita] [int] NULL ,
+[TEMPLATEPDF] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_T_tipofustella] PRIMARY KEY CLUSTERED 
+(
+[IdTipoFustella] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Td_catformatoprodotto](
+[IdCatFormatoProdotto] [int] IDENTITY(1,1) NOT NULL ,
+[DescrizioneEstesa] [nvarchar(255)] NULL ,
+[ImgRif] [nvarchar(255)] NOT NULL ,
+[Nome] [nvarchar(255)] NOT NULL ,
+ CONSTRAINT [PK_Td_catformatoprodotto] PRIMARY KEY CLUSTERED 
+(
+[IdCatFormatoProdotto] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Td_catfustelle](
+[IdCatFustella] [int] IDENTITY(1,1) NOT NULL ,
+[Anima] [int] NULL ,
+[Categoria] [nvarchar(255)] NOT NULL ,
+[Descrizione] [nvarchar(2147483647)] NULL ,
+[ImgRif] [nvarchar(255)] NULL ,
+[LarghezzaMax] [int] NULL ,
+[TipoForma] [int] NULL ,
+ CONSTRAINT [PK_Td_catfustelle] PRIMARY KEY CLUSTERED 
+(
+[IdCatFustella] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Td_catlav](
+[IdCatLav] [int] IDENTITY(1,1) NOT NULL ,
+[Descrizione] [nvarchar(255)] NOT NULL ,
+[FileLavNonSelezionata] [nvarchar(255)] NULL ,
+[OrdineEsecuzione] [int] NULL ,
+[RepartoAppartenenza] [int] NULL ,
+[SovrascriviImgScheda] [int] NULL ,
+[TipoCaratteristica] [int] NULL ,
+[TipoControllo] [int] NULL ,
+[VisibilePreventivo] [int] NULL ,
+ CONSTRAINT [PK_Td_catlav] PRIMARY KEY CLUSTERED 
+(
+[IdCatLav] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Td_coloristampa](
+[IdColoreStampa] [int] IDENTITY(1,1) NOT NULL ,
+[Descrizione] [nvarchar(255)] NULL ,
+[FR] [Boolean] NULL ,
+[imgrif] [nvarchar(255)] NULL ,
+[NLastre] [int] NULL ,
+[Sigla] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_Td_coloristampa] PRIMARY KEY CLUSTERED 
+(
+[IdColoreStampa] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Td_formato](
+[IdFormato] [int] IDENTITY(1,1) NOT NULL ,
+[Altezza] [int] NULL ,
+[CostoLastra] [decimal] NULL ,
+[DivisioneFoglio] [int] NULL ,
+[Formato] [nvarchar(50)] NULL ,
+[IdMacchinario] [int] NULL ,
+[ImgRif] [nvarchar(255)] NULL ,
+[Larghezza] [int] NULL ,
+ CONSTRAINT [PK_Td_formato] PRIMARY KEY CLUSTERED 
+(
+[IdFormato] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Td_formatocarta](
+[IdFormCarta] [int] IDENTITY(1,1) NOT NULL ,
+[Altezza] [Single] NULL ,
+[FormatoCarta] [nvarchar(255)] NULL ,
+[Larghezza] [Single] NULL ,
+[TolleranzaDifetto] [int] NULL ,
+[TolleranzaEccesso] [int] NULL ,
+ CONSTRAINT [PK_Td_formatocarta] PRIMARY KEY CLUSTERED 
+(
+[IdFormCarta] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Td_formatoprodotto](
+[IdFormProd] [int] IDENTITY(1,1) NOT NULL ,
+[DescrizioneEstesa] [nvarchar(255)] NULL ,
+[Formato] [nvarchar(255)] NULL ,
+[IdCatFormatoProdotto] [int] NULL ,
+[IdFormCarta] [int] NULL ,
+[ImgRif] [nvarchar(255)] NULL ,
+[IsLastra] [int] NULL ,
+[IsRotolo] [int] NULL ,
+[Larghezza] [int] NULL ,
+[Lunghezza] [int] NULL ,
+[NomeAlbero] [nvarchar(50)] NULL ,
+[numfacc] [int] NULL ,
+[Orientabile] [int] NULL ,
+[Orientamento] [int] NULL ,
+[PdfTemplate] [nvarchar(255)] NULL ,
+[PdfTemplate3d] [nvarchar(255)] NULL ,
+[ProdottoFinito] [Boolean] NULL ,
+[Sigla] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_Td_formatoprodotto] PRIMARY KEY CLUSTERED 
+(
+[IdFormProd] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Td_tipocarta](
+[IdTipoCarta] [int] IDENTITY(1,1) NOT NULL ,
+[Altezza] [int] NULL ,
+[CostoCartaKg] [decimal] NULL ,
+[CostoRiferimento] [decimal] NULL ,
+[DescrizioneEstesa] [nvarchar(255)] NULL ,
+[Finitura] [nvarchar(255)] NULL ,
+[Grammi] [int] NULL ,
+[HotFolder] [nvarchar(255)] NULL ,
+[ImgRif] [nvarchar(255)] NULL ,
+[Larghezza] [int] NULL ,
+[Sigla] [nvarchar(255)] NULL ,
+[Spessore] [Single] NULL ,
+[TipoCarta] [int] NULL ,
+[TipoCosto] [int] NULL ,
+[Tipologia] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_Td_tipocarta] PRIMARY KEY CLUSTERED 
+(
+[IdTipoCarta] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Td_tipopagamenti](
+[IdTipoPagam] [int] IDENTITY(1,1) NOT NULL ,
+[Descrizione] [nvarchar(255)] NULL ,
+[ggToAdd] [int] NULL ,
+[ImgWeb] [nvarchar(255)] NULL ,
+[ImportoMaggiorazione] [decimal] NULL ,
+[ImportoMassimoPagabile] [decimal] NULL ,
+[ModoPagam] [nvarchar(255)] NULL ,
+[OrdOnline] [int] NULL ,
+[PeriodoPagam] [int] NULL ,
+[TipoPagam] [nvarchar(255)] NULL ,
+ CONSTRAINT [PK_Td_tipopagamenti] PRIMARY KEY CLUSTERED 
+(
+[IdTipoPagam] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Tipoattivita](
+[IdTipoAttivita] [int] IDENTITY(1,1) NOT NULL ,
+[Descrizione] [nvarchar(50)] NOT NULL ,
+ CONSTRAINT [PK_Tipoattivita] PRIMARY KEY CLUSTERED 
+(
+[IdTipoAttivita] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Tr_cartacomposta](
+[IdCartaComposta] [int] IDENTITY(1,1) NOT NULL ,
+[IdCartaPadre] [int] NULL ,
+[IdCartaSingola] [int] NULL ,
+[NumFogli] [int] NULL ,
+ CONSTRAINT [PK_Tr_cartacomposta] PRIMARY KEY CLUSTERED 
+(
+[IdCartaComposta] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Tr_cattipofustella](
+[IdCatTipo] [int] IDENTITY(1,1) NOT NULL ,
+[IdCat] [int] NOT NULL ,
+[IdTipo] [int] NOT NULL ,
+ CONSTRAINT [PK_Tr_cattipofustella] PRIMARY KEY CLUSTERED 
+(
+[IdCatTipo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Tr_catvlistini](
+[IdCatListino] [int] IDENTITY(1,1) NOT NULL ,
+[IdCatVirtuale] [int] NOT NULL ,
+[IdListinoBase] [int] NOT NULL ,
+ CONSTRAINT [PK_Tr_catvlistini] PRIMARY KEY CLUSTERED 
+(
+[IdCatListino] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Tr_defaultformatoprev](
+[IdDefaultFormatoPrev] [int] IDENTITY(1,1) NOT NULL ,
+[IdCatFormatoProdotto] [int] NOT NULL ,
+[IdFormatoProdotto] [int] NOT NULL ,
+[IdPreventivazione] [int] NOT NULL ,
+ CONSTRAINT [PK_Tr_defaultformatoprev] PRIMARY KEY CLUSTERED 
+(
+[IdDefaultFormatoPrev] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Tr_gruppovarianterif](
+[IdGruppoVarianteDett] [int] IDENTITY(1,1) NOT NULL ,
+[IdGruppoVariante] [int] NOT NULL ,
+[IdListinoBase] [int] NULL ,
+[IdRiferimento] [int] NOT NULL ,
+[PercDiminuzione] [int] NULL ,
+[TipoRiferimento] [int] NOT NULL ,
+ CONSTRAINT [PK_Tr_gruppovarianterif] PRIMARY KEY CLUSTERED 
+(
+[IdGruppoVarianteDett] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Tr_lavprev](
+[IdLavPrev] [int] IDENTITY(1,1) NOT NULL ,
+[IdLavoro] [int] NULL ,
+[IdListinoBase] [int] NULL ,
+[Opzione] [int] NULL ,
+[Ordine] [int] NULL ,
+ CONSTRAINT [PK_Tr_lavprev] PRIMARY KEY CLUSTERED 
+(
+[IdLavPrev] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Tr_prevlistino](
+[IdPrevListino] [int] IDENTITY(1,1) NOT NULL ,
+[IdListinoBase] [int] NULL ,
+[IdPreventivazione] [int] NULL ,
+ CONSTRAINT [PK_Tr_prevlistino] PRIMARY KEY CLUSTERED 
+(
+[IdPrevListino] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Tr_resa](
+[IDFormatoResa] [int] IDENTITY(1,1) NOT NULL ,
+[IdFormato] [int] NULL ,
+[IdFormCarta] [int] NULL ,
+[PercScarto] [int] NULL ,
+[Resa] [int] NULL ,
+ CONSTRAINT [PK_Tr_resa] PRIMARY KEY CLUSTERED 
+(
+[IDFormatoResa] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Tracesource](
+[IdTraceSource] [int] IDENTITY(1,1) NOT NULL ,
+[Counter] [int] NOT NULL ,
+[Nome] [nvarchar(50)] NOT NULL ,
+[TargetUrl] [nvarchar(255)] NOT NULL ,
+ CONSTRAINT [PK_Tracesource] PRIMARY KEY CLUSTERED 
+(
+[IdTraceSource] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Unsubscribe](
+[IdUnsubscribe] [int] IDENTITY(1,1) NOT NULL ,
+[Email] [nvarchar(255)] NOT NULL ,
+[Ip] [nvarchar(50)] NOT NULL ,
+[Lavorato] [int] NULL ,
+[Quando] [DateTime] NOT NULL ,
+ CONSTRAINT [PK_Unsubscribe] PRIMARY KEY CLUSTERED 
+(
+[IdUnsubscribe] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[Utenti](
+[IdUt] [int] IDENTITY(1,1) NOT NULL ,
+[Cap] [nvarchar(5)] NULL ,
+[Cellulare] [nvarchar(20)] NULL ,
+[Citta] [nvarchar(100)] NULL ,
+[CodFisc] [nvarchar(16)] NULL ,
+[CodiceSDI] [nvarchar(7)] NULL ,
+[Cognome] [nvarchar(50)] NULL ,
+[DataIns] [DateTime] NULL ,
+[DisattivaAccessoSito] [int] NULL ,
+[DownloadEsplicito] [int] NULL ,
+[Email] [nvarchar(50)] NOT NULL ,
+[Fax] [nvarchar(20)] NULL ,
+[IdComune] [int] NULL ,
+[IdCorriereDef] [int] NULL ,
+[IdNazione] [int] NULL ,
+[IdPagamento] [int] NULL ,
+[IdProvincia] [int] NULL ,
+[IdRubricaInt] [int] NULL ,
+[IdTipoAttivita] [int] NULL ,
+[Indirizzo] [nvarchar(100)] NULL ,
+[LastIp] [nvarchar(50)] NULL ,
+[LastLogin] [DateTime] NULL ,
+[LastUpdate] [DateTime] NULL ,
+[NoCheckDatiFisc] [int] NULL ,
+[NoMail] [int] NULL ,
+[Nome] [nvarchar(50)] NULL ,
+[PasswordHash] [nvarchar(100)] NOT NULL ,
+[Pec] [nvarchar(100)] NULL ,
+[Piva] [nvarchar(11)] NULL ,
+[PrefissoPIva] [nvarchar(2)] NULL ,
+[Provincia] [nvarchar(2)] NULL ,
+[RagSoc] [nvarchar(100)] NULL ,
+[SitoWeb] [nvarchar(250)] NULL ,
+[Tel] [nvarchar(20)] NULL ,
+[TipoRub] [int] NOT NULL ,
+[TipoWeb] [int] NULL ,
+[UpdateFromUser] [int] NULL ,
+ CONSTRAINT [PK_Utenti] PRIMARY KEY CLUSTERED 
+(
+[IdUt] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+

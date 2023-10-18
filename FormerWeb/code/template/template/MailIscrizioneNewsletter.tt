@@ -1,0 +1,13 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import Namespace="FormerDALWeb" #>
+<#@ output extension=".html" #>
+
+<h3>Richiesta di Iscrizione alla Newsletter!</h3><br>
+<b>Abbiamo ricevuto una richiesta di Iscrizione alla Newsletter da questa email</b><br>
+Se non hai richiesto tu l'iscrizione o hai ricevuto questa email per errore puoi non tenerne conto.<br><br>
+Se invece vuoi confermare la tua iscrizione clicca qui:<br><br>
+<center><a href="https://www.tipografiaformer.it/iscrizione-newsletter/<#=EmailCrypt#>"><b>Iscriviti alla Newsletter</b></a></center>

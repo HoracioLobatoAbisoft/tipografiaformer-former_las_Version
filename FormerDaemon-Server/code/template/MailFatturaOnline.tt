@@ -1,0 +1,23 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import Namespace="FormerDALWeb" #>
+<#@ import Namespace="FormerLib" #>
+<#@ import Namespace="FormerLib.FormerConst" #>
+<#@ output extension=".html" #>
+
+Gentile <b><#=C.NomeCliente #></b>,<br><br>
+è stata appena emessa una nuova fattura relativa al tuo ordine numero <b><#= C.IdConsegna#></b>.<br>
+In allegato trovi Copia di Cortesia in formato <b>PDF</b>.<br>
+Fattura/Nota di credito elettronica emessa ai sensi dell.Art 1 D.Lgs 127/2015. Il documento originale è a disposizione alternativamente presso il codice destinatario (SDI) o indirizzo PEC comunicatoci ovvero nell' area riservata del sito web dell' Agenzia delle Entrate.<br>
+<br><br>
+<table style="padding:10px 20px 10px 20px;heigth:50px;width:500px;border-radius:5px;background-color:#d6e03d;font-weight:bold;"><tr>
+<td align=center><img src="https://www.tipografiaformer.it/img/icoFileTypePdf.png" width=20> <a href="<#=GetUrlPdf()#>" style="color:#2b2b2b;">Clicca qui e scarica dal sito la copia di cortesia in formato PDF</a></td>
+</tr></table>
+<br><br>
+<table style="padding:10px 20px 10px 20px;heigth:50px;width:500px;border-radius:5px;background-color:#f1f1f1;font-weight:bold;"><tr>
+<td align=center><img src="https://www.tipografiaformer.it/img/icoCarrello20.png"> <a href="https://www.tipografiaformer.it/<#=C.IdConsegna#>/dettaglio-ordine" style="color:#2b2b2b;">Clicca qui e vai al dettaglio dell' ordine online</a></td>
+</tr></table>
+

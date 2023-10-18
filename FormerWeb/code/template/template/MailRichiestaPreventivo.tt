@@ -1,0 +1,51 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import Namespace="FormerDALWeb" #>
+<#@ import Namespace="FormerLib" #>
+<#@ import Namespace="FormerLib.FormerEnum" #>
+<#@ output extension=".html" #>
+<h1>Richiesta di Preventivo</h1>
+<div style='heigth:100px;border:5px solid #d6e03d;border-radius:5px;padding:10px;margin:20px;'>
+<h2>Richiesta di Preventivo: FPGUID {<#=R.GuidRichiesta#>}</h2>
+<font size=1>In ogni successiva mail che invierete riguardo questo preventivo includete nel testo della vostra mail il testo: FPGUID{<#=R.GuidRichiesta#>}</font><br><br>
+<center><table style='border:1px solid #aaaaaa;border-radius:5px;'>
+<tr><td width=128><img src='https://www.tipografiaformer.it/listino/img/<#=R.LPart.GetImgFormato#>'></td><td valign=top>Richiesta di preventivo per variante di <h3 style='background-color:white;padding:3px;'><#= R.LPart.Nome#></h3>
+<a href='https://www.tipografiaformer.it<#= FormerUrlCreator.GetUrlLb(R.LPart)#>'>(clicca qui per andare al dettaglio sul sito)</a></td></tr>
+</table></center>
+<br>
+Data: <b style='font-size:14px;'><#= R.QuandoStr#></b><br>
+Cliente: <b style='font-size:14px;'><#= R.RagioneSocialeNome#></b><br>
+Email: <b style='font-size:14px;'><#= R.Email#></b><br><br>
+</div>
+
+<div style='heigth:100px;border:5px solid #850c70;border-radius:5px;padding:10px;margin:20px;'>
+<h2>Variante Richiesta</h2>
+<table>
+<tr><td>Reparto</td><td bgcolor="<#= R.RepartoBkgColor#>"><b><#= R.RepartoStr#></b></td></tr>
+<tr bgcolor="#f1f1f1"><td>Nome Lavoro</td><td><b><#= R.NomeLavoro#></b></td></tr>
+<tr><td>Quantit&agrave;</td><td><b><#= R.Qta#></b></td></tr>
+<tr bgcolor="#f1f1f1"><td>Larghezza</td><td><b><#= R.Larghezza#></b></td></tr>
+<tr><td>Lunghezza</td><td><b><#= R.Lunghezza#></b></td></tr>
+<tr bgcolor="#f1f1f1"><td>Orientamento</td><td><b><#= R.OrientamentoStr#></b></td></tr>
+<tr><td>Finitura</td><td><b><#= R.Finitura#></b></td></tr>
+<tr bgcolor="#f1f1f1"><td>Tipo Carta</td><td><b><#= R.TipoCarta#></b></td></tr>
+<tr><td>Colore Stampa</td><td><b><#= R.CS.Descrizione#></b></td></tr>
+<tr><td valign=top>Opzioni scelte</td><td>
+<#For Each L As LavorazioneW In R.ElencoOpzioniSel#>
+<img src='https://www.tipografiaformer.it/listino/img/<#=L.ImgRif#>' align=absmiddle style='border-radius:5px; border:1px solid #d6e03d; width:64px;'> <b><#=L.Descrizione #></b><br>
+<#Next #>
+</td></tr>
+<tr bgcolor="#f1f1f1"><td valign=top>Note e Indicazioni aggiuntive</td><td><b><#= R.Annotazioni#></b></td></tr></table>
+</div>
+
+<div style='heigth:100px;border:5px solid #f58220;border-radius:5px;padding:10px;margin:20px;'>
+<h2>Preventivo suggerito dal sistema</h2>
+<center><table style='border:1px solid #aaaaaa;border-radius:5px;'>
+<tr><td width=128><img src='https://www.tipografiaformer.it/listino/img/<#=R.Lrif.GetImgFormato#>'></td><td valign=top>Variante di <h3 style='background-color:white;padding:3px;'><#= R.Lrif.Nome#></h3>
+<a href='https://www.tipografiaformer.it<#= FormerUrlCreator.GetUrlLb(R.Lrif)#>'>(clicca qui per andare al dettaglio sul sito)</a></td></tr>
+</table></center>
+<#=R.BufferPreventivo#>
+</div>

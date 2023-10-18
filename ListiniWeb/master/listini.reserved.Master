@@ -1,0 +1,33 @@
+﻿<%@ Master Language="VB"  MasterPageFile="~/master/listini.Master" AutoEventWireup="false" CodeBehind="listini.reserved.master.vb" Inherits="FormerListiniWeb.listini_reserved" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+            <div class="Reserved">  
+    <div class="ReservedMenu">
+        <hr />
+                    <b>AREA PERSONALE</b><hr />
+        <b>Listino</b><br /><br />
+                        <a href="/genera-listino" class="voceMenu"><img src="/img/icoFileTypePdf.png" width="20"/> - Genera Listino</a><br /><br />
+                        <a href="/imposta-parametri" class="voceMenu"><img src="/img/icoparam.png" width="20" /> - Imposta Parametri</a><br /><br />
+        <%If UtenteConnesso.IsAdmin Then%>
+        <br /><b>Altro</b><br />
+        <a href="/webmaster" class="voceMenu"><b>WebMaster</b></a><br />
+        <%end if %>
+        <hr />
+        <b>AIUTO</b><br />
+                        <a href="http://www.tipografiaformer.it/assistenza-clienti" class="voceMenu">Contattaci</a><br />
+                        <a href="http://www.tipografiaformer.it/le-nostre-lavorazioni" class="voceMenu">Le nostre lavorazioni</a><br />
+                        <a href="http://www.tipografiaformer.it/glossario-tipografico" class="voceMenu">Glossario Tipografico</a><br />
+                </div>
+                <div class="ReservedHome">
+                    <asp:ContentPlaceHolder id="body" runat="server"></asp:ContentPlaceHolder>
+                </div>
+    </div>
+
+
+</asp:Content>

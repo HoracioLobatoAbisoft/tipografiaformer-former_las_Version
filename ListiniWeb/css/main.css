@@ -1,0 +1,112 @@
+﻿
+body
+{
+    background-color: #009ec9;
+}
+
+.page
+{
+    background-color: #009ec9;
+
+}
+
+.content {
+
+    min-height: 550px;
+
+}
+
+.singPage {
+
+
+    padding:20px;
+
+}
+
+    .singPage td {
+    
+    padding:20px;
+
+    }
+
+
+.annuncioHome {
+    color: #009ec9;
+    font-size:28px;
+    text-align:center;
+    vertical-align:central;
+
+}
+
+.imgstepTd {
+    width:100px;
+    height:100px;
+    text-align:center;
+    vertical-align:central;
+
+}
+
+.stepTd {
+
+    font-size:16px;
+
+}
+
+.lastGen {
+
+    font-size:16px;
+    font-weight:bold;
+    color:red;
+
+}
+
+.TitoloSez {
+
+font-size:16px;
+color:#2b2b2b;
+font-weight:bold;
+margin-bottom:20px;
+
+}
+
+
+.attenzione {
+    margin-top:90px;
+    border-radius:5px;
+    padding:20px;
+    background-color:#228b22;
+color:white;
+
+}
+
+.container {
+
+text-align:center;
+border:1px solid #aaaaaa;
+padding:10px;
+margin:20px;
+border-radius:5px;
+background-color:#f2f2f2;
+
+}
+
+    .container h5 {
+    margin:0px;
+        text-align:left;
+    
+    }
+
+.pedice {
+        margin:20px;
+    font-size:10px;
+
+}
+
+
+.alert {
+    border-radius:5px;
+    padding:20px;
+    background-color:red;
+    color:white;
+    text-align:justify;
+}

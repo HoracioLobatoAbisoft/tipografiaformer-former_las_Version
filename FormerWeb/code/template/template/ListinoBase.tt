@@ -1,0 +1,16 @@
+﻿<#@ template debug="false" hostspecific="false" language="VB" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".html" #>
+<div class="bloccoW hasTooltip">
+<a href="<#=FormerWeb.FormerUrlCreator.GetUrl(_L.IdPrev, _L.IdFormProd, _L.IdTipoCarta, _L.IdColoreStampa)#>">
+<img src="<#=FormerWebApp.PathListinoImg #><#=_L.GetImgFormato #>" border=0 alt="<#=_L.nome #>">
+<h3><#=_L.nome #></h3>
+</a>
+</div>
+<div class="hidden tooltiptext"><img src="<#=FormerWeb.FormerWebApp.PathListinoImg #><#=_L.GetImgFormato #>" class="imgSx" />
+    <h4><#=_L.Nome #></h4>
+    <#=_L.Nome #>
+</div>
