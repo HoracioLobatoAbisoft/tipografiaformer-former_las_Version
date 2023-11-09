@@ -408,7 +408,7 @@
                 </div>
                 <%End If%>                
                 <asp:Literal runat="server" ID="iframeRefactor" />
-                <%If UtenteConnesso.IdUtente = 1684 Then %>
+                <%If UtenteConnesso.IdUtente = 1684 Or UtenteConnesso.IdUtente = 3 Or UtenteConnesso.IdUtente = 292 Or UtenteConnesso.IdUtente = 38 Then %>
                     <div class="schedaProd"  hidden>
                 <%Else%>
                     <div class="schedaProd"  >
@@ -833,7 +833,7 @@
                 <FormerWeb:PrevPromo runat="server" Id="PrevPromo" visible="false"/>
             </div>
 
-                <%If UtenteConnesso.IdUtente = 1684 Then %>
+                <%If UtenteConnesso.IdUtente = 1684 Or UtenteConnesso.IdUtente = 3 Or UtenteConnesso.IdUtente = 292 Or UtenteConnesso.IdUtente = 38 Then %>
                     <div class="colonnaProd" hidden>
                 <%Else%>
                     <div class="colonnaProd"  >
@@ -843,7 +843,7 @@
                         <b>Scegli il tipo di consegna</b>
                         <asp:DropDownList CssClass="Combo" runat="server" id="ddlCorriere" AutoPostBack="true" Width="150"  Font-Size="11px" Font-Bold="True" Font-Names="Arial" ></asp:DropDownList>
                     </div>--%>
-                    <div id="menuLaterale">
+                    <div id="menuLaterale" >
                                             
                     <div class="CarrelloSchedaProd">
                         <h3>Riepilogo Carrello</h3>
@@ -1006,7 +1006,7 @@
 
                 </div>
                  <%End If %>
-                <%If UtenteConnesso.IdUtente = 1684 Then %>
+                <%If UtenteConnesso.IdUtente = 1684 Or UtenteConnesso.IdUtente = 3 Or UtenteConnesso.IdUtente = 292 Or UtenteConnesso.IdUtente = 38 Then %>
                     <div class="suggestedProduct" id="sugestedProductHidden" hidden>
                 <%Else%>
                     <div class="suggestedProduct" id="sugestedProductHidden" >
@@ -1017,7 +1017,7 @@
                     <FormerWeb:LBConsigliato id="lbConsigliato1" runat="server"/>
                     <FormerWeb:LBConsigliato id="lbConsigliato2" runat="server"/>
                 </div>
-                <%If UtenteConnesso.IdUtente = 1684 Then %>
+                <%If UtenteConnesso.IdUtente = 1684 Or UtenteConnesso.IdUtente = 3 Or UtenteConnesso.IdUtente = 292 Or UtenteConnesso.IdUtente = 38 Then %>
                     <div class="reviewContainer" id="reviewContainerHidden " hidden>
                 <%Else%>
                     <div class="reviewContainer" id="reviewContainerHidden " >
@@ -1044,8 +1044,11 @@
                     </asp:Repeater>
     
                 </div>  
-
-                <div class="DescrizioneDinamica">
+                <%If UtenteConnesso.IdUtente = 1684 Or UtenteConnesso.IdUtente = 3 Or UtenteConnesso.IdUtente = 292 Or UtenteConnesso.IdUtente = 38 Then %>
+                <div class="DescrizioneDinamica" hidden>
+                <%Else %>
+                <div class="DescrizioneDinamica" >
+                <%End If%>
                     <h1><%=LRif.Nome%></h1>
                     <p><%=LRif.FormatoProdotto.DescrizioneEstesa  %></p>
                     <h2>Il <%=TipoCarta%> scelto è <%=LRif.TipoCarta.Tipologia %></h2>

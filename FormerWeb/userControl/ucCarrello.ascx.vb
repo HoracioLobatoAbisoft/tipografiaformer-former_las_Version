@@ -6,6 +6,14 @@ Public Class ucCarrello
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         CaricaCarrello()
+        'IframeCarrello()
+    End Sub
+
+    Private Sub IframeCarrello()
+
+        Dim UrlCarrello As String = "http://localhost:5173/#/btnCarrello"
+        'Dim UrlCarrello As String = "https://react.tipografiaformertest.it:6060/#/btnCarrello"
+        'iframeNC.Text = "<iframe style='width:250px; border: none;' src=" & UrlCarrello & "></iframe>"
     End Sub
 
     Private Sub CaricaCarrello()

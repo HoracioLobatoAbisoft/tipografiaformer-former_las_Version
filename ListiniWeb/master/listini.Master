@@ -113,7 +113,6 @@
 <body>
     <form id="form1" runat="server">
     <div class="page">
-
          <div id="testataCompleta">
         <div class="headerRow">
             <div style="height:60px;">

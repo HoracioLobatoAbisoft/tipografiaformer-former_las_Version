@@ -160,47 +160,47 @@ Helper to produce culture-oriented representation of an object as a string
 </member>
 <member name="F:FormerListiniWeb.listini._head">
 <summary>
-Controllo head.
+head control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerListiniWeb.listini._form1">
 <summary>
-Controllo form1.
+form1 control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerListiniWeb.listini._lnkEsci">
 <summary>
-Controllo lnkEsci.
+lnkEsci control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerListiniWeb.listini._lblNotifiche">
 <summary>
-Controllo lblNotifiche.
+lblNotifiche control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerListiniWeb.listini._body">
 <summary>
-Controllo body.
+body control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerListiniWeb.listini_reserved._head">

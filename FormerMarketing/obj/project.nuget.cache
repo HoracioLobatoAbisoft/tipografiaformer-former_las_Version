@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TflQDGtGSxFYt579M7BSxB9LV78q1MsUZnLKtWoayD5kDbfKpQnaf18yOqG4ZAQAQvcsnaXZ44Xw473XpK+zhQ==",
+  "dgSpecHash": "kV1w9Urc8w4rMOddZS4p2o/fU0zhnLExrzMHMKr+ahCL7LEQ2qifsSy60Anndv3u5mMckiNIce5W1cqp0QF2ag==",
   "success": true,
-  "projectFilePath": "D:\\Abisfot\\FormerLast\\tipografiaformer-former_las_Version\\FormerMarketing\\FormerMarketing.csproj",
+  "projectFilePath": "D:\\Abisfot\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ichigo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\Ichigo\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",

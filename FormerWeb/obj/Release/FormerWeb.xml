@@ -2726,6 +2726,15 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
+<member name="F:FormerWeb.pSiteMasterPage._iframeIndexReact">
+<summary>
+iframeIndexReact control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="F:FormerWeb.pSiteMasterPage._body">
 <summary>
 body control.
@@ -4220,40 +4229,49 @@ Campo generato automaticamente.
 Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
 </remarks>
 </member>
-<member name="F:FormerWeb.pCarrello._lnkSvuota">
+<member name="F:FormerWeb.pCarrello._iframeCarrello">
 <summary>
-Controllo lnkSvuota.
+iframeCarrello control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:FormerWeb.pCarrello._lnkSvuota">
+<summary>
+lnkSvuota control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrello._rptOrdini">
 <summary>
-Controllo rptOrdini.
+rptOrdini control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrello._rptOmaggi">
 <summary>
-Controllo rptOmaggi.
+rptOmaggi control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrello._carrelloHelp">
 <summary>
-Controllo carrelloHelp.
+carrelloHelp control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pFatture._rptFatture">
@@ -6643,11 +6661,11 @@ Per la modifica, spostare la dichiarazione di campo dal file di progettazione al
 </member>
 <member name="F:FormerWeb.ucCarrello._tblCarrello">
 <summary>
-Controllo tblCarrello.
+tblCarrello control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.ucPreventivazioni._rptOfferte">

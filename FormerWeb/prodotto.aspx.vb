@@ -1311,6 +1311,8 @@ Public Class pProdotto
 
     End Function
 
+    Private UAuto As Utn_autorizzato = Nothing
+
     Private Sub PageLoad()
 
         _IdPrev = Convert.ToInt32(Page.RouteData.Values("idp"))
@@ -1319,6 +1321,10 @@ Public Class pProdotto
         _IdColori = Convert.ToInt32(Page.RouteData.Values("ids"))
         _DescrizioneUrl = Convert.ToString(Page.RouteData.Values("descrizione"))
         _Nfogli = Convert.ToInt32(Page.RouteData.Values("nfogli"))
+
+        Using ua As New Utn_autorizzatoDAO
+            UAuto = ua.Find()
+        End Using
 
         If P.DispOnline = False Then
             Response.Redirect("/")
@@ -1645,9 +1651,9 @@ Public Class pProdotto
         'Dim UrlProdotto2 = "http://95.110.133.251:6061/#/form-prodotto-v2/" & _IdPrev & "/" & _IdFormato & "/" & _IdTipoCarta & "/" & _IdColori & "/" & _Nfogli & "/" & Convert.ToInt32(UtenteConnesso.IdUtente) & "/" & _idFustela & "/" & _categoria & "/" & _BaseEtiquete & "/" & _AltezzaEqitquete
 
         'iframeProdotto.Text = "<iframe style='width:100%; height:1050px; border:none' class='AppIframe' src=" & UrlProdotto & "></iframe>"
-        If UtenteConnesso.IdUtente = 1684 Then
-            iframeRefactor.Text = "<iframe id='frameId' style='width:100%; height: 4000px;border: none;' src=" & UrlProdotto2 & " ></iframe>"
-
+        'TODO: empezar la conexion con sqlServer
+        If UtenteConnesso.IdUtente = 1684 Or UtenteConnesso.IdUtente = 3 Or UtenteConnesso.IdUtente = 292 Or UtenteConnesso.IdUtente = 38 Then
+            iframeRefactor.Text = "<iframe id='frameId' style='width:100%; height: 4080px;border: none;' src=" & UrlProdotto2 & " ></iframe>"
         End If
 
 

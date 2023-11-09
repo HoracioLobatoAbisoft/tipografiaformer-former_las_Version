@@ -36,12 +36,15 @@
             formerLocal: production ? 'https://www.tipografiaformertest.it' : 'https://localhost:44311',
             //front:'http://95.110.133.251:6061'
         }
+        
         window.addEventListener('message', function (aea) {
             if (aea.origin === Uris.front) {
                 //if (aea.origin === Uris.front) {
                 var message = aea.data;
                 switch (message.operation) {
                     case 1:
+
+                        this.window.scrollTo(0, 0);
                         var frameId = this.document.getElementById('frameId');
                         frameId.style.width = "1000px";
                         frameId.style.position = "relative";
@@ -79,6 +82,7 @@
 
                         var content = this.document.getElementById('contentHelperHidden');
                         content.style.overflowX = "hidden";
+
                         break;
                     case 2:
                         window.location.href = `${Uris.formerLocal}/${message.uri}`;
@@ -183,6 +187,87 @@
                         break;
                     case 12:
                         window.location.href = message.uri;
+                        break;
+                    case 13:
+                        var menuRowFrame = this.document.getElementById('menuRowFrame');
+                        var page = this.document.getElementById('contentHelperHidden');
+                        var frameId = this.document.getElementById('frameId');
+                        if (menuRowFrame) {
+                            menuRowFrame.style.height = '100vh';
+                            page.style.display = "none";
+                            frameId.style.height = '2000px';
+                        }
+                        
+                        break;
+                    case 14:
+                        //debugger
+                        var counterCarrello = this.document.getElementById('coutenCarrello');
+                        if (counterCarrello) {
+                            var count = parseInt(message.uri.count)
+                            if (count > 0) {
+                                console.log("hay el id", message.uri.data);
+                                counterCarrello.innerHTML = message.uri.count;
+                                counterCarrello.classList.add('totOrdCarrello', 'notifica');
+                                this.localStorage.setItem('c', message.uri.count);
+                                var stringObj = JSON.stringify(message.uri.data);
+                                const tableTooltipCarrello = this.document.getElementById(
+                                    "TableCarrelloNotifiche"
+                                );
+                                const arraryCarrLocal = this.localStorage.getItem("car");
+                                const arrarParse = JSON.parse(arraryCarrLocal);
+                                //debugger
+                                if (arrarParse) {
+                                    if (arrarParse.length != message.uri.data.length) {
+                                        this.localStorage.setItem('car', stringObj);
+                                        var html = ``;
+                                        arrarParse.map((item, i) => {
+                                            const TRow = tableTooltipCarrello.querySelector("tr");
+                                            tableTooltipCarrello.removeChild(TRow);
+                                            return null;
+                                        })
+
+                                        message.uri.data.map((item, i) => {
+                                                html = `
+                                                <tr>
+                                                    <td style="width:32px;"><img src="/listino/img/${item.img}" style="height:32px;width:32px;border-width:0px;"></td>
+                                                    <td align="left">${item.prodotto.substring(0, 34)}...</td>
+                                                    <td align="right" valign="top"><b> € ${formatNumber(item.prezzo)}</b></td>
+                                                </tr>
+                                                `;
+                                                tableTooltipCarrello.innerHTML += html;
+                                                return null;
+                                            
+                                        });
+                                    }
+                                } else {
+                                    this.localStorage.setItem('car', stringObj);
+                                    var html = ``;
+                                    message.uri.data.map((item, i) => {
+                                        html = `
+                                                <tr>
+                                                    <td style="width:32px;"><img src="/listino/img/${item.img}" style="height:32px;width:32px;border-width:0px;"></td>
+                                                    <td align="left">${item.prodotto.substring(0, 34)}...</td>
+                                                    <td align="right" valign="top"><b> € ${formatNumber(item.prezzo)}</b></td>
+                                                </tr>
+                                                `;
+                                        tableTooltipCarrello.innerHTML += html;
+                                        const firstRow = tableTooltipCarrello.querySelector("tr");
+                                        if (firstRow) {
+                                            tableTooltipCarrello.removeChild(firstRow);
+                                        }
+                                        return null;
+                                    });
+                                } 
+                                
+                            } else {
+                                console.log("hay el id", message.uri.count);
+                                counterCarrello.innerHTML = '';
+                                counterCarrello.classList.remove('totOrdCarrello', 'notifica');
+                                this.localStorage.removeItem('c');
+                                this.localStorage.removeItem('car');
+                            }
+                        }
+                        break;
                     default:
                         break;
                 }
@@ -224,8 +309,8 @@
                     },
                     style: {
                         //classes: 'qtip-youtube ',
-                        classes: 'qtip-youtube ', 
-                        
+                        classes: 'qtip-youtube ',
+
                         tip: {
                             corner: true
                         }
@@ -261,8 +346,8 @@
                 });
             });
         }
-                     
-	</script>
+
+</script>
 
     <script type="text/javascript">
 
@@ -272,7 +357,7 @@
             var prm = Sys.WebForms.PageRequestManager.getInstance();
             prm.add_endRequest(function () {
                 //$('.hasTooltip').qtip('reposition');
-                toolTipStart(); 
+                toolTipStart();
             });
 
             <%If ShowCookieMessage Then%>
@@ -281,9 +366,9 @@
 
             <%end If%>
         });
-        
 
-    </script>
+
+</script>
 
     <script type="text/javascript">
 
@@ -305,18 +390,18 @@
         }
 
         function goSearch() {
-            
+
             document.getElementById('<%=btnCerca.ClientID %>').click();
         }
 
-        
+
 
         $(function () {
             setInterval("slideSwitch()", 3500);
         });
 
 
-    </script>
+</script>
 
     <script>
         $(function () {
@@ -375,7 +460,7 @@
             };
 
         });
-    </script>
+</script>
 
     <%If FormerWeb.FormerWebApp.IsDebug = False Then%>
 
@@ -401,7 +486,7 @@
         i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
             (i[r].q = i[r].q || []).push(arguments)
         }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-43742415-1', 'tipografiaformer.it');
@@ -410,74 +495,66 @@
 
 </script>
     <script type="text/javascript">
-               
-function highlightRadioButtonList(elementRef)
-{
-    
-   var inputElementArray = elementRef.getElementsByTagName('input');
 
-    for (var i=0; i<inputElementArray.length; i++) 
-    { 
-        var inputElementRef = inputElementArray[i];
-        var parentElement = inputElementRef.parentNode;
+        function highlightRadioButtonList(elementRef) {
 
-        if ( parentElement )
-        {
-            if ( inputElementRef.checked == true ) 
-            {
-                parentElement.className = 'rdoHighLight';
+            var inputElementArray = elementRef.getElementsByTagName('input');
+
+            for (var i = 0; i < inputElementArray.length; i++) {
+                var inputElementRef = inputElementArray[i];
+                var parentElement = inputElementRef.parentNode;
+
+                if (parentElement) {
+                    if (inputElementRef.checked == true) {
+                        parentElement.className = 'rdoHighLight';
+                    }
+                    else {
+                        parentElement.className = elementRef.className;
+                    }
+                }
             }
-            else
-            {
-                parentElement.className = elementRef.className;
+
+        }
+
+
+        function NewsletterFissa() {
+
+            var divNL = $("#divNewsletter");
+            var imgNL = $("#btnNewsletterClose");
+
+            var win = $(window);
+
+            var viewport = {
+                top: win.scrollTop(),
+                left: win.scrollLeft()
+            };
+            viewport.bottom = viewport.top + win.height();
+
+            var bounds = divNL.offset();
+            bounds.right = bounds.left + divNL.outerWidth();
+            bounds.bottom = bounds.top + divNL.outerHeight();
+
+            var visibile = (viewport.bottom < bounds.top || viewport.top > bounds.bottom);
+
+            if (divNL.hasClass("NewsletterFissa")) {
+                divNL.removeClass("NewsletterFissa");
+                imgNL.removeClass("newsletterImgClose");
+                imgNL.addClass("newsletterImg");
+            }
+            else {
+
+                if (visibile) {
+                    divNL.addClass("NewsletterFissa");
+                    imgNL.removeClass("newsletterImg");
+                    imgNL.addClass("newsletterImgClose");
+                    $("#divNewsletter").fadeIn();
+
+                }
+
             }
         }
-    }
 
-        }
-
-
-function NewsletterFissa()
-{
-
-        var divNL = $("#divNewsletter");
-        var imgNL = $("#btnNewsletterClose");
-
-        var win = $(window);
-
-        var viewport = {
-            top: win.scrollTop(),
-            left: win.scrollLeft()
-        };
-        viewport.bottom = viewport.top + win.height();
-
-        var bounds = divNL.offset();
-        bounds.right = bounds.left + divNL.outerWidth();
-        bounds.bottom = bounds.top + divNL.outerHeight();
-
-        var visibile = (viewport.bottom < bounds.top || viewport.top > bounds.bottom);
-    
-        if (divNL.hasClass("NewsletterFissa"))
-        {
-            divNL.removeClass("NewsletterFissa");
-            imgNL.removeClass("newsletterImgClose");
-            imgNL.addClass("newsletterImg");
-        }
-        else
-        {
-       
-            if (visibile) {
-                divNL.addClass("NewsletterFissa");
-                imgNL.removeClass("newsletterImg");
-                imgNL.addClass("newsletterImgClose");
-                $("#divNewsletter").fadeIn();
-                
-            }
-                   
-        }
-    }
-      
-    </script>
+</script>
     <script>var w = window; var p = w.location.protocol; if (p.indexOf("http") < 0) { p = "http" + ":"; } var d = document; var f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript'; s.async = false; if (s.readyState) { s.onreadystatechange = function () { if (s.readyState == "loaded" || s.readyState == "complete") { s.onreadystatechange = null; try { loadwaprops("3z028b08e95fc683f6275de4529595292c", "3zc2e41397ab6b0ae34ef86368ccbee603", "3zd3a2e7929871ec85b420bd634eacbce1aadb10ee8cb12a3b1b53c03b1f30dba5", "3z1f999a8acc4d146215cbe8a91592f9a27ac9db2440a1f0e26a27890156d08414", "0.0"); } catch (e) { } } }; } else { s.onload = function () { try { loadwaprops("3z028b08e95fc683f6275de4529595292c", "3zc2e41397ab6b0ae34ef86368ccbee603", "3zd3a2e7929871ec85b420bd634eacbce1aadb10ee8cb12a3b1b53c03b1f30dba5", "3z1f999a8acc4d146215cbe8a91592f9a27ac9db2440a1f0e26a27890156d08414", "0.0"); } catch (e) { } }; }; s.src = p + "//ma.zoho.eu/hub/js/WebsiteAutomation.js"; f.parentNode.insertBefore(s, f);</script>
 
 </head>
@@ -494,12 +571,12 @@ function NewsletterFissa()
         <div class="headerRow">
             <div style="height:60px;" >
             <div class="logo">
-                <a href="https://www.tipografiaformer.it/"><img src="/img/logo.png" border="0"/></a> 
+                <a href="/"><img src="/img/logo.png" border="0"/></a> 
             </div>            
             <div class="benvenuto">
                 Benvenuto <%If UtenteConnesso.IdUtente Then%><b class="NomeUtente"><%--<img src="/img/icoUt20.png" width="25"/>--%><%=getNominativoUtente %></b><%Else%>Visitatore<%end if %>, 
                 <%If UtenteConnesso.IdUtente Then%>
-                <asp:LinkButton ID="lnkEsci" ForeColor="#009ec9" runat="server"><b>Esci</b></asp:LinkButton>
+                <asp:LinkButton ID="lnkEsci" ForeColor="#009ec9" runat="server" ><b id="esciText" onclick="cleanLocal();">Esci</b></asp:LinkButton>
                 <%Else%>
                 <a href="/registrati" class="orange"><b>Registrati</b></a> o <a href="/login" class="orange"><b>Accedi</b></a>
                 <%End If%>
@@ -537,8 +614,9 @@ function NewsletterFissa()
             </div>
            </div>
             <div class="menutxt">
-                <%If UtenteConnesso.IdUtente = 1684 Then %>
-                    <a href="/appIframe">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <%If UtenteConnesso.IdUtente = 1684 Or UtenteConnesso.IdUtente = 3 Or UtenteConnesso.IdUtente = 292 Or UtenteConnesso.IdUtente = 38 Then %>
+                    <%--<a href="/appIframe">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;--%>
+                    <a href="/area-riservata">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <%Else%>
                     <a href="/area-riservata">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <%End If%>
@@ -555,90 +633,107 @@ function NewsletterFissa()
                                                                                   If TotCoup Then
                                                                                       Response.Write(" (<b class=""red"">" & TotCoup & "</b>)")
                                                                                   End If
-                                                          End If%></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                                                              End If%></a>&nbsp;&nbsp;|&nbsp;&nbsp;
 
                 <%--<a href="/carrello">Carrello</a>&nbsp;&nbsp;|&nbsp;&nbsp;--%>
                 <a href="/le-tue-recensioni">Le tue Recensioni</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <a href="/assistenza-clienti">Contattaci</a>
             </div>
         </div>
+        <%--Inizio Menu Cerca--%>
+        <%'If UtenteConnesso.IdUtente = 1684 Then%>
+            <%--<div class="headerRow" id="menuRowFrame">
+                <asp:Literal runat="server" ID="iframeCerca" />
+            </div>--%>
+        <%'Else%>
+            <div class="menuRow ">
+                            <div class="menuRowInside">
 
-        <div class="menuRow">
-            <div class="menuRowInside">
-
-       <img src="/img/lblCosaStaiCercando.png" class="cosaCerchi" alt="Cosa stai cercando?"  onclick="javascript:goSearch();"/>
+                            <img src="/img/lblCosaStaiCercando.png" class="cosaCerchi" alt="Cosa stai cercando?  "  onclick="javascript:goSearch();"/>
                          
-            <div class="cerca">
-                <asp:Panel ID="pnlCerca" runat="server" DefaultButton="btnCerca">
-                <%If FormerWeb.FormerWebApp.SitoInManutenzione = False Then%>
-                <asp:TextBox CssClass="cercaTxt" title="Cerca nei nostri prodotti" MaxLength="30" ClientIDMode="Static"  ID="txtCerca" runat="server" ></asp:TextBox>
-                <asp:ImageButton ID="btnCerca" runat="server" CssClass="btnCerca hasTooltip" ImageUrl="/img/btnCercaSmall.png" />
-                <div class="hidden tooltiptext">
-                    <img src="/img/btnCercaSmall.png" class="imgSx"/>
-                    <h4>Cosa stai cercando?</h4>Da oggi il nostro motore di ricerca è tutto nuovo!!!<br /><br />Scrivi ciò che ti serve, <b>PREMI INVIO &crarr;</b><br /><br />Scoprirai un nuovo modo di scegliere i nostri prodotti
-                </div>
-                <%End If%>
-                </asp:Panel>
-            </div>                 
-            <div class="pulsantiera">    
-            <%--    <%If UtenteConnesso.IdUtente = 0 then %>  
-                    <a href="/registrati" class="hasTooltip"><img src="/img/btnRegister.png" class="button"/></a>
-                    <div class="hidden tooltiptext">
-                        <img src="/img/icoInformation.png" class="imgSx" />
-                        <h4>Registrati</h4>Solo registrandoti potrai visualizzare i prezzi dei nostri prodotti, effettuare un ordine e accedere alla tua area riservata
-                    </div>
-                <%end if %>--%>
+                            <div class="cerca">
+                                <asp:Panel ID="pnlCerca" runat="server" DefaultButton="btnCerca">
+                                <%If FormerWeb.FormerWebApp.SitoInManutenzione = False Then%>
+                                <asp:TextBox CssClass="cercaTxt" title="Cerca nei nostri prodotti" MaxLength="30" ClientIDMode="Static"  ID="txtCerca" runat="server" ></asp:TextBox>
+                                <asp:ImageButton ID="btnCerca" runat="server" CssClass="btnCerca hasTooltip" ImageUrl="/img/btnCercaSmall.png" />
+                                <div class="hidden tooltiptext">
+                                    <img src="/img/btnCercaSmall.png" class="imgSx"/>
+                                    <h4>Cosa stai cercando?</h4>Da oggi il nostro motore di ricerca è tutto nuovo!!!<br /><br />Scrivi ciò che ti serve, <b>PREMI INVIO &crarr;</b><br /><br />Scoprirai un nuovo modo di scegliere i nostri prodotti
+                                </div>
+                                <%End If%>
+                                </asp:Panel>
+                            </div>                 
+                            <div class="pulsantiera">    
+                            <%--    <%If UtenteConnesso.IdUtente = 0 then %>  
+                                    <a href="/registrati" class="hasTooltip"><img src="/img/btnRegister.png" class="button"/></a>
+                                    <div class="hidden tooltiptext">
+                                        <img src="/img/icoInformation.png" class="imgSx" />
+                                        <h4>Registrati</h4>Solo registrandoti potrai visualizzare i prezzi dei nostri prodotti, effettuare un ordine e accedere alla tua area riservata
+                                    </div>
+                                <%end if %>--%>
                 
-                <%If UtenteConnesso.IdUtente = 0 then %>
-                    <a href="/login" class="pulsante120Black hasTooltip"><img src="/img/icoLock32W.png" />Accedi</a>
-                    <%--<a href="/login" ><img src="/img/btnAccedi.png" class="button"/></a>--%>
-                <%Else%>
-                    <a href="/area-riservata" class="pulsante120Black hasTooltip"><img src="/img/icoLock32W.png" />Area Riservata</a>
-                   <%-- <a href="/area-riservata" ><img src="/img/btnAreaRiservata.png"  class="button"/></a>     --%>
-                <%End If%>
-                <div class="hidden tooltiptext">
-                    <img src="/img/icoInformation.png" class="imgSx" />
-                    <h4>Accedi alla tua Area Riservata</h4>Solo registrandoti ed effettuando l'accesso potrai effettuare un ordine, accedere alla tua area riservata, scaricare i documenti fiscali e tenere costantemente sotto controllo lo stato di avanzamento dei tuoi ordini
-                </div>
+                                <%If UtenteConnesso.IdUtente = 0 Then %>
+                                    <a href="/login" class="pulsante120Black hasTooltip"><img src="/img/icoLock32W.png" />Accedi</a>
+                                    <%--<a href="/login" ><img src="/img/btnAccedi.png" class="button"/></a>--%>
+                                <%Else%>
+                                    <a href="/area-riservata" class="pulsante120Black hasTooltip"><img src="/img/icoLock32W.png" />Area Riservata</a>
+                                   <%-- <a href="/area-riservata" ><img src="/img/btnAreaRiservata.png"  class="button"/></a>     --%>
+                                <%End If%>
+                                <div class="hidden tooltiptext">
+                                    <img src="/img/icoInformation.png" class="imgSx" />
+                                    <h4>Accedi alla tua Area Riservata</h4>Solo registrandoti ed effettuando l'accesso potrai effettuare un ordine, accedere alla tua area riservata, scaricare i documenti fiscali e tenere costantemente sotto controllo lo stato di avanzamento dei tuoi ordini
+                                </div>
 
-                <%--<div class="btn hasTooltip">
-                    <%--<a href="/carrello"><img src="/img/btnGoCarrello.png" alt="Carrello" class="button"/></a>--%>
-                <%If UtenteConnesso.IdUtente > 0 Or MostraNewsletter = False Then%>
-                <a href="/carrello" class="pulsante120Green hasTooltip"><img src="/img/icoCarrello32.png" />Carrello <asp:Label ID="lblTotOrdCarrello" Visible="false" runat="server" CssClass="totOrdCarrello notifica" Text="0"></asp:Label></a>
-                <%--</div>--%>
-                <div class="hidden tooltiptext">
-                    <img src="/img/icoCarrelloW.png" class="imgSx" /> <h4>Il tuo Carrello</h4>
-                    <FormerWeb:Carrello id="Carrello" runat="server"/>
-                </div>
-                <%Else%>
-                <a href="javascript:NewsletterFissa();" class="pulsante120Green hasTooltip"><img src="/img/icoMsg50.png" />Newsletter</a>
-                <%--</div>--%>
-                <div class="hidden tooltiptext">
-                    <img src="/img/icoInformation.png" class="imgSx" /> <h4>Iscrizione alla Newsletter</h4>
-                    Iscrivendoti alla nostra Newsletter riceverai direttamente nella tua email le nostre offerte e promozioni.
-                </div>
-                <%end if%>
-               <%Dim TotNotif As Integer = 0
-                   If UtenteConnesso.IdUtente Then
-                       TotNotif = Notifica.NumeroNotifiche
-                   End If
-                %>
-                <a href="/i-tuoi-lavori" class="pulsante55Green hasFixedTooltip" ><%If TotNotif Then%><img src="/img/icoNotifica24.png" /><%Else%>
-<img src="/img/icoNotifica24gray.png"/><%End If%>
-<asp:Label ID="lblNotifiche" runat="server" Visible="false" CssClass="totNotifiche notifica" Text="0"></asp:Label>
-                </a>
-                <div class="hidden tooltiptext">
-                    <img src="/img/icoNotifica30W.png" class="imgSx" /> <h4>Le tue notifiche</h4>
-                    <FormerWeb:Notifica id="Notifica" runat="server"/>
-                </div>
+                                <%--<div class="btn hasTooltip">
+                                    <%--<a href="/carrello"><img src="/img/btnGoCarrello.png" alt="Carrello" class="button"/></a>--%>
 
-            </div>    
-            </div>
+                                <%If UtenteConnesso.IdUtente > 0 Or MostraNewsletter = False Then%>
+                                <a href="/carrello" class="pulsante120Green hasTooltip"><img src="/img/icoCarrello32.png" />Carrello 
+                                        <%If UtenteConnesso.IdUtente = 1684 Or UtenteConnesso.IdUtente = 3 Or UtenteConnesso.IdUtente = 292 Or UtenteConnesso.IdUtente = 38 Then%>
+                                            <span class="" id="coutenCarrello">
+                                                
+                                            </span>
+                                        <%Else %>
+                                            <asp:Label ID="lblTotOrdCarrello" Visible="false" runat="server" CssClass="totOrdCarrello notifica" Text="0"></asp:Label>
+                                        <%End If %>
+                                </a>
+                                <%--</div>--%>
+                                <div class="hidden tooltiptext">
+                                    <img src="/img/icoCarrelloW.png" class="imgSx" /> <h4>Il tuo Carrello</h4>
+                                    <FormerWeb:Carrello id="Carrello" runat="server"/>
+                                </div>
+                                <%Else%>
+                                <a href="javascript:NewsletterFissa();" class="pulsante120Green hasTooltip"><img src="/img/icoMsg50.png" />Newsletter</a>
+                                <%--</div>--%>
+                                <div class="hidden tooltiptext">
+                                    <img src="/img/icoInformation.png" class="imgSx" /> <h4>Iscrizione alla Newsletter</h4>
+                                    Iscrivendoti alla nostra Newsletter riceverai direttamente nella tua email le nostre offerte e promozioni.
+                                </div>
+                                <%end if%>
+                               <%Dim TotNotif As Integer = 0
+                                   If UtenteConnesso.IdUtente Then
+                                       TotNotif = Notifica.NumeroNotifiche
+                                   End If
+                                %>
+                                <a href="/i-tuoi-lavori" class="pulsante55Green hasFixedTooltip" ><%If TotNotif Then%><img src="/img/icoNotifica24.png" /><%Else%>
+                                <img src="/img/icoNotifica24gray.png"/><%End If%>
+                                <asp:Label ID="lblNotifiche" runat="server" Visible="false" CssClass="totNotifiche notifica" Text="0"></asp:Label>
+                                </a>
+                                <div class="hidden tooltiptext">
+                                    <img src="/img/icoNotifica30W.png" class="imgSx" /> <h4>Le tue notifiche</h4>
+                                    <FormerWeb:Notifica id="Notifica" runat="server"/>
+                                </div>
+
+                                </div>    
+                                </div>
+                </div>
         </div>
-        </div>
+        <%'End If%>
+        <%--End Menu Cerca--%>
+
         <!-- CONTENUTO PAGINA-->
         <asp:ScriptManager ID="ScriptManagerFormer" runat="server"  EnablePartialRendering="true"  ></asp:ScriptManager>
-        
+        <asp:Literal runat="server" ID="iframeIndexReact" />
         <div class="content"  id="contentHelperHidden">
             <asp:ContentPlaceHolder id="body" runat="server"></asp:ContentPlaceHolder> 
             <asp:ContentPlaceHolder ID="secondaFascia" runat="server"></asp:ContentPlaceHolder>
@@ -742,7 +837,87 @@ function NewsletterFissa()
     <asp:ContentPlaceHolder ID="AfterForm" runat="Server"></asp:ContentPlaceHolder>
 
 <!--POWERED BY LUNA ORM https://sourceforge.net/projects/lunaorm/ -->
+    <script>
 
+        const urlFront = false ? "https://react.tipografiaformertest.it:6060" : 'http://localhost:5173/#/';
+        const counterLocal = this.localStorage.getItem('c');
+        if (parseInt(counterLocal) > 0) {
+            var idCounterCarrello = document.getElementById('coutenCarrello');
+            if (idCounterCarrello) {
+                console.log('Entre aca');
+                idCounterCarrello.innerHTML = counterLocal;
+                idCounterCarrello.classList.add('totOrdCarrello');
+                idCounterCarrello.classList.add('notifica');
+            }
+        } else {
+            console.log('Entre aca else');
+            this.localStorage.removeItem('c');
+        }
+
+        const cleanLocal = () => {
+            this.localStorage.removeItem('c');
+            this.localStorage.removeItem('car');
+            const frameId = this.document.getElementById('frameId');
+            if (frameId) {
+                console.log('hay el iframe');
+                frameId.contentWindow.postMessage({ operation: 1 }, urlFront);
+                const iframeIndex2 = this.document.getElementById('iframeIndex2');
+                if (iframeIndex2) {
+                    console.log('hay el iframe iframeIndex2');
+                    iframeIndex2.contentWindow.postMessage({ operation: 1 }, urlFront);
+                }
+            } else {
+                const iframeIndex2 = this.document.getElementById('iframeIndex2');
+                if (iframeIndex2) {
+                    console.log('hay el iframe iframeIndex2');
+                    iframeIndex2.contentWindow.postMessage({ operation: 1 }, urlFront);
+                }
+            } 
+        }
+
+        const esci = this.document.getElementById('esciText');
+        if (!esci) {
+            //alert('cerrando sesion')
+            
+        }
+
+        
+        const formatNumber = (n) => {
+            var formatNumber = new Intl.NumberFormat('it', { minimumFractionDigits: 2, maximumFractionDigits: 4, });
+            return formatNumber.format(n);
+        }
+        const tableTooltipCarrello = this.document.getElementById(
+            "TableCarrelloNotifiche"
+        );
+        if (tableTooltipCarrello ) {
+            const arraryCarrLocal = this.localStorage.getItem("car");
+            const arrarParse = JSON.parse(arraryCarrLocal);
+            if (arraryCarrLocal) {
+                var html = ``;
+                arrarParse.map((item, i) => {
+                    html = `
+                            <tr>
+                                <td style="width:32px;"><img src="/listino/img/${item.img}" style="height:32px;width:32px;border-width:0px;"></td>
+                                <td align="left">${item.prodotto.substring(0, 34)}...</td>
+                                <td align="right" valign="top"><b> € ${formatNumber(item.prezzo)}</b></td>
+                            </tr>
+                            `;
+                    tableTooltipCarrello.innerHTML += html;
+                    return null;
+                });
+            } else {
+                var html = `
+                            <tr>
+                                <td align="center">Il tuo Carrello è vuoto</td>
+                            </tr>
+                `;
+                tableTooltipCarrello.innerHTML += html;
+            }
+            
+        }
+
+        
+</script>
 </body>
 
 </html>

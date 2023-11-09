@@ -187,6 +187,8 @@
     <Compile Include="LunaEngine\ClassDAO\_TrackerWDAO.vb" />
     <Compile Include="LunaEngine\ClassDAO\_Unsubscribe.vb" />
     <Compile Include="LunaEngine\ClassDAO\_UnsubscribeDAO.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Utn_autorizzato.vb" />
+    <Compile Include="LunaEngine\ClassDAO\_Utn_autorizzatoDAO.vb" />
     <Compile Include="LunaUserClass\ClassBase\LunaContext.vb" />
     <Compile Include="code\Manager\MgrUtenti.vb" />
     <Compile Include="code\Utenti\UtenteSito.vb" />
@@ -311,6 +313,7 @@
     <Compile Include="LunaUserClass\ClassDAO\TrackerWDAO.vb" />
     <Compile Include="LunaUserClass\ClassDAO\UnsubscribeDAO.vb" />
     <Compile Include="LunaUserClass\ClassDAO\UtentiDAO.vb" />
+    <Compile Include="LunaUserClass\ClassDAO\Utn_autorizzatoDAO.vb" />
     <Compile Include="LunaUserClass\ClassEntity\Argomento.vb" />
     <Compile Include="LunaUserClass\ClassEntity\Banner.vb" />
     <Compile Include="LunaUserClass\ClassEntity\CapCorriereW.vb" />
@@ -374,6 +377,7 @@
     <Compile Include="LunaUserClass\ClassEntity\TrackerW.vb" />
     <Compile Include="LunaUserClass\ClassEntity\Unsubscribe.vb" />
     <Compile Include="LunaUserClass\ClassEntity\Utente.vb" />
+    <Compile Include="LunaUserClass\ClassEntity\Utn_autorizzato.vb" />
     <Compile Include="LunaView\MgrLunaView.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

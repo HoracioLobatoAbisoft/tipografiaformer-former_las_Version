@@ -6451,6 +6451,194 @@ Return all record on DB table Unsubscribe
 Return all record in list of Unsubscribe
  </returns>
 </member>
+<member name="T:FormerDALWeb._Utn_autorizzato">
+ <summary>
+DAO Class for table Utn_autorizzato
+ </summary>
+ <remarks>
+Don't write code here
+ </remarks>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzato.Read(System.Int32)">
+ <summary>
+This method read an Utn_autorizzato from DB.
+ </summary>
+ <returns>
+Return 0 if all ok, 1 if error
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzato.Refresh">
+ <summary>
+This method Refresh all data in the entity from DB.
+ </summary>
+ <returns>
+Return 0 if all ok, 1 if error
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzato.Save">
+ <summary>
+This method save an Utn_autorizzato on DB.
+ </summary>
+ <returns>
+Return Id insert in DB if all ok, 0 if error
+ </returns>
+</member>
+<member name="T:FormerDALWeb._IUtn_autorizzato">
+ <summary>
+Interface for table Utn_autorizzato
+ </summary>
+ <remarks>
+Don't write code here
+ </remarks>
+</member>
+<member name="T:FormerDALWeb._Utn_autorizzatoDAO">
+ <summary>
+This class manage persistency on db of Utn_autorizzato object
+ </summary>
+ <remarks>
+
+ </remarks>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.#ctor">
+ <summary>
+New() create an istance of this class. Use default DB Connection
+ </summary>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.#ctor(System.Data.Common.DbConnection)">
+ <summary>
+New() create an istance of this class and specify an OPENED DB connection
+ </summary>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.Read(System.Int32)">
+ <summary>
+Read from DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return a Utn_autorizzato object
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.Save(FormerDALWeb.Utn_autorizzato@)">
+ <summary>
+Save on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return ID insert in DB
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.Delete(System.Int32)">
+ <summary>
+Delete from DB table Utn_autorizzato. Accept id of object to delete.
+ </summary>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.Delete(FormerDALWeb.Utn_autorizzato@,System.Collections.Generic.List{FormerDALWeb.Utn_autorizzato}@)">
+ <summary>
+Delete from DB table Utn_autorizzato. Accept object to delete and optional a List to remove the object from.
+ </summary>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.Find(FormerDALWeb.LUNA.LunaSearchParameter[])">
+ <summary>
+Find one on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return first of Utn_autorizzato
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.Find(System.String,FormerDALWeb.LUNA.LunaSearchParameter[])">
+ <summary>
+Find one on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return first of Utn_autorizzato
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.Find(FormerDALWeb.LUNA.LunaFieldName,FormerDALWeb.LUNA.LunaSearchParameter[])">
+ <summary>
+Find one on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return first of Utn_autorizzato
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.FindAll(FormerDALWeb.LUNA.LunaSearchParameter[])">
+ <summary>
+Find on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return a list of Utn_autorizzato
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.FindAll(System.String,FormerDALWeb.LUNA.LunaSearchParameter[])">
+ <summary>
+Find on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return a list of Utn_autorizzato
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.FindAll(System.Int32,System.String,FormerDALWeb.LUNA.LunaSearchParameter[])">
+ <summary>
+Find on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return a list of Utn_autorizzato
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.FindAll(FormerDALWeb.LUNA.LunaFieldName,FormerDALWeb.LUNA.LunaSearchParameter[])">
+ <summary>
+Find on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return a list of Utn_autorizzato
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.FindAll(System.Int32,FormerDALWeb.LUNA.LunaFieldName,FormerDALWeb.LUNA.LunaSearchParameter[])">
+ <summary>
+Find on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return a list of Utn_autorizzato
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.FindAll(FormerDALWeb.LUNA.LunaSearchOption,FormerDALWeb.LUNA.LunaSearchParameter[])">
+ <summary>
+Find on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return a list of Utn_autorizzato
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.GetBySQL(System.String,System.Boolean)">
+ <summary>
+Find on DB table Utn_autorizzato by custom query 
+ </summary>
+ <returns>
+Return a list of Utn_autorizzato by custom query
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.GetAll">
+ <summary>
+Return all record on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return all record in list of Utn_autorizzato
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.GetAll(FormerDALWeb.LUNA.LunaFieldName,System.Boolean)">
+ <summary>
+Return all record on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return all record in list of Utn_autorizzato
+ </returns>
+</member>
+<member name="M:FormerDALWeb._Utn_autorizzatoDAO.GetAll(System.String,System.Boolean)">
+ <summary>
+Return all record on DB table Utn_autorizzato
+ </summary>
+ <returns>
+Return all record in list of Utn_autorizzato
+ </returns>
+</member>
 <member name="T:FormerDALWeb.LUNA.LSO">
  <summary>
 This Class is an alias for LunaSearchOption. You could use both without difference
@@ -12085,6 +12273,14 @@ New() create an istance of this class and specify an OPENED DB connection
 
  </returns>
 </member>
+<member name="T:FormerDALWeb.Utn_autorizzatoDAO">
+ <summary>
+DAO Class for table Utn_autorizzato
+ </summary>
+ <remarks>
+Write your DATABASE custom method here
+ </remarks>
+</member>
 <member name="T:FormerDALWeb.Argomento">
  <summary>
 Entity Class for table Argomenti
@@ -13089,6 +13285,22 @@ Write your custom method and property here
 <member name="T:FormerDALWeb.IUtente">
  <summary>
 Interface for table Utenti
+ </summary>
+ <remarks>
+Don't write code here
+ </remarks>
+</member>
+<member name="T:FormerDALWeb.Utn_autorizzato">
+ <summary>
+Entity Class for table Utn_autorizzato
+ </summary>
+ <remarks>
+Write your custom method and property here
+ </remarks>
+</member>
+<member name="T:FormerDALWeb.IUtn_autorizzato">
+ <summary>
+Interface for table Utn_autorizzato
  </summary>
  <remarks>
 Don't write code here

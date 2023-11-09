@@ -6,6 +6,7 @@ Imports System.Web.Services
 Imports System.Web.Script.Services
 Imports System.Data
 Imports iTextSharp.testutils
+Imports System.Globalization
 
 Public Class pSiteMasterPage
     Inherits FormerMasterPage
@@ -127,6 +128,7 @@ Public Class pSiteMasterPage
         'Response.Cache.SetExpires(DateTime.Now.AddSeconds(1))
         'Response.Cache.SetCacheability(HttpCacheability.Public)
         'Response.Cache.SetValidUntilExpires(True)
+
         If Not Session("Carrello") Is Nothing Then
             Dim C As Carrello = Session("Carrello")
 
@@ -141,6 +143,9 @@ Public Class pSiteMasterPage
         If Not IsPostBack Then
             'carico le notifiche 
             If UtenteConnesso.IdUtente Then
+
+
+
                 Dim TotOrd As Integer = Notifica.NumeroNotifiche
                 If TotOrd Then
                     lblNotifiche.Text = TotOrd
@@ -150,6 +155,19 @@ Public Class pSiteMasterPage
                 End If
             End If
         End If
+        Dim UrlIndex As String = "http://localhost:5173/#/"
+        'Dim UrlIndex As String = "https://react.tipografiaformertest.it:6060/#/form-prodotto-v2/2/131/72/1/1/1684/0/0/0/0"
+        iframeIndexReact.Text = "<iframe id='iframeIndex2' src=" & UrlIndex & " hidden></iframe>"
+        'If UtenteConnesso.IdUtente = 1684 Then
+        '    Dim Differenza As Integer
+        '    Using mgr As New ListiniUtenteWDAO
+        '        Dim lLis As List(Of ListinoUtenteW) = mgr.FindAll(New LUNA.LunaSearchParameter(LFM.ListinoUtenteW.IdUt, UtenteConnesso.IdUtente))
+        '        Dim ListinoUtente As ListinoUtenteW = lLis(0)
+        '        Differenza = DateDiff(DateInterval.Minute, ListinoUtente.UltimaGenerazione, FormerWebApp.DataUltimaPubblicazioneListino)
+        '    End Using
+        '    Dim UrlCerca As String = "http://localhost:5173/#/cerca/" & UtenteConnesso.IdUtente & "/" & Differenza
+        '    iframeCerca.Text = "<iframe  style='width:100%; height:100%;border: none;overflow-y:hidden;position:relative;' src=" & UrlCerca & " ></iframe>"
+        'End If
 
         'FormerWebApp.FormerScriptManager = ScriptManagerFormer
 

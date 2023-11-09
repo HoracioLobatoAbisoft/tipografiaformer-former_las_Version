@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\Ichigo\Desktop\build_antiguo</_PublishTargetUrl>
-    <History>True|2023-10-17T19:46:11.2840987Z;True|2023-10-17T10:46:50.1110924-04:00;True|2023-10-06T10:47:37.7063809-04:00;True|2023-10-05T11:30:32.4498924-04:00;True|2023-09-29T10:43:43.2217207-04:00;True|2023-09-28T15:53:35.9685833-04:00;</History>
+    <History>True|2023-11-07T18:17:00.3249888Z;False|2023-11-07T14:16:50.5994602-04:00;True|2023-11-06T15:42:51.3001252-04:00;True|2023-11-06T15:28:05.1120579-04:00;True|2023-11-03T16:45:49.5219338-04:00;True|2023-11-03T16:23:10.0303203-04:00;True|2023-11-03T16:18:50.8217324-04:00;True|2023-11-02T09:13:37.3402470-04:00;True|2023-10-30T12:26:57.9286142-04:00;True|2023-10-17T15:46:11.2840987-04:00;True|2023-10-17T10:46:50.1110924-04:00;True|2023-10-06T10:47:37.7063809-04:00;True|2023-10-05T11:30:32.4498924-04:00;True|2023-09-29T10:43:43.2217207-04:00;True|2023-09-28T15:53:35.9685833-04:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -217,76 +217,76 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/12/2021 09:04:37</publishTime>
     </File>
     <File Include="bin/FormerBancaSella.dll">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:43</publishTime>
     </File>
     <File Include="bin/FormerBancaSella.dll.config">
       <publishTime>04/12/2021 09:03:35</publishTime>
     </File>
     <File Include="bin/FormerBancaSella.pdb">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:43</publishTime>
     </File>
     <File Include="bin/FormerBusinessLogic.dll">
-      <publishTime>09/28/2023 15:49:17</publishTime>
+      <publishTime>11/03/2023 09:30:47</publishTime>
     </File>
     <File Include="bin/FormerBusinessLogic.pdb">
-      <publishTime>09/28/2023 15:49:17</publishTime>
+      <publishTime>11/03/2023 09:30:47</publishTime>
     </File>
     <File Include="bin/FormerBusinessLogicInterface.dll">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:44</publishTime>
     </File>
     <File Include="bin/FormerBusinessLogicInterface.pdb">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:44</publishTime>
     </File>
     <File Include="bin/FormerConfig.dll">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:43</publishTime>
     </File>
     <File Include="bin/FormerConfig.pdb">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:43</publishTime>
     </File>
     <File Include="bin/FormerDALSql.dll">
-      <publishTime>09/28/2023 15:49:17</publishTime>
+      <publishTime>11/03/2023 09:30:46</publishTime>
     </File>
     <File Include="bin/FormerDALSql.pdb">
-      <publishTime>09/28/2023 15:49:17</publishTime>
+      <publishTime>11/03/2023 09:30:46</publishTime>
     </File>
     <File Include="bin/FormerDALWeb.dll">
-      <publishTime>09/28/2023 15:49:16</publishTime>
+      <publishTime>11/03/2023 09:30:46</publishTime>
     </File>
     <File Include="bin/FormerDALWeb.pdb">
-      <publishTime>09/28/2023 15:49:16</publishTime>
+      <publishTime>11/03/2023 09:30:46</publishTime>
     </File>
     <File Include="bin/FormerError.dll">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:44</publishTime>
     </File>
     <File Include="bin/FormerError.pdb">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:44</publishTime>
     </File>
     <File Include="bin/FormerGraphics.dll">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:44</publishTime>
     </File>
     <File Include="bin/FormerGraphics.pdb">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:44</publishTime>
     </File>
     <File Include="bin/FormerIO.dll">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:44</publishTime>
     </File>
     <File Include="bin/FormerIO.pdb">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:44</publishTime>
     </File>
     <File Include="bin/FormerLib.dll">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:43</publishTime>
     </File>
     <File Include="bin/FormerLib.pdb">
-      <publishTime>09/28/2023 15:49:15</publishTime>
+      <publishTime>11/03/2023 09:30:43</publishTime>
     </File>
     <File Include="bin/FormerWeb.dll">
-      <publishTime>10/17/2023 15:46:09</publishTime>
+      <publishTime>11/06/2023 15:42:49</publishTime>
     </File>
     <File Include="bin/FormerWeb.pdb">
-      <publishTime>10/17/2023 15:46:09</publishTime>
+      <publishTime>11/06/2023 15:42:49</publishTime>
     </File>
     <File Include="bin/FormerWeb.xml">
-      <publishTime>10/17/2023 15:46:09</publishTime>
+      <publishTime>11/06/2023 15:42:49</publishTime>
     </File>
     <File Include="bin/GhostscriptSharp.dll">
       <publishTime>04/12/2021 09:04:38</publishTime>
@@ -1633,7 +1633,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/12/2021 09:04:29</publishTime>
     </File>
     <File Include="master/main.master">
-      <publishTime>10/17/2023 15:45:39</publishTime>
+      <publishTime>11/06/2023 15:27:33</publishTime>
     </File>
     <File Include="master/reserved.master">
       <publishTime>04/12/2021 09:04:29</publishTime>
@@ -1675,7 +1675,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/12/2021 09:04:29</publishTime>
     </File>
     <File Include="page/carrello/carrello.aspx">
-      <publishTime>09/28/2023 14:45:01</publishTime>
+      <publishTime>11/06/2023 08:50:47</publishTime>
     </File>
     <File Include="page/carrello/carrelloConsegna.aspx">
       <publishTime>09/28/2023 14:45:01</publishTime>
@@ -1882,7 +1882,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/12/2021 09:04:09</publishTime>
     </File>
     <File Include="prodotto.aspx">
-      <publishTime>09/29/2023 09:08:03</publishTime>
+      <publishTime>11/06/2023 15:16:09</publishTime>
     </File>
     <File Include="robots.txt">
       <publishTime>04/12/2021 09:04:09</publishTime>
@@ -2128,7 +2128,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/12/2021 09:04:35</publishTime>
     </File>
     <File Include="userControl/ucCarrello.ascx">
-      <publishTime>04/12/2021 09:04:36</publishTime>
+      <publishTime>11/06/2023 15:41:54</publishTime>
     </File>
     <File Include="userControl/ucCarrelloHelp.ascx">
       <publishTime>09/28/2023 14:45:02</publishTime>
@@ -2173,7 +2173,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>04/12/2021 09:04:37</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/17/2023 15:46:10</publishTime>
+      <publishTime>11/03/2023 16:18:49</publishTime>
     </File>
   </ItemGroup>
 </Project>
