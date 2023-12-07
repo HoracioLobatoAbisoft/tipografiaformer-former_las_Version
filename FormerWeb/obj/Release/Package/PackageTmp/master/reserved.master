@@ -1,0 +1,50 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/master/Main.Master" AutoEventWireup="false" CodeBehind="reserved.master.vb" Inherits="FormerWeb.reserved" %>
+<%@ Import Namespace="Formerlib.formerenum" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+    <div class="Reserved">  
+    <div class="ReservedMenu">
+        <hr />
+                    <b>AREA PERSONALE</b><hr />
+        <b>Profilo</b><br />
+                        <a href="/i-tuoi-dati" class="voceMenu"><img src="/img/icoUt20B.png"/> - Il tuo Profilo</a><br />
+                        <a href="/i-tuoi-dati" class="voceMenu"><img src="/img/icoPwd20.png" /> - Cambio Password</a><br />
+                        <a href="/aggiorna-dati-fiscali" class="voceMenu"><img src="/img/_icoDatiFiscali20.png" /> - Aggiorna Dati Fiscali</a><br />
+                        <a href="/indirizzi-spedizione" class="voceMenu"><img src="/img/icoInd20.png" /> - Indirizzi e Corriere</a><br />
+        <br /><b>Ordini</b><br />
+                        <a href="/i-tuoi-ordini" class="voceMenu"><img src="/img/icoCarrello20.png" /> - I tuoi Ordini</a><br />
+                        <a href="/i-tuoi-lavori" class="voceMenu"><img src="/img/icoLavoro20.png" /> - I tuoi Lavori</a><br />
+                        <a href="/i-tuoi-coupon-di-sconto" class="voceMenu"><img src="/img/icoMieiCoupon20.png" /> - I tuoi Coupon di Sconto</a><br />
+                        <a href="/offerte-e-promozioni" class="voceMenu"><img src="/img/icoOfferte16.png"  /> - Offerte e Promozioni</a><br />
+                        <a href="/le-tue-fatture" class="voceMenu"><img src="/img/icoPdf20.png" /> - Le tue Fatture</a><br />
+<%If UtenteConnesso.Tipo = enTipoRubrica.Rivenditore Then %>
+<br /><b>Listino PDF</b><br />
+<a href="http://listini.tipografiaformer.it" class="voceMenu" target="_blank" ><img src="/img/icoPdf20.png" /> - Crea il tuo listino</a><br />
+<%End if %>
+        <br /><b>Recensioni</b><br />
+                        <a href="/le-tue-recensioni" class="voceMenu"><img src="/img/icorecensione.png" width="20" /> - Le tue Recensioni</a><br />
+<%If UtenteConnesso.IsAdmin Then%>
+<br /><b>Altro</b><br />
+<a href="/webmaster" class="voceMenu"><b>WebMaster</b></a><br />
+<%end if %>
+        <hr />
+                    <b>AIUTO</b><br />
+                        <a href="/assistenza-clienti" class="voceMenu">Contattaci</a><br />
+                        <a href="/le-nostre-lavorazioni" class="voceMenu">Le nostre lavorazioni</a><br />
+                        <a href="/glossario-tipografico" class="voceMenu">Glossario Tipografico</a><br />
+                        <a href="/suggerimenti-per-inviarci-i-file" class="voceMenu">Come creare file perfetti</a><br />
+                        <%--<a href="/dal-vecchio-al-nuovo-sito" class="voceMenu">Dal vecchio al nuovo sito</a><br />--%>
+        <hr />
+        <a href="https://www.google.com/chrome/" target="_blank"><img src="/img/btnHomeBrowser.png" class="imgNeutraSpaced" /></a>
+        <a href="/suggerimenti-per-inviarci-i-file" target="_blank"><img src="/img/btnHomeInvioFile.png" class="imgNeutra" /></a>
+
+                </div>
+                <div class="ReservedHome">
+                    <asp:ContentPlaceHolder id="body" runat="server"></asp:ContentPlaceHolder>
+                </div>
+    </div>
+</asp:Content>

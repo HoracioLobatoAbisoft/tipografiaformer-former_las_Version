@@ -5,18 +5,28 @@
 
         Session("PageTitle") = "Richiedi un Campione Gratuito"
 
-        If Not IsPostBack Then
-
-            If Not Session("CampioneRichiesto") Is Nothing Then
-                lblCampione.Text = Session("CampioneRichiesto")
-            Else
-                Response.Redirect("/")
-            End If
-
-
-
+        Dim Eviroment As Boolean = UtenteConnesso.Eviroment
+        Dim UrlProdottoEnviroment As String = ""
+        If Eviroment Then
+            UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/richiedi-un-campione-gratuito"
+        Else
+            UrlProdottoEnviroment = "http://localhost:5173/#/richiedi-un-campione-gratuito"
         End If
 
+        If UtenteConnesso.UtenteAutorizato Then
+            Dim UrlProdotto2 As String = UrlProdottoEnviroment
+
+            iframeCampGrat.Text = "<iframe id='carrelloCampGrat' style='width:100%; height: 71vh;border: none;' src=" & UrlProdotto2 & " ></iframe>"
+        Else
+            If Not IsPostBack Then
+
+                If Not Session("CampioneRichiesto") Is Nothing Then
+                    lblCampione.Text = Session("CampioneRichiesto")
+                Else
+                    Response.Redirect("/")
+                End If
+            End If
+        End If
     End Sub
 
     Private Sub imgRichiedi_Click(sender As Object, e As ImageClickEventArgs) Handles imgRichiedi.Click

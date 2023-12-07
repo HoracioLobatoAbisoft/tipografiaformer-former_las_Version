@@ -1,0 +1,117 @@
+<OrdineWeb>
+	<L>FormerDALWeb.ListinoBaseW</L>
+	<P>FormerDALWeb.PreventivazioneW</P>
+	<F>FormerDALWeb.FormatoProdottoW</F>
+	<TC>FormerDALWeb.TipoCartaW</TC>
+	<C>FormerDALWeb.ColoreStampaW</C>
+	<Corriere>FormerDALWeb.CorriereW</Corriere>
+	<PercPromo>0</PercPromo>
+	<IdProdotto>330</IdProdotto>
+	<NOrdineStr>-</NOrdineStr>
+	<AltezzaI>0</AltezzaI>
+	<LarghezzaI>0</LarghezzaI>
+	<ProfonditaI>0</ProfonditaI>
+	<IdTipoFustellaI>0</IdTipoFustellaI>
+	<Stato>5</Stato>
+	<IdOrdineWithAttach>former:129768</IdOrdineWithAttach>
+	<IdRiferimentoOrdine>129768</IdRiferimentoOrdine>
+	<QtaStr>500</QtaStr>
+	<ColoriDiStampaStr>Stampa a Caldo (Hot Foil)</ColoriDiStampaStr>
+	<IdOrdineWeb>129768</IdOrdineWeb>
+	<CorriereStr>RITIRO CLIENTE</CorriereStr>
+	<ColliStr>5</ColliStr>
+	<NomeLavoroStr>Prueba daemon</NomeLavoroStr>
+	<NFogliVisStr>1</NFogliVisStr>
+	<OrientamentoSelezionato>-1</OrientamentoSelezionato>
+	<OrientamentoSelezionatoStr>Non specificato</OrientamentoSelezionatoStr>
+	<NFogliVis>1</NFogliVis>
+	<PesoVolumetrico>1</PesoVolumetrico>
+	<PesoStr>1</PesoStr>
+	<Riassunto>500 Biglietti da Visita 85x55 Cartoncino NERO stampa ORO lucido a caldo</Riassunto>
+	<NomeProdotto>Biglietti da Visita 85x55 Cartoncino NERO stampa ORO lucido a caldo</NomeProdotto>
+	<NomeCliente>Diego Lunadei</NomeCliente>
+	<AnteprimaWeb></AnteprimaWeb>
+	<ImportoNettoOrigStr>75.00</ImportoNettoOrigStr>
+	<ImportoNettoStr>75.00</ImportoNettoStr>
+	<PagatoStr>No</PagatoStr>
+	<ImportoNettoOrig>75</ImportoNettoOrig>
+	<ImportoNetto>75</ImportoNetto>
+	<DataInsStr>Wed 06/12/2023 10:45</DataInsStr>
+	<DataPrevProduzione>12/14/2023 12:00:00 AM</DataPrevProduzione>
+	<DataPrevConsegna>12/14/2023 12:00:00 AM</DataPrevConsegna>
+	<DataConsegnaStr>Thursday 14/12/2023</DataConsegnaStr>
+	<DimensioniStr>85x55</DimensioniStr>
+	<StatoStr>In attesa Invio File</StatoStr>
+	<IdOrdineInterno>0</IdOrdineInterno>
+	<Modificabile>True</Modificabile>
+	<ColoreStato>Color [A=255, R=255, G=0, B=0]</ColoreStato>
+	<ColoreStatoHTML>#FF0000</ColoreStatoHTML>
+	<BoxTitolo>Comunicazione Di Prestigio</BoxTitolo>
+	<IconaStato>/img/icoBianco.png</IconaStato>
+	<SupportoStr>Cartoncino Nero 390 gr</SupportoStr>
+	<PathTemplate></PathTemplate>
+	<SchedaProdottoStr>/14/114/77/15/1/Stampa-Stampa-Comunicazione-Di-Prestigio-85x55-cartoncino-390gr-Stampa-a-Caldo-Hot-Foil-</SchedaProdottoStr>
+	<RiassuntoBox>500 Biglietti da Visita 85x...</RiassuntoBox>
+	<BoxImgRif>Biglietto-Cartoncino-Nero-Oro-Lucido-a-Caldo-20200206144255329889.png</BoxImgRif>
+	<BoxLavorazioni>
+	</BoxLavorazioni>
+	<NoteOrd>Note Daemon</NoteOrd>
+	<ImportoTotaleScontiStr>0.00</ImportoTotaleScontiStr>
+	<FileModificabili>True</FileModificabili>
+	<ConsegnaAssociata>FormerDALWeb.Consegna</ConsegnaAssociata>
+	<FileScaricatiNomeAnteprima></FileScaricatiNomeAnteprima>
+	<FileScaricatiNomeFronte></FileScaricatiNomeFronte>
+	<FileScaricatiNomeRetro></FileScaricatiNomeRetro>
+	<Omaggio>0</Omaggio>
+	<Utente>FormerDALWeb.Utente</Utente>
+	<IdOrdine>129768</IdOrdine>
+	<Altezza>0</Altezza>
+	<Annotazioni>Note Daemon</Annotazioni>
+	<Anteprima></Anteprima>
+	<ConsegnaGarantita>1/1/0001 12:00:00 AM</ConsegnaGarantita>
+	<ConsegnaGarantitaDa>0</ConsegnaGarantitaDa>
+	<DataCambioStato>1/1/0001 12:00:00 AM</DataCambioStato>
+	<DataIns>12/6/2023 10:45:52 AM</DataIns>
+	<ExtraData></ExtraData>
+	<IdCons>246829</IdCons>
+	<IdCorriere>1</IdCorriere>
+	<IdCoupon>0</IdCoupon>
+	<IdIndirizzo>0</IdIndirizzo>
+	<IdListinoBase>330</IdListinoBase>
+	<IdMacchinarioProduzioneUtilizzato>0</IdMacchinarioProduzioneUtilizzato>
+	<IdMailPreventivo>0</IdMailPreventivo>
+	<IdOrdineInt>0</IdOrdineInt>
+	<IdPromo>0</IdPromo>
+	<IdTipoFustella>0</IdTipoFustella>
+	<IdUt>3</IdUt>
+	<InseritoDa>0</InseritoDa>
+	<Larghezza>0</Larghezza>
+	<Lavorazioni>155,1</Lavorazioni>
+	<Mq>0</Mq>
+	<Nfogli>1</Nfogli>
+	<NoEmailDemone>0</NoEmailDemone>
+	<NomeLavoro>Prueba daemon</NomeLavoro>
+	<NumeroColli>5</NumeroColli>
+	<OrdineInOmaggio>0</OrdineInOmaggio>
+	<OrdineWeb>True</OrdineWeb>
+	<Orientamento>-1</Orientamento>
+	<Peso>1</Peso>
+	<Preventivo>0</Preventivo>
+	<PrezzoCalcolatoNetto>75</PrezzoCalcolatoNetto>
+	<PrezzoCorriere>0</PrezzoCorriere>
+	<Profondita>0</Profondita>
+	<Qta>500</Qta>
+	<Ricarico>0</Ricarico>
+	<Sconto>0</Sconto>
+	<SorgenteCopertina></SorgenteCopertina>
+	<SorgenteFronte></SorgenteFronte>
+	<SorgenteRetro></SorgenteRetro>
+	<StatoWeb>0</StatoWeb>
+	<TipoConsegna>0</TipoConsegna>
+	<TipoRetro>0</TipoRetro>
+	<TotaleIva>0</TotaleIva>
+	<TotaleNetto>0</TotaleNetto>
+	<TotaleOrdine>0</TotaleOrdine>
+	<UsaNomeLavoroInFattura>0</UsaNomeLavoroInFattura>
+	<IsChanged>True</IsChanged>
+</OrdineWeb>

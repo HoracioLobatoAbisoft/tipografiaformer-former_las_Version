@@ -30,6 +30,7 @@
         $(document).ready(function () {
             $("#tabs").tabs();
         });
+        
         const production = false;
         var Uris = {
             front: production ? 'https://react.tipografiaformertest.it:6060' : 'http://localhost:5173',
@@ -227,10 +228,11 @@
                                         })
 
                                         message.uri.data.map((item, i) => {
+                                            const prodottoQta = item.qta + " " +item.prodotto
                                                 html = `
                                                 <tr>
                                                     <td style="width:32px;"><img src="/listino/img/${item.img}" style="height:32px;width:32px;border-width:0px;"></td>
-                                                    <td align="left">${item.prodotto.substring(0, 34)}...</td>
+                                                    <td align="left">${prodottoQta.substring(0, 34)}...</td>
                                                     <td align="right" valign="top"><b> € ${formatNumber(item.prezzo)}</b></td>
                                                 </tr>
                                                 `;
@@ -895,10 +897,11 @@
             if (arraryCarrLocal) {
                 var html = ``;
                 arrarParse.map((item, i) => {
+                    const prodottoQta = item.qta+" "+ item.prodotto
                     html = `
                             <tr>
                                 <td style="width:32px;"><img src="/listino/img/${item.img}" style="height:32px;width:32px;border-width:0px;"></td>
-                                <td align="left">${item.prodotto.substring(0, 34)}...</td>
+                                <td align="left">${prodottoQta.substring(0, 34)}...</td>
                                 <td align="right" valign="top"><b> € ${formatNumber(item.prezzo)}</b></td>
                             </tr>
                             `;

@@ -3626,67 +3626,76 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:FormerWeb.pCarrelloFile._PannelloDinamico">
+<member name="F:FormerWeb.pCarrelloFile._IframecarreloStp2">
 <summary>
-Controllo PannelloDinamico.
+IframecarreloStp2 control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:FormerWeb.pCarrelloFile._PannelloDinamico">
+<summary>
+PannelloDinamico control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloFile._pnlTrace">
 <summary>
-Controllo pnlTrace.
+pnlTrace control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloFile._txtTrace">
 <summary>
-Controllo txtTrace.
+txtTrace control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloFile._lnkMiaMail">
 <summary>
-Controllo lnkMiaMail.
+lnkMiaMail control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloFile._lblErrEmail">
 <summary>
-Controllo lblErrEmail.
+lblErrEmail control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloFile._carrelloHelp">
 <summary>
-Controllo carrelloHelp.
+carrelloHelp control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloFile._UpdateProgress1">
 <summary>
-Controllo UpdateProgress1.
+UpdateProgress1 control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDatiFiscali._lblIdCli">
@@ -3986,247 +3995,274 @@ Campo generato automaticamente.
 Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
 </remarks>
 </member>
-<member name="F:FormerWeb.pCarrelloRiepilogo._rptOrdini">
+<member name="F:FormerWeb.pCarrelloRiepilogo._IframecarreloStp5">
 <summary>
-Controllo rptOrdini.
+IframecarreloStp5 control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:FormerWeb.pCarrelloRiepilogo._rptOrdini">
+<summary>
+rptOrdini control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloRiepilogo._btnOrdina">
 <summary>
-Controllo btnOrdina.
+btnOrdina control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloRiepilogo._carrelloHelp">
 <summary>
-Controllo carrelloHelp.
+carrelloHelp control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:FormerWeb.pCarrelloPagamento._IframecarreloStp4">
+<summary>
+IframecarreloStp4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloPagamento._PannelloDinamico">
 <summary>
-Controllo PannelloDinamico.
+PannelloDinamico control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloPagamento._rdoPagam">
 <summary>
-Controllo rdoPagam.
+rdoPagam control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloPagamento._pnlCouponCarrello">
 <summary>
-Controllo pnlCouponCarrello.
+pnlCouponCarrello control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloPagamento._txtCoupon">
 <summary>
-Controllo txtCoupon.
+txtCoupon control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloPagamento._btnCoupon">
 <summary>
-Controllo btnCoupon.
+btnCoupon control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloPagamento._pnlRisCoupon">
 <summary>
-Controllo pnlRisCoupon.
+pnlRisCoupon control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloPagamento._lblRisCoupon">
 <summary>
-Controllo lblRisCoupon.
+lblRisCoupon control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloPagamento._carrelloHelp">
 <summary>
-Controllo carrelloHelp.
+carrelloHelp control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloPagamento._UpdateProgress1">
 <summary>
-Controllo UpdateProgress1.
+UpdateProgress1 control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:FormerWeb.pCarrelloConsegna._IframecarreloStp3">
+<summary>
+IframecarreloStp3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._PannelloDinamico">
 <summary>
-Controllo PannelloDinamico.
+PannelloDinamico control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._rdoCorr">
 <summary>
-Controllo rdoCorr.
+rdoCorr control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._pnlSelectIndirizzo">
 <summary>
-Controllo pnlSelectIndirizzo.
+pnlSelectIndirizzo control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._ddlIndirizzo">
 <summary>
-Controllo ddlIndirizzo.
+ddlIndirizzo control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._lnkAddInd">
 <summary>
-Controllo lnkAddInd.
+lnkAddInd control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._pnlIndRitiro">
 <summary>
-Controllo pnlIndRitiro.
+pnlIndRitiro control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._lblInfoCorr">
 <summary>
-Controllo lblInfoCorr.
+lblInfoCorr control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._lblDataCons">
 <summary>
-Controllo lblDataCons.
+lblDataCons control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._pnlTrace">
 <summary>
-Controllo pnlTrace.
+pnlTrace control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._txtTrace">
 <summary>
-Controllo txtTrace.
+txtTrace control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._lnkMiaMail">
 <summary>
-Controllo lnkMiaMail.
+lnkMiaMail control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._lblErrEmail">
 <summary>
-Controllo lblErrEmail.
+lblErrEmail control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._btnScegliPagamento">
 <summary>
-Controllo btnScegliPagamento.
+btnScegliPagamento control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._carrelloHelp">
 <summary>
-Controllo carrelloHelp.
+carrelloHelp control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrelloConsegna._UpdateProgress1">
 <summary>
-Controllo UpdateProgress1.
+UpdateProgress1 control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pCarrello._iframeCarrello">
@@ -4292,67 +4328,76 @@ Campo generato automaticamente.
 Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
 </remarks>
 </member>
-<member name="F:FormerWeb.pDettaglioOrdine._rptOrdini">
+<member name="F:FormerWeb.pDettaglioOrdine._IframeDetaglioOrdini">
 <summary>
-Controllo rptOrdini.
+IframeDetaglioOrdini control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:FormerWeb.pDettaglioOrdine._rptOrdini">
+<summary>
+rptOrdini control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioOrdine._pnlPagamentoEffettuato">
 <summary>
-Controllo pnlPagamentoEffettuato.
+pnlPagamentoEffettuato control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioOrdine._lblPagamentoEffettuato">
 <summary>
-Controllo lblPagamentoEffettuato.
+lblPagamentoEffettuato control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioOrdine._pnlPagamAnticip">
 <summary>
-Controllo pnlPagamAnticip.
+pnlPagamAnticip control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioOrdine._btnPayBancaSella">
 <summary>
-Controllo btnPayBancaSella.
+btnPayBancaSella control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioOrdine._lblNoDocFisc">
 <summary>
-Controllo lblNoDocFisc.
+lblNoDocFisc control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioOrdine._lblDocFiscDownload">
 <summary>
-Controllo lblDocFiscDownload.
+lblDocFiscDownload control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pLetuerecensioni._rptRecensioni">
@@ -4409,184 +4454,202 @@ Campo generato automaticamente.
 Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
 </remarks>
 </member>
-<member name="F:FormerWeb.pOrdini._rptCons">
+<member name="F:FormerWeb.pOrdini._IframeOrdini">
 <summary>
-Controllo rptCons.
+IframeOrdini control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:FormerWeb.pOrdini._rptCons">
+<summary>
+rptCons control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pOrdini._plcPaging">
 <summary>
-Controllo plcPaging.
+plcPaging control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pOrdini._lblPageName">
 <summary>
-Controllo lblPageName.
+lblPageName control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:FormerWeb.pDettaglioLavoro._IframeDetaglioLavoro">
+<summary>
+IframeDetaglioLavoro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._PannelloDinamico">
 <summary>
-Controllo PannelloDinamico.
+PannelloDinamico control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._lnkEditNome">
 <summary>
-Controllo lnkEditNome.
+lnkEditNome control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._ddlTipoRetro">
 <summary>
-Controllo ddlTipoRetro.
+ddlTipoRetro control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._chkPreventivo">
 <summary>
-Controllo chkPreventivo.
+chkPreventivo control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._lnkEditNote">
 <summary>
-Controllo lnkEditNote.
+lnkEditNote control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._pnlNote">
 <summary>
-Controllo pnlNote.
+pnlNote control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._txtNote">
 <summary>
-Controllo txtNote.
+txtNote control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._lnkSaveNote">
 <summary>
-Controllo lnkSaveNote.
+lnkSaveNote control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._lnkChiudi">
 <summary>
-Controllo lnkChiudi.
+lnkChiudi control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._lnkCarica">
 <summary>
-Controllo lnkCarica.
+lnkCarica control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._UploaderF">
 <summary>
-Controllo UploaderF.
+UploaderF control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._UploaderR">
 <summary>
-Controllo UploaderR.
+UploaderR control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._lblRetro">
 <summary>
-Controllo lblRetro.
+lblRetro control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._HrefFronte">
 <summary>
-Controllo HrefFronte.
+HrefFronte control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._HrefRetro">
 <summary>
-Controllo HrefRetro.
+HrefRetro control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._UpdateProgress1">
 <summary>
-Controllo UpdateProgress1.
+UpdateProgress1 control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pDettaglioLavoro._lnkDownloadModello3d">
 <summary>
-Controllo lnkDownloadModello3d.
+lnkDownloadModello3d control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pnewInd._pnlNewInd">
@@ -4731,6 +4794,15 @@ Controllo lnkSave.
 <remarks>
 Campo generato automaticamente.
 Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:FormerWeb.ppEndOk._IFramePayPalOk">
+<summary>
+IFramePayPalOk control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pRigPwd._lblEsito">
@@ -4940,22 +5012,31 @@ Campo generato automaticamente.
 Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
 </remarks>
 </member>
-<member name="F:FormerWeb.pRichiediCampione._lblCampione">
+<member name="F:FormerWeb.pRichiediCampione._iframeCampGrat">
 <summary>
-Controllo lblCampione.
+iframeCampGrat control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:FormerWeb.pRichiediCampione._lblCampione">
+<summary>
+lblCampione control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pRichiediCampione._imgRichiedi">
 <summary>
-Controllo imgRichiedi.
+imgRichiedi control.
 </summary>
 <remarks>
-Campo generato automaticamente.
-Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:FormerWeb.pIndirizzoSpedizione._rptInd">

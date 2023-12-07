@@ -155,19 +155,19 @@ Public Class pSiteMasterPage
                 End If
             End If
         End If
-        Dim UrlIndex As String = "http://localhost:5173/#/"
-        'Dim UrlIndex As String = "https://react.tipografiaformertest.it:6060/#/form-prodotto-v2/2/131/72/1/1/1684/0/0/0/0"
-        iframeIndexReact.Text = "<iframe id='iframeIndex2' src=" & UrlIndex & " hidden></iframe>"
-        'If UtenteConnesso.IdUtente = 1684 Then
-        '    Dim Differenza As Integer
-        '    Using mgr As New ListiniUtenteWDAO
-        '        Dim lLis As List(Of ListinoUtenteW) = mgr.FindAll(New LUNA.LunaSearchParameter(LFM.ListinoUtenteW.IdUt, UtenteConnesso.IdUtente))
-        '        Dim ListinoUtente As ListinoUtenteW = lLis(0)
-        '        Differenza = DateDiff(DateInterval.Minute, ListinoUtente.UltimaGenerazione, FormerWebApp.DataUltimaPubblicazioneListino)
-        '    End Using
-        '    Dim UrlCerca As String = "http://localhost:5173/#/cerca/" & UtenteConnesso.IdUtente & "/" & Differenza
-        '    iframeCerca.Text = "<iframe  style='width:100%; height:100%;border: none;overflow-y:hidden;position:relative;' src=" & UrlCerca & " ></iframe>"
-        'End If
+
+        Dim Eviroment As Boolean = UtenteConnesso.Eviroment
+        Dim UrlProdottoEnviroment As String = ""
+        If Eviroment Then
+            UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/"
+        Else
+            UrlProdottoEnviroment = "http://localhost:5173/#/"
+        End If
+
+        If UtenteConnesso.UtenteAutorizato Then
+            Dim UrlIndex As String = UrlProdottoEnviroment
+            iframeIndexReact.Text = "<iframe id='iframeIndex2' src=" & UrlIndex & " hidden></iframe>"
+        End If
 
         'FormerWebApp.FormerScriptManager = ScriptManagerFormer
 

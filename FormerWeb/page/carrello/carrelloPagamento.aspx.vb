@@ -7,20 +7,33 @@ Public Class pCarrelloPagamento
     Inherits FormerSecurePage
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If UtenteConnesso.UtenteAutorizato Then
 
-        If Carrello.Ordini.Count = 0 Then Response.Redirect("/carrello")
+            Dim UrlProdottoEnviroment As String = ""
+            Dim Eviroment As Boolean = UtenteConnesso.Eviroment
 
-        If Not IsPostBack Then
-
-            CaricaMetodiPagamento()
-
-            If Carrello.ApplicatoCouponAlCarrello Then
-
-                lblRisCoupon.Text = "Sconto per Coupon '" & Carrello.CodiceCouponApplicato.ToUpper & "' applicato all' ordine"
-                pnlRisCoupon.Visible = True
-
+            If Eviroment Then
+                UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/carrelloStp4"
+            Else
+                UrlProdottoEnviroment = "http://localhost:5173/#/carrelloStp4"
             End If
 
+            IframecarreloStp4.Text = "<iframe id='carrelloStp3' style='width:100%; height: 100vh;border: none;' src=" & UrlProdottoEnviroment & " ></iframe>"
+        Else
+            If Carrello.Ordini.Count = 0 Then Response.Redirect("/carrello")
+
+            If Not IsPostBack Then
+
+                CaricaMetodiPagamento()
+
+                If Carrello.ApplicatoCouponAlCarrello Then
+
+                    lblRisCoupon.Text = "Sconto per Coupon '" & Carrello.CodiceCouponApplicato.ToUpper & "' applicato all' ordine"
+                    pnlRisCoupon.Visible = True
+
+                End If
+
+            End If
         End If
 
 

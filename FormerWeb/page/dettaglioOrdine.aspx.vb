@@ -55,11 +55,26 @@ Public Class pDettaglioOrdine
         Return ris
     End Function
 
+    Private Sub IframeRender(_IdConsegna As Integer)
+        Dim Eviroment As Boolean = UtenteConnesso.Eviroment
+        Dim UrlProdottoEnviroment As String = ""
+        If Eviroment Then
+            UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/dettaglioOrdine/" & _IdConsegna
+        Else
+            UrlProdottoEnviroment = "http://localhost:5173/#/dettaglioOrdine/" & _IdConsegna
+        End If
+
+        If UtenteConnesso.UtenteAutorizato Then
+            Dim UrlIndex As String = UrlProdottoEnviroment
+            IframeDetaglioOrdini.Text = "<iframe id='IFrameOrdini' src=" & UrlIndex & " style = 'width:100%;height:100vh;border:none;'></iframe>"
+        End If
+    End Sub
+
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
         _IdConsegna = Convert.ToInt32(Page.RouteData.Values("ido"))
         Dim CheckVisOrd As Boolean = False
-
+        IframeRender(_IdConsegna)
         If _IdConsegna Then
             _C = New Consegna
             _C.Read(_IdConsegna)

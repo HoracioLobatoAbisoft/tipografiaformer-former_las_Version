@@ -62,6 +62,10 @@ Public Class pCarrelloRiepilogo
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
+
+
+
+
         Dim GiaChiestoAggiornamentoDF As Boolean = False
 
         Try
@@ -73,10 +77,22 @@ Public Class pCarrelloRiepilogo
         If GiaChiestoAggiornamentoDF = False AndAlso UtenteConnesso.AggiornareDatiFiscali = True Then
             Response.Redirect("/aggiorna-dati-fiscali")
         Else
-            If Carrello.Ordini.Count = 0 Then
-                Response.Redirect("/carrello")
+            If UtenteConnesso.UtenteAutorizato Then
+                Dim UrlProdottoEnviroment As String = ""
+                Dim Eviroment As Boolean = UtenteConnesso.Eviroment
+
+                If Eviroment Then
+                    UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/carrelloStp5"
+                Else
+                    UrlProdottoEnviroment = "http://localhost:5173/#/carrelloStp5"
+                End If
+                IframecarreloStp5.Text = "<iframe id='carrelloStp3' style='width:100%; height: 100vh;border: none;' src=" & UrlProdottoEnviroment & " ></iframe>"
             Else
-                CaricaDati()
+                If Carrello.Ordini.Count = 0 Then
+                    Response.Redirect("/carrello")
+                Else
+                    CaricaDati()
+                End If
             End If
         End If
     End Sub

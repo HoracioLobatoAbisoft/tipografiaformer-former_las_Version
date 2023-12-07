@@ -1,0 +1,208 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="main.m.master.vb" Inherits="FormerWeb.main_m" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Tipografia Former Online - Il tuo mondo della stampa a Roma</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="keywords" content=<%=GetSpecificKeywords()%> />
+    <meta name="description" content=<%=GetSpecificDescription()%> /> 
+    <meta name="robots" content="all" />
+    <meta http-equiv="CONTENT-LANGUAGE" content="Italian" />
+<%--    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />--%>
+    <link rel="SHORTCUT ICON" href="/img/icoSite.gif" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<link rel="stylesheet" href="/styles/css/site.mobile.css" />
+</head>
+<body class="is-preload">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scrMain" runat="server"></asp:ScriptManager>
+        <div id="wrapper">
+            				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<!-- Header -->
+								<header id="header">
+									<a href="/" class="logo"><strong>TipografiaFormer.it</strong> - il tuo mondo della stampa a Roma</a>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+							<div style="margin-top:10px;">
+								Benvenuto <%If UtenteConnesso.IdUtente Then%><b class="NomeUtenteMobile"><%--<img src="/img/icoUt20.png" width="25"/>--%><%=getNominativoUtente %></b><%Else%>Visitatore<%end if %>, 
+                <%If UtenteConnesso.IdUtente Then%>
+                <a href="/m/i-tuoi-ordini"><b>I tuoi Ordini</b></a> <asp:LinkButton ID="lnkEsci" ForeColor="#009ec9" runat="server"><b>Esci</b></asp:LinkButton>
+                <%Else%>
+                <a href="/registrati" class="orange"><b>Registrati</b></a> o <a href="/login" class="orange"><b>Accedi</b></a>
+                <%End If%>
+							</div>
+							
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+</asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+            <!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+										<asp:TextBox ID="txtCerca" runat="server" placeholder="Cerca..." ></asp:TextBox>
+										<asp:button id="btnCerca" runat="server" text="Cerca" />
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Tipografia Former</h2>
+									</header>
+									<ul>
+										<li>
+                                        <span class="opener tvwViolet"><b><img src="/img/icoOffset16w.png" /> STAMPA OFFSET</b></span>
+											<ul style="display:block;">
+                                                
+												<asp:Repeater ID="rptPreventivazione" runat="server">
+													<HeaderTemplate>
+                       
+													</HeaderTemplate>
+													<ItemTemplate>
+														<a href="<%#Eval("Url")%>" title="<%#eval("DescrizioneEstesa")%>" >
+														<%#Eval("Descrizione")%> <%# If(Eval("Aggiornata") = True, " <img src=""/img/new.gif"">", "")%></a>
+													</ItemTemplate>
+												</asp:Repeater>
+
+                                            </ul>
+                                        </li>
+                                        
+										 <%If ShowPackaging() Then%>
+										<li>
+											<span class="opener tvwOrange"><b><img src="/img/icoPackaging16w.png" /> PACKAGING</b></span>
+											<ul style="display:block;">
+										<asp:Repeater ID="rptPackaging" runat="server">
+                   
+											<HeaderTemplate>
+                       
+											</HeaderTemplate>
+											<ItemTemplate>
+												<a href="<%#Eval("Url")%>" title="<%#Eval("DescrizioneEstesa")%>"  >
+												<%#Eval("Descrizione")%></a>
+											</ItemTemplate>
+										</asp:Repeater>
+												</ul>
+										</li>
+                    
+										<%end If %>
+
+										<%If ShowDigitale() Then%>
+										<li>
+											<span class="opener tvwBlu"><b><img src="/img/icoDigitale16w.png" /> STAMPA DIGITALE</b></span>
+										<ul style="display:block;">
+											<asp:Repeater ID="rptDigitale" runat="server">
+                   
+											<HeaderTemplate>
+                       
+											</HeaderTemplate>
+											<ItemTemplate>
+												<a href="<%#Eval("Url")%>" title="<%#Eval("DescrizioneEstesa")%>"  >
+												<%#Eval("Descrizione")%></a>
+											</ItemTemplate>
+										</asp:Repeater>
+											</ul>
+										</li>
+                    
+										<%end If %>
+
+										<%If ShowRicamo() Then%>
+										<li>
+											<span class="opener tvwGreen"><b><img src="/img/icoRicamo16w.png" /> RICAMO</b></span>
+										<ul style="display:block;">
+											<asp:Repeater ID="rptRicamo" runat="server">
+                   
+											<HeaderTemplate>
+                       
+											</HeaderTemplate>
+											<ItemTemplate>
+												<a href="<%#Eval("Url")%>" title="<%#Eval("DescrizioneEstesa")%>"  >
+												<%#Eval("Descrizione")%></a>
+											</ItemTemplate>
+										</asp:Repeater>
+											</ul>
+										</li>
+                    
+										<%end If %>
+
+										<%If ShowEtichette() Then%>
+										<li>
+											<span class="opener tvwLightRed"><b><img src="/img/icoEtichette16w.png" /> ETICHETTE</b></span>
+										<ul style="display:block;">
+											<asp:Repeater ID="rptEtichette" runat="server">
+                   
+											<HeaderTemplate>
+                       
+											</HeaderTemplate>
+											<ItemTemplate>
+												<a href="<%#Eval("Url")%>" title="<%#Eval("DescrizioneEstesa")%>"  >
+												<%#Eval("Descrizione")%></a>
+											</ItemTemplate>
+										</asp:Repeater>
+											</ul>
+										</li>
+                    
+										<%end If %>				
+									</ul>
+								</nav>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contattaci</h2>
+									</header>
+									<b>STABILIMENTO E UFFICI</b>
+									<p>Via Cassia 2010, 00123 Roma</p>
+									<b>SERVIZIO CLIENTI</b>
+									<p>06.30884518 - 06.30884057</p>
+									<p><a href="mailto:info@tipografiaformer.it">info@tipografiaformer.it</a></p>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; tipografiaformer.it. All rights reserved. Powered by <b>LunaORM</b>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+            </div>
+
+           <div  class="footer">
+			   <hr />
+			   <b>Tipografia FORMER</b> 
+                <br />
+                <a href="/la-nostra-azienda">La Nostra Azienda</a><br />
+                <a href="/il-nostro-parco-macchine">Il Nostro Parco Macchine</a><br />
+                <a href="/assistenza-clienti">Contattaci</a><br />
+                <a href="/registrati">Richiedi i codici di accesso</a><br />
+                <a href="/diventa-rivenditore">Diventa Rivenditore</a><br />
+           </div>
+        
+    </form>
+    <!-- Scripts -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/browser.min.js"></script>
+	<script src="/assets/js/breakpoints.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<script src="/assets/js/main.js"></script>
+
+</body>
+</html>
+

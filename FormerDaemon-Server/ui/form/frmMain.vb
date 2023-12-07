@@ -11,7 +11,8 @@ Public Class frmMain
     Private MaxErrCounter As Integer = 20
     Private MediumPingVelocity As Integer = 500
     Private DestErrMail As String = FormerConst.EmailAssistenzaTecnica
-    Private AddressServerInterno As String = "former-server"
+    'Private AddressServerInterno As String = "former-server"
+    Private AddressServerInterno As String = "localhost"
 
     Private ProcessiInEsecuzione As Integer = 0
 

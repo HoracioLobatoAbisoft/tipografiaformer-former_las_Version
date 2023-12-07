@@ -1,0 +1,191 @@
+<Consegna>
+	<Tag>	<IdConsegnaView>-</IdConsegnaView>
+	<DataOrdineStato>Prevista</DataOrdineStato>
+	<DataOrdineClasse>DataOrdinePrevista</DataOrdineClasse>
+	<DataOrdineLabel> - Consegna PREVISTA</DataOrdineLabel>
+	<HaOrdiniConDataGarantita>False</HaOrdiniConDataGarantita>
+	<InseritoStr>06/12/2023</InseritoStr>
+	<GiornoStr>14/12/2023</GiornoStr>
+	<GiornoConsegna>12/14/2023 12:00:00 AM</GiornoConsegna>
+	<GetIdUtentebyOrd>3</GetIdUtentebyOrd>
+	<ColoreStatoHtml>#F58220</ColoreStatoHtml>
+	<StatoStr>Inserito</StatoStr>
+	<ImportoTotConfrontoPP>9150</ImportoTotConfrontoPP>
+	<ImportoTot>91.5000</ImportoTot>
+	<HaUnPagamento>False</HaUnPagamento>
+	<Accorpabile>True</Accorpabile>
+	<IdCouponUtilizzato>0</IdCouponUtilizzato>
+	<Tracciabile>False</Tracciabile>
+	<Modificabile>True</Modificabile>
+	<PesoKg>1</PesoKg>
+	<NumeroColliStr>5</NumeroColliStr>
+	<NumeroColli>5</NumeroColli>
+	<ImportoConsegna>0</ImportoConsegna>
+	<ImportoConsegnaStr>0.00</ImportoConsegnaStr>
+	<ImportoTotStr>91.50</ImportoTotStr>
+	<ImportoTotPayPal>91.50</ImportoTotPayPal>
+	<ImportoTotNettoStr>75.00</ImportoTotNettoStr>
+	<ImportoTotIvaStr>16.50</ImportoTotIvaStr>
+	<ImportoTotIva>16.50</ImportoTotIva>
+	<ImportoTotOrdiniNettoOriginaleStr>75.00</ImportoTotOrdiniNettoOriginaleStr>
+	<ImportoTotOrdiniNettoStr>75.00</ImportoTotOrdiniNettoStr>
+	<ImportoTotaleScontiStr>0.00</ImportoTotaleScontiStr>
+	<ImportoTotaleSconti>0</ImportoTotaleSconti>
+	<ImportoTotOrdiniNetto>75.0000</ImportoTotOrdiniNetto>
+	<ImportoTotNettoOriginale>75.0000</ImportoTotNettoOriginale>
+	<ImportoTotNetto>75.0000</ImportoTotNetto>
+	<MetodoPagamento>FormerDALWeb.TipoPagamentoW</MetodoPagamento>
+	<Corriere>FormerDALWeb.CorriereW</Corriere>
+	<CorriereStr>RITIRO CLIENTE</CorriereStr>
+	<DataInserimentoStr>06/12/2023</DataInserimentoStr>
+	<IconaCorriere>/img/icoRitiroCli20.png</IconaCorriere>
+	<IconaCorriereAlt>RITIRO CLIENTE</IconaCorriereAlt>
+	<PagamentoStr>Contrassegno/Al ritiro</PagamentoStr>
+	<IndirizzoStr>Tipografia Former, Via Cassia, 2010 - 00123 Roma</IndirizzoStr>
+	<ListaOrdini>
+	<OrdineWeb>
+		<L>FormerDALWeb.ListinoBaseW</L>
+		<P>FormerDALWeb.PreventivazioneW</P>
+		<F>FormerDALWeb.FormatoProdottoW</F>
+		<TC>FormerDALWeb.TipoCartaW</TC>
+		<C>FormerDALWeb.ColoreStampaW</C>
+		<Corriere>FormerDALWeb.CorriereW</Corriere>
+		<PercPromo>0</PercPromo>
+		<IdProdotto>331</IdProdotto>
+		<NOrdineStr>-</NOrdineStr>
+		<AltezzaI>0</AltezzaI>
+		<LarghezzaI>0</LarghezzaI>
+		<ProfonditaI>0</ProfonditaI>
+		<IdTipoFustellaI>0</IdTipoFustellaI>
+		<Stato>5</Stato>
+		<IdOrdineWithAttach>former:129769</IdOrdineWithAttach>
+		<IdRiferimentoOrdine>129769</IdRiferimentoOrdine>
+		<QtaStr>500</QtaStr>
+		<ColoriDiStampaStr>Stampa a Caldo (Hot Foil)</ColoriDiStampaStr>
+		<IdOrdineWeb>129769</IdOrdineWeb>
+		<CorriereStr>RITIRO CLIENTE</CorriereStr>
+		<ColliStr>5</ColliStr>
+		<NomeLavoroStr></NomeLavoroStr>
+		<NFogliVisStr>1</NFogliVisStr>
+		<OrientamentoSelezionato>-1</OrientamentoSelezionato>
+		<OrientamentoSelezionatoStr>Non specificato</OrientamentoSelezionatoStr>
+		<NFogliVis>1</NFogliVis>
+		<PesoVolumetrico>0</PesoVolumetrico>
+		<PesoStr>1</PesoStr>
+		<Riassunto>500 Biglietti da Visita 85x55 Cartoncino Crema stampa ORO lucido a caldo</Riassunto>
+		<NomeProdotto>Biglietti da Visita 85x55 Cartoncino Crema stampa ORO lucido a caldo</NomeProdotto>
+		<NomeCliente>Diego Lunadei</NomeCliente>
+		<AnteprimaWeb></AnteprimaWeb>
+		<ImportoNettoOrigStr>75.00</ImportoNettoOrigStr>
+		<ImportoNettoStr>75.00</ImportoNettoStr>
+		<PagatoStr>No</PagatoStr>
+		<ImportoNettoOrig>75.0000</ImportoNettoOrig>
+		<ImportoNetto>75.0000</ImportoNetto>
+		<DataInsStr>Wed 06/12/2023 10:47</DataInsStr>
+		<DataPrevProduzione>12/14/2023 12:00:00 AM</DataPrevProduzione>
+		<DataPrevConsegna>12/14/2023 12:00:00 AM</DataPrevConsegna>
+		<DataConsegnaStr>Thursday 14/12/2023</DataConsegnaStr>
+		<DimensioniStr>85x55</DimensioniStr>
+		<StatoStr>In attesa Invio File</StatoStr>
+		<IdOrdineInterno>0</IdOrdineInterno>
+		<Modificabile>True</Modificabile>
+		<ColoreStato>Color [A=255, R=255, G=0, B=0]</ColoreStato>
+		<ColoreStatoHTML>#FF0000</ColoreStatoHTML>
+		<BoxTitolo>Comunicazione Di Prestigio</BoxTitolo>
+		<IconaStato>/img/icoBianco.png</IconaStato>
+		<SupportoStr>Cartoncino Crema 260 gr.</SupportoStr>
+		<PathTemplate></PathTemplate>
+		<SchedaProdottoStr>/14/115/18/15/1/Stampa-Stampa-Comunicazione-Di-Prestigio-85x55-Martellata-260gr-Stampa-a-Caldo-Hot-Foil-</SchedaProdottoStr>
+		<RiassuntoBox>500 Biglietti da Visita 85x...</RiassuntoBox>
+		<BoxImgRif>Biglietto-Cartoncino-Crema-Oro-Lucido-a-Caldo-20200206144300300298.png</BoxImgRif>
+		<BoxLavorazioni>
+		</BoxLavorazioni>
+		<NoteOrd></NoteOrd>
+		<ImportoTotaleScontiStr>0.00</ImportoTotaleScontiStr>
+		<FileModificabili>True</FileModificabili>
+		<ConsegnaAssociata>FormerDALWeb.Consegna</ConsegnaAssociata>
+		<FileScaricatiNomeAnteprima></FileScaricatiNomeAnteprima>
+		<FileScaricatiNomeFronte></FileScaricatiNomeFronte>
+		<FileScaricatiNomeRetro></FileScaricatiNomeRetro>
+		<Omaggio>0</Omaggio>
+		<Utente>FormerDALWeb.Utente</Utente>
+		<IdOrdine>129769</IdOrdine>
+		<Altezza>0</Altezza>
+		<Annotazioni></Annotazioni>
+		<Anteprima></Anteprima>
+		<ConsegnaGarantita>1/1/0001 12:00:00 AM</ConsegnaGarantita>
+		<ConsegnaGarantitaDa>0</ConsegnaGarantitaDa>
+		<DataCambioStato>1/1/0001 12:00:00 AM</DataCambioStato>
+		<DataIns>12/6/2023 10:47:00 AM</DataIns>
+		<ExtraData></ExtraData>
+		<IdCons>246830</IdCons>
+		<IdCorriere>1</IdCorriere>
+		<IdCoupon>0</IdCoupon>
+		<IdIndirizzo>0</IdIndirizzo>
+		<IdListinoBase>331</IdListinoBase>
+		<IdMacchinarioProduzioneUtilizzato>0</IdMacchinarioProduzioneUtilizzato>
+		<IdMailPreventivo>0</IdMailPreventivo>
+		<IdOrdineInt>0</IdOrdineInt>
+		<IdPromo>0</IdPromo>
+		<IdTipoFustella>0</IdTipoFustella>
+		<IdUt>3</IdUt>
+		<InseritoDa>0</InseritoDa>
+		<Larghezza>0</Larghezza>
+		<Lavorazioni>155,1</Lavorazioni>
+		<Mq>0</Mq>
+		<Nfogli>1</Nfogli>
+		<NoEmailDemone>0</NoEmailDemone>
+		<NomeLavoro></NomeLavoro>
+		<NumeroColli>5</NumeroColli>
+		<OrdineInOmaggio>0</OrdineInOmaggio>
+		<OrdineWeb>True</OrdineWeb>
+		<Orientamento>-1</Orientamento>
+		<Peso>1</Peso>
+		<Preventivo>0</Preventivo>
+		<PrezzoCalcolatoNetto>75.0000</PrezzoCalcolatoNetto>
+		<PrezzoCorriere>0</PrezzoCorriere>
+		<Profondita>0</Profondita>
+		<Qta>500</Qta>
+		<Ricarico>0</Ricarico>
+		<Sconto>0</Sconto>
+		<SorgenteCopertina></SorgenteCopertina>
+		<SorgenteFronte></SorgenteFronte>
+		<SorgenteRetro></SorgenteRetro>
+		<StatoWeb>0</StatoWeb>
+		<TipoConsegna>0</TipoConsegna>
+		<TipoRetro>0</TipoRetro>
+		<TotaleIva>0</TotaleIva>
+		<TotaleNetto>0</TotaleNetto>
+		<TotaleOrdine>0</TotaleOrdine>
+		<UsaNomeLavoroInFattura>0</UsaNomeLavoroInFattura>
+		<IsChanged>False</IsChanged>
+	</OrdineWeb>
+
+	</ListaOrdini>
+	<BufferHTMLOrdini><a href="/129769/dettaglio-ordine"><img src="/img/icoCarrello16.png"> <b>500 Biglietti da Visita 85x55 Cartoncino Crema stampa ORO lucido a caldo</b></a><br /></BufferHTMLOrdini>
+	<PagamentoOrdine>	<Utente>FormerDALWeb.Utente</Utente>
+	<NomeCliente>Diego Lunadei</NomeCliente>
+	<IdConsegna>246830</IdConsegna>
+	<AlertLevel>0</AlertLevel>
+	<Annotazioni></Annotazioni>
+	<Blocco>0</Blocco>
+	<CodTrack></CodTrack>
+	<DataEffettiva>1/1/0001 12:00:00 AM</DataEffettiva>
+	<DataInserimento>12/6/2023 10:47:22 AM</DataInserimento>
+	<DataPrevistaOriginale>12/14/2023 12:00:00 AM</DataPrevistaOriginale>
+	<EmailNotificheCorriere></EmailNotificheCorriere>
+	<Giorno>12/14/2023 12:00:00 AM</Giorno>
+	<GuidTransazione>3-1b61ae44-0ded-4385-93ce-00f5dae0d6de</GuidTransazione>
+	<IdConsegnaInt>0</IdConsegnaInt>
+	<IdCorriere>1</IdCorriere>
+	<IdIndirizzo>0</IdIndirizzo>
+	<IdPagam>8</IdPagam>
+	<IdStatoConsegna>0</IdStatoConsegna>
+	<IdUt>3</IdUt>
+	<ImportoNetto>0</ImportoNetto>
+	<NoCartaceo>0</NoCartaceo>
+	<NumColli>0</NumColli>
+	<Peso>1</Peso>
+	<TipoDoc>1</TipoDoc>
+	<IsChanged>True</IsChanged>
+</Consegna>

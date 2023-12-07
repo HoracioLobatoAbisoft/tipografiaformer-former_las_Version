@@ -1,0 +1,195 @@
+<Consegna>
+	<Tag>	<IdConsegnaView>-</IdConsegnaView>
+	<DataOrdineStato>Prevista</DataOrdineStato>
+	<DataOrdineClasse>DataOrdinePrevista</DataOrdineClasse>
+	<DataOrdineLabel> - Consegna PREVISTA</DataOrdineLabel>
+	<HaOrdiniConDataGarantita>False</HaOrdiniConDataGarantita>
+	<InseritoStr>05/12/2023</InseritoStr>
+	<GiornoStr>09/12/2023</GiornoStr>
+	<GiornoConsegna>12/9/2023 12:00:00 AM</GiornoConsegna>
+	<GetIdUtentebyOrd>3</GetIdUtentebyOrd>
+	<ColoreStatoHtml>#F58220</ColoreStatoHtml>
+	<StatoStr>Inserito</StatoStr>
+	<ImportoTotConfrontoPP>1464</ImportoTotConfrontoPP>
+	<ImportoTot>14.6400</ImportoTot>
+	<HaUnPagamento>False</HaUnPagamento>
+	<Accorpabile>True</Accorpabile>
+	<IdCouponUtilizzato>0</IdCouponUtilizzato>
+	<Tracciabile>False</Tracciabile>
+	<Modificabile>True</Modificabile>
+	<PesoKg>1</PesoKg>
+	<NumeroColliStr>1</NumeroColliStr>
+	<NumeroColli>1</NumeroColli>
+	<ImportoConsegna>0</ImportoConsegna>
+	<ImportoConsegnaStr>0.00</ImportoConsegnaStr>
+	<ImportoTotStr>14.64</ImportoTotStr>
+	<ImportoTotPayPal>14.64</ImportoTotPayPal>
+	<ImportoTotNettoStr>12.00</ImportoTotNettoStr>
+	<ImportoTotIvaStr>2.64</ImportoTotIvaStr>
+	<ImportoTotIva>2.64</ImportoTotIva>
+	<ImportoTotOrdiniNettoOriginaleStr>12.00</ImportoTotOrdiniNettoOriginaleStr>
+	<ImportoTotOrdiniNettoStr>12.00</ImportoTotOrdiniNettoStr>
+	<ImportoTotaleScontiStr>0.00</ImportoTotaleScontiStr>
+	<ImportoTotaleSconti>0</ImportoTotaleSconti>
+	<ImportoTotOrdiniNetto>12.0000</ImportoTotOrdiniNetto>
+	<ImportoTotNettoOriginale>12.0000</ImportoTotNettoOriginale>
+	<ImportoTotNetto>12.0000</ImportoTotNetto>
+	<MetodoPagamento>FormerDALWeb.TipoPagamentoW</MetodoPagamento>
+	<Corriere>FormerDALWeb.CorriereW</Corriere>
+	<CorriereStr>RITIRO CLIENTE</CorriereStr>
+	<DataInserimentoStr>05/12/2023</DataInserimentoStr>
+	<IconaCorriere>/img/icoRitiroCli20.png</IconaCorriere>
+	<IconaCorriereAlt>RITIRO CLIENTE</IconaCorriereAlt>
+	<PagamentoStr>Contrassegno/Al ritiro</PagamentoStr>
+	<IndirizzoStr>Tipografia Former, Via Cassia, 2010 - 00123 Roma</IndirizzoStr>
+	<ListaOrdini>
+	<OrdineWeb>
+		<L>FormerDALWeb.ListinoBaseW</L>
+		<P>FormerDALWeb.PreventivazioneW</P>
+		<F>FormerDALWeb.FormatoProdottoW</F>
+		<TC>FormerDALWeb.TipoCartaW</TC>
+		<C>FormerDALWeb.ColoreStampaW</C>
+		<Corriere>FormerDALWeb.CorriereW</Corriere>
+		<PercPromo>0</PercPromo>
+		<IdProdotto>254</IdProdotto>
+		<NOrdineStr>-</NOrdineStr>
+		<AltezzaI>0</AltezzaI>
+		<LarghezzaI>0</LarghezzaI>
+		<ProfonditaI>0</ProfonditaI>
+		<IdTipoFustellaI>0</IdTipoFustellaI>
+		<Stato>5</Stato>
+		<IdOrdineWithAttach>former:129767</IdOrdineWithAttach>
+		<IdRiferimentoOrdine>129767</IdRiferimentoOrdine>
+		<QtaStr>100</QtaStr>
+		<ColoriDiStampaStr>4+4 a colori Fronte/Retro</ColoriDiStampaStr>
+		<IdOrdineWeb>129767</IdOrdineWeb>
+		<CorriereStr>RITIRO CLIENTE</CorriereStr>
+		<ColliStr>1</ColliStr>
+		<NomeLavoroStr></NomeLavoroStr>
+		<NFogliVisStr>1</NFogliVisStr>
+		<OrientamentoSelezionato>0</OrientamentoSelezionato>
+		<OrientamentoSelezionatoStr>Orizzontale</OrientamentoSelezionatoStr>
+		<NFogliVis>1</NFogliVis>
+		<PesoVolumetrico>0</PesoVolumetrico>
+		<PesoStr>1</PesoStr>
+		<Riassunto>100 Biglietti da Visita 85 x 55  - 350gr + UV</Riassunto>
+		<NomeProdotto>Biglietti da Visita 85 x 55  - 350gr + UV</NomeProdotto>
+		<NomeCliente>Diego Lunadei</NomeCliente>
+		<AnteprimaWeb></AnteprimaWeb>
+		<ImportoNettoOrigStr>12.00</ImportoNettoOrigStr>
+		<ImportoNettoStr>12.00</ImportoNettoStr>
+		<PagatoStr>No</PagatoStr>
+		<ImportoNettoOrig>12.0000</ImportoNettoOrig>
+		<ImportoNetto>12.0000</ImportoNetto>
+		<DataInsStr>Tue 05/12/2023 15:09</DataInsStr>
+		<DataPrevProduzione>12/9/2023 12:00:00 AM</DataPrevProduzione>
+		<DataPrevConsegna>12/9/2023 12:00:00 AM</DataPrevConsegna>
+		<DataConsegnaStr>Saturday 09/12/2023</DataConsegnaStr>
+		<DimensioniStr>85x55</DimensioniStr>
+		<StatoStr>In attesa Invio File</StatoStr>
+		<IdOrdineInterno>0</IdOrdineInterno>
+		<Modificabile>True</Modificabile>
+		<ColoreStato>Color [A=255, R=255, G=0, B=0]</ColoreStato>
+		<ColoreStatoHTML>#FF0000</ColoreStatoHTML>
+		<BoxTitolo>Biglietti da Visita</BoxTitolo>
+		<IconaStato>/img/icoBianco.png</IconaStato>
+		<SupportoStr>Patinata Opaca 350 gr.</SupportoStr>
+		<PathTemplate>20151301335472427.pdf</PathTemplate>
+		<SchedaProdottoStr>/2/131/72/1/1/Stampa-Stampa-Biglietti-da-Visita-85x55-Opaca-350gr-4-4-a-colori-Fronte-Retro</SchedaProdottoStr>
+		<RiassuntoBox>100 Biglietti da Visita 85 ...</RiassuntoBox>
+		<BoxImgRif>Biglietti-da-Visita-85-x-55-mm-20200206144301465580.png</BoxImgRif>
+		<BoxLavorazioni>
+		<String>
+			<Length>28</Length>
+		</String>
+
+		</BoxLavorazioni>
+		<NoteOrd></NoteOrd>
+		<ImportoTotaleScontiStr>0.00</ImportoTotaleScontiStr>
+		<FileModificabili>True</FileModificabili>
+		<ConsegnaAssociata>FormerDALWeb.Consegna</ConsegnaAssociata>
+		<FileScaricatiNomeAnteprima></FileScaricatiNomeAnteprima>
+		<FileScaricatiNomeFronte></FileScaricatiNomeFronte>
+		<FileScaricatiNomeRetro></FileScaricatiNomeRetro>
+		<Omaggio>0</Omaggio>
+		<Utente>FormerDALWeb.Utente</Utente>
+		<IdOrdine>129767</IdOrdine>
+		<Altezza>0</Altezza>
+		<Annotazioni></Annotazioni>
+		<Anteprima></Anteprima>
+		<ConsegnaGarantita>1/1/0001 12:00:00 AM</ConsegnaGarantita>
+		<ConsegnaGarantitaDa>0</ConsegnaGarantitaDa>
+		<DataCambioStato>1/1/0001 12:00:00 AM</DataCambioStato>
+		<DataIns>12/5/2023 3:09:00 PM</DataIns>
+		<ExtraData></ExtraData>
+		<IdCons>246828</IdCons>
+		<IdCorriere>1</IdCorriere>
+		<IdCoupon>0</IdCoupon>
+		<IdIndirizzo>0</IdIndirizzo>
+		<IdListinoBase>254</IdListinoBase>
+		<IdMacchinarioProduzioneUtilizzato>0</IdMacchinarioProduzioneUtilizzato>
+		<IdMailPreventivo>0</IdMailPreventivo>
+		<IdOrdineInt>0</IdOrdineInt>
+		<IdPromo>0</IdPromo>
+		<IdTipoFustella>0</IdTipoFustella>
+		<IdUt>3</IdUt>
+		<InseritoDa>0</InseritoDa>
+		<Larghezza>0</Larghezza>
+		<Lavorazioni>155,51,1</Lavorazioni>
+		<Mq>0</Mq>
+		<Nfogli>1</Nfogli>
+		<NoEmailDemone>0</NoEmailDemone>
+		<NomeLavoro></NomeLavoro>
+		<NumeroColli>1</NumeroColli>
+		<OrdineInOmaggio>0</OrdineInOmaggio>
+		<OrdineWeb>True</OrdineWeb>
+		<Orientamento>0</Orientamento>
+		<Peso>1</Peso>
+		<Preventivo>0</Preventivo>
+		<PrezzoCalcolatoNetto>12.0000</PrezzoCalcolatoNetto>
+		<PrezzoCorriere>0</PrezzoCorriere>
+		<Profondita>0</Profondita>
+		<Qta>100</Qta>
+		<Ricarico>0</Ricarico>
+		<Sconto>0</Sconto>
+		<SorgenteCopertina></SorgenteCopertina>
+		<SorgenteFronte></SorgenteFronte>
+		<SorgenteRetro></SorgenteRetro>
+		<StatoWeb>0</StatoWeb>
+		<TipoConsegna>0</TipoConsegna>
+		<TipoRetro>0</TipoRetro>
+		<TotaleIva>0</TotaleIva>
+		<TotaleNetto>0</TotaleNetto>
+		<TotaleOrdine>0</TotaleOrdine>
+		<UsaNomeLavoroInFattura>0</UsaNomeLavoroInFattura>
+		<IsChanged>False</IsChanged>
+	</OrdineWeb>
+
+	</ListaOrdini>
+	<BufferHTMLOrdini><a href="/129767/dettaglio-ordine"><img src="/img/icoCarrello16.png"> <b>100 Biglietti da Visita 85 x 55  - 350gr + UV</b></a><br /></BufferHTMLOrdini>
+	<PagamentoOrdine>	<Utente>FormerDALWeb.Utente</Utente>
+	<NomeCliente>Diego Lunadei</NomeCliente>
+	<IdConsegna>246828</IdConsegna>
+	<AlertLevel>0</AlertLevel>
+	<Annotazioni></Annotazioni>
+	<Blocco>0</Blocco>
+	<CodTrack></CodTrack>
+	<DataEffettiva>1/1/0001 12:00:00 AM</DataEffettiva>
+	<DataInserimento>12/5/2023 3:09:15 PM</DataInserimento>
+	<DataPrevistaOriginale>12/9/2023 12:00:00 AM</DataPrevistaOriginale>
+	<EmailNotificheCorriere></EmailNotificheCorriere>
+	<Giorno>12/9/2023 12:00:00 AM</Giorno>
+	<GuidTransazione>3-d42a3ca6-f6a2-4b31-ba03-91e1334bf0fa</GuidTransazione>
+	<IdConsegnaInt>0</IdConsegnaInt>
+	<IdCorriere>1</IdCorriere>
+	<IdIndirizzo>0</IdIndirizzo>
+	<IdPagam>8</IdPagam>
+	<IdStatoConsegna>0</IdStatoConsegna>
+	<IdUt>3</IdUt>
+	<ImportoNetto>0</ImportoNetto>
+	<NoCartaceo>0</NoCartaceo>
+	<NumColli>0</NumColli>
+	<Peso>1</Peso>
+	<TipoDoc>1</TipoDoc>
+	<IsChanged>True</IsChanged>
+</Consegna>

@@ -10,11 +10,18 @@ Public Class pCarrello
 
         'check dati fiscali
 
-        If UtenteConnesso.IdUtente = 1684 Or UtenteConnesso.IdUtente = 3 Or UtenteConnesso.IdUtente = 292 Or UtenteConnesso.IdUtente = 38 Then
-            Dim UrlProdotto2 As String = "http://localhost:5173/#/carrello"
-            'Dim UrlProdotto2 As String = "https://react.tipografiaformertest.it:6060/#/carrello"
+        Dim Eviroment As Boolean = UtenteConnesso.Eviroment
+        Dim UrlProdottoEnviroment As String = ""
+        If Eviroment Then
+            UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/carrelloStp1"
+        Else
+            UrlProdottoEnviroment = "http://localhost:5173/#/carrelloStp1"
+        End If
 
-            iframeCarrello.Text = "<iframe id='frameId' style='width:100%; height: 100vh;border: none;' src=" & UrlProdotto2 & " ></iframe>"
+        If UtenteConnesso.UtenteAutorizato Then
+            Dim UrlProdotto2 As String = UrlProdottoEnviroment
+
+            iframeCarrello.Text = "<iframe id='carrelloStp1' style='width:100%; height: 100vh;border: none;' src=" & UrlProdotto2 & " ></iframe>"
         End If
         CaricaDati()
 

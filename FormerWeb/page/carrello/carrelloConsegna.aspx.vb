@@ -8,18 +8,35 @@ Public Class pCarrelloConsegna
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
-        If Carrello.Ordini.Count = 0 Then Response.Redirect("/carrello")
+        If UtenteConnesso.UtenteAutorizato Then
 
-        If Not IsPostBack Then
+            Dim UrlProdottoEnviroment As String = ""
+            Dim Eviroment As Boolean = UtenteConnesso.Eviroment
 
-            CaricaCorriere()
-            CaricaIndirizzi()
-            VisualizzaDataOrdini()
-            VisualizzaInfoCorr()
+            If Eviroment Then
+                UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/carrelloStp3"
+            Else
+                UrlProdottoEnviroment = "http://localhost:5173/#/carrelloStp3"
+            End If
 
-            If Carrello.EmailTracciamento.Length Then txtTrace.Text = Carrello.EmailTracciamento
+            IframecarreloStp3.Text = "<iframe id='carrelloStp3' style='width:100%; height: 100vh;border: none;' src=" & UrlProdottoEnviroment & " ></iframe>"
+        Else
+            If Carrello.Ordini.Count = 0 Then Response.Redirect("/carrello")
 
+            If Not IsPostBack Then
+
+                CaricaCorriere()
+                CaricaIndirizzi()
+                VisualizzaDataOrdini()
+                VisualizzaInfoCorr()
+
+                If Carrello.EmailTracciamento.Length Then txtTrace.Text = Carrello.EmailTracciamento
+
+            End If
         End If
+
+
+
 
     End Sub
 

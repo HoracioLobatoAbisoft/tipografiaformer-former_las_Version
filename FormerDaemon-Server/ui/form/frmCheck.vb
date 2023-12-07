@@ -15,7 +15,8 @@ Public Class frmCheck
         tmrCheck.Enabled = False
 
         Try
-            Dim AddressServerInterno As String = "former-server"
+            'Dim AddressServerInterno As String = "former-server"
+            Dim AddressServerInterno As String = "localhost"
             Dim ris As Integer = Postazione.Network.IsPingable(AddressServerInterno)
             If ris Then
                 imgServerInterno.Image = My.Resources.icoOk

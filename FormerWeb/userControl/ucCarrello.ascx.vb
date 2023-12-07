@@ -10,7 +10,7 @@ Public Class ucCarrello
     End Sub
 
     Private Sub IframeCarrello()
-
+        'NOTE: temporalmente ese no es necesario cambiarlo 
         Dim UrlCarrello As String = "http://localhost:5173/#/btnCarrello"
         'Dim UrlCarrello As String = "https://react.tipografiaformertest.it:6060/#/btnCarrello"
         'iframeNC.Text = "<iframe style='width:250px; border: none;' src=" & UrlCarrello & "></iframe>"

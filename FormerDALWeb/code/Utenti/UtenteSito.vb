@@ -18,6 +18,34 @@ Public Class UtenteSito
             _Utente = value
         End Set
     End Property
+    Dim UAuto As Utn_autorizzato
+    Public Property UtenteAutorizato As Boolean
+        Get
+            Using ua As New Utn_autorizzatoDAO
+                UAuto = ua.Find(New LUNA.LunaSearchParameter(LFM.Utn_autorizzato.IdUt, Utente.IdUt))
+                If Not UAuto Is Nothing Then
+                    Return True
+                Else
+                    Return False
+                End If
+            End Using
+        End Get
+        Set(value As Boolean)
+
+        End Set
+    End Property
+
+    Dim isDevelopment As Boolean
+    Public Property Eviroment As Boolean
+        Get
+            'isDevelopment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") = "Development"
+            Return False
+
+        End Get
+        Set(value As Boolean)
+
+        End Set
+    End Property
 
     Public ReadOnly Property Nominativo As String
         Get

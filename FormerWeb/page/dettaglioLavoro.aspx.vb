@@ -98,12 +98,27 @@ Public Class pDettaglioLavoro
         End Get
     End Property
 
+    Private Sub IframeRender(_IdOrdine As Integer)
+        Dim Eviroment As Boolean = UtenteConnesso.Eviroment
+        Dim UrlProdottoEnviroment As String = ""
+        If Eviroment Then
+            UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/" & _IdOrdine & "/dettaglio-lavoro"
+        Else
+            UrlProdottoEnviroment = "http://localhost:5173/#/" & _IdOrdine & "/dettaglio-lavoro"
+        End If
+
+        If UtenteConnesso.UtenteAutorizato Then
+            Dim UrlIndex As String = UrlProdottoEnviroment
+            IframeDetaglioLavoro.Text = "<iframe id='IFrameOrdini' src=" & UrlIndex & " style = 'width:100%;height:100vh;border:none;'></iframe>"
+        End If
+    End Sub
+
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
         _IdOrdine = Convert.ToInt32(Page.RouteData.Values("idl"))
 
         'qui devo controllare che l'ordine sia tuo e che puoi gestire i file 
-
+        IframeRender(_IdOrdine)
         Dim CheckVisOrd As Boolean = False
         If _IdOrdine Then
 
