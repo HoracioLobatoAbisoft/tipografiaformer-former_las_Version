@@ -8,6 +8,13 @@
 *.userosscache
 *.sln.docstates
 
+# Ignorar directorio binario de compilación
+bin
+# Ignore any files in /bin and /obj Folders
+**/bin/*
+**/obj/*
+**/.vs/*
+
 # User-specific files (Mono Auto Generated)
 mono_crash.*
 
