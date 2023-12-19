@@ -75,6 +75,11 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FormerEFDALSql", "FormerEFD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormerMarketing", "FormerMarketing\FormerMarketing.csproj", "{28238A48-9679-4A5C-BE49-43447544DF73}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C5099D1-DA55-4FB1-A7D4-C38D5AD3945A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

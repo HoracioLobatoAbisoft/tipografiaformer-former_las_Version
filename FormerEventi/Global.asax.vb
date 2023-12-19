@@ -27,7 +27,7 @@ Public Class Global_asax
 
     Sub Application_Error(ByVal sender As Object, ByVal e As EventArgs)
         ' Generato quando si verifica un errore
-        Response.Redirect("/opsss")
+        'Response.Redirect()
     End Sub
 
     Sub Session_End(ByVal sender As Object, ByVal e As EventArgs)

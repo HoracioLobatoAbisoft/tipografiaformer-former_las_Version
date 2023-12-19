@@ -270,6 +270,9 @@
                             }
                         }
                         break;
+                    case 15:
+                        this.window.print();
+                        break;
                     default:
                         break;
                 }
@@ -623,8 +626,8 @@
                     <a href="/area-riservata">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <%End If%>
                 <%--<a href="/area-riservata">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;--%>
-                <a href="/i-tuoi-ordini">I tuoi Ordini</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                <a href="/i-tuoi-lavori">I tuoi Lavori<%If UtenteConnesso.IdUtente Then
+                <a href="/i-tuoi-ordini">Le Tue Consegna</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/i-tuoi-lavori">I tuoi Ordini<%If UtenteConnesso.IdUtente Then
                                                               Dim TotOrd As Integer = UtenteConnesso.GetNumeroTotaleOrdini
                                                               If TotOrd Then
                                                                   Response.Write(" (<b class=""red"">" & TotOrd & "</b>)")

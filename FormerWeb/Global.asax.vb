@@ -194,8 +194,11 @@ Public Class Global_asax
                     Dim Subject As String = "Eccezione dal sito DB non raggiungibile"
                     FormerLib.FormerHelper.Mail.InviaMail(Subject, LogErrore, FormerConst.EmailAssistenzaTecnica)
                 Else
+
                     If hErr.GetHttpCode <> 404 Then
                         redirectUrl = "/opsss"
+
+                        FormerLib.FormerHelper.Mail.InviaMail("Eccezione dal sito", LogErrore, FormerConst.EmailAssistenzaTecnica)
 
                         If FormerWebApp.IsCrawler(Request.UserAgent.ToLower) = False Then
                             Try
@@ -205,7 +208,7 @@ Public Class Global_asax
                                     Subject = "Errore Tipografiaformer.it SERVER INTERNO"
                                 End If
 
-                                FormerLib.FormerHelper.Mail.InviaMail(Subject, LogErrore, FormerConst.EmailAssistenzaTecnica)
+                                FormerLib.FormerHelper.Mail.InviaMail(Subject, LogErrore, "ichigoarnez34@gmail.com")
 
                             Catch ex As Exception
 
@@ -318,6 +321,9 @@ Public Class Global_asax
 
         routes.MapPageRoute("i-tuoi-lavori", "i-tuoi-lavori", "~/page/lavori.aspx")
         routes.MapPageRoute("i-tuoi-ordini", "i-tuoi-ordini", "~/page/ordini.aspx")
+        'Routes Update 12/14/2023 ordini -> Consegne | Lavori -> Ordini
+
+
         routes.MapPageRoute("ordine-confermato", "ordine-confermato", "~/page/ordineconfermato.aspx")
         routes.MapPageRoute("i-tuoi-coupon-di-sconto", "i-tuoi-coupon-di-sconto", "~/page/ituoicoupon.aspx")
         routes.MapPageRoute("offerte-e-promozioni", "offerte-e-promozioni", "~/page/offerte.aspx")

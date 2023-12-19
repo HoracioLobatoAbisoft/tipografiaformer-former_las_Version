@@ -23,7 +23,7 @@
     
     <%If UtenteConnesso.UtenteAutorizato Then%>
     <div style="
-           
+            height:750px;
             overflow: hidden;
         ">
         <asp:Literal runat="server" ID="IframeDetaglioLavoro"/>

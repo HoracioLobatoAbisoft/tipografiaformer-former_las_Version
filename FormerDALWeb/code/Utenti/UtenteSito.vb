@@ -40,7 +40,6 @@ Public Class UtenteSito
         Get
             'isDevelopment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") = "Development"
             Return False
-
         End Get
         Set(value As Boolean)
 

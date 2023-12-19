@@ -109,16 +109,16 @@ Public Class pDettaglioLavoro
 
         If UtenteConnesso.UtenteAutorizato Then
             Dim UrlIndex As String = UrlProdottoEnviroment
-            IframeDetaglioLavoro.Text = "<iframe id='IFrameOrdini' src=" & UrlIndex & " style = 'width:100%;height:100vh;border:none;'></iframe>"
+            IframeDetaglioLavoro.Text = "<iframe id='IFrameOrdini' src=" & UrlIndex & " style = 'width:100%;height:100%;border:none;'></iframe>"
         End If
     End Sub
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
         _IdOrdine = Convert.ToInt32(Page.RouteData.Values("idl"))
-
-        'qui devo controllare che l'ordine sia tuo e che puoi gestire i file 
         IframeRender(_IdOrdine)
+        'qui devo controllare che l'ordine sia tuo e che puoi gestire i file 
+
         Dim CheckVisOrd As Boolean = False
         If _IdOrdine Then
 
