@@ -392,6 +392,9 @@ $RECYCLE.BIN/
 .vs/Former/bin
 .vs/Former/obj
 .vs/Former/vs
+.vs/Former/v17
+.vs/Former
+.vs/Former/config
 
 Former/bin
 Former/obj
