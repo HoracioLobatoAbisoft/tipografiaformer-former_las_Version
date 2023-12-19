@@ -245,10 +245,11 @@
                                     this.localStorage.setItem('car', stringObj);
                                     var html = ``;
                                     message.uri.data.map((item, i) => {
+                                        const prodottoQta = item.qta + " " + item.prodotto
                                         html = `
                                                 <tr>
                                                     <td style="width:32px;"><img src="/listino/img/${item.img}" style="height:32px;width:32px;border-width:0px;"></td>
-                                                    <td align="left">${item.prodotto.substring(0, 34)}...</td>
+                                                    <td align="left">${prodottoQta.substring(0, 34)}...</td>
                                                     <td align="right" valign="top"><b> € ${formatNumber(item.prezzo)}</b></td>
                                                 </tr>
                                                 `;
@@ -278,7 +279,7 @@
                 }
             }
         })
-</script>
+    </script>
 
     <link href="/scripts/qtip-2.21/jquery.qtip.min.css" rel="stylesheet" type="text/css" />
     <link href="/scripts/lightbox-2.6/lightbox.min.css" rel="stylesheet" type="text/css" />
