@@ -11,12 +11,12 @@ Public Class pCarrello
         'check dati fiscali
 
         Dim Eviroment As Boolean = UtenteConnesso.Eviroment
-        Dim UrlProdottoEnviroment As String = ""
-        If Eviroment Then
-            UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/carrelloStp1"
-        Else
-            UrlProdottoEnviroment = "http://localhost:5173/#/carrelloStp1"
-        End If
+        Dim UrlProdottoEnviroment As String = UtenteConnesso.UrlIframe & "/carrelloStp1"
+        'If Eviroment Then
+        '    UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/carrelloStp1"
+        'Else
+        '    UrlProdottoEnviroment = "http://localhost:5173/#/carrelloStp1"
+        'End If
 
         If UtenteConnesso.UtenteAutorizato Then
             Dim UrlProdotto2 As String = UrlProdottoEnviroment

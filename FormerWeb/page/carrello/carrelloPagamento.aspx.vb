@@ -9,14 +9,14 @@ Public Class pCarrelloPagamento
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If UtenteConnesso.UtenteAutorizato Then
 
-            Dim UrlProdottoEnviroment As String = ""
+            Dim UrlProdottoEnviroment As String = UtenteConnesso.UrlIframe & "/carrelloStp4"
             Dim Eviroment As Boolean = UtenteConnesso.Eviroment
 
-            If Eviroment Then
-                UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/carrelloStp4"
-            Else
-                UrlProdottoEnviroment = "http://localhost:5173/#/carrelloStp4"
-            End If
+            'If Eviroment Then
+            '    UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/carrelloStp4"
+            'Else
+            '    UrlProdottoEnviroment = "http://localhost:5173/#/carrelloStp4"
+            'End If
 
             IframecarreloStp4.Text = "<iframe id='carrelloStp3' style='width:100%; height: 100vh;border: none;' src=" & UrlProdottoEnviroment & " ></iframe>"
         Else

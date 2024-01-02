@@ -57,7 +57,7 @@
             <b class="StatoCarrello bkgGrey ColorWhite ">7) Ricevi il tuo Ordine</b>
         </div>
 
-    <h3 class="orange" style="margin-left:80px;"><img src="/img/icoCart50.png" />DETTAGLIO DEL TUO ORDINE N° <b class="black"><%=GetIdConsView%></b> del <b class="black"><%=Ordine.DataInserimentoStr %></b></h3>
+    <h3 class="orange" style="margin-left:80px;"><img src="/img/icoCart50.png" />DETTAGLIO DEL TUO CONSEGNA N° <b class="black"><%=GetIdConsView%></b> del <b class="black"><%=Ordine.DataInserimentoStr %></b></h3>
      <div class="riepilogoOrdine ">
          <hr />
         <div class="BoxOrdBody">
@@ -65,7 +65,7 @@
                          <table>
 
                              <tr height="12">
-                                 <td width="100">N° Ordine</td>
+                                 <td width="100">N° Consegna</td>
                                  <td class="TDValore"><b><%=GetIdConsView%></b></td>
                                  <td rowspan="5" width="180" valign="top" >
                                     <center><b class="statoOrdineLabel" style='background-color:<%=ordine.ColoreStatoHtml%>;'><%=ordine.StatoStr%></b></center><br />
@@ -99,11 +99,11 @@
                              </tr>                             
 
                             <tr height="12">
-                                 <td width="100">Data Ordine</td>
+                                 <td width="100">Data Inserimento Consegna</td>
                                  <td class="TDValore"><b><%=ordine.DataInserimentoStr %></b></td>
                             </tr>
                              <tr height="12">
-                                 <td width="100">N° Lavori</td>
+                                 <td width="100">N° Ordini</td>
                                  <td class="TDValore" ><b><%=ordine.ListaOrdini.Count%></b></td>
                              </tr>
                              <tr height="12">
@@ -116,8 +116,8 @@
                              </tr>
                              <tr>
                                  <td colspan="3">                                     
-                                     <b>LAVORI NELL' ORDINE</b><br />
-                                     Qui trovi l'elenco dei lavori che sono contenuti in questo Ordine.
+                                     <b>ORDINI NELL' CONSEGNA</b><br />
+                                     Qui trovi l'elenco dei ordini che sono contenuti in questo Consene.
                                      <asp:Repeater ID="rptOrdini" runat="server">
                                          <HeaderTemplate><div class="accordionOrdini"></HeaderTemplate>
                                          <ItemTemplate>

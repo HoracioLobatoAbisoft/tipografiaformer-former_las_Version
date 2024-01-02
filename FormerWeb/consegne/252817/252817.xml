@@ -1,0 +1,199 @@
+<Consegna>
+	<Tag>	<IdConsegnaView>-</IdConsegnaView>
+	<DataOrdineStato>Prevista</DataOrdineStato>
+	<DataOrdineClasse>DataOrdinePrevista</DataOrdineClasse>
+	<DataOrdineLabel> - Consegna PREVISTA</DataOrdineLabel>
+	<HaOrdiniConDataGarantita>False</HaOrdiniConDataGarantita>
+	<InseritoStr>22/12/2023</InseritoStr>
+	<GiornoStr>29/12/2023</GiornoStr>
+	<GiornoConsegna>12/29/2023 12:00:00 AM</GiornoConsegna>
+	<GetIdUtentebyOrd>1684</GetIdUtentebyOrd>
+	<ColoreStatoHtml>#F58220</ColoreStatoHtml>
+	<StatoStr>Inserito</StatoStr>
+	<ImportoTotConfrontoPP>5124</ImportoTotConfrontoPP>
+	<ImportoTot>51.2400</ImportoTot>
+	<HaUnPagamento>False</HaUnPagamento>
+	<Accorpabile>True</Accorpabile>
+	<IdCouponUtilizzato>0</IdCouponUtilizzato>
+	<Tracciabile>False</Tracciabile>
+	<Modificabile>True</Modificabile>
+	<PesoKg>1</PesoKg>
+	<NumeroColliStr>n.d.</NumeroColliStr>
+	<NumeroColli>1</NumeroColli>
+	<ImportoConsegna>10.0000</ImportoConsegna>
+	<ImportoConsegnaStr>10.00</ImportoConsegnaStr>
+	<ImportoTotStr>51.24</ImportoTotStr>
+	<ImportoTotPayPal>51.24</ImportoTotPayPal>
+	<ImportoTotNettoStr>42.00</ImportoTotNettoStr>
+	<ImportoTotIvaStr>9.24</ImportoTotIvaStr>
+	<ImportoTotIva>9.24</ImportoTotIva>
+	<ImportoTotOrdiniNettoOriginaleStr>32.00</ImportoTotOrdiniNettoOriginaleStr>
+	<ImportoTotOrdiniNettoStr>32.00</ImportoTotOrdiniNettoStr>
+	<ImportoTotaleScontiStr>0.00</ImportoTotaleScontiStr>
+	<ImportoTotaleSconti>0</ImportoTotaleSconti>
+	<ImportoTotOrdiniNetto>32.0000</ImportoTotOrdiniNetto>
+	<ImportoTotNettoOriginale>32.0000</ImportoTotNettoOriginale>
+	<ImportoTotNetto>42.0000</ImportoTotNetto>
+	<MetodoPagamento>FormerDALWeb.TipoPagamentoW</MetodoPagamento>
+	<Corriere>FormerDALWeb.CorriereW</Corriere>
+	<CorriereStr>Corriere GLS</CorriereStr>
+	<DataInserimentoStr>22/12/2023</DataInserimentoStr>
+	<IconaCorriere>/img/icoCorriere20.png</IconaCorriere>
+	<IconaCorriereAlt>Corriere GLS</IconaCorriereAlt>
+	<PagamentoStr>60 giorni data fattura</PagamentoStr>
+	<IndirizzoStr>Dimmagine s.r.l., VIA TRIESTE, 8 - 00040 Pomezia (RM)</IndirizzoStr>
+	<ListaOrdini>
+	<OrdineWeb>
+		<L>FormerDALWeb.ListinoBaseW</L>
+		<P>FormerDALWeb.PreventivazioneW</P>
+		<F>FormerDALWeb.FormatoProdottoW</F>
+		<TC>FormerDALWeb.TipoCartaW</TC>
+		<C>FormerDALWeb.ColoreStampaW</C>
+		<Corriere>FormerDALWeb.CorriereW</Corriere>
+		<PercPromo>0</PercPromo>
+		<IdProdotto>545</IdProdotto>
+		<NOrdineStr>-</NOrdineStr>
+		<AltezzaI>0</AltezzaI>
+		<LarghezzaI>0</LarghezzaI>
+		<ProfonditaI>0</ProfonditaI>
+		<IdTipoFustellaI>0</IdTipoFustellaI>
+		<Stato>5</Stato>
+		<IdOrdineWithAttach>former:131754</IdOrdineWithAttach>
+		<IdRiferimentoOrdine>131754</IdRiferimentoOrdine>
+		<QtaStr>100</QtaStr>
+		<ColoriDiStampaStr>4+4 a colori Fronte/Retro</ColoriDiStampaStr>
+		<IdOrdineWeb>131754</IdOrdineWeb>
+		<CorriereStr>Corriere GLS</CorriereStr>
+		<ColliStr>1</ColliStr>
+		<NomeLavoroStr></NomeLavoroStr>
+		<NFogliVisStr>1</NFogliVisStr>
+		<OrientamentoSelezionato>0</OrientamentoSelezionato>
+		<OrientamentoSelezionatoStr>Orizzontale</OrientamentoSelezionatoStr>
+		<NFogliVis>1</NFogliVis>
+		<PesoVolumetrico>0</PesoVolumetrico>
+		<PesoStr>1</PesoStr>
+		<Riassunto>100 Biglietti da visita quadro 54 x 54</Riassunto>
+		<NomeProdotto>Biglietti da visita quadro 54 x 54</NomeProdotto>
+		<NomeCliente>Dimmagine s.r.l.</NomeCliente>
+		<AnteprimaWeb></AnteprimaWeb>
+		<ImportoNettoOrigStr>32.00</ImportoNettoOrigStr>
+		<ImportoNettoStr>32.00</ImportoNettoStr>
+		<PagatoStr>No</PagatoStr>
+		<ImportoNettoOrig>32.0000</ImportoNettoOrig>
+		<ImportoNetto>32.0000</ImportoNetto>
+		<DataInsStr>Fri 22/12/2023 08:47</DataInsStr>
+		<DataPrevProduzione>12/28/2023 12:00:00 AM</DataPrevProduzione>
+		<DataPrevConsegna>12/29/2023 12:00:00 AM</DataPrevConsegna>
+		<DataConsegnaStr>Friday 29/12/2023</DataConsegnaStr>
+		<DimensioniStr>85x55</DimensioniStr>
+		<StatoStr>In attesa Invio File</StatoStr>
+		<IdOrdineInterno>0</IdOrdineInterno>
+		<Modificabile>True</Modificabile>
+		<ColoreStato>Color [A=255, R=255, G=0, B=0]</ColoreStato>
+		<ColoreStatoHTML>#FF0000</ColoreStatoHTML>
+		<BoxTitolo>Biglietti da Visita</BoxTitolo>
+		<IconaStato>/img/icoBianco.png</IconaStato>
+		<SupportoStr>Patinata Opaca 350 gr.</SupportoStr>
+		<PathTemplate>20170110170446346327.pdf</PathTemplate>
+		<SchedaProdottoStr>/2/1164/72/1/1/Stampa-Stampa-Biglietti-da-Visita-85x55-Opaca-350gr-4-4-a-colori-Fronte-Retro</SchedaProdottoStr>
+		<RiassuntoBox>100 Biglietti da visita qua...</RiassuntoBox>
+		<BoxImgRif>Biglietti-da-Visita-QUADRO-20200206144304430661.png</BoxImgRif>
+		<BoxLavorazioni>
+		<String>
+			<Length>28</Length>
+		</String>
+
+		<String>
+			<Length>34</Length>
+		</String>
+
+		</BoxLavorazioni>
+		<NoteOrd></NoteOrd>
+		<ImportoTotaleScontiStr>0.00</ImportoTotaleScontiStr>
+		<FileModificabili>True</FileModificabili>
+		<ConsegnaAssociata>FormerDALWeb.Consegna</ConsegnaAssociata>
+		<FileScaricatiNomeAnteprima></FileScaricatiNomeAnteprima>
+		<FileScaricatiNomeFronte></FileScaricatiNomeFronte>
+		<FileScaricatiNomeRetro></FileScaricatiNomeRetro>
+		<Omaggio>0</Omaggio>
+		<Utente>FormerDALWeb.Utente</Utente>
+		<IdOrdine>131754</IdOrdine>
+		<Altezza>0</Altezza>
+		<Annotazioni></Annotazioni>
+		<Anteprima></Anteprima>
+		<ConsegnaGarantita>1/1/0001 12:00:00 AM</ConsegnaGarantita>
+		<ConsegnaGarantitaDa>0</ConsegnaGarantitaDa>
+		<DataCambioStato>1/1/0001 12:00:00 AM</DataCambioStato>
+		<DataIns>12/22/2023 8:47:00 AM</DataIns>
+		<ExtraData></ExtraData>
+		<IdCons>252817</IdCons>
+		<IdCorriere>10</IdCorriere>
+		<IdCoupon>0</IdCoupon>
+		<IdIndirizzo>10</IdIndirizzo>
+		<IdListinoBase>545</IdListinoBase>
+		<IdMacchinarioProduzioneUtilizzato>0</IdMacchinarioProduzioneUtilizzato>
+		<IdMailPreventivo>0</IdMailPreventivo>
+		<IdOrdineInt>0</IdOrdineInt>
+		<IdPromo>0</IdPromo>
+		<IdTipoFustella>0</IdTipoFustella>
+		<IdUt>1684</IdUt>
+		<InseritoDa>0</InseritoDa>
+		<Larghezza>0</Larghezza>
+		<Lavorazioni>155,51,1,181</Lavorazioni>
+		<Mq>0</Mq>
+		<Nfogli>1</Nfogli>
+		<NoEmailDemone>0</NoEmailDemone>
+		<NomeLavoro></NomeLavoro>
+		<NumeroColli>1</NumeroColli>
+		<OrdineInOmaggio>0</OrdineInOmaggio>
+		<OrdineWeb>True</OrdineWeb>
+		<Orientamento>0</Orientamento>
+		<Peso>1</Peso>
+		<Preventivo>0</Preventivo>
+		<PrezzoCalcolatoNetto>32.0000</PrezzoCalcolatoNetto>
+		<PrezzoCorriere>0</PrezzoCorriere>
+		<Profondita>0</Profondita>
+		<Qta>100</Qta>
+		<Ricarico>0</Ricarico>
+		<Sconto>0</Sconto>
+		<SorgenteCopertina></SorgenteCopertina>
+		<SorgenteFronte></SorgenteFronte>
+		<SorgenteRetro></SorgenteRetro>
+		<StatoWeb>0</StatoWeb>
+		<TipoConsegna>0</TipoConsegna>
+		<TipoRetro>0</TipoRetro>
+		<TotaleIva>0</TotaleIva>
+		<TotaleNetto>0</TotaleNetto>
+		<TotaleOrdine>0</TotaleOrdine>
+		<UsaNomeLavoroInFattura>0</UsaNomeLavoroInFattura>
+		<IsChanged>False</IsChanged>
+	</OrdineWeb>
+
+	</ListaOrdini>
+	<BufferHTMLOrdini><a href="/131754/dettaglio-ordine"><img src="/img/icoCarrello16.png"> <b>100 Biglietti da visita quadro 54 x 54</b></a><br /></BufferHTMLOrdini>
+	<PagamentoOrdine>	<Utente>FormerDALWeb.Utente</Utente>
+	<NomeCliente>Dimmagine s.r.l.</NomeCliente>
+	<IdConsegna>252817</IdConsegna>
+	<AlertLevel>0</AlertLevel>
+	<Annotazioni></Annotazioni>
+	<Blocco>0</Blocco>
+	<CodTrack></CodTrack>
+	<DataEffettiva>1/1/0001 12:00:00 AM</DataEffettiva>
+	<DataInserimento>12/22/2023 8:47:11 AM</DataInserimento>
+	<DataPrevistaOriginale>12/29/2023 12:00:00 AM</DataPrevistaOriginale>
+	<EmailNotificheCorriere></EmailNotificheCorriere>
+	<Giorno>12/28/2023 12:00:00 AM</Giorno>
+	<GuidTransazione>1684-97cfcabc-ad6b-4faa-9d58-880962551fe3</GuidTransazione>
+	<IdConsegnaInt>0</IdConsegnaInt>
+	<IdCorriere>10</IdCorriere>
+	<IdIndirizzo>10</IdIndirizzo>
+	<IdPagam>5</IdPagam>
+	<IdStatoConsegna>0</IdStatoConsegna>
+	<IdUt>1684</IdUt>
+	<ImportoNetto>10.0000</ImportoNetto>
+	<NoCartaceo>0</NoCartaceo>
+	<NumColli>0</NumColli>
+	<Peso>1</Peso>
+	<TipoDoc>1</TipoDoc>
+	<IsChanged>True</IsChanged>
+</Consegna>

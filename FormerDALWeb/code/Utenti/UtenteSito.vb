@@ -45,6 +45,19 @@ Public Class UtenteSito
 
         End Set
     End Property
+    Dim urlFrame As String
+    Public Property UrlIframe As String
+        Get
+            urlFrame = "http://localhost:5173/#" ' url local react
+            'urlFrame = "https://react.tipografiaformertest.it:6060/#" ' url test
+            'urlFrame = "http://95.110.134.38:51/#" ' url former server
+            Return urlFrame
+        End Get
+        Set(value As String)
+
+        End Set
+    End Property
+
 
     Public ReadOnly Property Nominativo As String
         Get

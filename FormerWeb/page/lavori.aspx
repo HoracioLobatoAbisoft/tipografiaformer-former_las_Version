@@ -24,17 +24,17 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">   
-<h3 class="orange"><img src="/img/icoLavoro50.png" />I TUOI LAVORI</h3>
+<h3 class="orange"><img src="/img/icoLavoro50.png" />I TUOI ORDINI</h3>
 <div class="ordini">
     
     <div id="tabs" >
         <ul>
-        <li><a href="#tabs-1"><img src="/img/icoLavoro20.png" alt="I tuoi lavori" class="icoImg"/> Tutti i tuoi Lavori</a></li>
-        <li><a href="#tabs-2"><img src="/img/icoLavOpz16.png" alt="Legenda Stato Lavori" class="icoImg"/> Legenda Stato Lavori</a></li>
+        <li><a href="#tabs-1"><img src="/img/icoLavoro20.png" alt="I tuoi lavori" class="icoImg"/> Tutti i tuoi Ordini</a></li>
+        <li><a href="#tabs-2"><img src="/img/icoLavOpz16.png" alt="Legenda Stato Lavori" class="icoImg"/> Legenda Stato Ordini</a></li>
         </ul>
         <div id="tabs-1"><br />
-            Da qui puoi consultare lo stato dei tuoi lavori ed essere sempre informato sulla fase di lavorazione. Lo stato dei lavori viene aggiornato all' incirca <b>ogni 15 minuti</b>.<br /><br />
-            Clicca sul <b style="font-size:14px;">+</b> che vedi accanto a ogni Lavoro per visualizzare il dettaglio e le operazioni che puoi effettuare.
+            Da qui puoi consultare lo stato dei tuoi ordini ed essere sempre informato sulla fase di lavorazione. Lo stato dei ordini viene aggiornato all' incirca <b>ogni 15 minuti</b>.<br /><br />
+            Clicca sul <b style="font-size:14px;">+</b> che vedi accanto a ogni Ordine per visualizzare il dettaglio e le operazioni che puoi effettuare.
             <br /><br />
             <table width="100%" class="BoxOrdInt">
                 <tr>
@@ -43,7 +43,7 @@
                     <td width="35"><b style="color:red;">STATO</b></td>
                     <td><b style="color:red;">PRODOTTO ACQUISTATO</b></td>
                     <td width="140"><%--<b style="color:red;">CONSEGNA</b>--%></td>
-                    <td width="60" align="center"><b style="color:red;">LAVORO</b></td>
+                    <td width="60" align="center"><b style="color:red;">ORDINE</b></td>
                     <td width="100" align="center"><b style="color:red;">IMPORTO NETTO</b></td>
                 </tr>
             </table>
@@ -74,7 +74,7 @@
                 <b class="StatoCarrello bkgGrey ColorWhite ">7) Ricevi il tuo Ordine</b>
             </div><br /><br />
 
-            <br />Vuoi sapere cosa significano gli <b>Stati dei Lavori</b>? Ecco una spiegazione dettagliata di ogni stato.<br /><br />
+            <br />Vuoi sapere cosa significano gli <b>Stati dei Ordini</b>? Ecco una spiegazione dettagliata di ogni stato.<br /><br />
             <table>
                 <tr>
                     <td valign="top" rowspan="2">
@@ -86,7 +86,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono pronti per essere messi in produzione e attendono solamente che tu effettui il pagamento.<br /><br />
+                        I ordini in questo stato sono pronti per essere messi in produzione e attendono solamente che tu effettui il pagamento.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -99,7 +99,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono in attesa che vengano <b>Allegati i file</b>. Puoi effettuare questa operazione cliccando sul link <b>Vai al Dettaglio</b> oppure cliccando sul link <b>Invia i File</b><br /><br />
+                        I ordini in questo stato sono in attesa che vengano <b>Allegati i file</b>. Puoi effettuare questa operazione cliccando sul link <b>Vai al Dettaglio</b> oppure cliccando sul link <b>Invia i File</b><br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -112,7 +112,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono in attesa che l'integrità e la congruenza del formato dei file che ci hai inviato venga verificata dal sistema. <br /><br />
+                        I ordini in questo stato sono in attesa che l'integrità e la congruenza del formato dei file che ci hai inviato venga verificata dal sistema. <br /><br />
                     </td>
                 </tr>
 
@@ -126,7 +126,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono in produzione, non possono essere modificati e stanno per essere schedulati per la stampa.<br /><br />
+                        I ordini in questo stato sono in produzione, non possono essere modificati e stanno per essere schedulati per la stampa.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -139,7 +139,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono sospesi per vostra o nostra comunicazione.<br /><br />
+                        I ordini in questo stato sono sospesi per vostra o nostra comunicazione.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -152,7 +152,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono nel processo produttivo.<br /><br />
+                        I ordini in questo stato sono nel processo produttivo.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -165,7 +165,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono nel processo produttivo.<br /><br />
+                        I ordini in questo stato sono nel processo produttivo.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -178,7 +178,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono nel processo produttivo.<br /><br />
+                        I ordini in questo stato sono nel processo produttivo.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -191,7 +191,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono nel processo produttivo.<br /><br />
+                        I ordini in questo stato sono nel processo produttivo.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -204,7 +204,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono nel processo produttivo.<br /><br />
+                        I ordini in questo stato sono nel processo produttivo.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -217,7 +217,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono nel processo produttivo.<br /><br />
+                        I ordini in questo stato sono nel processo produttivo.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -230,7 +230,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono nel processo produttivo.<br /><br />
+                        I ordini in questo stato sono nel processo produttivo.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -243,7 +243,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato vengono sottoposti al controllo qualità per essere imballati e spediti.<br /><br />
+                        I ordini in questo stato vengono sottoposti al controllo qualità per essere imballati e spediti.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -256,7 +256,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato vengono sottoposti al controllo qualità per essere imballati e spediti con il corriere scelto.<br /><br />
+                        I ordini in questo stato vengono sottoposti al controllo qualità per essere imballati e spediti con il corriere scelto.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -269,7 +269,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono pronti per essere ritirati presso la nostra sede (se concordato).<br /><br />
+                        I ordini in questo stato sono pronti per essere ritirati presso la nostra sede (se concordato).<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -282,7 +282,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono in transito verso l'indirizzo di spedizione.<br /><br />
+                        I ordini in questo stato sono in transito verso l'indirizzo di spedizione.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -295,7 +295,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono in transito verso l'indirizzo di spedizione.<br /><br />
+                        I ordini in questo stato sono in transito verso l'indirizzo di spedizione.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -308,7 +308,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono stati consegnati al destinatario.<br /><br />
+                        I ordini in questo stato sono stati consegnati al destinatario.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -321,7 +321,7 @@
                 </tr>
                 <tr>
                     <td>
-                        Per questi lavori è stato corrisposto solo un acconto.<br /><br />
+                        Per questi ordini è stato corrisposto solo un acconto.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -334,7 +334,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato risultano interamente saldati.<br /><br />
+                        I ordini in questo stato risultano interamente saldati.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -347,7 +347,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono stati rifiutati per vostra o nostra comunicazione.<br /><br />
+                        I ordini in questo stato sono stati rifiutati per vostra o nostra comunicazione.<br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -360,7 +360,7 @@
                 </tr>
                 <tr>
                     <td>
-                        I lavori in questo stato sono stati eliminati per vostra o nostra comunicazione.<br /><br />
+                        I ordini in questo stato sono stati eliminati per vostra o nostra comunicazione.<br /><br />
                     </td>
                 </tr>
             </table>

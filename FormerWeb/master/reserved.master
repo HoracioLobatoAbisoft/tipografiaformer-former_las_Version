@@ -16,8 +16,8 @@
                         <a href="/aggiorna-dati-fiscali" class="voceMenu"><img src="/img/_icoDatiFiscali20.png" /> - Aggiorna Dati Fiscali</a><br />
                         <a href="/indirizzi-spedizione" class="voceMenu"><img src="/img/icoInd20.png" /> - Indirizzi e Corriere</a><br />
         <br /><b>Ordini</b><br />
-                        <a href="/i-tuoi-ordini" class="voceMenu"><img src="/img/icoCarrello20.png" /> - I tuoi Ordini</a><br />
-                        <a href="/i-tuoi-lavori" class="voceMenu"><img src="/img/icoLavoro20.png" /> - I tuoi Lavori</a><br />
+                        <a href="/i-tuoi-ordini" class="voceMenu"><img src="/img/icoCarrello20.png" /> - I tuoi Consegne</a><br />
+                        <a href="/i-tuoi-lavori" class="voceMenu"><img src="/img/icoLavoro20.png" /> - I tuoi Ordini</a><br />
                         <a href="/i-tuoi-coupon-di-sconto" class="voceMenu"><img src="/img/icoMieiCoupon20.png" /> - I tuoi Coupon di Sconto</a><br />
                         <a href="/offerte-e-promozioni" class="voceMenu"><img src="/img/icoOfferte16.png"  /> - Offerte e Promozioni</a><br />
                         <a href="/le-tue-fatture" class="voceMenu"><img src="/img/icoPdf20.png" /> - Le tue Fatture</a><br />

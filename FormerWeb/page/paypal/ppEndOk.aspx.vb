@@ -10,12 +10,12 @@
         Dim TokenPP As String = queryParameters("token")
 
         Dim Eviroment As Boolean = UtenteConnesso.Eviroment
-        Dim UrlProdottoEnviroment As String = ""
-        If Eviroment Then
-            UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/pagamento-confermato-paypal?tokenPP=" & TokenPP
-        Else
-            UrlProdottoEnviroment = "http://localhost:5173/#/pagamento-confermato-paypal?tokenPP=" & TokenPP
-        End If
+        Dim UrlProdottoEnviroment As String = UtenteConnesso.UrlIframe & "/pagamento-confermato-paypal?tokenPP=" & TokenPP
+        'If Eviroment Then
+        '    UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/pagamento-confermato-paypal?tokenPP=" & TokenPP
+        'Else
+        '    UrlProdottoEnviroment = "http://localhost:5173/#/pagamento-confermato-paypal?tokenPP=" & TokenPP
+        'End If
 
         IFramePayPalOk.Text = "<iframe id='IframePaypalOk' src=" & UrlProdottoEnviroment & " style='border:none; width:100%; height:250px'></iframe>"
     End Sub

@@ -157,12 +157,12 @@ Public Class pSiteMasterPage
         End If
 
         Dim Eviroment As Boolean = UtenteConnesso.Eviroment
-        Dim UrlProdottoEnviroment As String = ""
-        If Eviroment Then
-            UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/"
-        Else
-            UrlProdottoEnviroment = "http://localhost:5173/#/"
-        End If
+        Dim UrlProdottoEnviroment As String = UtenteConnesso.UrlIframe & "/"
+        'If Eviroment Then
+        '    UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/"
+        'Else
+        '    UrlProdottoEnviroment = "http://localhost:5173/#/"
+        'End If
 
         If UtenteConnesso.UtenteAutorizato Then
             Dim UrlIndex As String = UrlProdottoEnviroment

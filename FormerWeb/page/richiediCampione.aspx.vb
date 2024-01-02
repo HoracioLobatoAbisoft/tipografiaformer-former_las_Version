@@ -6,12 +6,12 @@
         Session("PageTitle") = "Richiedi un Campione Gratuito"
 
         Dim Eviroment As Boolean = UtenteConnesso.Eviroment
-        Dim UrlProdottoEnviroment As String = ""
-        If Eviroment Then
-            UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/richiedi-un-campione-gratuito"
-        Else
-            UrlProdottoEnviroment = "http://localhost:5173/#/richiedi-un-campione-gratuito"
-        End If
+        Dim UrlProdottoEnviroment As String = UtenteConnesso.UrlIframe & "/richiedi-un-campione-gratuito"
+        'If Eviroment Then
+        '    UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/richiedi-un-campione-gratuito"
+        'Else
+        '    UrlProdottoEnviroment = "http://localhost:5173/#/richiedi-un-campione-gratuito"
+        'End If
 
         If UtenteConnesso.UtenteAutorizato Then
             Dim UrlProdotto2 As String = UrlProdottoEnviroment

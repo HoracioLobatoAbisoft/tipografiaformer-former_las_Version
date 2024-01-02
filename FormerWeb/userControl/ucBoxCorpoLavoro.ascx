@@ -34,13 +34,13 @@
                 </div>
                 <%End if %>
             </td>
-            <td>Nome lavoro:</td>
+            <td>Nome Ordini:</td>
             <td style="font-size:12px;"><b><%=Ordine.NomeLavoro%></b></td>
             <td rowspan="<%=NumeroRighe%>" width="150" align="center" valign="top" >
                 <%If Ordine.IdOrdineWeb Then%>
                 <b class="statoOrdineLabel" style='background-color:<%=Ordine.ColoreStatoHTML %>;<%=iif(ordine.omaggio=ensino.si,"color:white;","")%>'><%=Ordine.StatoStr %></b><br />
                 
-                    N° Lavoro: <b><%=Ordine.NOrdineStr %></b><br />
+                    N° Ordine: <b><%=Ordine.NOrdineStr %></b><br />
                     <%If Ordine.AnteprimaWeb.Length Then%>
                         <a href="/ordini/<%=Ordine.IdOrdineWeb%>/<%=Ordine.AnteprimaWeb%>" data-lightbox="ord<%=Ordine.IdOrdineWeb%>"><img src="/ordini/<%=Ordine.IdOrdineWeb%>/<%=Ordine.AnteprimaWeb%>" class="anteprima" /></a>
                     <%Else%>

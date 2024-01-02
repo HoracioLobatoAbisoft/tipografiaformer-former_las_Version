@@ -100,12 +100,12 @@ Public Class pDettaglioLavoro
 
     Private Sub IframeRender(_IdOrdine As Integer)
         Dim Eviroment As Boolean = UtenteConnesso.Eviroment
-        Dim UrlProdottoEnviroment As String = ""
-        If Eviroment Then
-            UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/" & _IdOrdine & "/dettaglio-lavoro"
-        Else
-            UrlProdottoEnviroment = "http://localhost:5173/#/" & _IdOrdine & "/dettaglio-lavoro"
-        End If
+        Dim UrlProdottoEnviroment As String = UtenteConnesso.UrlIframe & "/" & _IdOrdine & "/dettaglio-lavoro"
+        'If Eviroment Then
+        '    UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/" & _IdOrdine & "/dettaglio-lavoro"
+        'Else
+        '    UrlProdottoEnviroment = "http://localhost:5173/#/" & _IdOrdine & "/dettaglio-lavoro"
+        'End If
 
         If UtenteConnesso.UtenteAutorizato Then
             Dim UrlIndex As String = UrlProdottoEnviroment

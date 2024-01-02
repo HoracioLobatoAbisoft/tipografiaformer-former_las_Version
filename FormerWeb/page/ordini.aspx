@@ -46,23 +46,23 @@
         </div>
         
     <%Else %>
-<h3 class="orange"><img src="/img/icoCart50.png" />I TUOI ORDINI</h3>
+<h3 class="orange"><img src="/img/icoCart50.png" />Le Tue Consegna</h3>
 <div class="ordini">
      <div id="tabs" >
     <ul>
-    <li><a href="#tabs-1"><img src="/img/icoCarrello20.png" alt="I tuoi lavori" class="icoImg"/> Tutti i tuoi Ordini</a></li>
-    <li><a href="#tabs-2"><img src="/img/icoLavOpz16.png" alt="Legenda Stato Lavori" class="icoImg"/> Legenda Stato Ordini</a></li>
+    <li><a href="#tabs-1"><img src="/img/icoCarrello20.png" alt="I tuoi lavori" class="icoImg"/> Tutti i tue Consegna</a></li>
+    <li><a href="#tabs-2"><img src="/img/icoLavOpz16.png" alt="Legenda Stato Lavori" class="icoImg"/> Legenda Stato Consegna</a></li>
     </ul>
-    <div id="tabs-1"><br />  Da qui puoi visualizzare lo stato dei tuoi Ordini. Clicca sul <b style="font-size:14px;">+</b> che vedi accanto a ogni Ordine per visualizzare il dettaglio dell' ordine.<br /><br />
+    <div id="tabs-1"><br />  Da qui puoi visualizzare lo stato dei tuoi Consegne. Clicca sul <b style="font-size:14px;">+</b> che vedi accanto a ogni consegna per visualizzare il dettaglio dell' consenge.<br /><br />
     
     <table width="100%" class="BoxOrdInt">
         <tr>
             <td width="65">&nbsp;</td>
             <td width="130" align="center"><b class="red">STATO</b></td>
-            <td width="120" align="center"><b class="red">ORDINE</b></td>
+            <td width="120" align="center"><b class="red">CONSEGNA</b></td>
             <td width="100" align="center"><b class="red">DATA CONSEGNA</b></td>
             <td><b class="red">CORRIERE</b></td>
-            <td width="60"><b class="red">N° LAVORI</b></td>
+            <td width="60"><b class="red">N° ORDINI</b></td>
             <td width="110" align="right"><b class="red">IMPORTO NETTO</b></td>
         </tr>
     </table>
@@ -87,7 +87,7 @@
              </h3>
              <div>
                  <div class="BoxOrdBody">
-                     <b>Riepilogo Ordine</b>
+                     <b>Riepilogo Consegna</b>
                      <table>
                          <tr height="12">
                              <td width="100">Data Consegna</td>
@@ -96,7 +96,7 @@
                                 <center><b class="statoOrdineLabel" style='background-color:<%#Eval("ColoreStatoHtml")%>;'><%#Eval("StatoStr")%></b></center><br />
                                  <table>
                                      <tr>
-                                         <td>Totale Lavori: </td>
+                                         <td>Totale Consegna: </td>
                                          <td align="right"><b>€ <%#Eval("ImportoTotOrdiniNettoOriginaleStr")%></b></td>
                                      </tr>
                                      <asp:Panel ID="pnlCoupon" runat="server" Visible='<%#ShowCoupon(Eval("ImportoTotaleSconti"),Eval("IdCouponUtilizzato"))%>'>
@@ -123,7 +123,7 @@
                              </td>
                          </tr>                             
                          <tr height="12">
-                             <td width="100">N° Lavori</td>
+                             <td width="100">N° Ordini</td>
                              <td ><b><%#Eval("ListaOrdini.Count")%></b></td>
                          </tr>
                         <tr height="12">
@@ -148,8 +148,8 @@
                          </tr>
                          <tr>
                              <td colspan="3">                                     
-                                 <b>LAVORI NELL' ORDINE</b><br />
-                                 Qui trovi l'elenco dei lavori che sono contenuti in questo Ordine.
+                                 <b>ORDINI NELL' CONSEGNE</b><br />
+                                 Qui trovi l'elenco dei ordini che sono contenuti in questo CONSEGNE.
                                  <asp:Repeater ID="rptOrdini" runat="server">
                                      <HeaderTemplate><div class="accordionOrdini"></HeaderTemplate>
                                      <ItemTemplate>
@@ -174,7 +174,7 @@
     <div class="pager">Vai alla pagina <asp:PlaceHolder ID="plcPaging" runat="server" /> <asp:Label runat="server" ID="lblPageName"  /></div>
     </div>
     <div id="tabs-2">
-        <br />Vuoi sapere cosa significano gli <b>Stati degli Ordini</b>? Ecco una spiegazione dettagliata di ogni stato.<br /><br />
+        <br />Vuoi sapere cosa significano gli <b>Stati degli Consegna</b>? Ecco una spiegazione dettagliata di ogni stato.<br /><br />
         <table>
             <tr>
                 <td valign="top" rowspan="2">
@@ -186,7 +186,7 @@
             </tr>
             <tr>
                 <td>
-                    Gli ordini in questo stato sono stati acquistati dal Carrello.<br /><br />
+                    Gli consegna in questo stato sono stati acquistati dal Carrello.<br /><br />
                 </td>
             </tr>
             <tr>
@@ -199,7 +199,7 @@
             </tr>
             <tr>
                 <td>
-                    Gli ordini in questo stato sono in attesa che tu effettui il pagamento. Puoi effettuare il pagamento dal dettaglio dell'ordine con pochi click.<br /><br />
+                    Gli ordini in questo stato sono in attesa che tu effettui il pagamento. Puoi effettuare il pagamento dal dettaglio dell'consegne con pochi click.<br /><br />
                 </td>
             </tr>
             <tr>
@@ -257,7 +257,7 @@
 
             </table>
         <hr class="separatore"/>
-        <br />Vuoi sapere cosa significano i simboli accanto a ogni ordine? Ecco una spiegazione dettagliata di ogni simbolo.<br /><br />
+        <br />Vuoi sapere cosa significano i simboli accanto a ogni consegna? Ecco una spiegazione dettagliata di ogni simbolo.<br /><br />
         <table>
             <tr>
                 <td>
@@ -272,7 +272,7 @@
                     <img src="/img/icoCorriere20.png" />
                 </td>
                 <td>
-                    Per gli ordini con questo simbolo accanto hai scelto di ricevere l'ordine tramite un <b>NOSTRO CORRIERE</b><br />
+                    Per gli ordini con questo simbolo accanto hai scelto di ricevere l'consena tramite un <b>NOSTRO CORRIERE</b><br />
                 </td>
             </tr>
             <tr>
@@ -280,7 +280,7 @@
                     <img src="/img/icoPacco20.png" />
                 </td>
                 <td>
-                    Per gli ordini con questo simbolo accanto hai scelto di inviare un <b>TUO CORRIERE</b> a ritirare l'ordine
+                    Per gli ordini con questo simbolo accanto hai scelto di inviare un <b>TUO CORRIERE</b> a ritirare l'consegne
                 </td>
             </tr>
         </table>
@@ -292,7 +292,7 @@
                     <b class="DataOrdinePrevista"><%=Now.Date.ToString("dd/MM/yyyy") %> Consegna PREVISTA</b>
                 </td>
                 <td>
-                    La data della consegna è quella <b>PREVISTA</b> al momento dell'inserimento dell'ordine.<br />
+                    La data della consegna è quella <b>PREVISTA</b> al momento dell'inserimento dell'consegna.<br />
                 </td>
             </tr>
              <tr>

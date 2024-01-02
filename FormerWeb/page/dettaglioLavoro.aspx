@@ -32,7 +32,7 @@
     <%Else %>
     <div class="dettaglioOrdine">
     <%End If%>
-    <h3 class="orange" style="margin-left:80px;"><img src="/img/icoLavoro50.png" />DETTAGLIO DEL TUO LAVORO N° <b class="black"><%=GetIdOrdView%></b> </h3>
+    <h3 class="orange" style="margin-left:80px;"><img src="/img/icoLavoro50.png" />DETTAGLIO DEL TUO ORDINI N° <b class="black"><%=GetIdOrdView%></b> </h3>
         
      <div class="riepilogoOrdine">
 
@@ -116,7 +116,7 @@
         <td valign="top">
 <table>
     <tr>
-        <td valign="top" class="TDIntestazione">Nome Lavoro:</td>
+        <td valign="top" class="TDIntestazione">Nome Ordini:</td>
         <td  class="BloccoNoteLavoro">
         <div class="boxNote"><%=o.NomeLavoro%></div>
         </td>

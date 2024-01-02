@@ -1,0 +1,125 @@
+<OrdineWeb>
+	<L>FormerDALWeb.ListinoBaseW</L>
+	<P>FormerDALWeb.PreventivazioneW</P>
+	<F>FormerDALWeb.FormatoProdottoW</F>
+	<TC>FormerDALWeb.TipoCartaW</TC>
+	<C>FormerDALWeb.ColoreStampaW</C>
+	<Corriere>FormerDALWeb.CorriereW</Corriere>
+	<PercPromo>0</PercPromo>
+	<IdProdotto>1008</IdProdotto>
+	<NOrdineStr>-</NOrdineStr>
+	<AltezzaI>100</AltezzaI>
+	<LarghezzaI>70</LarghezzaI>
+	<ProfonditaI>20</ProfonditaI>
+	<IdTipoFustellaI>1377</IdTipoFustellaI>
+	<Stato>5</Stato>
+	<IdOrdineWithAttach>former:131761</IdOrdineWithAttach>
+	<IdRiferimentoOrdine>131761</IdRiferimentoOrdine>
+	<QtaStr>1</QtaStr>
+	<ColoriDiStampaStr>4+0 a colori solo Fronte</ColoriDiStampaStr>
+	<IdOrdineWeb>131761</IdOrdineWeb>
+	<CorriereStr>Corriere GLS</CorriereStr>
+	<ColliStr>1</ColliStr>
+	<NomeLavoroStr></NomeLavoroStr>
+	<NFogliVisStr>1</NFogliVisStr>
+	<OrientamentoSelezionato>-1</OrientamentoSelezionato>
+	<OrientamentoSelezionatoStr>Non specificato</OrientamentoSelezionatoStr>
+	<NFogliVis>1</NFogliVis>
+	<PesoVolumetrico>0</PesoVolumetrico>
+	<PesoStr>1</PesoStr>
+	<Riassunto>1 Astucci Ovali entro B5</Riassunto>
+	<NomeProdotto>Astucci Ovali entro B5</NomeProdotto>
+	<NomeCliente>Dimmagine s.r.l.</NomeCliente>
+	<AnteprimaWeb></AnteprimaWeb>
+	<ImportoNettoOrigStr>78.00</ImportoNettoOrigStr>
+	<ImportoNettoStr>78.00</ImportoNettoStr>
+	<PagatoStr>No</PagatoStr>
+	<ImportoNettoOrig>78</ImportoNettoOrig>
+	<ImportoNetto>78</ImportoNetto>
+	<DataInsStr>Thu 28/12/2023 15:52</DataInsStr>
+	<DataPrevProduzione>1/4/2024 12:00:00 AM</DataPrevProduzione>
+	<DataPrevConsegna>1/5/2024 12:00:00 AM</DataPrevConsegna>
+	<DataConsegnaStr>Friday 05/01/2024</DataConsegnaStr>
+	<DimensioniStr> (70B x 100A x 20P mm Chiuso)</DimensioniStr>
+	<StatoStr>In attesa Invio File</StatoStr>
+	<IdOrdineInterno>0</IdOrdineInterno>
+	<Modificabile>True</Modificabile>
+	<ColoreStato>Color [A=255, R=255, G=0, B=0]</ColoreStato>
+	<ColoreStatoHTML>#FF0000</ColoreStatoHTML>
+	<BoxTitolo>Astucci Ovali</BoxTitolo>
+	<IconaStato>/img/icoBianco.png</IconaStato>
+	<SupportoStr>Cartoncino ZENITH 295gr</SupportoStr>
+	<PathTemplate>20155212059666603.pdf</PathTemplate>
+	<SchedaProdottoStr>/38/1138/103/2/1/Stampa-Stampa-Astucci-Ovali-B5--cartoncino-300gr-4-0-a-colori-solo-Fronte</SchedaProdottoStr>
+	<RiassuntoBox>1 Astucci Ovali entro B5</RiassuntoBox>
+	<BoxImgRif>Astucci-Ovali-2020020613064159159.png</BoxImgRif>
+	<BoxLavorazioni>
+	<String>
+		<Length>21</Length>
+	</String>
+
+	<String>
+		<Length>26</Length>
+	</String>
+
+	</BoxLavorazioni>
+	<NoteOrd></NoteOrd>
+	<ImportoTotaleScontiStr>0.00</ImportoTotaleScontiStr>
+	<FileModificabili>True</FileModificabili>
+	<ConsegnaAssociata>FormerDALWeb.Consegna</ConsegnaAssociata>
+	<FileScaricatiNomeAnteprima></FileScaricatiNomeAnteprima>
+	<FileScaricatiNomeFronte></FileScaricatiNomeFronte>
+	<FileScaricatiNomeRetro></FileScaricatiNomeRetro>
+	<Omaggio>0</Omaggio>
+	<Utente>FormerDALWeb.Utente</Utente>
+	<IdOrdine>131761</IdOrdine>
+	<Altezza>100</Altezza>
+	<Annotazioni></Annotazioni>
+	<Anteprima></Anteprima>
+	<ConsegnaGarantita>1/1/0001 12:00:00 AM</ConsegnaGarantita>
+	<ConsegnaGarantitaDa>0</ConsegnaGarantitaDa>
+	<DataCambioStato>1/1/0001 12:00:00 AM</DataCambioStato>
+	<DataIns>12/28/2023 3:52:41 PM</DataIns>
+	<ExtraData></ExtraData>
+	<IdCons>252824</IdCons>
+	<IdCorriere>10</IdCorriere>
+	<IdCoupon>0</IdCoupon>
+	<IdIndirizzo>10</IdIndirizzo>
+	<IdListinoBase>1008</IdListinoBase>
+	<IdMacchinarioProduzioneUtilizzato>0</IdMacchinarioProduzioneUtilizzato>
+	<IdMailPreventivo>0</IdMailPreventivo>
+	<IdOrdineInt>0</IdOrdineInt>
+	<IdPromo>0</IdPromo>
+	<IdTipoFustella>1377</IdTipoFustella>
+	<IdUt>1684</IdUt>
+	<InseritoDa>0</InseritoDa>
+	<Larghezza>70</Larghezza>
+	<Lavorazioni>155,59,204</Lavorazioni>
+	<Mq>0</Mq>
+	<Nfogli>1</Nfogli>
+	<NoEmailDemone>0</NoEmailDemone>
+	<NomeLavoro></NomeLavoro>
+	<NumeroColli>1</NumeroColli>
+	<OrdineInOmaggio>0</OrdineInOmaggio>
+	<OrdineWeb>True</OrdineWeb>
+	<Orientamento>-1</Orientamento>
+	<Peso>1</Peso>
+	<Preventivo>0</Preventivo>
+	<PrezzoCalcolatoNetto>78</PrezzoCalcolatoNetto>
+	<PrezzoCorriere>0</PrezzoCorriere>
+	<Profondita>20</Profondita>
+	<Qta>1</Qta>
+	<Ricarico>0</Ricarico>
+	<Sconto>0</Sconto>
+	<SorgenteCopertina></SorgenteCopertina>
+	<SorgenteFronte></SorgenteFronte>
+	<SorgenteRetro></SorgenteRetro>
+	<StatoWeb>0</StatoWeb>
+	<TipoConsegna>0</TipoConsegna>
+	<TipoRetro>0</TipoRetro>
+	<TotaleIva>0</TotaleIva>
+	<TotaleNetto>0</TotaleNetto>
+	<TotaleOrdine>0</TotaleOrdine>
+	<UsaNomeLavoroInFattura>0</UsaNomeLavoroInFattura>
+	<IsChanged>True</IsChanged>
+</OrdineWeb>

@@ -16,12 +16,12 @@ Public Class pOrdini
 
     Private Sub IframeRender()
         Dim Eviroment As Boolean = UtenteConnesso.Eviroment
-        Dim UrlProdottoEnviroment As String = ""
-        If Eviroment Then
-            UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/iTuoiOrdini/" & UtenteConnesso.IdUtente
-        Else
-            UrlProdottoEnviroment = "http://localhost:5173/#/iTuoiOrdini/" & UtenteConnesso.IdUtente
-        End If
+        Dim UrlProdottoEnviroment As String = UtenteConnesso.UrlIframe & "/iTuoiOrdini/" & UtenteConnesso.IdUtente
+        'If Eviroment Then
+        '    UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/iTuoiOrdini/" & UtenteConnesso.IdUtente
+        'Else
+        '    UrlProdottoEnviroment = "http://localhost:5173/#/iTuoiOrdini/" & UtenteConnesso.IdUtente
+        'End If
 
         If UtenteConnesso.UtenteAutorizato Then
             Dim UrlIndex As String = UrlProdottoEnviroment
