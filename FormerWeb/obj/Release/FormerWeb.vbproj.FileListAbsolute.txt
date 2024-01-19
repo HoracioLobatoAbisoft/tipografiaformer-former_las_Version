@@ -114,6 +114,7 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\CsPotrace.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\SevenZipSharp.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\GhostscriptSharp.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerBancaSella.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerBancaSella.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerBancaSella.dll.config
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerBusinessLogicInterface.pdb
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerBusinessLogicInterface.xml
@@ -127,8 +128,11 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerDALWeb.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerGraphics.pdb
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerGraphics.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerLib.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerLib.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerIO.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerIO.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerError.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\bin\FormerError.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\obj\Release\FormerWeb.vbproj.AssemblyReference.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\obj\Release\FormerWeb.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWeb\obj\Release\FormerWeb.vbproj.GenerateResource.cache

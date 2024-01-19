@@ -68,6 +68,7 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\bin\Release\FormerB
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\bin\Release\FormerGraphics.pdb
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\bin\Release\FormerGraphics.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\bin\Release\FormerLib.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\bin\Release\FormerLib.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\bin\Release\FormerConfig.pdb
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.vbproj.AssemblyReference.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.Resources.resources

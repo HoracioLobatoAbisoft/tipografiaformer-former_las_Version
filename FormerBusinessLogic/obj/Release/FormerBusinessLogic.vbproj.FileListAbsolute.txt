@@ -99,8 +99,11 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerDALWeb.pdb
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerDALWeb.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerError.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerError.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerIO.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerIO.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerLib.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerLib.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerGraphics.pdb
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerGraphics.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.vbproj.AssemblyReference.cache

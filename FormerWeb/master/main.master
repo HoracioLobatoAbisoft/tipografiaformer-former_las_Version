@@ -494,8 +494,18 @@
 
     <%      End If %>
     <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
-
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KSRG534D24"></script>
 <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KSRG534D24');
+</script>
+
+<%--<script>
+//[Obsolete]
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
             (i[r].q = i[r].q || []).push(arguments)
@@ -507,7 +517,7 @@
     ga('require', 'displayfeatures');
     ga('send', 'pageview');
 
-</script>
+</script>--%>
     <script type="text/javascript">
 
         function highlightRadioButtonList(elementRef) {
@@ -635,7 +645,7 @@
                     <a href="/area-riservata">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <%End If%>
                 <%--<a href="/area-riservata">Area Riservata</a>&nbsp;&nbsp;|&nbsp;&nbsp;--%>
-                <a href="/i-tuoi-ordini">Le Tue Consegna</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/i-tuoi-ordini">Le Tue Consegne</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                 <a href="/i-tuoi-lavori">I tuoi Ordini<%If UtenteConnesso.IdUtente Then
                                                               Dim TotOrd As Integer = UtenteConnesso.GetNumeroTotaleOrdini
                                                               If TotOrd Then
@@ -853,8 +863,8 @@
 <!--POWERED BY LUNA ORM https://sourceforge.net/projects/lunaorm/ -->
     <script>
         //const urlFront = 'https://react.tipografiaformertest.it:6060';
-        //const urlFront = 'http://localhost:5173';
-        const urlFront = 'http://95.110.134.38:51';
+        const urlFront = 'http://localhost:5173';
+        //const urlFront = 'http://95.110.134.38:51';
         const counterLocal = this.localStorage.getItem('c');
         if (parseInt(counterLocal) > 0) {
             var idCounterCarrello = document.getElementById('coutenCarrello');

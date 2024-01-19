@@ -10,3 +10,15 @@ D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\FormerMarketing.dll
 D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\refint\FormerMarketing.dll
 D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\FormerMarketing.pdb
 D:\Abisfot\Former\main\FormerMarketing\obj\Release\net5.0\ref\FormerMarketing.dll
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\bin\Release\net5.0\FormerMarketing.deps.json
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\bin\Release\net5.0\FormerMarketing.dll
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\bin\Release\net5.0\FormerMarketing.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.AssemblyInfoInputs.cache
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.AssemblyInfo.cs
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.csproj.CoreCompileInputs.cache
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.sourcelink.json
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.dll
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\refint\FormerMarketing.dll
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\ref\FormerMarketing.dll

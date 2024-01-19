@@ -46,7 +46,7 @@
         </div>
         
     <%Else %>
-<h3 class="orange"><img src="/img/icoCart50.png" />Le Tue Consegna</h3>
+<h3 class="orange"><img src="/img/icoCart50.png" />Le Tue Consegne</h3>
 <div class="ordini">
      <div id="tabs" >
     <ul>

@@ -112,7 +112,9 @@ Public Class MgrDataConsegna
         Else
             ED = D + E - 9 & "/04/" & Y
         End If
-        ris = CDate(ED)
+        Dim formatDate As String = "dd/MM/yyyy"
+        ris = DateTime.ParseExact(ED, formatDate, Nothing)
+        'ris = CDate(ED)
 
         ris = ris.AddDays(1)
 

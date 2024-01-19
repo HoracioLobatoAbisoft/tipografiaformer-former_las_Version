@@ -48,6 +48,7 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\bin
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\bin\Release\GhostscriptSharp.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\bin\Release\FormerConfig.pdb
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\bin\Release\FormerLib.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\bin\Release\FormerLib.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.vbproj.AssemblyReference.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.vbproj.GenerateResource.cache

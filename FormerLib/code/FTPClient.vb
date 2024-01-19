@@ -331,6 +331,21 @@ Public Class FTPclient
         Return Ris
     End Function
 
+    Public Function GetUriFTPClient(ByVal filename As String) As FtpWebRequest
+        Dim path As String
+        Dim Ris As Long = 0
+        If filename.Contains("/") Then
+            path = AdjustDir(filename)
+        Else
+            path = Me.CurrentDirectory & filename
+        End If
+        Dim URI As String = Me.Hostname & path
+        Dim ftp As FtpWebRequest = GetRequest(URI)
+
+        Return ftp
+    End Function
+
+
     Public Function FtpRename(ByVal sourceFilename As String, ByVal newName As String) As Boolean
         'Does file exist?
         Dim source As String = GetFullPath(sourceFilename)

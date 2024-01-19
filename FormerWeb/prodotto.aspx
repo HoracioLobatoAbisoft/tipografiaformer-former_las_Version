@@ -409,7 +409,7 @@
                 <%End If%>                
                 <asp:Literal runat="server" ID="iframeRefactor" />
                 <%If UtenteConnesso.UtenteAutorizato Then %>
-                    <div class="schedaProd" style="display:none">
+                    <div class="schedaProd" style="display:block">
                 <%Else%>
                     <div class="schedaProd"  >
                 <%End If %>

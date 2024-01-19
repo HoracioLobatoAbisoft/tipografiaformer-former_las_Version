@@ -64,7 +64,9 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerB
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerBusinessLogicInterface.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerConfig.pdb
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerIO.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerIO.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerLib.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerLib.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.vbproj.AssemblyReference.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.vbproj.GenerateResource.cache

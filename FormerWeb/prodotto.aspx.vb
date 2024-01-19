@@ -24,6 +24,7 @@ Public Class pProdotto
     Private _categoria As String = "0"
     Private _BaseEtiquete As String = "0"
     Private _AltezzaEqitquete As String = "0"
+    Private _ImgEtiquete As String = "0"
 
     'Private F As FormatoProdottoW
     'Private TC As TipoCartaW
@@ -1647,7 +1648,7 @@ Public Class pProdotto
         '    UrlProdottoEnviroment = "http://localhost:5173/#/form-prodotto-v2/"
         'End If
 
-        Dim UrlProdotto2 = UrlProdottoEnviroment & _IdPrev & "/" & _IdFormato & "/" & _IdTipoCarta & "/" & _IdColori & "/" & _Nfogli & "/" & Convert.ToInt32(UtenteConnesso.IdUtente) & "/" & _idFustela & "/" & _categoria & "/" & _BaseEtiquete & "/" & _AltezzaEqitquete
+        Dim UrlProdotto2 = UrlProdottoEnviroment & _IdPrev & "/" & _IdFormato & "/" & _IdTipoCarta & "/" & _IdColori & "/" & _Nfogli & "/" & Convert.ToInt32(UtenteConnesso.IdUtente) & "/" & _idFustela & "/" & _categoria & "/" & _BaseEtiquete & "/" & _AltezzaEqitquete & "/" & _ImgEtiquete
         If UtenteConnesso.UtenteAutorizato Then
             iframeRefactor.Text = "<iframe id='frameId' style='width:100%; height: 4080px;border: none;' src=" & UrlProdotto2 & " ></iframe>"
         End If
@@ -3388,6 +3389,7 @@ Public Class pProdotto
                         End If
                         _BaseEtiquete = R.Base
                         _AltezzaEqitquete = R.Altezza
+                        _ImgEtiquete = R.ImgFustellaScelta
                         RisultatoPlugin = New cEnum
                         RisultatoPlugin.Id = _IdFormato
                         RisultatoPlugin.Descrizione = R.Base & " x " & R.Altezza & " (" & R.Categoria & ")"

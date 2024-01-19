@@ -201,7 +201,7 @@ Friend Class FormerSyncronizer
                                     Buffer &= "La data di scadenza è il : <b>" & DataFineValidita.ToString & "</b><br><br>"
                                     Buffer &= "Troverai tutte le informazioni sulle modalità di utilizzo del Coupon sul nostro sito nella sezione <b>I tuoi Coupon</b> che puoi raggiungere all'indirizzo https://www.tipografiaformer.it/i-tuoi-coupon-di-sconto o cliccando <a href=""https://www.tipografiaformer.it/i-tuoi-coupon-di-sconto"">qui</a>."
 
-                                    FormerLib.FormerHelper.Mail.InviaMail(Soggetto, Buffer, V.Email)
+                                    'FormerLib.FormerHelper.Mail.InviaMail(Soggetto, Buffer, V.Email)
 
                                     LogCoupon("Emesso Coupon IdRubrica " & V.IdRub & " " & V.RagSocNome, GruppoCoupon)
                                     LogMe(GruppoCoupon & " - Emesso Coupon IdRubrica " & V.IdRub & " " & V.RagSocNome)
@@ -251,7 +251,7 @@ Friend Class FormerSyncronizer
                                     Buffer &= "La data di scadenza è il : <b>" & DataFineValidita.ToString & "</b><br><br>"
                                     Buffer &= "Troverai tutte le informazioni sulle modalità di utilizzo del Coupon sul nostro sito nella sezione <b>I tuoi Coupon</b> che puoi raggiungere all'indirizzo https://www.tipografiaformer.it/i-tuoi-coupon-di-sconto o cliccando <a href=""https://www.tipografiaformer.it/i-tuoi-coupon-di-sconto"">qui</a>."
 
-                                    FormerLib.FormerHelper.Mail.InviaMail(Soggetto, Buffer, V.Email)
+                                    'FormerLib.FormerHelper.Mail.InviaMail(Soggetto, Buffer, V.Email)
 
                                     LogCoupon("Emesso Coupon IdRubrica " & V.IdRub & " " & V.RagSocNome, GruppoCoupon)
                                     LogMe(GruppoCoupon & " - Emesso Coupon IdRubrica " & V.IdRub & " " & V.RagSocNome)
@@ -455,7 +455,7 @@ Friend Class FormerSyncronizer
                         ElseIf IdUtenteGiaTrovato = -1 Then
                             'qui ci sono piu utenti interni con quella mail sitauzione limite e assurda, segnalo errore e mi mando una mail 
                             LogMe("ERRORE DOWNLOAD NUOVE REGISTRAZIONI, EMAIL GIA PRESENTE PIU VOLTE: " & singUt.Nominativo)
-                            FormerHelper.Mail.InviaMail("Errore nuove registrazioni", "Questo utente risulta registrato piu volte nella nostra rubrica interna: idutonline " & singUt.IdUt & " email " & singUt.Email, FormerConst.EmailAssistenzaTecnica)
+                            'FormerHelper.Mail.InviaMail("Errore nuove registrazioni", "Questo utente risulta registrato piu volte nella nostra rubrica interna: idutonline " & singUt.IdUt & " email " & singUt.Email, FormerConst.EmailAssistenzaTecnica)
 
                         End If
                     Next
@@ -803,7 +803,7 @@ Friend Class FormerSyncronizer
                                                             LogMe("Inviata email x recensione a idrub= " & OInt.IdRub & " idlistinobase = " & OInt.IdListinoBase & " idord = " & OInt.IdOrd)
 
                                                             Try
-                                                                FormerHelper.Mail.InviaMail("Aiutaci a migliorare, lascia una Recensione sul tuo recente ordine", TestoMail, OInt.VoceRubrica.Email)
+                                                                'FormerHelper.Mail.InviaMail("Aiutaci a migliorare, lascia una Recensione sul tuo recente ordine", TestoMail, OInt.VoceRubrica.Email)
                                                             Catch ex As Exception
 
                                                             End Try
@@ -1035,7 +1035,7 @@ Friend Class FormerSyncronizer
                                             If IdByOrd <> ConsW.IdUt Then
                                                 'ALLARME
                                                 Try
-                                                    FormerHelper.Mail.InviaMail("ERRORE Demone inconsistenza", "Errore inconsistenza consegna online id = " & ConsW.IdConsegna & " IdUtCons = " & ConsW.IdUt & " IdByOrd = " & IdByOrd, FormerConst.EmailAssistenzaTecnica)
+                                                    'FormerHelper.Mail.InviaMail("ERRORE Demone inconsistenza", "Errore inconsistenza consegna online id = " & ConsW.IdConsegna & " IdUtCons = " & ConsW.IdUt & " IdByOrd = " & IdByOrd, FormerConst.EmailAssistenzaTecnica)
                                                 Catch ex As Exception
 
                                                 End Try
@@ -1225,7 +1225,7 @@ Friend Class FormerSyncronizer
 
             If MonitoraggioHotFolderAttivo = False Then
                 LogMe("AVVIATO MONITORAGGIO HOTFOLDER REFINE")
-
+                LogMe("--------------------------FormerConfig.FConfiguration.Refine.Server--------------------->" & FormerConfig.FConfiguration.Refine.Server)
                 Try
                     If FormerHelper.Web.IsPingable(FormerConfig.FConfiguration.Refine.Server) Then
                         Dim wfRefError As New FileSystemWatcher
@@ -2050,7 +2050,9 @@ Friend Class FormerSyncronizer
                 LogMe("Apertura Connessione FTP")
 
                 Using Ftp As New FTPclient(FtpServer, FtpLogin, FtpPwd)
-
+                    'LogMe("---------------------------------------------------------FTPSERVER" & FtpServer)
+                    'Dim URIFTPCLIENT = Ftp.GetUriFTPClient("/tipografiaformer.it/ordini/131837")
+                    'LogMe("----------------------------------------URI___", URIFTPCLIENT.)
                     'qui in L ho tutti gli ordini da lavorare in questo momento 
                     For Each O As FW.OrdineWeb In LOrd.ToList
 
@@ -2136,6 +2138,10 @@ Friend Class FormerSyncronizer
 
                                         Dim CheckFileOk As Boolean = True
                                         Dim UsaFileOnline As Boolean = True
+
+                                        LogMe("----------------NomeSorgenteFronte------------->" & NomeSorgenteFronte)
+                                        LogMe("---------------FileToDownloadFronte------------> " & FileToDownloadFronte & "-----O.L.NoAttachFile-->" & O.L.NoAttachFile)
+                                        LogMe("----------Ftp.FtpFileExists(FileToDownloadFronte)-------->" & Ftp.FtpFileExists(FileToDownloadFronte))
 
                                         If O.L.NoAttachFile <> enSiNo.Si Then
                                             If System.IO.File.Exists(NomeSorgenteFronte) Then
@@ -2960,7 +2966,7 @@ Friend Class FormerSyncronizer
                                                                             Buffer &= "Consegna " & ConsRis.IdCons & "<br>Giorno " & ConsRis.Giorno.ToString("dd/MM/yyyy") & "<br>Cliente " & ConsRis.Cliente.RagSocNome & " (id " & ConsRis.Cliente.IdRub & ")<br>Indirizzo " & ConsRis.IndirizzoRif.Riassunto(False)
                                                                             Buffer &= "<br><br>Informazioni supplementari: (IdComuneInElenco " & ConsRis.IndirizzoRif.IdComune & ")" & OkIndirizzo.Messaggio
                                                                             Try
-                                                                                FormerLib.FormerHelper.Mail.InviaMail("Errore in validazione Indirizzo GLS", Buffer, "info@tipografiaformer.it", , , , )
+                                                                                'FormerLib.FormerHelper.Mail.InviaMail("Errore in validazione Indirizzo GLS", Buffer, "info@tipografiaformer.it", , , , )
                                                                             Catch ex As Exception
 
                                                                             End Try
@@ -3050,7 +3056,7 @@ Friend Class FormerSyncronizer
 
                                     Catch ex As Exception
                                         TB.TransactionRollBack()
-                                        LogMe("SORGENTE: LAVORO ONLINE " & O.IdOrdine & ", " & ex.Source & ControlChars.NewLine & "MESSAGE: " & ex.Message & ControlChars.NewLine & "STACK:" & ex.StackTrace, , ex)
+                                        LogMe("------------------------SORGENTE: LAVORO ONLINE " & O.IdOrdine & ", " & ex.Source & ControlChars.NewLine & "MESSAGE: " & ex.Message & ControlChars.NewLine & "STACK:" & ex.StackTrace, , ex)
 
                                         If ex.Message.IndexOf("Errore del server remoto: (425)") <> -1 OrElse
                                            ex.Message.IndexOf("Errore del server remoto: (550)") <> -1 Then
@@ -3077,7 +3083,7 @@ Friend Class FormerSyncronizer
                 LogMe("*********************************************", True)
                 ris = OrdiniScaricati
             Catch ex As Exception
-                LogMe("SORGENTE: ScaricaNuoviLavoriStandard(), " & ex.Source & ControlChars.NewLine & "MESSAGE: " & ex.Message & ControlChars.NewLine & "STACK:" & ex.StackTrace, , ex)
+                LogMe("-------------------------SORGENTE: ScaricaNuoviLavoriStandard(), " & ex.Source & ControlChars.NewLine & "MESSAGE: " & ex.Message & ControlChars.NewLine & "STACK:" & ex.StackTrace, , ex)
             End Try
 
             Return ris
@@ -3233,7 +3239,7 @@ Friend Class FormerSyncronizer
                     ccn = FormerConst.EmailAmministrazione
                 End If
 
-                If TestoMail.Length Then FormerHelper.Mail.InviaMail(SoggettoMail, TestoMail, Dest, , , Attach,, ccn)
+                'If TestoMail.Length Then FormerHelper.Mail.InviaMail(SoggettoMail, TestoMail, Dest, , , Attach,, ccn)
 
             Else
                 LogMe("ATTENZIONE! L' ordine " & Ord.IdOrd & " si riferisce a un cliente che ha un indirizzo email non valido")
@@ -3342,7 +3348,7 @@ Friend Class FormerSyncronizer
                         ccnAddress = "stampa@tipografiaformer.com"
                     End If
                     If O.InseritoDa = 0 Then
-                        FormerLib.FormerHelper.Mail.InviaMail(TitoloMail, BufferMsg, O.Utente.Email, , , O.FileScaricatiNomeAnteprima, , ccnAddress)
+                        'FormerLib.FormerHelper.Mail.InviaMail(TitoloMail, BufferMsg, O.Utente.Email, , , O.FileScaricatiNomeAnteprima, , ccnAddress)
                     End If
 
                 End If
@@ -4543,7 +4549,7 @@ Friend Class FormerSyncronizer
                                                             Buffer &= "Consegna " & ConsBloccata.IdCons & "<br>Giorno " & ConsBloccata.Giorno.ToString("dd/MM/yyyy") & "<br>Cliente " & ConsBloccata.Cliente.RagSocNome & " (id " & ConsBloccata.Cliente.IdRub & ")<br>Indirizzo " & ConsBloccata.IndirizzoRif.Riassunto(False)
                                                             Buffer &= "<br><br>Informazioni supplementari: (IdComuneInElenco " & ConsBloccata.IndirizzoRif.IdComune & ")" & OkIndirizzo.Messaggio
                                                             Try
-                                                                FormerLib.FormerHelper.Mail.InviaMail("Errore in validazione Indirizzo GLS", Buffer, "info@tipografiaformer.it", , , , , FormerConst.EmailAssistenzaTecnica)
+                                                                'FormerLib.FormerHelper.Mail.InviaMail("Errore in validazione Indirizzo GLS", Buffer, "info@tipografiaformer.it", , , , , FormerConst.EmailAssistenzaTecnica)
                                                             Catch ex As Exception
 
                                                             End Try
@@ -4576,7 +4582,7 @@ Friend Class FormerSyncronizer
                                                 Catch ex As Exception
                                                     Dim Buffer As String = "Si è verificato un errore nella gestione dell'indirizzo GLS sulla consegna interna " & ConsBloccata.IdCons & ": " & ex.Message
 
-                                                    FormerLib.FormerHelper.Mail.InviaMail("Errore in validazione Indirizzo GLS", Buffer, FormerConst.EmailAssistenzaTecnica)
+                                                    'FormerLib.FormerHelper.Mail.InviaMail("Errore in validazione Indirizzo GLS", Buffer, FormerConst.EmailAssistenzaTecnica)
                                                 End Try
 
                                             Catch ex As Exception
