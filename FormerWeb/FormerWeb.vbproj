@@ -694,6 +694,7 @@
     <Content Include="scripts\sly\sly.js" />
     <Content Include="scripts\sly\sly.min.js" />
     <Content Include="styles\css\newsite.css" />
+    <Content Include="styles\css\registerNewStyle.css" />
     <Content Include="styles\css\site.min.20230124.css" />
     <Content Include="styles\css\site.min.css">
       <DependentUpon>site.css</DependentUpon>

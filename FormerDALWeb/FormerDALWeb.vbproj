@@ -424,6 +424,10 @@
       <Project>{d056f549-d3d9-4da0-b0a0-5c22bb15cb14}</Project>
       <Name>FormerBusinessLogicInterface</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FormerConfig\FormerConfig.vbproj">
+      <Project>{31ede59a-0c3f-462b-98e0-4dd454d96847}</Project>
+      <Name>FormerConfig</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FormerGraphics\FormerGraphics.vbproj">
       <Project>{b694a233-b984-4364-8691-1fee6ebb1fac}</Project>
       <Name>FormerGraphics</Name>

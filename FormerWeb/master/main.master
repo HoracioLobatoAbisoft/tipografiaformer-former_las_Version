@@ -21,6 +21,7 @@
 
     <link href="/styles/jquery-1.11.4/jquery-ui.min.css" rel="stylesheet" type="text/css" />    
     <%--<link href="/styles/css/site.css" rel="stylesheet" type="text/css" />--%>
+    <link href="/styles/css/registerNewStyle.css" rel="stylesheet" type="text/css" />
     <link href="/styles/css/site.min.20230124.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="/scripts/jquery-1.11.3/jquery-1.11.3.min.js"></script>
@@ -32,17 +33,18 @@
         });
         
         //const production = false;
-        //const uriReact = 'https://react.tipografiaformertest.it:6060';
+        //const uriReact = 'https://tipografiaformertest.it:6060';
         const uriReact = 'http://localhost:5173';
         //const uriReact = 'http://95.110.134.38:51';
-        //const uriLocal = 'https://www.tipografiaformertest.it';
+        //const uriReact = 'https://tipografiaformer.it:61';
+        //const uriLocal = 'https://tipografiaformertest.it';
         const uriLocal = 'https://localhost:44311';
         //const uriLocal = 'http://95.110.134.38';
+        //const uriLocal = 'https://tipografiaformer.it';
 
         var Uris = {
             front: uriReact,
             formerLocal: uriLocal,
-            //front:'http://95.110.133.251:6061'
         }
         
         window.addEventListener('message', function (aea) {
@@ -51,49 +53,9 @@
                 var message = aea.data;
                 switch (message.operation) {
                     case 1:
-
-                        this.window.scrollTo(0, 0);
-                        var frameId = this.document.getElementById('frameId');
-                        frameId.style.width = "1000px";
-                        frameId.style.position = "relative";
-                        frameId.style.right = "200px";
-                        console.log('entro caso 1');
-                        var divHidden = this.document.getElementById('divHidden');
-                        //divHidden.classList.add(message.color);
-                        divHidden.style.display = 'none';
-                        var divHidden2 = this.document.getElementById('divHidden2');
-                        //divHidden2.classList.add(message.color);
-                        divHidden2.style.display = 'none';
-                        var introProdH = this.document.getElementById('introProdH');
-                        var introProdH2 = this.document.getElementById('introProdH2');
-                        if (introProdH) {
-                            //introProdH.classList.add(message.color);introProdH2
-                            introProdH.style.display = 'none'
-                        } else {
-                            //introProdH.classList.add(message.color);introProdH2
-                            introProdH2.style.display = 'none'
-                        }
-                        var sugestedProductHidden = this.document.getElementById('sugestedProductHidden');
-                        //sugestedProductHidden.classList.add(message.color);
-                        sugestedProductHidden.style.display = 'none'
-                        var reviewContainerHidden = this.document.getElementById('reviewContainerHidden');
-                        //reviewContainerHidden.classList.add(message.color);
-                        reviewContainerHidden.style.display = 'none'
-                        var DescrizioneDinamicaHidden = this.document.getElementById('DescrizioneDinamicaHidden');
-                        //DescrizioneDinamicaHidden.classList.add(message.color);
-                        DescrizioneDinamicaHidden.style.display = 'none';
-
-                        var frameId = this.document.getElementById('frameId');
-                        frameId.style.width = "1000px";
-                        frameId.style.position = "relative";
-                        frameId.style.right = "200px";
-
-                        var content = this.document.getElementById('contentHelperHidden');
-                        content.style.overflowX = "hidden";
-
                         break;
                     case 2:
-                        
+      
                         window.location.href = `${Uris.formerLocal}/${message.uri}`;
                         break;
                     case 3:
@@ -106,80 +68,11 @@
                         window.location.href = `${Uris.formerLocal}/i-tuoi-coupon-di-sconto`;
                         break;
                     case 6:
-                        var frameId = this.document.getElementById('frameId');
-                        frameId.style.width = "820px";
-                        frameId.style.position = "inherit";
-                        //frameId.style.right = "200px";
-                        console.log('entro caso 6');
-                        var divHidden = this.document.getElementById('divHidden');
-                        //divHidden.classList.add(message.color);
-                        divHidden.style.display = 'block';
-                        var divHidden2 = this.document.getElementById('divHidden2');
-                        //divHidden2.classList.add(message.color);
-                        divHidden2.style.display = 'block';
-                        var introProdH = this.document.getElementById('introProdH');
-                        var introProdH2 = this.document.getElementById('introProdH2');
-                        if (introProdH) {
-                            //introProdH.classList.add(message.color);introProdH2
-                            introProdH.style.display = 'block'
-                        } else {
-                            //introProdH.classList.add(message.color);introProdH2
-                            introProdH2.style.display = 'block'
-                        }
-                        var sugestedProductHidden = this.document.getElementById('sugestedProductHidden');
-                        //sugestedProductHidden.classList.add(message.color);
-                        sugestedProductHidden.style.display = 'block'
-                        var reviewContainerHidden = this.document.getElementById('reviewContainerHidden');
-                        //reviewContainerHidden.classList.add(message.color);
-                        reviewContainerHidden.style.display = 'block'
-                        var DescrizioneDinamicaHidden = this.document.getElementById('DescrizioneDinamicaHidden');
-                        //DescrizioneDinamicaHidden.classList.add(message.color);
-                        DescrizioneDinamicaHidden.style.display = 'block';
-
-                        var frameId = this.document.getElementById('frameId');
-                        frameId.style.width = "820px";
-                        frameId.style.position = "inherit";
-                        //frameId.style.right = "200px";
-
-                        var content = this.document.getElementById('contentHelperHidden');
-                        content.style.overflowX = "hidden";
+                       
                         break;
                     //redirection de react a la vista i-tuoi-ordini
                     case 7:
-                        var frameId = this.document.getElementById('frameId');
-                        frameId.style.width = "1000px";
-                        frameId.style.position = "relative";
-                        frameId.style.right = "220px";
-                        console.log('entro caso 7');
-                        var divHidden = this.document.getElementById('divHidden');
-                        //divHidden.classList.add(message.color);
-                        divHidden.style.display = 'none';
-                        var divHidden2 = this.document.getElementById('divHidden2');
-                        //divHidden2.classList.add(message.color);
-                        divHidden2.style.display = 'none';
-                        var introProdH = this.document.getElementById('introProdH');
-                        //introProdH.classList.add(message.color);introProdH2
-                        introProdH.style.display = 'none'
-                        var introProdH2 = this.document.getElementById('introProdH2');
-                        //introProdH.classList.add(message.color);introProdH2
-                        introProdH2.style.display = 'none'
-                        var sugestedProductHidden = this.document.getElementById('sugestedProductHidden');
-                        //sugestedProductHidden.classList.add(message.color);
-                        sugestedProductHidden.style.display = 'none'
-                        var reviewContainerHidden = this.document.getElementById('reviewContainerHidden');
-                        //reviewContainerHidden.classList.add(message.color);
-                        reviewContainerHidden.style.display = 'none'
-                        var DescrizioneDinamicaHidden = this.document.getElementById('DescrizioneDinamicaHidden');
-                        //DescrizioneDinamicaHidden.classList.add(message.color);
-                        DescrizioneDinamicaHidden.style.display = 'none';
-
-                        var frameId = this.document.getElementById('frameId');
-                        frameId.style.width = "1000px";
-                        frameId.style.position = "relative";
-                        frameId.style.right = "220px";
-
-                        var content = this.document.getElementById('contentHelperHidden');
-                        content.style.overflowX = "hidden";
+                        
                         break;
                     case 8:
                         //this.alert('dio')
@@ -616,11 +509,14 @@
                 <img src="/img/btnYoutube.png" class="imgSx" style="background-color:red;" />
                 <h4>Visita il nostro canale Youtube</h4>Sul nostro canale Youtube potrai trovare molti filmati di informazione dei nostri prodotti e lavorazioni con spiegazioni dettagliate e prodotti di esempio
             </div>
-            <a class="socialbuttonT hasTooltip"  href="https://twitter.com/FormerOfficial" target="_blank" ><img src="/img/btnTwitter.png" /></a>
+            <a class="socialbuttonT hasTooltip"  href="https://twitter.com/FormerOfficial" target="_blank" >
+                <%--<img src="/img/btnTwitter.png" />--%>
+                <img src="/img/icons8-twitterx.svg" width="30px" height="30px"/>
+            </a>
                <div class="hidden tooltiptext">
-                <img src="/img/btnTwitter.png" class="imgSx" style="background-color:#5ea9dd;" />
-                <h4>Seguici su Twitter</h4>Seguici su Twitter e resta sempre aggiornato sulle novità riguardanti offerte sui nostri prodotti e lavorazioni
-            </div>
+                    <img src="/img/icons8-twitterx.svg" style="float:left;margin-right:5px;border:0;border-radius:5px; width:30px;height:30px" />
+                    <h4>Seguici su Twitter</h4>Seguici su Twitter e resta sempre aggiornato sulle novità riguardanti offerte sui nostri prodotti e lavorazioni
+                </div>
             <a class="socialbuttonI hasTooltip"  href="https://www.instagram.com/tipografiaformer/" target="_blank" ><img src="/img/btnInstagram.png"/></a>
                <div class="hidden tooltiptext">
                 <img src="/img/btnInstagram.png" class="imgSx"/>
@@ -713,7 +609,7 @@
 
                                 <%If UtenteConnesso.IdUtente > 0 Or MostraNewsletter = False Then%>
                                 <a href="/carrello" class="pulsante120Green hasTooltip"><img src="/img/icoCarrello32.png" />Carrello 
-                                        <%If UtenteConnesso.IdUtente = 1684 Or UtenteConnesso.IdUtente = 3 Or UtenteConnesso.IdUtente = 292 Or UtenteConnesso.IdUtente = 38 Then%>
+                                        <%If UtenteConnesso.UtenteAutorizato Then%>
                                             <span class="" id="coutenCarrello">
                                                 
                                             </span>
@@ -862,9 +758,10 @@
 
 <!--POWERED BY LUNA ORM https://sourceforge.net/projects/lunaorm/ -->
     <script>
-        //const urlFront = 'https://react.tipografiaformertest.it:6060';
+        //const urlFront = 'https://tipografiaformertest.it:6060';
         const urlFront = 'http://localhost:5173';
         //const urlFront = 'http://95.110.134.38:51';
+        //const urlFront = 'https://tipografiaformer.it:61';
         const counterLocal = this.localStorage.getItem('c');
         if (parseInt(counterLocal) > 0) {
             var idCounterCarrello = document.getElementById('coutenCarrello');

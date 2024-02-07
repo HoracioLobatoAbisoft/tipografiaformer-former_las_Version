@@ -1,0 +1,174 @@
+﻿:root {
+    --orange: #f58220;
+}
+
+.containerRegister {
+    font-family: Arial,Helvetica,sans-serif,
+    Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    /*//color: #b9b9b9;*/
+}
+
+.titleForm {
+    color: var(--orange);
+    padding: 0;
+    margin: 0.5em 0;
+}
+
+.containerRegister .inputText, .containerRegister input[type="radio"] + label,.containerRegister select {
+    width: 92.5%;
+    padding: 1em;
+    line-height: 1.4;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.containerRegister .inputText:focus {
+        outline: 0;
+        border-color: var(--orange);
+}
+
+.input-group {
+    margin-bottom: 1em;
+    zoom: 1;
+}
+
+    .input-group:before,
+    .input-group:after {
+        content: "";
+        display: table;
+    }
+
+    .input-group:after {
+        clear: both;
+    }
+
+.input-group-icon {
+    position: relative;
+}
+
+.input-group-icon .inputText {
+    padding-left: 4.4em;
+}
+
+.input-group-icon .input-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.4em;
+    height: 3.4em;
+    line-height: 3.4em;
+    text-align: center;
+    pointer-events: none;
+}
+
+.input-group-icon .input-icon:after {
+            position: absolute;
+            top: 0.6em;
+            bottom: 0.6em;
+            left: 3.4em;
+            display: block;
+            border-right: 1px solid #e5e5e5;
+            content: "";
+            -webkit-transition: 0.35s ease-in-out;
+            -moz-transition: 0.35s ease-in-out;
+            -o-transition: 0.35s ease-in-out;
+            transition: 0.35s ease-in-out;
+            transition: all 0.35s ease-in-out;
+}
+
+.input-group-icon .input-icon i img {
+            -webkit-transition: 0.35s ease-in-out;
+            -moz-transition: 0.35s ease-in-out;
+            -o-transition: 0.35s ease-in-out;
+            transition: 0.35s ease-in-out;
+            transition: all 0.35s ease-in-out;
+}
+.containerRegister input[type="radio"] {
+    display: none;
+}
+
+.containerRegister input[type="radio"] + label,.containerRegister select {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+        float: left;
+        border-radius: 0;
+        font-weight: bold;
+}
+.containerRegister input[type="radio"] + label:first-of-type {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.containerRegister input[type="radio"] + label:last-of-type {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.containerRegister input[type="radio"] + label i {
+    padding-right: 0.4em;
+}
+
+.containerRegister input[type="radio"]:checked + label, input:checked + label:before {
+    background-color: #f0a500;
+    color: #fff;
+    border-color: #bd8200;
+}
+.containerRegister .input-group-radio{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+}
+.containerRegister .input-group-radios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.containerRegister .rivenditoreClass {
+        display: flex;
+}
+.containerRegister select:active, .containerRegister select:hover, .containerRegister select:focus {
+    background-color: #f0a500;
+    color: #fff;
+    border-color: #bd8200;
+}
+.containerRegister select option {
+    background-color: #fff;
+    color: black;
+}
+
+.containerRegister .containerTextBox{
+    display:flex;
+    align-items:center;
+    width:auto;
+}
+
+.containerRegister .labelText{
+    width:auto;
+    font-weight:bold;
+    text-align:center;
+    font-size:1.1em;
+    margin-bottom:1em;
+}
+.containerRegister h6{
+    font-size:1.1em;
+    padding:0;
+    margin:.5em 0;
+}
+.containerRegister .row-2{
+    width:auto;
+    display:flex;
+    justify-content:center;
+    padding:0 1.5em;
+    
+}

@@ -24,6 +24,9 @@ Public Class UtenteSito
             Using ua As New Utn_autorizzatoDAO
                 UAuto = ua.Find(New LUNA.LunaSearchParameter(LFM.Utn_autorizzato.IdUt, Utente.IdUt))
                 If Not UAuto Is Nothing Then
+                    If FormerConfig.FConfiguration.Environment.EnableMobile = True AndAlso HttpContext.Current.Request.Browser.IsMobileDevice = True Then
+                        Return False
+                    End If
                     Return True
                 Else
                     Return False
@@ -49,8 +52,9 @@ Public Class UtenteSito
     Public Property UrlIframe As String
         Get
             urlFrame = "http://localhost:5173/#" ' url local react
-            'urlFrame = "https://react.tipografiaformertest.it:6060/#" ' url test
+            'urlFrame = "https://tipografiaformertest.it:6060/#" ' url test
             'urlFrame = "http://95.110.134.38:51/#" ' url former server
+            'urlFrame = "https://tipografiaformer.it:61/#" ' url former server Dominio
             Return urlFrame
         End Get
         Set(value As String)

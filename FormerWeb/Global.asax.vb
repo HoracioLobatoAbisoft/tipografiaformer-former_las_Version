@@ -208,7 +208,7 @@ Public Class Global_asax
                                     Subject = "Errore Tipografiaformer.it SERVER INTERNO"
                                 End If
 
-                                FormerLib.FormerHelper.Mail.InviaMail(Subject, LogErrore, "ichigoarnez34@gmail.com")
+                                FormerLib.FormerHelper.Mail.InviaMail(Subject, LogErrore, FormerConst.EmailAssistenzaTecnica)
 
                             Catch ex As Exception
 
@@ -451,16 +451,16 @@ Public Class Global_asax
 
         'MOBILE
 
-        If FormerConfig.FConfiguration.Environment.EnableMobile Then
-            FormerWeb.FormerWebApp.MobileRouteRegeX.Add("^\/m\/$")
-            routes.MapPageRoute("mobile", "m", "~/mobile/default.m.aspx")
-            FormerWeb.FormerWebApp.MobileRouteRegeX.Add("^\/m\/([0-9]){1,6}\/([0-9]){1,6}\/([0-9]){1,6}\/([0-9]){1,6}\/([0-9]){1,6}\/(([A-Za-z0-9\-]){1,100})$")
-            routes.MapPageRoute("wizardProdottoM", "m/{idp}/{idf}/{idc}/{ids}/{nfogli}/{descrizione}", "~/mobile/prodotto.m.aspx", True, New RouteValueDictionary() From {}, New RouteValueDictionary() From {{"idp", "\d{1,}"}, {"idf", "\d{1,}"}, {"idc", "\d{1,}"}, {"ids", "\d{1,}"}, {"nfogli", "\d{1,}"}})
-            FormerWeb.FormerWebApp.MobileRouteRegeX.Add("^\/m\/i-tuoi-ordini$")
-            routes.MapPageRoute("ordiniM", "m/i-tuoi-ordini", "~/mobile/ordini.m.aspx")
-            FormerWeb.FormerWebApp.MobileRouteRegeX.Add("^\/m\/login$")
-            routes.MapPageRoute("loginM", "m/login", "~/mobile/login.m.aspx")
-        End If
+        'If FormerConfig.FConfiguration.Environment.EnableMobile Then
+        '    FormerWeb.FormerWebApp.MobileRouteRegeX.Add("^\/m\/$")
+        '    routes.MapPageRoute("mobile", "m", "~/mobile/default.m.aspx")
+        '    FormerWeb.FormerWebApp.MobileRouteRegeX.Add("^\/m\/([0-9]){1,6}\/([0-9]){1,6}\/([0-9]){1,6}\/([0-9]){1,6}\/([0-9]){1,6}\/(([A-Za-z0-9\-]){1,100})$")
+        '    routes.MapPageRoute("wizardProdottoM", "m/{idp}/{idf}/{idc}/{ids}/{nfogli}/{descrizione}", "~/mobile/prodotto.m.aspx", True, New RouteValueDictionary() From {}, New RouteValueDictionary() From {{"idp", "\d{1,}"}, {"idf", "\d{1,}"}, {"idc", "\d{1,}"}, {"ids", "\d{1,}"}, {"nfogli", "\d{1,}"}})
+        '    FormerWeb.FormerWebApp.MobileRouteRegeX.Add("^\/m\/i-tuoi-ordini$")
+        '    routes.MapPageRoute("ordiniM", "m/i-tuoi-ordini", "~/mobile/ordini.m.aspx")
+        '    FormerWeb.FormerWebApp.MobileRouteRegeX.Add("^\/m\/login$")
+        '    routes.MapPageRoute("loginM", "m/login", "~/mobile/login.m.aspx")
+        'End If
 
         routes.MapPageRoute("rss", "rss", "~/pagerss/getRssPreventivazioni.aspx")
         routes.MapPageRoute("rssOfferte", "rss-offerte", "~/pagerss/getRssOfferte.aspx")
