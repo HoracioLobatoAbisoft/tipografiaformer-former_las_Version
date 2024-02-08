@@ -14,40 +14,31 @@ Option Explicit On
 Partial Public Class register
 
     '''<summary>
-    '''pnlReg control.
+    '''Panel1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pnlReg As Global.System.Web.UI.WebControls.Panel
+    Protected WithEvents Panel1 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''pnlRegister control.
+    '''Panel2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pnlRegister As Global.System.Web.UI.WebControls.Panel
+    Protected WithEvents Panel2 As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''updForm control.
+    '''UpdatePanel1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents updForm As Global.System.Web.UI.UpdatePanel
-
-    '''<summary>
-    '''imgRiv control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents imgRiv As Global.System.Web.UI.WebControls.ImageButton
+    Protected WithEvents UpdatePanel1 As Global.System.Web.UI.UpdatePanel
 
     '''<summary>
     '''rdoCli control.
@@ -66,6 +57,15 @@ Partial Public Class register
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents rdoRiv As Global.System.Web.UI.WebControls.RadioButton
+
+    '''<summary>
+    '''imgRiv control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents imgRiv As Global.System.Web.UI.WebControls.ImageButton
 
     '''<summary>
     '''lblInfoRiv control.
@@ -212,15 +212,6 @@ Partial Public Class register
     Protected WithEvents lblPiva As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txtPrefisso control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtPrefisso As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''txtPiva control.
     '''</summary>
     '''<remarks>
@@ -228,6 +219,15 @@ Partial Public Class register
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPiva As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtPrefisso control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtPrefisso As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''lblCodFisc control.

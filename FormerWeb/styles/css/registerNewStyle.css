@@ -1,11 +1,14 @@
 ﻿:root {
     --orange: #f58220;
+    --orangeLigth: #F99037;
 }
 
 .containerRegister {
     font-family: Arial,Helvetica,sans-serif,
     Helvetica, Arial, sans-serif;
     font-size: 1.1em;
+    display:flex;
+    flex-direction:column;
     /*//color: #b9b9b9;*/
 }
 
@@ -27,15 +30,35 @@
     -o-transition: 0.35s ease-in-out;
     transition: 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
+    /*color:var(--orange);*/
+    font-weight:bold;
+}
+
+.containerRegister .inputTextIcon {
+    width: 70%;
+    line-height: 1.4;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    border: none;
+    font-weight:bold;
 }
 
 .containerRegister .inputText:focus {
-        outline: 0;
-        border-color: var(--orange);
+    outline: 0;
+    border-color: var(--orange);
+}
+
+.inputText:focus + .input-icon i {
+    color: var(--orange);
 }
 
 .input-group {
-    margin-bottom: 1em;
+    
     zoom: 1;
 }
 
@@ -56,22 +79,34 @@
 .input-group-icon .inputText {
     padding-left: 4.4em;
 }
-
-.input-group-icon .input-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3.4em;
-    height: 3.4em;
-    line-height: 3.4em;
-    text-align: center;
-    pointer-events: none;
-}
-
-.input-group-icon .input-icon:after {
+    .input-group-icon .input-icon-text {
+        position: absolute;
+        top: 0em;
+        left: 0em;
+        bottom: 0em;
+        width: 3.4em;
+        height: 3.4em;
+        line-height: 3.4em;
+        text-align: center;
+        pointer-events: none;
+        font-size:2em;
+    }
+    .input-group-icon .input-icon {
+        position: absolute;
+        top: 0.6em;
+        left: 0em;
+        bottom: 0.6em;
+        width: 3.4em;
+        height: 3.4em;
+        line-height: 3.4em;
+        text-align: center;
+        pointer-events: none;
+    }
+    
+        .input-group-icon .input-icon:after {
             position: absolute;
-            top: 0.6em;
-            bottom: 0.6em;
+            top: -0.2em;
+            bottom: 0.7em;
             left: 3.4em;
             display: block;
             border-right: 1px solid #e5e5e5;
@@ -81,15 +116,19 @@
             -o-transition: 0.35s ease-in-out;
             transition: 0.35s ease-in-out;
             transition: all 0.35s ease-in-out;
+        }
+    .inputText:focus + .input-icon:after {
+        border-right-color: var(--orange);
+    }
+.input-group-icon .input-icon i {
+    -webkit-transition: 0.35s ease-in-out;
+    -moz-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+    transition: 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    font-size: 2em;
 }
 
-.input-group-icon .input-icon i img {
-            -webkit-transition: 0.35s ease-in-out;
-            -moz-transition: 0.35s ease-in-out;
-            -o-transition: 0.35s ease-in-out;
-            transition: 0.35s ease-in-out;
-            transition: all 0.35s ease-in-out;
-}
 .containerRegister input[type="radio"] {
     display: none;
 }
@@ -148,9 +187,8 @@
 }
 
 .containerRegister .containerTextBox{
-    display:flex;
     align-items:center;
-    width:auto;
+    width:50%;
 }
 
 .containerRegister .labelText{
@@ -165,10 +203,46 @@
     padding:0;
     margin:.5em 0;
 }
-.containerRegister .row-2{
-    width:auto;
+.containerRegister p {
+    font-size: .8em;
+    margin: .5em 0;
+    padding: 0;
+    font-style: italic;
+}
+.containerRegister .row-2 {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+}
+
+.containerRegister hr {
+    border: 1px solid var(--orange);
+    width:100%;
+}
+
+.containerRegister .btnContainer{
     display:flex;
     justify-content:center;
-    padding:0 1.5em;
-    
+    align-items:center;
+}
+
+.containerRegister .btnContainer .btnRegistrati {
+    background-color: var(--orange);
+    color: #fff;
+    font-weight: bold;
+    padding: 1em;
+    display: flex;
+    gap: 1.1em;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration:none;
+    margin-top:.5em;
+}
+.containerRegister .btnContainer .btnRegistrati:hover {
+    background-color: var(--orangeLigth);
+    transition: background-color 0.5s ease;
+}
+.containerRegister .textIcon{
+    background:red;
 }

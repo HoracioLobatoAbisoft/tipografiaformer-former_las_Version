@@ -429,7 +429,7 @@ Public Class register
     '    End If
     'End Sub
 
-    Private Sub rdoSoc_CheckedChanged(sender As Object, e As EventArgs) Handles rdoRiv.CheckedChanged, _
+    Private Sub rdoSoc_CheckedChanged(sender As Object, e As EventArgs) Handles rdoRiv.CheckedChanged,
         rdoCli.CheckedChanged
 
         If rdoCli.Checked Then
@@ -648,3 +648,4 @@ Public Class register
     End Sub
 
 End Class
+
