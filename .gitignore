@@ -408,3 +408,6 @@ FormerBancaSella/obj/
 
 FormerBancaSella/bin/Release/
 
+FormerWeb/public/log/
+.vs/Former/
+FormerWeb/public/log/*.txt
