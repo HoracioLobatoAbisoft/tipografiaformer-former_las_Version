@@ -476,6 +476,15 @@ Public Class FormerWebApp
             Return ris
         End Get
     End Property
+    Public Shared ReadOnly Property ClearCacheSitio() As Boolean
+        Get
+            Dim ris As Boolean = False
+
+            ris = ConfigurationManager.AppSettings("ClearCache")
+
+            Return ris
+        End Get
+    End Property
 
     Public Shared ReadOnly Property DimensioneMassimaDigitale() As Integer
         Get

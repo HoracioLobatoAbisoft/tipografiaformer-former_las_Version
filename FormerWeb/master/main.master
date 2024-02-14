@@ -22,6 +22,8 @@
     <link href="/styles/jquery-1.11.4/jquery-ui.min.css" rel="stylesheet" type="text/css" />    
     <%--<link href="/styles/css/site.css" rel="stylesheet" type="text/css" />--%>
     <link href="/styles/css/registerNewStyle.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/css/profiloNewStyle.css" rel="stylesheet" type="text/css" />
+
     <link href="/styles/css/site.min.20230124.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="/scripts/jquery-1.11.3/jquery-1.11.3.min.js"></script>
@@ -32,7 +34,12 @@
         $(document).ready(function () {
             $("#tabs").tabs();
         });
-        
+
+        <%--if ('<%=  FormerWeb.FormerWebApp.ClearCacheSitio.ToString().ToLower()%>') {
+
+            location.reload(true);
+        }--%>
+
         //const production = false;
         //const uriReact = 'https://tipografiaformertest.it:6060';
         const uriReact = 'http://localhost:5173';
@@ -608,9 +615,9 @@
                                 <%--<div class="btn hasTooltip">
                                     <%--<a href="/carrello"><img src="/img/btnGoCarrello.png" alt="Carrello" class="button"/></a>--%>
 
-                                <%If UtenteConnesso.IdUtente > 0 Or MostraNewsletter = False Then%>
+                                <%If UtenteConnesso.IdUtente > 0 Or MostraNewsletter = 0 Then%>
                                 <a href="/carrello" class="pulsante120Green hasTooltip"><img src="/img/icoCarrello32.png" />Carrello 
-                                        <%If UtenteConnesso.UtenteAutorizato Then%>
+                                        <%If UtenteConnesso.IdUtente > 0 Or MostraNewsletter = False Then%>
                                             <span class="" id="coutenCarrello">
                                                 
                                             </span>

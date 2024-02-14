@@ -727,6 +727,7 @@
     <Content Include="styles\jquery-1.9.1\jquery-ui.css" />
     <Content Include="styles\jquery-1.9.1\jquery-ui.min.css" />
     <Content Include="styles\css\site.css" />
+    <Content Include="styles\css\profiloNewStyle.css" />
     <Content Include="userControl\ucAggregateReview.ascx" />
     <Content Include="userControl\ucBoxFooterOrdine.ascx" />
     <Content Include="userControl\ucCarrelloHelp.ascx" />

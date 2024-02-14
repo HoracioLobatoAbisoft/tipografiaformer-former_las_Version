@@ -24,7 +24,7 @@
                         <ContentTemplate>
                         <div class="containerRegister">
                             <h2 class="titleForm">TIPOLOGIA DI CLIENTE</h2>
-                            <div class="input-group-radio " title="Ragione Sociale">
+                            <div class="input-group-radio " >
                                 <div class="input-group-radios">
                                     <asp:RadioButton CssClass="lblSceltaTipoCli" AutoPostBack="true" ID="rdoCli" GroupName="tipoCli" runat="server" Text="Privato o Società" />
                                     <asp:RadioButton CssClass="lblSceltaTipoCli" AutoPostBack="true" ID="rdoRiv" GroupName="tipoCli" runat="server" Text="Rivenditore" />
@@ -38,7 +38,7 @@
                             <h6 >
                                 <asp:Label ID="lblNomeAzienda" runat="server" Text="Ragione Sociale "  ></asp:Label>
                             </h6>
-                            <div class="input-group input-group-icon" title="Ragione Sociale">
+                            <div class="input-group input-group-icon" >
                                 <asp:TextBox ID="txtNomeAz" runat="server" placeholder="Inserisci la Ragione Sociale dell'azienda" Enabled="true" MaxLength="100" CssClass="inputText" ></asp:TextBox>
                                 <div class="input-icon">
                                     <i class="fa-solid fa-file-signature"></i>
@@ -47,13 +47,13 @@
                             <h6>
                                 <asp:Label ID="lblTipoAtt" runat="server" Text="Tipo Attività *" Visible="false"></asp:Label>
                             </h6>
-                            <div class="" title="Ragione Sociale">
+                            <div class="" >
                                 <asp:DropDownList ID="ddlTipoAtt" runat="server" Width="49.5%" Visible="false"></asp:DropDownList>
                             </div>
                             <div class="row-2">
                                 <div class="containerTextBox">
                                     <h6>Nome *</h6>
-                                    <div class="input-group input-group-icon" title="Ragione Sociale">
+                                    <div class="input-group input-group-icon">
                                         <asp:TextBox ID="txtNome" Width="84%" placeholder="Inserisci il tuo Nome" runat="server"  MaxLength="50" CssClass="inputText"></asp:TextBox>
                                         <div class="input-icon">
                                             <i class="fa-solid fa-address-card"></i>
@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="containerTextBox">
                                     <h6>Cognome *</h6>
-                                    <div class="input-group input-group-icon" title="Ragione Sociale">
+                                    <div class="input-group input-group-icon" >
                                         <asp:TextBox ID="txtCognome" Width="84%" placeholder="Inserisci il tuo Cognome"  runat="server" MaxLength="50" CssClass="inputText"></asp:TextBox>
                                         <div class="input-icon">
                                             <i class="fa-solid fa-address-card"></i>
@@ -73,7 +73,7 @@
                             <h6 >
                                 Indirizzo *
                             </h6>
-                            <div class="input-group input-group-icon" title="Ragione Sociale">
+                            <div class="input-group input-group-icon" >
                                 <asp:TextBox ID="txtIndirizzo"  placeholder="Inserisci l'indirizzo" font-size="14px" runat="server" MaxLength="100" CssClass="inputText"></asp:TextBox>
                                 <div class="input-icon">
                                     <i class="fa-solid fa-location-dot"></i>
@@ -85,7 +85,7 @@
                             <h6 >
                                 Nazione *
                             </h6>
-                            <div class="" title="Ragione Sociale">
+                            <div class="" >
                                 <asp:DropDownList ID="ddlNazione" Width="49.5%" AutoPostBack="true" runat="server"></asp:DropDownList>
                             </div>
                             <asp:Panel ID="pnlLocalitaIT" runat="server" Visible="true">
@@ -101,7 +101,7 @@
                                 </div>
                                 <div class="containerTextBox">
                                     <h6>Località *</h6>
-                                    <div class="" title="Ragione Sociale">
+                                    <div class="" >
                                         <asp:DropDownList ID="ddlCitta" Width="100%" AutoPostBack="true" runat="server" ></asp:DropDownList>
                                     </div>
                                 </div>
@@ -111,7 +111,7 @@
                             <h6 >
                                 Localita e CAP *
                             </h6>
-                            <div class="input-group input-group-icon" title="Ragione Sociale">
+                            <div class="input-group input-group-icon" >
                                 <asp:TextBox ID="txtLocalita"  placeholder="Inserisci la Località e il CAP" runat="server" Visible="true"  CssClass="inputText"></asp:TextBox>
                                 <div class="input-icon">
                                     <i class="fa-solid fa-map-location-dot"></i>
@@ -121,7 +121,7 @@
                             <div class="row-2">
                                 <div class="containerTextBox">
                                     <h6 ><asp:Label ID="lblPiva" runat="server" Text="P. Iva"></asp:Label></h6>
-                                    <div class="input-group input-group-icon" title="Ragione Sociale">
+                                    <div class="input-group input-group-icon" >
                                         <asp:TextBox ID="txtPiva" placeholder="Inserisci la Partita IVA" runat="server" CssClass="inputText" Width="85%"></asp:TextBox>
                                         <div class="input-icon input-group input-group-icon" >
                                             <i style="font-size:1.5em;width:20%;"><asp:TextBox ID="txtPrefisso"  placeholder="Inserisci il Prefisso Partita IVA" runat="server" Text="IT" ReadOnly="true" CssClass="inputTextIcon" ></asp:TextBox></i>
@@ -130,7 +130,7 @@
                                 </div>
                                 <div class="containerTextBox">
                                     <h6><asp:Label ID="lblCodFisc"  runat="server" Text="Codice Fiscale *"></asp:Label></h6>
-                                    <div class="input-group input-group-icon" title="Ragione Sociale">
+                                    <div class="input-group input-group-icon" >
                                         <asp:TextBox ID="txtCodFisc" placeholder="Inserisci il Codice Fiscale"  runat="server" Enabled="true" CssClass="inputText" Width="85.5%"></asp:TextBox>
                                         <div class="input-icon" >
                                             <i class="fa-solid fa-address-card"></i>
@@ -141,7 +141,7 @@
                             <div class="row-2">
                                 <div class="containerTextBox">
                                     <h6><asp:Label ID="lblPec" runat="server" Text="PEC"></asp:Label></h6>
-                                    <div class="input-group input-group-icon" title="Ragione Sociale">
+                                    <div class="input-group input-group-icon" >
                                         <asp:TextBox ID="txtPec" placeholder="Inserisci la casella PEC" runat="server" MaxLength="50" CssClass="inputText" Width="84%"></asp:TextBox>
                                         <div class="input-icon input-group input-group-icon" >
                                             <i class="fa-solid fa-paper-plane"></i>
@@ -150,7 +150,7 @@
                                 </div>
                                 <div class="containerTextBox">
                                     <h6><asp:Label ID="lblSdi"  runat="server" Text="Codice SDI"></asp:Label></h6>
-                                    <div class="input-group input-group-icon" title="Ragione Sociale">
+                                    <div class="input-group input-group-icon" >
                                         <asp:TextBox ID="txtSDI" placeholder="Inserisci il Codice SDI"  runat="server" Enabled="true"  MaxLength="7" Width="84%" CssClass="inputText"></asp:TextBox>
                                         <div class="input-icon" >
                                             <i class="fa-solid fa-address-card"></i>

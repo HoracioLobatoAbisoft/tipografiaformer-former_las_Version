@@ -1,0 +1,150 @@
+﻿:root {
+    --orange: #f58220;
+    --orangeLigth: #F99037;
+    --white: #FFF;
+    --blueLigth: #009ec9;
+    --whiteSemiBold: #f1f1f1;
+    --whiteBold: #e5e5e5;
+    --yellow: #d6e03d;
+    --yellowLigth: #f1fc45;
+}
+
+.containerProfilo{
+    width:100%;
+}
+.containerProfilo h2{
+    font-size:2em;
+    margin:0 0;
+    text-align:center;
+    background-color:var(--orange);
+    color:var(--white);
+    border-radius: 10px;
+}
+.containerProfilo .containerData .containerDatiAccesso {
+    display: flex;
+    gap:1em;
+    background:var(--whiteSemiBold);
+    justify-content:center;
+    align-items:center;
+    margin:.8em 0;
+    padding:.5em 0;
+    border-radius: 10px;
+    flex-wrap:wrap;
+}
+.containerProfilo .containerData .containerDatiAccesso .containerIcono{
+    text-align:center;
+}
+.containerProfilo .containerData .containerDatiAccesso .containerIcono h3{
+    color:var(--orange);
+    padding:0;
+    margin:.5em 0;
+    font-size:1.4em;
+}
+.containerProfilo .containerData .containerDatiAccesso .containerIcono i{
+    font-size:7em;
+    text-align:center;
+    width:40%;
+}
+.containerProfilo .containerData .containerDatiAccesso .containerDati{
+    display:flex;
+    flex-direction:column;
+    justify-content:end;
+    gap:.5em;
+    width:70%;
+}
+.containerProfilo .containerData .containerDatiAccesso h5{
+    font-size:1.2em;
+    width:100%;
+    margin: 0;
+}
+.containerProfilo .containerData .containerDatiAccesso .containerDatiRow{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    padding-left:2em;
+    gap:.5em;
+}
+
+.containerProfilo .spanDati i{
+    border-right: 2px solid var(--whiteBold);
+    padding-right:.5em;
+    margin-right:.5em;
+}
+
+.containerProfilo .spanDati{
+    background-color:var(--white);
+    padding:.5em;
+    width:90%;
+    border: 1px solid #e5e5e5;
+    border-radius:5px;
+    font-weight:bold;
+    font-size:1.1em;
+    margin:0;
+}
+
+.containerProfilo .spanSeparator{
+    background:red;
+    padding:0;
+    margin-left:.1em;
+    font-size:1em;
+}
+.containerProfilo .spanDati .inputText{
+    font-weight:bold;
+    background:none;
+    border:none;
+    outline:none;
+    width:90%;
+    font-size:1.2em;
+}
+.containerProfilo .spanDati.spanInput:hover {
+    transition: all 1s ease-in-out;
+    border: 1px solid var(--orange);
+}
+.containerProfilo .spanDati.spanInput:hover i{
+    transition: all .5s ease-in-out;
+    color:var(--orange)
+}
+.containerDatiAccesso .btnModifica{
+    background:var(--orange);
+    font-size:1.1em;
+    display:flex;
+    gap:2px;
+    border:none;
+    padding:.8em .1em;
+    border-radius:5px;
+    font-weight:bold;
+    color:var(--white);
+    cursor:pointer;
+    text-decoration:none;
+}
+.containerDatiAccesso .btnModifica:hover{
+    background:var(--orangeLigth);
+}
+.containerDatiAccesso .spanLink{
+    color:var(--blueLigth);
+    font-weight:bold;
+    cursor:pointer;
+}
+.containerDatiAccesso .spanLink:hover{
+    text-decoration:underline;
+}
+.containerDatiAccesso .btnEsci {
+    background: var(--yellow);
+    font-size: 1.1em;
+    display: flex;
+    gap: 2px;
+    border: none;
+    padding: .8em 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.containerDatiAccesso .btnEsci:hover{
+    background:var(--yellowLigth);
+}
+.containerDatiAccesso .textP{
+    padding:0;
+    margin:0;
+}
