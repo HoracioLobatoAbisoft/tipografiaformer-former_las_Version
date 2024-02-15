@@ -80,6 +80,7 @@ Public Class FormerPage
             Carrello.IdIndirizzoScelto = UtenteConnesso.DefaultIdIndirizzoPredefinito
         Else
             Carrello = Session("Carrello")
+            Carrello.IdIndirizzoScelto = UtenteConnesso.DefaultIdIndirizzoPredefinito 'Fix 2/14/2024
         End If
 
         Title = FormerWebApp.MetaTitle
