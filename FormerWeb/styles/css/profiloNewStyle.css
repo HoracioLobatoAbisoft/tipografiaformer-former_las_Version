@@ -16,41 +16,49 @@
     font-size:2em;
     margin:0 0;
     text-align:center;
-    background-color:var(--orange);
-    color:var(--white);
+    /*background-color:var(--orange);*/
+    color:var(--orange);
     border-radius: 10px;
 }
 .containerProfilo .containerData .containerDatiAccesso {
     display: flex;
     gap:1em;
+    flex-direction:column;
     background:var(--whiteSemiBold);
     justify-content:center;
     align-items:center;
     margin:.8em 0;
-    padding:.5em 0;
+    padding: 1em;
     border-radius: 10px;
     flex-wrap:wrap;
 }
 .containerProfilo .containerData .containerDatiAccesso .containerIcono{
-    text-align:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:var(--orange);
+    padding:.5em;
+    border-radius:5px;
+    color:var(--white);
+    width:98%;
 }
 .containerProfilo .containerData .containerDatiAccesso .containerIcono h3{
-    color:var(--orange);
+    color:var(--white);
     padding:0;
-    margin:.5em 0;
+    margin: 0;
     font-size:1.4em;
 }
 .containerProfilo .containerData .containerDatiAccesso .containerIcono i{
-    font-size:7em;
+    font-size:2em;
     text-align:center;
-    width:40%;
+    /*width:40%;*/
 }
 .containerProfilo .containerData .containerDatiAccesso .containerDati{
     display:flex;
     flex-direction:column;
     justify-content:end;
     gap:.5em;
-    width:70%;
+    width:100%;
 }
 .containerProfilo .containerData .containerDatiAccesso h5{
     font-size:1.2em;
@@ -74,7 +82,6 @@
 .containerProfilo .spanDati{
     background-color:var(--white);
     padding:.5em;
-    width:90%;
     border: 1px solid #e5e5e5;
     border-radius:5px;
     font-weight:bold;
@@ -110,7 +117,7 @@
     display:flex;
     gap:2px;
     border:none;
-    padding:.8em .1em;
+    padding:.8em;
     border-radius:5px;
     font-weight:bold;
     color:var(--white);
@@ -128,10 +135,15 @@
 .containerDatiAccesso .spanLink:hover{
     text-decoration:underline;
 }
+.containerDatiAccesso .spanLink:active{
+    color:#850c70;
+}
+
 .containerDatiAccesso .btnEsci {
     background: var(--yellow);
-    font-size: 1.1em;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 2px;
     border: none;
     padding: .8em 1em;
@@ -140,6 +152,7 @@
     color: black;
     cursor: pointer;
     text-decoration: none;
+    /*width:10%;*/
 }
 .containerDatiAccesso .btnEsci:hover{
     background:var(--yellowLigth);

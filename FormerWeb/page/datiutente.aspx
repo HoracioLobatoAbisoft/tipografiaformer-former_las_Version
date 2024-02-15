@@ -8,16 +8,16 @@
         <div class="containerData">
             <div class="containerDatiAccesso">
                 <div class="containerIcono">
-                    <h3> I TUOI DATI DI ACCESSO</h3>
                     <i class="fa-solid fa-circle-user"></i>
+                    <h3> I TUOI DATI DI ACCESSO</h3>
+                    <asp:linkbutton id="lnkShutdown" runat="server" CssClass="btnEsci"><i class="fa-solid fa-right-from-bracket" style="font-size:1em;"></i> Esci</asp:linkbutton>
                 </div>
-                <div class="containerDati" style="width:50%">
+                <div class="containerDati" >
                     <h5> La tua ID di accesso: </h5>
                     <p class="spanDati"> <i class="fa-solid fa-id-card-clip"></i> <asp:Label ID="lblIdCli" runat="server" Text="-" ></asp:Label> </p>
                     <h5> La tua Email di accesso: </h5>
                     <p class="spanDati"> <i class="fa-solid fa-envelope-open-text"></i><asp:Label ID="lblEmail" runat="server" Text="-" ></asp:Label></p>
                 </div>
-                <asp:linkbutton id="lnkShutdown" runat="server" CssClass="btnEsci"><i class="fa-solid fa-right-from-bracket"></i> Esci</asp:linkbutton>
             </div>
             <div class="containerDatiAccesso">
                 <div class="containerIcono">
@@ -29,8 +29,6 @@
                     <p class="spanDati"> <i class="fa-solid fa-file-signature"></i><asp:Label ID="lblRagSoc" runat="server" Text="-" ></asp:Label></p>
                     <h5> Nominativo: </h5>
                     <p class="spanDati"> <i class="fa-solid fa-address-card"></i>	<asp:Label ID="lblNominativo" runat="server"></asp:Label></p>
-                </div>
-                <div class="containerDatiRow">
                     <h5>P.IVA: </h5>
                     <p class="spanDati"> <i class="fa-solid fa-location-arrow"></i>	<asp:Label ID="lblPiva" runat="server" Text="-" ></asp:Label></p>
                     <h5> Codice Fiscale: </h5>
@@ -55,7 +53,7 @@
                     <h5> Immetti la nuova password  </h5>
                     <p class="spanDati spanInput"> <i class="fa-solid fa-lock"></i><asp:TextBox ID="txtPwd" CssClass="inputText" TextMode="Password"  MaxLength="20" runat="server" Placeholder="esempio : 64$%164#as"></asp:TextBox></p>
                     <h5> e riscrivi la nuova Password </h5>
-                    <p class="spanDati spanInput"> <i class="fa-solid fa-lock"></i><asp:TextBox ID="txtPwdRip" TextMode="Password" MaxLength="20" runat="server" Width="120" Placeholder="riscrivi la password" CssClass="inputText"></asp:TextBox></p>
+                    <p class="spanDati spanInput"> <i class="fa-solid fa-lock"></i><asp:TextBox ID="txtPwdRip" TextMode="Password" MaxLength="20" runat="server"  Placeholder="riscrivi la password" CssClass="inputText"></asp:TextBox></p>
                 </div>
                 <asp:linkbutton id="lnkModPwd" runat="server"  CssClass="btnModifica"><i class="fa-solid fa-pen-to-square"></i> Modifica</asp:linkbutton>
                 <asp:Label ID="lblEsitoPwd" Visible="false"  CssClass="esitoPwd" runat="server" Text=""></asp:Label>

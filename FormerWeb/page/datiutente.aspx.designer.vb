@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class pDatiUtente
 
     '''<summary>
+    '''lnkShutdown control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lnkShutdown As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
     '''lblIdCli control.
     '''</summary>
     '''<remarks>
@@ -30,15 +39,6 @@ Partial Public Class pDatiUtente
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblEmail As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''lnkShutdown control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lnkShutdown As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
     '''lblRagSoc control.
