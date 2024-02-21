@@ -279,7 +279,7 @@ Public Class IndiceRicerca
 
     Public ReadOnly Property Prezzo1Str As String
         Get
-            Return FormerHelper.Stringhe.FormattaPrezzo(Prezzo1)
+            Return FormerHelper.Stringhe.FormatNumberNonVirgola(Prezzo1)
         End Get
     End Property
 

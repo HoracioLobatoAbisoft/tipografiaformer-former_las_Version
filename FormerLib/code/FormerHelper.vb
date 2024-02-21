@@ -3289,6 +3289,7 @@ Public Class FormerHelper
         Public Shared Function FormattaPrezzo(ByVal Val As Object, Optional NumeroDecimali As Integer = 2) As String
 
             Dim ris As String = Val.ToString()
+
             If Val.ToString.Length = 0 Then
                 Val = 0
             Else
@@ -3309,6 +3310,11 @@ Public Class FormerHelper
 
             Return ris
 
+        End Function
+
+        Public Shared Function FormatNumberNonVirgola(Val As Decimal)
+            Dim ris As String = Val.ToString("N2")
+            Return ris
         End Function
 
         Public Shared Function FormattaNumero(ByVal Val) As String
