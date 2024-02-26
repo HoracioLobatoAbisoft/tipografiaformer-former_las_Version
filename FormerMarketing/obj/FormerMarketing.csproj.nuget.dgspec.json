@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Abisfot\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj": {}
+    "D:\\REPOSITORIOS\\ABISOFT\\FORMER_LAST_VERSION\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj": {}
   },
   "projects": {
-    "D:\\Abisfot\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj": {
+    "D:\\REPOSITORIOS\\ABISOFT\\FORMER_LAST_VERSION\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Abisfot\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj",
+        "projectUniqueName": "D:\\REPOSITORIOS\\ABISOFT\\FORMER_LAST_VERSION\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj",
         "projectName": "FormerMarketing",
-        "projectPath": "D:\\Abisfot\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj",
-        "packagesPath": "C:\\Users\\Ichigo\\.nuget\\packages\\",
-        "outputPath": "D:\\Abisfot\\tipografiaformer-former_last_Version\\FormerMarketing\\obj\\",
+        "projectPath": "D:\\REPOSITORIOS\\ABISOFT\\FORMER_LAST_VERSION\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj",
+        "packagesPath": "C:\\Users\\DANGO\\.nuget\\packages\\",
+        "outputPath": "D:\\REPOSITORIOS\\ABISOFT\\FORMER_LAST_VERSION\\tipografiaformer-former_last_Version\\FormerMarketing\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ichigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DANGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

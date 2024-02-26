@@ -41,12 +41,12 @@
         }--%>
 
         //const production = false;
-        const uriReact = 'https://tipografiaformertest.it:6060';
-        //const uriReact = 'http://localhost:5173';
+        //const uriReact = 'https://tipografiaformertest.it:6060';
+        const uriReact = 'http://localhost:5173';
         //const uriReact = 'http://95.110.134.38:51';
         //const uriReact = 'https://tipografiaformer.it:61';
-        const uriLocal = 'https://tipografiaformertest.it';
-        //const uriLocal = 'https://localhost:44311';
+        //const uriLocal = 'https://tipografiaformertest.it';
+        const uriLocal = 'https://localhost:44311';
         //const uriLocal = 'http://95.110.134.38';
         //const uriLocal = 'https://tipografiaformer.it';
 

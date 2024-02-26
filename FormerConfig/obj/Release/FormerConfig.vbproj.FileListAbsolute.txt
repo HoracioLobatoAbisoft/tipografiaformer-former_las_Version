@@ -18,3 +18,13 @@ D:\Abisfot\Former\main\FormerConfig\obj\Release\FormerConfig.vbproj.CoreCompileI
 D:\Abisfot\Former\main\FormerConfig\obj\Release\FormerConfig.dll
 D:\Abisfot\Former\main\FormerConfig\obj\Release\FormerConfig.xml
 D:\Abisfot\Former\main\FormerConfig\obj\Release\FormerConfig.pdb
+D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerConfig\bin\Release\FormerConfig.dll
+D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerConfig\bin\Release\FormerConfig.pdb
+D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerConfig\bin\Release\FormerConfig.xml
+D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerConfig\obj\Release\FormerConfig.vbproj.AssemblyReference.cache
+D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerConfig\obj\Release\FormerConfig.Resources.resources
+D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerConfig\obj\Release\FormerConfig.vbproj.GenerateResource.cache
+D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerConfig\obj\Release\FormerConfig.vbproj.CoreCompileInputs.cache
+D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerConfig\obj\Release\FormerConfig.dll
+D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerConfig\obj\Release\FormerConfig.xml
+D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerConfig\obj\Release\FormerConfig.pdb
