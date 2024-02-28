@@ -153,3 +153,42 @@ D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version
 D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.dll
 D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.xml
 D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerBusinessLogic.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerBusinessLogic.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerBusinessLogic.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerBusinessLogicInterface.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerConfig.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerDALSql.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerDALWeb.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerError.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerIO.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\itextsharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerGraphics.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\SevenZipSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\GhostscriptSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\CsPotrace.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerBusinessLogicInterface.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerBusinessLogicInterface.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerConfig.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerConfig.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerDALSql.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerDALSql.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerDALWeb.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerDALWeb.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerError.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerError.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerIO.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerIO.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerGraphics.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerGraphics.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.pdb

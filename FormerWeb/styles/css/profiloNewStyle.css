@@ -64,6 +64,8 @@
     font-size:1.2em;
     width:100%;
     margin: 0;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
 }
 .containerProfilo .containerData .containerDatiAccesso .containerDatiRow{
     width:100%;
@@ -73,21 +75,25 @@
     gap:.5em;
 }
 
-.containerProfilo .spanDati i{
-    border-right: 2px solid var(--whiteBold);
-    padding-right:.5em;
-    margin-right:.5em;
-}
+    .containerProfilo .spanDati i {
+        border-right: 2px solid var(--whiteBold);
+        padding-right: .5em;
+        margin-right: .5em;
+        font-weight: 600;
+        color: gray;
+    }
 
-.containerProfilo .spanDati{
-    background-color:var(--white);
-    padding:.5em;
-    border: 1px solid #e5e5e5;
-    border-radius:5px;
-    font-weight:bold;
-    font-size:1.1em;
-    margin:0;
-}
+    .containerProfilo .spanDati {
+        background-color: var(--white);
+        padding: .5em;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin: 0;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.7);
+    }
 
 .containerProfilo .spanSeparator{
     background:red;
@@ -95,14 +101,16 @@
     margin-left:.1em;
     font-size:1em;
 }
-.containerProfilo .spanDati .inputText{
-    font-weight:bold;
-    background:none;
-    border:none;
-    outline:none;
-    width:90%;
-    font-size:1.2em;
-}
+    .containerProfilo .spanDati .inputText {
+        font-weight: bold;
+        background: none;
+        border: none;
+        outline: none;
+        width: 90%;
+        font-size: 1.2em;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.7);
+    }
 .containerProfilo .spanDati.spanInput:hover {
     transition: all 1s ease-in-out;
     border: 1px solid var(--orange);
@@ -111,22 +119,30 @@
     transition: all .5s ease-in-out;
     color:var(--orange)
 }
-.containerDatiAccesso .btnModifica{
-    background:var(--orange);
-    font-size:1.1em;
-    display:flex;
-    gap:2px;
-    border:none;
-    padding:.8em;
-    border-radius:5px;
-    font-weight:bold;
-    color:var(--white);
-    cursor:pointer;
-    text-decoration:none;
+.containerDatiAccesso .btnModifica {
+    background: var(--orange);
+    font-size: 1.1em;
+    display: flex;
+    gap: 2px;
+    border: none;
+    padding: .8em;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+    transition:all;
+    transition-duration:150ms;
 }
-.containerDatiAccesso .btnModifica:hover{
-    background:var(--orangeLigth);
-}
+    .containerDatiAccesso .btnModifica.mt-2{
+        margin-top: 0.75rem;
+    }
+    .containerDatiAccesso .btnModifica:hover {
+        background: var(--orangeLigth);
+        color: white;
+    }
 .containerDatiAccesso .spanLink{
     color:var(--blueLigth);
     font-weight:bold;

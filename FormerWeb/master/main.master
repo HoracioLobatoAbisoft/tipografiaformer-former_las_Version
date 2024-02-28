@@ -503,7 +503,7 @@
                 <%If UtenteConnesso.IdUtente Then%>
                 <asp:LinkButton ID="lnkEsci" ForeColor="#009ec9" runat="server" ><b id="esciText" onclick="cleanLocal();">Esci</b></asp:LinkButton>
                 <%Else%>
-                <a href="/registrati" class="orange"><b>Registrati</b></a> o <a href="/login" class="orange"><b>Accedi</b></a>
+                <a href="/registrati" class="orange"><b>Registrati</b></a> o <a href="/login" onclick="cleanLocal();" class="orange"><b>Accedi</b></a>
                 <%End If%>
             </div>    
             
@@ -660,6 +660,7 @@
         <%--End Menu Cerca--%>
 
         <!-- CONTENUTO PAGINA-->
+        
         <asp:ScriptManager ID="ScriptManagerFormer" runat="server"  EnablePartialRendering="true"  ></asp:ScriptManager>
         <asp:Literal runat="server" ID="iframeIndexReact" />
         <div class="content"  id="contentHelperHidden">

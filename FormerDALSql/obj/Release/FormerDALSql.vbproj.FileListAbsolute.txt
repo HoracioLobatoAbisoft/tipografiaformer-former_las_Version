@@ -101,3 +101,29 @@ D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version
 D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.dll
 D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.xml
 D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerDALSql.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerDALSql.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerDALSql.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerBusinessLogicInterface.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerConfig.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerIO.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\SevenZipSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\itextsharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\GhostscriptSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerBusinessLogicInterface.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerBusinessLogicInterface.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerConfig.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerConfig.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerIO.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerIO.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.pdb

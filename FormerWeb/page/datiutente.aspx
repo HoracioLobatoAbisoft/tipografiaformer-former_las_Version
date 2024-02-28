@@ -55,7 +55,7 @@
                     <h5> e riscrivi la nuova Password </h5>
                     <p class="spanDati spanInput"> <i class="fa-solid fa-lock"></i><asp:TextBox ID="txtPwdRip" TextMode="Password" MaxLength="20" runat="server"  Placeholder="riscrivi la password" CssClass="inputText"></asp:TextBox></p>
                 </div>
-                <asp:linkbutton id="lnkModPwd" runat="server"  CssClass="btnModifica"><i class="fa-solid fa-pen-to-square"></i> Modifica</asp:linkbutton>
+                <asp:linkbutton id="lnkModPwd" runat="server"  CssClass="btnModifica mt-2" ><i class="fa-solid fa-pen-to-square"></i> Modifica</asp:linkbutton>
                 <asp:Label ID="lblEsitoPwd" Visible="false"  CssClass="esitoPwd" runat="server" Text=""></asp:Label>
             </div>
             <div class="containerDatiAccesso">

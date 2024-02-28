@@ -85,3 +85,25 @@ D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version
 D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.dll
 D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.xml
 D:\REPOSITORIOS\ABISOFT\FORMER_LAST_VERSION\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\FormerIO.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\FormerIO.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\FormerIO.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\FormerConfig.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\FormerLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\SevenZipSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\itextsharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\GhostscriptSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\FormerConfig.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\FormerConfig.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\FormerLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\bin\Release\FormerLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.frmFileCopy.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.frmFileFTP.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerIO\obj\Release\FormerIO.pdb

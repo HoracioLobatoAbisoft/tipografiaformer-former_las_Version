@@ -14,7 +14,7 @@
     <div class="Login"><div class="label">ID di Accesso/Email </div><asp:TextBox ID="txtLogin" runat="server"></asp:TextBox><asp:RequiredFieldValidator ID="rqLogin" CssClass="loginErr" ControlToValidate="txtLogin" runat="server" ValidationGroup="group1" ErrorMessage="Il nome utente è obbligatorio"></asp:RequiredFieldValidator></div>
     <div class="Pwd"><div class="label">Password </div><asp:TextBox ID="txtPwd" TextMode="Password" runat="server"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator1" CssClass="loginErr" ControlToValidate="txtpwd" runat="server" ValidationGroup="group1" ErrorMessage="La password è obbligatoria"></asp:RequiredFieldValidator></div>
         <div><asp:CheckBox runat="server" ID="chkRestaConnesso" Text="Resta connesso" Checked="true"/><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Deseleziona questa casella se utilizzi un computer condiviso)</div>
-    <div class="buttonLogin"><asp:Linkbutton ID="btnLoginImg" CssClass="pulsante120Orange" runat="server" ValidationGroup="group1" ><img src="/img/icoChiaveW.png" /> Accedi</asp:Linkbutton></div>
+    <div class="buttonLogin" onclick="cleanLocal();"><asp:Linkbutton ID="btnLoginImg" CssClass="pulsante120Orange" runat="server" ValidationGroup="group1" ><img src="/img/icoChiaveW.png" /> Accedi</asp:Linkbutton></div>
     <br /><center><asp:Label id="lblEsito" runat="server" text="" visible="false" CssClass="esitoPwd"></asp:Label></center>
     </div>
     </asp:Panel>
