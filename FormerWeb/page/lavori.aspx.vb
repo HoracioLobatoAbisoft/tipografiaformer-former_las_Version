@@ -8,6 +8,7 @@ Public Class pLavori
     Private RecordPerPage As Integer = 10
 
     Private Sub myFormer_Load(sender As Object, e As EventArgs) Handles Me.Load
+        DirectCast(Page, FormerPage).Title = "I tuoi Ordini"
         CaricaOrdini(RecordPerPage, 0)
 
         RowCount = ViewState("RowCount")

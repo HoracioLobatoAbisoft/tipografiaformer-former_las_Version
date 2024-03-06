@@ -40,8 +40,8 @@
         Colori di stampa: <b>-</b><br />
     </div>
 </div>
-    <p class="titoloWizard"><%=P.Descrizione  %></p>
-    <p class="sottotitoloWizard"><%=P.DescrizioneEstesa%></p>
+    <h1 class="titoloWizard"><%=P.Descrizione  %></h1>
+    <h2 class="sottotitoloWizard"><%=P.DescrizioneEstesa%></h2>
 <p class="effettuaScelta">Scegli un <%=IIf(P.IdReparto = FormerLib.FormerEnum.enRepartoWeb.Ricamo, "PRODOTTO", "TIPO DI CARTA")%> tra quelli disponibili.</p>    
 <asp:Table ID="tableWizard" class="tableWizard" runat="server"></asp:Table>
 <div class="icoConsigliato">

@@ -1,10 +1,10 @@
 ﻿'------------------------------------------------------------------------------
-' <generato automaticamente>
-'     Codice generato da uno strumento.
+' <generado automáticamente>
+'     Este código fue generado por una herramienta.
 '
-'     Le modifiche a questo file possono causare un comportamento non corretto e verranno perse se
-'     il codice viene rigenerato. 
-' </generato automaticamente>
+'     Los cambios en este archivo podrían causar un comportamiento incorrecto y se perderán si
+'     se vuelve a generar el código. 
+' </generado automáticamente>
 '------------------------------------------------------------------------------
 
 Option Strict On
@@ -14,11 +14,11 @@ Option Explicit On
 Partial Public Class pfogliW
 
     '''<summary>
-    '''Controllo tableWizard.
+    '''Control tableWizard.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents tableWizard As Global.System.Web.UI.WebControls.Table
 End Class

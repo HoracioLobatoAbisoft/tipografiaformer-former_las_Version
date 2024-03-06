@@ -7,6 +7,7 @@ Public Class pCarrelloPagamento
     Inherits FormerSecurePage
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        DirectCast(Page, FormerPage).Title = "Carrello pagamento"
         If UtenteConnesso.UtenteAutorizato Then
 
             Dim UrlProdottoEnviroment As String = UtenteConnesso.UrlIframe & "/carrelloStp4"

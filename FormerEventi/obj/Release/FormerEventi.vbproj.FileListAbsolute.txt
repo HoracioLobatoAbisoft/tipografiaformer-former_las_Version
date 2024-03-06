@@ -27,3 +27,18 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerE
 D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\bin\FormerEventi.dll.config
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\bin\FormerEventi.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\bin\FormerEventi.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\bin\FormerEventi.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\bin\FormerDALEventi.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\bin\FormerDALEventi.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\bin\FormerDALEventi.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.pdb

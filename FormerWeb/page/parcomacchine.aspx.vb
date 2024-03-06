@@ -5,7 +5,7 @@ Public Class ParcoMacchine
     Inherits FormerFreePage
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        DirectCast(Page, FormerPage).Title = "Il Nostro Parco Macchine"
         Session("PageTitle") = "Il nostro Parco Macchine"
 
         If Not IsPostBack Then

@@ -123,3 +123,45 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\Former
 D:\Abisfot\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\FormerPrinter.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\FormerPrinter.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\FormerPrinter.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerPrinter.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerPrinter.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerPrinter.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerBusinessLogic.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerBusinessLogicInterface.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerConfig.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerDALSql.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerDALWeb.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerError.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerGraphics.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\itextsharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerIO.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\CsPotrace.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\SevenZipSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\GhostscriptSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerBusinessLogicInterface.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerBusinessLogicInterface.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerBusinessLogic.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerBusinessLogic.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerConfig.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerConfig.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerDALSql.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerDALSql.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerDALWeb.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerDALWeb.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerError.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerError.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerGraphics.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerGraphics.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerIO.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\bin\Release\FormerIO.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\FormerPrinter.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\FormerPrinter.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\FormerPrinter.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\FormerPrinter.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\FormerPrinter.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\FormerPrinter.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\FormerPrinter.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerPrinter\obj\Release\FormerPrinter.pdb

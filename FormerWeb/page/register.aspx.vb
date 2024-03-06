@@ -8,6 +8,8 @@ Public Class register
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
+        DirectCast(Page, FormerPage).Title = "Registrati"
+
         If UtenteConnesso.IdUtente Then
 
             Response.Redirect("/area-riservata")

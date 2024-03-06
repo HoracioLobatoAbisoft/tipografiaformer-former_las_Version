@@ -4,7 +4,7 @@ Public Class pDatiUtente
     Inherits FormerSecurePage
 
     Private Sub myFormer_Load(sender As Object, e As EventArgs) Handles Me.Load
-
+        DirectCast(Page, FormerPage).Title = "Il tuo Profilo"
         If Not IsPostBack Then
             If UtenteConnesso.Utente.IdRubricaInt Then
                 lblIdCli.Text = UtenteConnesso.Utente.IdRubricaInt

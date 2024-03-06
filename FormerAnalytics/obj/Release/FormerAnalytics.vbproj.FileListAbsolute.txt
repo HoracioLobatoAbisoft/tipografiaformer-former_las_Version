@@ -86,3 +86,47 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\Form
 D:\Abisfot\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.exe
 D:\Abisfot\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerAnalytics.exe.config
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerAnalytics.exe
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerAnalytics.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerAnalytics.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerBusinessLogic.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerConfig.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerDALWeb.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerDALSql.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\itextsharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerBusinessLogicInterface.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerIO.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerError.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerGraphics.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\SevenZipSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\GhostscriptSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\CsPotrace.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerBusinessLogic.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerBusinessLogic.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerConfig.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerConfig.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerDALWeb.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerDALWeb.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerDALSql.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerDALSql.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerBusinessLogicInterface.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerBusinessLogicInterface.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerIO.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerIO.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerError.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerError.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerGraphics.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\bin\Release\FormerGraphics.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.frmMain.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.exe
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerAnalytics\obj\Release\FormerAnalytics.pdb

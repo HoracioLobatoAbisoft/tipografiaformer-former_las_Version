@@ -87,3 +87,33 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\For
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerListiniLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerListiniLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerListiniLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerBusinessLogicInterface.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerDALWeb.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\itextsharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerConfig.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerGraphics.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\SevenZipSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\GhostscriptSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\CsPotrace.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerBusinessLogicInterface.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerBusinessLogicInterface.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerDALWeb.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerDALWeb.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerConfig.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerConfig.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerGraphics.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerGraphics.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.pdb

@@ -1869,7 +1869,7 @@ Public Class prodotto_m
 
         If Not IsPostBack Then
 
-            _TitoloPagina = "Tipografia Former Online, il tuo mondo della stampa a Roma - Stampa "
+            _TitoloPagina = "Stampa "
             _TitoloPagina &= P.Descrizione & " "
             _TitoloPagina &= LRif.FormatoProdotto.Formato & " "
             _TitoloPagina &= LRif.TipoCarta.Tipologia & " "

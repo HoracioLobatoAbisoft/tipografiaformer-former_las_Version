@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\REPOSITORIOS\\ABISOFT\\FORMER_LAST_VERSION\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj": {}
+    "C:\\Projects\\Former\\former Antiguo\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj": {}
   },
   "projects": {
-    "D:\\REPOSITORIOS\\ABISOFT\\FORMER_LAST_VERSION\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj": {
+    "C:\\Projects\\Former\\former Antiguo\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\REPOSITORIOS\\ABISOFT\\FORMER_LAST_VERSION\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj",
+        "projectUniqueName": "C:\\Projects\\Former\\former Antiguo\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj",
         "projectName": "FormerMarketing",
-        "projectPath": "D:\\REPOSITORIOS\\ABISOFT\\FORMER_LAST_VERSION\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj",
-        "packagesPath": "C:\\Users\\DANGO\\.nuget\\packages\\",
-        "outputPath": "D:\\REPOSITORIOS\\ABISOFT\\FORMER_LAST_VERSION\\tipografiaformer-former_last_Version\\FormerMarketing\\obj\\",
+        "projectPath": "C:\\Projects\\Former\\former Antiguo\\tipografiaformer-former_last_Version\\FormerMarketing\\FormerMarketing.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Former\\former Antiguo\\tipografiaformer-former_last_Version\\FormerMarketing\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DANGO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -68,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

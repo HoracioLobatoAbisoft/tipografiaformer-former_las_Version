@@ -87,3 +87,33 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\Fo
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerWebLabeling.dll.config
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerWebLabeling.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerWebLabeling.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerWebLabeling.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerConfig.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerDALSql.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerBusinessLogicInterface.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerIO.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\SevenZipSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\itextsharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\GhostscriptSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerConfig.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerConfig.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerDALSql.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerDALSql.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerBusinessLogicInterface.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerBusinessLogicInterface.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerIO.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerIO.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.pdb

@@ -69,3 +69,38 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\For
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.exe
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerListiniLab.exe.config
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerListiniLab.exe
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerListiniLab.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerListiniLab.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerDALWeb.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerListiniLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\itextsharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerBusinessLogicInterface.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerGraphics.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerConfig.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\SevenZipSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\GhostscriptSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\CsPotrace.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerDALWeb.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerDALWeb.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerListiniLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerListiniLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerBusinessLogicInterface.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerBusinessLogicInterface.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerGraphics.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerGraphics.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerConfig.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\bin\Release\FormerConfig.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.frmMain.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.exe
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.pdb

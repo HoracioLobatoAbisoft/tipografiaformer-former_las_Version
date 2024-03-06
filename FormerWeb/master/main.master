@@ -42,13 +42,13 @@
 
         //const production = false;
         //const uriReact = 'https://tipografiaformertest.it:6060';
-        const uriReact = 'http://localhost:5173';
+        //const uriReact = 'http://localhost:5173';
         //const uriReact = 'http://95.110.134.38:51';
-        //const uriReact = 'https://tipografiaformer.it:61';
+        const uriReact = 'https://tipografiaformer.it:61';
         //const uriLocal = 'https://tipografiaformertest.it';
-        const uriLocal = 'https://localhost:44311';
+        //const uriLocal = 'https://localhost:44311';
         //const uriLocal = 'http://95.110.134.38';
-        //const uriLocal = 'https://tipografiaformer.it';
+        const uriLocal = 'https://tipografiaformer.it';
 
         var Uris = {
             front: uriReact,
@@ -751,7 +751,7 @@
         <div style="display:none;" itemprop="seller" itemtype="https://schema.org/Organization">
             <span itemprop="name">Tipografia Former https://www.tipografiaformer.it</span>
             <span itemprop="url">https://www.tipografiaformer.it</span>
-            <span itemprop="description">Tipografia Former Online, il tuo mondo della stampa a Roma mod - Stampa Offset, Stampa Digitale Grande Formato, Packaging Personalizzato, Ricamo, Etichette</span>
+            <span itemprop="description">Stampa Offset, Stampa Digitale Grande Formato, Packaging Personalizzato, Ricamo, Etichette</span>
             <div itemprop="address" itemtype="https://schema.org/PostalAddress">
                 <span itemprop="streetAddress">Via Cassia 2010 </span>
                 <span itemprop="addressLocality">Roma</span>
@@ -768,9 +768,9 @@
 <!--POWERED BY LUNA ORM https://sourceforge.net/projects/lunaorm/ -->
     <script>
         //const urlFront = 'https://tipografiaformertest.it:6060';
-        const urlFront = 'http://localhost:5173';
+        //const urlFront = 'http://localhost:5173';
         //const urlFront = 'http://95.110.134.38:51';
-        //const urlFront = 'https://tipografiaformer.it:61';
+        const urlFront = 'https://tipografiaformer.it:61';
         const counterLocal = this.localStorage.getItem('c');
         if (parseInt(counterLocal) > 0) {
             var idCounterCarrello = document.getElementById('coutenCarrello');

@@ -44,7 +44,9 @@
         <span itemprop="name"><%=Review.ListinoBase.Nome%></span>
         <div style="display:none;" itemprop="review" itemscope itemtype="http://schema.org/Review">
             <span itemprop="name">La mia Recensione</span>
-            <span itemprop="author"><%=Server.HtmlEncode(GetNome)%></span>,
+        <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name"><%=Server.HtmlEncode(GetNome)%></span>
+        </div>
             <span itemprop="datePublished"><%=Review.Quando.ToString("yyyy-MM-dd") %></span>
             <div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
               <span itemprop="worstRating">1</span>

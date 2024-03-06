@@ -6,7 +6,7 @@ Public Class pDatiFiscali
     Inherits FormerSecurePage
 
     Private Sub myFormer_Load(sender As Object, e As EventArgs) Handles Me.Load
-
+        DirectCast(Page, FormerPage).Title = "Aggiorna Dati Fiscali"
         If Not IsPostBack Then
             If UtenteConnesso.Utente.IdRubricaInt Then
                 lblIdCli.Text = UtenteConnesso.Utente.IdRubricaInt

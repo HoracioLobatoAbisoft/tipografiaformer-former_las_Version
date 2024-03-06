@@ -20,7 +20,9 @@
     <div style="display:none;" itemscope itemtype="https://schema.org/Product">
       <span itemprop="name"><%=OgTitle%></span>
       <img itemprop="image" src="https://www.tipografiaformer.it<%=FormerWeb.FormerWebApp.PathListinoImg%><%=LRif.GetImgFormato %>" alt="<%=OgTitle%>" />
-      <span itemprop="url">https://www.tipografiaformer.it<%=Request.Url.AbsolutePath%></span><span itemprop="description"><%=OgDescription%></span><div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+      <span itemprop="url">https://www.tipografiaformer.it<%=Request.Url.AbsolutePath%></span>
+        <span itemprop="description"><%=OgDescription%></span>
+        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
         <meta itemprop="priceCurrency" content="EUR" />
         <span itemprop="price"><%=PrimoPrezzo%></span>
         <div itemprop="seller" itemscope itemtype="https://schema.org/Organization">

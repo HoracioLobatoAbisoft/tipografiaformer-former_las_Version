@@ -19,7 +19,8 @@ Public Class FormerWebApp
 
     Public Shared ReadOnly Property MetaTitle As String
         Get
-            Return "Tipografia Former Online, il tuo mondo della stampa a Roma app- Stampa Offset, Stampa Digitale Grande Formato, Packaging Personalizzato, Ricamo, Etichette"
+            'modificated-dev-last
+            Return "Stampa Offset, Stampa Digitale Grande Formato, Packaging Personalizzato, Ricamo, Etichette---review"
         End Get
     End Property
 

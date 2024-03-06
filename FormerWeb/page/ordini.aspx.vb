@@ -8,6 +8,7 @@ Public Class pOrdini
     Private RecordPerPage As Integer = 10
 
     Private Sub myFormer_Load(sender As Object, e As EventArgs) Handles Me.Load
+        DirectCast(Page, FormerPage).Title = "Le Tue Consegne"
         CaricaConsegne(RecordPerPage, 0)
         RowCount = ViewState("RowCountConsegne")
         CreatePagingControl()

@@ -51,10 +51,10 @@ Public Class UtenteSito
     Dim urlFrame As String
     Public Property UrlIframe As String
         Get
-            urlFrame = "http://localhost:5173/#" ' url local react
+            'urlFrame = "http://localhost:5173/#" ' url local react
             'urlFrame = "https://tipografiaformertest.it:6060/#" ' url test
             'urlFrame = "http://95.110.134.38:51/#" ' url former server
-            'urlFrame = "https://tipografiaformer.it:61/#" ' url former server Dominio
+            urlFrame = "https://tipografiaformer.it:61/#" ' url former server Dominio
             Return urlFrame
         End Get
         Set(value As String)

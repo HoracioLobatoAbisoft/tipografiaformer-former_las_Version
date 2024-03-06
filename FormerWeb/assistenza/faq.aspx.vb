@@ -44,12 +44,16 @@ Public Class pFaq
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
-
         If Page.RouteData.DataTokens.Count Then
             If Page.RouteData.DataTokens("isGlossario") = True Then
                 _VaiAGlossario = True
+                DirectCast(Page, FormerPage).Title = "Glossario Tipografico"
             ElseIf Page.RouteData.DataTokens("isFaq") = True Then
                 _VaiAFaq = True
+                DirectCast(Page, FormerPage).Title = "Domande e risposte frequenti"
+            ElseIf Page.RouteData.DataTokens("isAssistenza") = True Then
+                DirectCast(Page, FormerPage).Title = "Contattaci"
+
             End If
         End If
 

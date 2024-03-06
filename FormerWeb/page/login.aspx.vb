@@ -3,6 +3,7 @@ Imports FormerLib
 Public Class login
     Inherits FormerFreePage
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        DirectCast(Page, FormerPage).Title = "Accedi"
 
         If Not IsPostBack Then
 

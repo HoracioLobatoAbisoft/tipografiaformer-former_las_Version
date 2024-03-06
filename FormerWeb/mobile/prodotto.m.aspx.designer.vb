@@ -1,10 +1,10 @@
 ﻿'------------------------------------------------------------------------------
-' <generato automaticamente>
-'     Codice generato da uno strumento.
+' <generado automáticamente>
+'     Este código fue generado por una herramienta.
 '
-'     Le modifiche a questo file possono causare un comportamento non corretto e verranno perse se
-'     il codice viene rigenerato. 
-' </generato automaticamente>
+'     Los cambios en este archivo podrían causar un comportamiento incorrecto y se perderán si
+'     se vuelve a generar el código. 
+' </generado automáticamente>
 '------------------------------------------------------------------------------
 
 Option Strict On
@@ -14,200 +14,200 @@ Option Explicit On
 Partial Public Class prodotto_m
 
     '''<summary>
-    '''Controllo PannelloDinamico.
+    '''Control PannelloDinamico.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents PannelloDinamico As Global.System.Web.UI.UpdatePanel
 
     '''<summary>
-    '''Controllo txtQtaUser.
+    '''Control txtQtaUser.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtQtaUser As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controllo ddlQta.
+    '''Control ddlQta.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ddlQta As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controllo ddlFormato.
+    '''Control ddlFormato.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ddlFormato As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controllo ddlTipoCarta.
+    '''Control ddlTipoCarta.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ddlTipoCarta As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controllo ddlColoreStampa.
+    '''Control ddlColoreStampa.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ddlColoreStampa As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controllo ddlFogliPagine.
+    '''Control ddlFogliPagine.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ddlFogliPagine As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Controllo rptOpzioni.
+    '''Control rptOpzioni.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents rptOpzioni As Global.System.Web.UI.WebControls.Repeater
 
     '''<summary>
-    '''Controllo tblDDL.
+    '''Control tblDDL.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents tblDDL As Global.System.Web.UI.WebControls.Table
 
     '''<summary>
-    '''Controllo pnlMisure.
+    '''Control pnlMisure.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents pnlMisure As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''Controllo txtLarghezza.
+    '''Control txtLarghezza.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtLarghezza As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controllo rfvTBase.
+    '''Control rfvTBase.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents rfvTBase As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Controllo txtAltezza.
+    '''Control txtAltezza.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtAltezza As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controllo rfvTAltezza.
+    '''Control rfvTAltezza.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents rfvTAltezza As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Controllo txtProfondita.
+    '''Control txtProfondita.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtProfondita As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controllo rfvTProfondita.
+    '''Control rfvTProfondita.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents rfvTProfondita As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Controllo lblQta.
+    '''Control lblQta.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lblQta As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Controllo txtQtaCustom.
+    '''Control txtQtaCustom.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtQtaCustom As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Controllo btnCalcola.
+    '''Control btnCalcola.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btnCalcola As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Controllo pnlErrore.
+    '''Control pnlErrore.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents pnlErrore As Global.System.Web.UI.WebControls.Panel
 
     '''<summary>
-    '''Controllo lblInfoDim.
+    '''Control lblInfoDim.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lblInfoDim As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Controllo tblPrezzi.
+    '''Control tblPrezzi.
     '''</summary>
     '''<remarks>
-    '''Campo generato automaticamente.
-    '''Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents tblPrezzi As Global.System.Web.UI.WebControls.Table
 End Class

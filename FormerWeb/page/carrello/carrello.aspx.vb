@@ -9,7 +9,7 @@ Public Class pCarrello
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
         'check dati fiscali
-
+        DirectCast(Page, FormerPage).Title = "Carrello"
         Dim Eviroment As Boolean = UtenteConnesso.Eviroment
         Dim UrlProdottoEnviroment As String = UtenteConnesso.UrlIframe & "/carrelloStp1"
         'If Eviroment Then

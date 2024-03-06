@@ -1321,6 +1321,22 @@ Public Class pProdotto
         _DescrizioneUrl = Convert.ToString(Page.RouteData.Values("descrizione"))
         _Nfogli = Convert.ToInt32(Page.RouteData.Values("nfogli"))
 
+
+        Dim UrlProdottoEnviroment As String = UtenteConnesso.UrlIframe & "/form-prodotto-v2/"
+        Dim Eviroment As Boolean = UtenteConnesso.Eviroment
+
+        'If Eviroment Then
+        '    UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/form-prodotto-v2/"
+        'Else
+        '    UrlProdottoEnviroment = "http://localhost:5173/#/form-prodotto-v2/"
+        'End If
+
+        Dim UrlProdotto2 = UrlProdottoEnviroment & _IdPrev & "/" & _IdFormato & "/" & _IdTipoCarta & "/" & _IdColori & "/" & _Nfogli & "/" & Convert.ToInt32(UtenteConnesso.IdUtente) & "/" & _idFustela & "/" & _categoria & "/" & _BaseEtiquete & "/" & _AltezzaEqitquete & "/" & _ImgEtiquete
+        If UtenteConnesso.UtenteAutorizato Then
+            iframeRefactor.Text = "<iframe id='frameId' style='width:100%; height: 4080px;border: none;' src=" & UrlProdotto2 & " ></iframe>"
+        End If
+
+
         If P.DispOnline = False Then
             Response.Redirect("/")
         Else
@@ -1639,19 +1655,7 @@ Public Class pProdotto
         If P.IdReparto = enRepartoWeb.StampaDigitale Then
             lblTipoQta.Text = "Copie"
         End If
-        Dim UrlProdottoEnviroment As String = UtenteConnesso.UrlIframe & "/form-prodotto-v2/"
-        Dim Eviroment As Boolean = UtenteConnesso.Eviroment
 
-        'If Eviroment Then
-        '    UrlProdottoEnviroment = "https://react.tipografiaformertest.it:6060/#/form-prodotto-v2/"
-        'Else
-        '    UrlProdottoEnviroment = "http://localhost:5173/#/form-prodotto-v2/"
-        'End If
-
-        Dim UrlProdotto2 = UrlProdottoEnviroment & _IdPrev & "/" & _IdFormato & "/" & _IdTipoCarta & "/" & _IdColori & "/" & _Nfogli & "/" & Convert.ToInt32(UtenteConnesso.IdUtente) & "/" & _idFustela & "/" & _categoria & "/" & _BaseEtiquete & "/" & _AltezzaEqitquete & "/" & _ImgEtiquete
-        If UtenteConnesso.UtenteAutorizato Then
-            iframeRefactor.Text = "<iframe id='frameId' style='width:100%; height: 4080px;border: none;' src=" & UrlProdotto2 & " ></iframe>"
-        End If
 
 
     End Sub

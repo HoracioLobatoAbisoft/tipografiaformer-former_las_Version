@@ -8,3 +8,13 @@ D:\Abisfot\Former\main\FormerEFDALSql\obj\Release\FormerEFDALSql.vbproj.CoreComp
 D:\Abisfot\Former\main\FormerEFDALSql\obj\Release\FormerEFDALSql.dll
 D:\Abisfot\Former\main\FormerEFDALSql\obj\Release\FormerEFDALSql.xml
 D:\Abisfot\Former\main\FormerEFDALSql\obj\Release\FormerEFDALSql.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\bin\Release\FormerEFDALSql.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\bin\Release\FormerEFDALSql.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\bin\Release\FormerEFDALSql.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.pdb

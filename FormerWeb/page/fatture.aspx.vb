@@ -7,7 +7,7 @@ Public Class pFatture
     Inherits FormerSecurePage
 
     Private Sub myFormer_Load(sender As Object, e As EventArgs) Handles Me.Load
-
+        DirectCast(Page, FormerPage).Title = "Le tue Fatture"
         If Not IsPostBack Then
 
             Dim lF As New List(Of Consegna)

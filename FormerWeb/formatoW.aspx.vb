@@ -47,7 +47,7 @@ Public Class pFormatoW
 
         'If Not IsPostBack Then
 
-        Dim titoloPagina As String = "Tipografia Former Online, il tuo mondo della stampa a Roma - Stampa "
+        Dim titoloPagina As String = "Stampa "
 
         _idP = Convert.ToInt32(Page.RouteData.Values("idp"))
         P = New PreventivazioneW

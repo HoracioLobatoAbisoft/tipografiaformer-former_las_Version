@@ -63,7 +63,7 @@ Public Class pCarrelloRiepilogo
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
 
-
+        DirectCast(Page, FormerPage).Title = "Carrello riepilogo"
 
 
         Dim GiaChiestoAggiornamentoDF As Boolean = False

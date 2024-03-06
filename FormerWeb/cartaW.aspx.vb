@@ -41,8 +41,8 @@ Public Class pCartaW
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Session("PageTitle") = "Scegli una Tipologia di Carta"
         'If Not IsPostBack Then
-
-        Dim titoloPagina As String = "Tipografia Former Online, il tuo mondo della stampa a Roma - Stampa "
+        'modificated-dev
+        Dim titoloPagina As String = "Stampa "
 
         _idP = Convert.ToInt32(Page.RouteData.Values("idp"))
         _idFormatoSel = Convert.ToInt32(Page.RouteData.Values("idf"))

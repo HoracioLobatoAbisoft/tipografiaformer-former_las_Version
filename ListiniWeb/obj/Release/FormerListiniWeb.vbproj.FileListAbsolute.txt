@@ -65,3 +65,37 @@ D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerLis
 D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.dll
 D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.xml
 D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerListiniWeb.dll.config
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerListiniWeb.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerListiniWeb.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerListiniWeb.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerBusinessLogicInterface.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerDALWeb.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerListiniLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerConfig.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerGraphics.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\SevenZipSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\itextsharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\GhostscriptSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\CsPotrace.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerBusinessLogicInterface.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerBusinessLogicInterface.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerDALWeb.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerDALWeb.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerListiniLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerListiniLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerConfig.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerConfig.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerGraphics.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerGraphics.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.pdb

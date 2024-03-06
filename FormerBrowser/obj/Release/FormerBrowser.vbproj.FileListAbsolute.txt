@@ -62,3 +62,35 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\Former
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.exe
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerBrowser.exe.config
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerBrowser.exe
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerBrowser.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerBrowser.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerDALSql.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerBusinessLogicInterface.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerConfig.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerIO.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\SevenZipSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\itextsharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\GhostscriptSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerDALSql.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerDALSql.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerBusinessLogicInterface.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerBusinessLogicInterface.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerConfig.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerConfig.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerIO.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerIO.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.frmMain.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.ucBrowser.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.exe
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.pdb

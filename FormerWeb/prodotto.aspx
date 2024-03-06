@@ -389,6 +389,7 @@
             <div class="colDx">
                 <%If ShowFoto() Then%>
                 <div class="introProdotto" style="height: 285px;max-height:285px;overflow:hidden;display:inline-block;" id="introProdH2">
+                <div> tesssttstststt</div>
                 <ul id="lightSlider">
                 <%=BufferFoto %>
                 </ul>

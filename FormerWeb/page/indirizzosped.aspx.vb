@@ -60,7 +60,7 @@ Public Class pIndirizzoSpedizione
     End Sub
 
     Private Sub myFormer_Load(sender As Object, e As EventArgs) Handles Me.Load
-
+        DirectCast(Page, FormerPage).Title = "Indirizzi e Corriere"
         If Not IsPostBack Then
             CaricaCorriere()
             CaricaIndirizzi()

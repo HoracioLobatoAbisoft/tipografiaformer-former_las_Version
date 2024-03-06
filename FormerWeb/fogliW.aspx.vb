@@ -49,7 +49,7 @@ Public Class pfogliW
         _IdTipoCarta = Convert.ToInt32(Page.RouteData.Values("idc"))
         _IdColori = Convert.ToInt32(Page.RouteData.Values("ids"))
 
-        Dim titoloPagina As String = "Tipografia Former Online, il tuo mondo della stampa a Roma - Stampa "
+        Dim titoloPagina As String = "Stampa "
         Dim urlPagina As String = String.Empty
 
         P = New PreventivazioneW

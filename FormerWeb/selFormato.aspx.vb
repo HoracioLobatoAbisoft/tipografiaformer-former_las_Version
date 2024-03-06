@@ -49,8 +49,8 @@ Public Class selFormato
         Session("PageTitle") = "Scegli un formato"
 
         'If Not IsPostBack Then
-
-        Dim titoloPagina As String = "Tipografia Former Online, il tuo mondo della stampa a Roma - Stampa "
+        'modificated-dev
+        Dim titoloPagina As String = "Stampa "
 
         _idP = Convert.ToInt32(Page.RouteData.Values("idp"))
         _idC = Convert.ToInt32(Page.RouteData.Values("idC"))

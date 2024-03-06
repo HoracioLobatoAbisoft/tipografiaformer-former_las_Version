@@ -5,7 +5,7 @@ Public Class ituoicoupon
     Inherits FormerSecurePage
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+        DirectCast(Page, FormerPage).Title = "I tuoi Coupon di Sconto"
         If Not IsPostBack Then
             'qui devo caricare solo i coupon in corso di validita sia riservati che pubblici con il totale di volte usabili e il totale di volte gia usati
 

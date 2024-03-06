@@ -22,3 +22,15 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5
 D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\refint\FormerMarketing.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.pdb
 D:\Abisfot\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\ref\FormerMarketing.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\bin\Release\net5.0\FormerMarketing.deps.json
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\bin\Release\net5.0\FormerMarketing.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\bin\Release\net5.0\FormerMarketing.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.AssemblyInfoInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.AssemblyInfo.cs
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.csproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.sourcelink.json
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\refint\FormerMarketing.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\FormerMarketing.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerMarketing\obj\Release\net5.0\ref\FormerMarketing.dll

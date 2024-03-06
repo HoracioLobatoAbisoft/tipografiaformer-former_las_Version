@@ -43,3 +43,25 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Releas
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.exe
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\FormerDaemon-Launcher.exe.config
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\FormerDaemon-Launcher.exe
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\FormerDaemon-Launcher.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\FormerDaemon-Launcher.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\FormerLib.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\SevenZipSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\itextsharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\GhostscriptSharp.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\FormerConfig.dll
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\FormerLib.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\FormerLib.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\FormerConfig.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\bin\Release\FormerConfig.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon_Launcher.frmMain.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon_Launcher.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.vbproj.CopyComplete
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.exe
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.pdb

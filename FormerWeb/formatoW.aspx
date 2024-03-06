@@ -35,8 +35,8 @@
         Non è stato ancora selezionato un colore di stampa per il prodotto
     </div>
 </div>
-<p class="titoloWizard"><%=P.Descrizione  %></p>
-<p class="sottotitoloWizard"><%=P.DescrizioneEstesa%></p>
+<h1 class="titoloWizard"><%=P.Descrizione  %></h1>
+<h2 class="sottotitoloWizard"><%=P.DescrizioneEstesa%></h2>
 <p class="effettuaScelta">Scegli un FORMATO tra quelli disponibili</p>    
 <asp:Table ID="tableWizard" class="tableWizard" runat="server"></asp:Table>
 <div class="icoConsigliato">

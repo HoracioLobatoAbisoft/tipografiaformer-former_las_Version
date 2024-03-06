@@ -10,3 +10,14 @@ D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\FormerLiveUpdate.vbproj.Core
 D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\formerliveupdate.exe
 D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\formerliveupdate.xml
 D:\Abisfot\Former\main\FormerLiveUpdate\obj\Release\formerliveupdate.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLiveUpdate\bin\Release\formerliveupdate.exe.config
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLiveUpdate\bin\Release\formerliveupdate.exe
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLiveUpdate\bin\Release\formerliveupdate.pdb
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLiveUpdate\bin\Release\formerliveupdate.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLiveUpdate\obj\Release\FormerLiveUpdate.vbproj.AssemblyReference.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLiveUpdate\obj\Release\FormerLiveUpdate.Resources.resources
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLiveUpdate\obj\Release\FormerLiveUpdate.vbproj.GenerateResource.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLiveUpdate\obj\Release\FormerLiveUpdate.vbproj.CoreCompileInputs.cache
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLiveUpdate\obj\Release\formerliveupdate.exe
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLiveUpdate\obj\Release\formerliveupdate.xml
+C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLiveUpdate\obj\Release\formerliveupdate.pdb

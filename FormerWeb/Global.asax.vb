@@ -356,11 +356,16 @@ Public Class Global_asax
         routes.MapPageRoute("diventa-rivenditore", "diventa-rivenditore", "~/pagetext/diventariv.aspx")
 
         'ASSISTENZA
-        routes.MapPageRoute("assistenza", "assistenza-clienti", "~/assistenza/faq.aspx")
+        'routes.MapPageRoute("assistenza", "assistenza-clienti", "~/assistenza/faq.aspx")
 
         'routes.MapPageRoute("contattaci", "{ida}/{idd}/contattaci", "~/assistenza/contattaci.aspx", True, New RouteValueDictionary() From {}, New RouteValueDictionary() From {{"ida", "\d{1,}"}}, New RouteValueDictionary() From {{"idd", "\d{1,}"}})
         'routes.MapPageRoute("esitoAssistenza", "{ris}-esito-richiesta/", "~/assistenza/ris.aspx", True, New RouteValueDictionary() From {}, New RouteValueDictionary() From {{"ris", "\d{1,}"}})
         routes.MapPageRoute("guida-ordine", "come-effettuare-un-ordine", "~/pagetext/guidaOrdine.aspx")
+
+        Dim RInfo As New Route("assistenza-clienti", New PageRouteHandler("~/assistenza/faq.aspx"))
+        RInfo.DataTokens = New RouteValueDictionary() From {{"isAssistenza", True}}
+        routes.Add(RInfo)
+
         Dim RGloss As New Route("glossario-tipografico", New PageRouteHandler("~/assistenza/faq.aspx"))
         RGloss.DataTokens = New RouteValueDictionary() From {{"isGlossario", True}}
         routes.Add(RGloss)

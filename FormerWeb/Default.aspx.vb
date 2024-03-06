@@ -6,6 +6,22 @@ Public Class pHomePage
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
+        If Page.RouteData.DataTokens.Count Then
+            If Page.RouteData.DataTokens("idR") = enRepartoWeb.Ricamo Then
+                DirectCast(Page, FormerPage).Title = "Ricamo"
+            ElseIf Page.RouteData.DataTokens("idR") = enRepartoWeb.StampaOffset Then
+                DirectCast(Page, FormerPage).Title = "Stampa offse"
+            ElseIf Page.RouteData.DataTokens("idR") = enRepartoWeb.StampaDigitale Then
+                DirectCast(Page, FormerPage).Title = "Stampa Digitale"
+            ElseIf Page.RouteData.DataTokens("idR") = enRepartoWeb.Packaging Then
+                DirectCast(Page, FormerPage).Title = "Packaging"
+            ElseIf Page.RouteData.DataTokens("idR") = enRepartoWeb.Etichette Then
+                DirectCast(Page, FormerPage).Title = "Etichette"
+            End If
+
+        End If
+
+
         Session("PageTitle") = "Scegli un Prodotto"
         If Not IsPostBack Then
 
