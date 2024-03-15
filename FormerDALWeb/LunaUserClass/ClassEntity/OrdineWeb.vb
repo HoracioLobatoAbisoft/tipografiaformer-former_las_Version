@@ -106,7 +106,19 @@ Public Class OrdineWeb
             Return IdPromo
         End Get
     End Property
+    Public ReadOnly Property IdConsegna As Integer? Implements IOrdineBox.IdConsegna
+        Get
+            ' Verificar si la entrega asociada ya ha sido cargada
+            If _ConsegnaAssociata Is Nothing Then
+                ' Si no ha sido cargada, cargarla
+                _ConsegnaAssociata = New Consegna
+                _ConsegnaAssociata.Read(IdCons)
+            End If
 
+            ' Devolver el ID de la entrega
+            Return _ConsegnaAssociata.IdConsegna
+        End Get
+    End Property
     Public ReadOnly Property IdProdotto As Integer Implements IOrdineBox.IdProdotto
         Get
             Return L.IdListinoBase
@@ -122,6 +134,7 @@ Public Class OrdineWeb
             Return Ris
         End Get
     End Property
+
 
     Public ReadOnly Property AltezzaI As Integer Implements IOrdineBox.Altezza
         Get

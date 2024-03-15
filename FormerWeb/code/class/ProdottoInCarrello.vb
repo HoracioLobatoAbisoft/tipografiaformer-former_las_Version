@@ -111,7 +111,11 @@ Public Class ProdottoInCarrello
             Return FormerEnumHelper.GetIconaStato(enStatoOrdine.InAttesaAllegati)
         End Get
     End Property
-
+    Public ReadOnly Property IdConsegna As Integer? Implements IOrdineBox.IdConsegna
+        Get
+            Return IdConsegna
+        End Get
+    End Property
     Public ReadOnly Property ColoreStato As System.Drawing.Color
         Get
             Dim Ris As Drawing.Color

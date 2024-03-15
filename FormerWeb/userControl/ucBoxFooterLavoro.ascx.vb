@@ -11,7 +11,9 @@ Public Class ucBoxFooterLavoro
             'devo prima vedere la consegna
 
             Dim O As New OrdineWeb
+
             O.Read(Ordine.IdOrdineWeb)
+            Dim IdConsegna As Integer = O.ConsegnaAssociata.IdConsegna
             If O.ConsegnaAssociata.Modificabile Then
                 If O.Modificabile Then
                     'controllo tutti gli altri ordini della consegna

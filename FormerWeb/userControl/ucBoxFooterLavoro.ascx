@@ -3,7 +3,9 @@
 
 <div class="BoxOrdFooter">
     <hr />
-
+    <%If Ordine.StatoStr = "In attesa di Pagamento" Then%>
+        <a href="<%=Ordine.IdConsegna%>/dettaglio-ordine"  class="pulsanteOperativoR"><img src="/img/icoPrezzo16.png" /> <b>EFFETTUA IL PAGAMENTO</b></a>&nbsp;&nbsp;&nbsp;
+     <%End If %>
     <%If Ordine.IdOrdineWeb Then%>
         <%If Ordine.StatoOrdine = enStatoOrdine.InAttesaAllegati And Ordine.Omaggio <> enSiNo.Si Then%>
             <a href="/<%=Ordine.IdOrdineWeb%>/dettaglio-lavoro"  class="pulsanteOperativoR"><img src="/img/icoAttach16.png"/> <b>INVIA I FILE</b></a>&nbsp;&nbsp;&nbsp;

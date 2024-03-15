@@ -42,5 +42,6 @@ Public Interface IOrdineBox
     ReadOnly Property Base As Integer
     ReadOnly Property Altezza As Integer
     ReadOnly Property Profondita As Integer
+    ReadOnly Property IdConsegna As Integer?
 
 End Interface

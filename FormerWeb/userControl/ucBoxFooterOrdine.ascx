@@ -12,6 +12,6 @@
     <a href="/<%=Ordine.IdConsegna%>/dettaglio-ordine" class="pulsanteOperativo"><img src="/img/icoFreccia16.png" /> Vai al Dettaglio Consegna</a>&nbsp;&nbsp;&nbsp;
     <%If Ordine.Modificabile Then%>
         <asp:LinkButton ID="lnkDelOrd" CssClass="pulsanteOperativo" runat="server" OnClientClick = "return confirm('Sicuro di voler eliminare questo Ordine?');"><img src="/img/icoCestino16.png" />Elimina Consegna</asp:LinkButton>
-    <%end If%>
+    <%      End If%>
    
 </div>
