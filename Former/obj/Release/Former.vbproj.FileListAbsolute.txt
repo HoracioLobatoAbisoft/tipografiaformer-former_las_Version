@@ -1123,7 +1123,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\Former\obj\Release\Former.vbproj
 D:\Abisfot\tipografiaformer-former_last_Version\Former\obj\Release\Former.TrustInfo.xml
 D:\Abisfot\tipografiaformer-former_last_Version\Former\obj\Release\Former.exe.manifest
 D:\Abisfot\tipografiaformer-former_last_Version\Former\obj\Release\Former.application
-D:\Abisfot\tipografiaformer-former_last_Version\Former\obj\Release\Former.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\Former\obj\Release\Former.exe
 D:\Abisfot\tipografiaformer-former_last_Version\Former\obj\Release\Former.pdb
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\Former\bin\Release\Former.exe.config
@@ -1502,3 +1501,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\Former\ob
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\Former\obj\Release\Former.vbproj.CopyComplete
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\Former\obj\Release\Former.exe
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\Former\obj\Release\Former.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\Former\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\Former\obj\Release\Former.vbproj.Up2Date

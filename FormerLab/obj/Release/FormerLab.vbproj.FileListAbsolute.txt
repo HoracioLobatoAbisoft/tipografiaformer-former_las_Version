@@ -254,7 +254,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.exe.licenses
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.exe
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.pdb
@@ -345,3 +344,6 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLab
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.exe
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerLab\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerLab\bin\Release\FormerDALEventi.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerLab\obj\Release\FormerLab.vbproj.Up2Date

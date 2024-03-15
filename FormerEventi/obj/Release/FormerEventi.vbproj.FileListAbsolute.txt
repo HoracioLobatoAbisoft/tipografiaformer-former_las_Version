@@ -23,7 +23,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerE
 D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.pdb
@@ -42,3 +41,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEve
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEventi.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\bin\FormerDALEventi.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEventi\obj\Release\FormerEv.725F441C.Up2Date

@@ -53,7 +53,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.pdb
@@ -97,3 +96,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBus
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBusinessLogicInterface.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogicInterface\obj\Release\FormerBu.38B0E6B3.Up2Date

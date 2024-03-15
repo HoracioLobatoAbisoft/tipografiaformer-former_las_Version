@@ -196,7 +196,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Server\obj\Release\
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Server\obj\Release\FormerDaemon-Server.TrustInfo.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Server\obj\Release\FormerDaemon-Server.exe.manifest
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Server\obj\Release\FormerDaemon-Server.application
-D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Server\obj\Release\FormerDaemon-Server.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Server\obj\Release\FormerDaemon-Server.exe
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Server\obj\Release\FormerDaemon-Server.pdb
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Server\bin\Release\guetzli.exe
@@ -266,3 +265,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDae
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Server\obj\Release\FormerDaemon-Server.vbproj.CopyComplete
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Server\obj\Release\FormerDaemon-Server.exe
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Server\obj\Release\FormerDaemon-Server.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Server\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Server\obj\Release\FormerDa.9C9BA1D3.Up2Date

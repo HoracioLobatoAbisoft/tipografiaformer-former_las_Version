@@ -74,7 +74,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerD
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.pdb
@@ -132,3 +131,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDAL
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDALWeb.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALWeb\obj\Release\FormerDA.71D88C32.Up2Date

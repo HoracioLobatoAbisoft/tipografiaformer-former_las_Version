@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="ucCarrello.ascx.vb" Inherits="FormerWeb.ucCarrello" %>
 <div class="CarrelloBox" >
-    <%If UtenteConnesso.IdUtente = 1684 Or UtenteConnesso.IdUtente = 3 Or UtenteConnesso.IdUtente = 292 Or UtenteConnesso.IdUtente = 38 Then %>
+    <%If UtenteConnesso.UtenteAutorizato %>
         <%--<asp:Literal runat="server" ID="iframeNC" />--%>
         <table class="" style="width:100%">
             <tbody id = "TableCarrelloNotifiche">

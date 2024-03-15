@@ -56,7 +56,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\For
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\FormerBancaSella.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\FormerBancaSella.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\FormerBancaSella.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\FormerBancaSella.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\FormerBancaSella.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\FormerBancaSella.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\FormerBancaSella.pdb
@@ -102,3 +101,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBan
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\FormerBancaSella.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\FormerBancaSella.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\FormerBancaSella.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBancaSella\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBancaSella\obj\Release\FormerBa.2AA9B05C.Up2Date

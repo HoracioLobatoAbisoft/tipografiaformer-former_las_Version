@@ -71,7 +71,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerD
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.pdb
@@ -127,3 +126,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDAL
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDALSql.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALSql\obj\Release\FormerDA.43134E86.Up2Date

@@ -53,7 +53,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerEr
 D:\Abisfot\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerError.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerError.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerError.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerError.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerError.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerError.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerError.pdb
@@ -97,3 +96,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerErr
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerError.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerError.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerError.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerError\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerError\obj\Release\FormerEr.F7BBF467.Up2Date

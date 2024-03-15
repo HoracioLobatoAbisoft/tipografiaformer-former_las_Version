@@ -43,11 +43,11 @@
         //const production = false;
         //const uriReact = 'https://tipografiaformertest.it:6060';
         //const uriReact = 'http://localhost:5173';
-        //const uriReact = 'http://95.110.134.38:51';
+        //const uriReact = 'http://95.110.134.38:82';
         const uriReact = 'https://tipografiaformer.it:61';
         //const uriLocal = 'https://tipografiaformertest.it';
         //const uriLocal = 'https://localhost:44311';
-        //const uriLocal = 'http://95.110.134.38';
+        //const uriLocal = 'http://95.110.134.38:81';
         const uriLocal = 'https://tipografiaformer.it';
 
         var Uris = {
@@ -617,7 +617,7 @@
 
                                 <%If UtenteConnesso.IdUtente > 0 Or MostraNewsletter = 0 Then%>
                                 <a href="/carrello" class="pulsante120Green hasTooltip"><img src="/img/icoCarrello32.png" />Carrello 
-                                        <%If UtenteConnesso.IdUtente > 0 Or MostraNewsletter = False Then%>
+                                        <%If UtenteConnesso.UtenteAutorizato Then%>
                                             <span class="" id="coutenCarrello">
                                                 
                                             </span>
@@ -769,7 +769,7 @@
     <script>
         //const urlFront = 'https://tipografiaformertest.it:6060';
         //const urlFront = 'http://localhost:5173';
-        //const urlFront = 'http://95.110.134.38:51';
+        //const urlFront = 'http://95.110.134.38:82';
         const urlFront = 'https://tipografiaformer.it:61';
         const counterLocal = this.localStorage.getItem('c');
         if (parseInt(counterLocal) > 0) {

@@ -65,7 +65,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\For
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.exe
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.pdb
@@ -104,3 +103,4 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLis
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.exe
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerListiniLab.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLab\obj\Release\FormerLi.1E34B2AC.Up2Date

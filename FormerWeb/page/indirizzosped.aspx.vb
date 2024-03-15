@@ -129,6 +129,7 @@ Public Class pIndirizzoSpedizione
                 Indirizzi.EliminaIndirizzo(UtenteConnesso.IdUtente, IdIndirizzo)
             Case "Pred"
                 Indirizzi.RendiPredefinito(UtenteConnesso.IdUtente, IdIndirizzo)
+                Carrello.IdIndirizzoScelto = IdIndirizzo
             Case "AnnP"
                 Indirizzi.RendiPredefinito(UtenteConnesso.IdUtente, 0)
         End Select

@@ -47,7 +47,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.pdb
@@ -87,3 +86,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLib
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerLib\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerLib\obj\Release\FormerLib.vbproj.Up2Date

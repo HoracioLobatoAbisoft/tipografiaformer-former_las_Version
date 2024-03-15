@@ -83,7 +83,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\For
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.pdb
@@ -117,3 +116,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerLis
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerListiniLib.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerListiniLib\obj\Release\FormerLi.4675A3D4.Up2Date

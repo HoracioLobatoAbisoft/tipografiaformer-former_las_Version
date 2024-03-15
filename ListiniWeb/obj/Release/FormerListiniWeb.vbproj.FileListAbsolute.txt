@@ -61,7 +61,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerLis
 D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.dll
 D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.xml
 D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.pdb
@@ -99,3 +98,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWe
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerListiniWeb.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\bin\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\ListiniWeb\obj\Release\FormerLi.265B7251.Up2Date

@@ -18,3 +18,13 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFD
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEFDALSql\bin\Release\FormerEFDALSql.dll
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEFDALSql\bin\Release\FormerEFDALSql.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEFDALSql\bin\Release\FormerEFDALSql.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.vbproj.AssemblyReference.cache
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.Resources.resources
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.vbproj.GenerateResource.cache
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.vbproj.CoreCompileInputs.cache
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.dll
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerEFDALSql\obj\Release\FormerEFDALSql.pdb

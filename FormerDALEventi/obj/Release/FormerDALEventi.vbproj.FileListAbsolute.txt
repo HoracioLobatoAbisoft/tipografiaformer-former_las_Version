@@ -28,3 +28,13 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDAL
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALEventi\obj\Release\FormerDALEventi.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALEventi\obj\Release\FormerDALEventi.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDALEventi\obj\Release\FormerDALEventi.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALEventi\bin\Release\FormerDALEventi.dll
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALEventi\bin\Release\FormerDALEventi.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALEventi\bin\Release\FormerDALEventi.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALEventi\obj\Release\FormerDALEventi.vbproj.AssemblyReference.cache
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALEventi\obj\Release\FormerDALEventi.Resources.resources
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALEventi\obj\Release\FormerDALEventi.vbproj.GenerateResource.cache
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALEventi\obj\Release\FormerDALEventi.vbproj.CoreCompileInputs.cache
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALEventi\obj\Release\FormerDALEventi.dll
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALEventi\obj\Release\FormerDALEventi.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDALEventi\obj\Release\FormerDALEventi.pdb

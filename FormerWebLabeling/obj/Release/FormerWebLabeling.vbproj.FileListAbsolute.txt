@@ -83,7 +83,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\Fo
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.pdb
@@ -117,3 +116,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWeb
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWebLabeling.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerWebLabeling\obj\Release\FormerWe.4B5A1E76.Up2Date

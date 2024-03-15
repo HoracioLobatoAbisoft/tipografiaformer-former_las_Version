@@ -110,7 +110,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.dll
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.pdb
@@ -192,3 +191,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBus
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.dll
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBusinessLogic.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBusinessLogic\obj\Release\FormerBu.E5CEFFA8.Up2Date

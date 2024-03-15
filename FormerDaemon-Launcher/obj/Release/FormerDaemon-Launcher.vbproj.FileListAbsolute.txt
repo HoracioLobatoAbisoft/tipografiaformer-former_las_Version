@@ -39,7 +39,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Releas
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon_Launcher.Resources.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.exe
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.pdb
@@ -65,3 +64,4 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDae
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.exe
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDaemon-Launcher.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerDaemon-Launcher\obj\Release\FormerDa.660323B8.Up2Date

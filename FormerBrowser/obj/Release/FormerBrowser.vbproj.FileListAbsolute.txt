@@ -58,7 +58,6 @@ D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\Former
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.ucBrowser.resources
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.vbproj.GenerateResource.cache
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.vbproj.CoreCompileInputs.cache
-D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.vbproj.CopyComplete
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.exe
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.xml
 D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.pdb
@@ -94,3 +93,5 @@ C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBro
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.exe
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.xml
 C:\Projects\Former\former Antiguo\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBrowser.pdb
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\bin\Release\FormerConfig.xml
+D:\Abisfot\tipografiaformer-former_last_Version\FormerBrowser\obj\Release\FormerBr.7B4D978B.Up2Date
