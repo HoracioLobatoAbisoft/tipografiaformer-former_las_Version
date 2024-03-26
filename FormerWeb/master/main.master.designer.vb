@@ -131,15 +131,6 @@ Partial Public Class pSiteMasterPage
     Protected WithEvents ScriptManagerFormer As Global.System.Web.UI.ScriptManager
 
     '''<summary>
-    '''iframeIndexReact control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents iframeIndexReact As Global.System.Web.UI.WebControls.Literal
-
-    '''<summary>
     '''body control.
     '''</summary>
     '''<remarks>

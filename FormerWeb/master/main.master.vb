@@ -166,7 +166,7 @@ Public Class pSiteMasterPage
 
         If UtenteConnesso.UtenteAutorizato Then
             Dim UrlIndex As String = UrlProdottoEnviroment
-            iframeIndexReact.Text = "<iframe id='iframeIndex2' src=" & UrlIndex & " hidden></iframe>"
+            'iframeIndexReact.Text = "<iframe id='iframeIndex2' src=" & UrlIndex & " hidden></iframe>"
         End If
 
         'FormerWebApp.FormerScriptManager = ScriptManagerFormer

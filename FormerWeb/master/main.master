@@ -41,14 +41,14 @@
         }--%>
 
         //const production = false;
-        const uriReact = 'https://tipografiaformertest.it:6060';
+        //const uriReact = 'https://tipografiaformertest.it:6060';
         //const uriReact = 'http://localhost:5173';
         //const uriReact = 'http://95.110.134.38:82';
-        //const uriReact = 'https://tipografiaformer.it:61';
-        const uriLocal = 'https://tipografiaformertest.it';
+        const uriReact = 'https://tipografiaformer.it:61';
+        //const uriLocal = 'https://www.tipografiaformertest.it';
         //const uriLocal = 'https://localhost:44311';
         //const uriLocal = 'http://95.110.134.38:81';
-        //const uriLocal = 'https://tipografiaformer.it';
+        const uriLocal = 'https://www.tipografiaformer.it';
 
         var Uris = {
             front: uriReact,
@@ -662,7 +662,7 @@
         <!-- CONTENUTO PAGINA-->
         
         <asp:ScriptManager ID="ScriptManagerFormer" runat="server"  EnablePartialRendering="true"  ></asp:ScriptManager>
-        <asp:Literal runat="server" ID="iframeIndexReact" />
+        <%--<asp:Literal runat="server" ID="iframeIndexReact" />--%>
         <div class="content"  id="contentHelperHidden">
             <asp:ContentPlaceHolder id="body" runat="server"></asp:ContentPlaceHolder> 
             <asp:ContentPlaceHolder ID="secondaFascia" runat="server"></asp:ContentPlaceHolder>
@@ -767,10 +767,10 @@
 
 <!--POWERED BY LUNA ORM https://sourceforge.net/projects/lunaorm/ -->
     <script>
-        const urlFront = 'https://tipografiaformertest.it:6060';
+        //const urlFront = 'https://tipografiaformertest.it:6060';
         //const urlFront = 'http://localhost:5173';
         //const urlFront = 'http://95.110.134.38:82';
-        //const urlFront = 'https://tipografiaformer.it:61';
+        const urlFront = 'https://tipografiaformer.it:61';
         const counterLocal = this.localStorage.getItem('c');
         if (parseInt(counterLocal) > 0) {
             var idCounterCarrello = document.getElementById('coutenCarrello');
