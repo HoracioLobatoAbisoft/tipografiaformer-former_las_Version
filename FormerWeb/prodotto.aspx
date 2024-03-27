@@ -366,6 +366,10 @@
       <span itemprop="url">https://www.tipografiaformer.it<%=Request.Url.AbsolutePath%></span><span itemprop="description"><%=OgDescription%></span><div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
         <meta itemprop="priceCurrency" content="EUR" />
         <span itemprop="price"><%=PrimoPrezzo%></span>
+            <!-- Agregando el campo availability -->
+          <meta itemprop="availability" content="InStock" />
+          <!-- Agregando el campo priceValidUntil (fecha de validez del precio) -->
+          <meta itemprop="priceValidUntil" content="2024-12-31" />
         <div itemprop="seller" itemscope itemtype="https://schema.org/Organization">
             <span itemprop="name">Tipografia Former https://www.tipografiaformer.it</span>
             <span itemprop="url">https://www.tipografiaformer.it</span>
@@ -384,6 +388,12 @@
           <span itemprop="bestRating">5</span> 
           <span itemprop="reviewCount"><%=LRif.Reviews.Count%></span> 
         </div>
+        <%Else %>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                <span itemprop="ratingValue">1</span>
+                <span itemprop="bestRating">5</span>
+                <span itemprop="reviewCount">1</span>
+          </div>
         <%End If%>
     </div>
             <div class="colDx">

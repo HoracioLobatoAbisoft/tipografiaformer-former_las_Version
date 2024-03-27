@@ -769,7 +769,7 @@ Public Class pProdotto
 
             If L.Count Then
                 Dim singInd As IndiceRicerca = L(0)
-                ris = singInd.Prezzo1Str
+                ris = Replace(singInd.Prezzo1Str, ",", ".")
             End If
 
         End Using
@@ -4475,6 +4475,7 @@ Public Class pProdotto
 
     End Sub
 
+    Public reviewStatic As Boolean = False
     Private Sub AggiornaReview() 'ByVal take As Integer, ByVal pageSize As Integer)
 
         AggregateReview.IdListinoBase = LRif.IdListinoBase
@@ -4492,6 +4493,7 @@ Public Class pProdotto
             rptReview.Visible = True
         Else
             rptReview.Visible = False
+            reviewStatic = True
             ' plcPaging.Visible = False
         End If
 
